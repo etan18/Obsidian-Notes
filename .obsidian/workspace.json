@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "a1ca38f897cfb02d",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa68308a88823da1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8ef8469192af8cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linear Algebra/multivariate gaussians.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "11fe5740f0dda893",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Probability/geometric distribution.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "46248b51788ad745",
+    "type": "split",
+    "children": [
+      {
+        "id": "d372b5a1178e5e11",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61641501b03c8a9b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7b87019e4063d4ad",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8363e59ddd9a0508",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.50390625
+  },
+  "right": {
+    "id": "39399c717678d550",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a2c588d11385266",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c961b60bd71f44e5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f9ebbd3e6aaa8324",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "77428341e935b819",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8d6b882237e03c64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "61641501b03c8a9b",
+  "lastOpenFiles": [
+    "2023-05-21.md",
+    "Cognitive Science/sentience.md",
+    "Linear Algebra/multivariate gaussians.md",
+    "Probability/geometric distribution.md",
+    "Linear Algebra/gradients.md",
+    "Machine Learning/Classification/bayes classifiers.md",
+    "Linear Algebra/singular value decomposition.md",
+    "Linear Algebra/pseudoinverse.md",
+    "Linear Algebra/eigenvalues.md",
+    "Linear Algebra/eigendecomposition.md",
+    "Linear Algebra/convexity.md",
+    "Linear Algebra/img/pseudo.png",
+    "Cognitive Science/artificial intelligence.md",
+    "Cognitive Science/img/actr.png",
+    "Probability/random variable.md",
+    "Probability/bernoulli distribution.md",
+    "Probability/binomial distribution.md",
+    "Probability/poisson distribution.md",
+    "Probability/exponential distribution.md",
+    "Probability/poisson processes.md",
+    "Probability/Probability.md",
+    "Machine Learning/supervised learning.md",
+    "Machine Learning/logistic regression.md",
+    "Machine Learning/vanishing gradient problem.md",
+    "Machine Learning/gradient descent.md",
+    "Machine Learning/shatter function.md",
+    "Machine Learning/regression.md",
+    "Machine Learning/regularization.md",
+    "Cognitive Science/img/looking.png",
+    "Cognitive Science/img",
+    "Machine Learning/img/jacobian.png",
+    "Machine Learning/img/convex.png",
+    "Screen Shot 2023-05-11 at 11.49.07 AM.png",
+    "Machine Learning/img/gradient.png",
+    "Cognitive Science",
+    "Computer Science",
+    "Probability",
+    "Machine Learning/Classification",
+    "Machine Learning/img/l2.png",
+    "Machine Learning/img/lasso.png",
+    "Machine Learning/img/dendrogram.png",
+    "Machine Learning/Neural Networks",
+    "Machine Learning/Decision Trees & Ensemble Learning",
+    "Machine Learning/Unsupervised Learning",
+    "Linear Algebra/img",
+    "Linear Algebra"
+  ]
+}
