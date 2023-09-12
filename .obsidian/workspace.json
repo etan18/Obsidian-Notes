@@ -8,30 +8,67 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b8ef8469192af8cd",
+            "id": "a6a8f3d4f768b80a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/multivariate gaussians.md",
+                "file": "Artificial Intelligence/rational agents.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "11fe5740f0dda893",
+            "id": "240fd5f2d6857bcc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/geometric distribution.md",
+                "file": "heuristics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "edcaf6657b25bb7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Structures/vtables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19d657dff12161d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "memory structure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aeaca368365f465a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "memory structure.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -60,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "arti",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.50390625
+    "width": 206.5
   },
   "right": {
     "id": "39399c717678d550",
@@ -97,6 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "memory structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "memory structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +173,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "memory structure.md"
+              }
             }
           }
         ]
@@ -154,37 +195,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "61641501b03c8a9b",
+  "active": "aeaca368365f465a",
   "lastOpenFiles": [
-    "2023-05-21.md",
-    "Cognitive Science/sentience.md",
-    "Linear Algebra/multivariate gaussians.md",
-    "Probability/geometric distribution.md",
-    "Linear Algebra/gradients.md",
-    "Machine Learning/Classification/bayes classifiers.md",
-    "Linear Algebra/singular value decomposition.md",
-    "Linear Algebra/pseudoinverse.md",
-    "Linear Algebra/eigenvalues.md",
-    "Linear Algebra/eigendecomposition.md",
-    "Linear Algebra/convexity.md",
-    "Linear Algebra/img/pseudo.png",
-    "Cognitive Science/artificial intelligence.md",
+    "search tree.md",
+    "running.md",
+    "memory structure.md",
+    "buffer overflows.md",
+    "heuristics.md",
+    "Artificial Intelligence/rational agents.md",
+    "Artificial Intelligence/search problems.md",
+    "Machine Structures/vtables.md",
+    "Computer Science/graph theory.md",
+    "Cognitive Science/preference acquisition.md",
+    "Cognitive Science/learning.md",
+    "Computer Science/dynamic programming.md",
+    "sear",
+    "Artificial Intelligence",
+    "information theory.md",
+    "artificial intelligence.md",
+    "colonialism.md",
+    "Artificial Intelligence/artificial intelligence.md",
+    "Machine Structures",
+    "Cognitive Science/memory.md",
+    "Machine Learning/risk.md",
+    "Machine Learning/Neural Networks/neural networks.md",
+    "Computer Science/entropy.md",
     "Cognitive Science/img/actr.png",
-    "Probability/random variable.md",
-    "Probability/bernoulli distribution.md",
-    "Probability/binomial distribution.md",
-    "Probability/poisson distribution.md",
-    "Probability/exponential distribution.md",
-    "Probability/poisson processes.md",
-    "Probability/Probability.md",
-    "Machine Learning/supervised learning.md",
-    "Machine Learning/logistic regression.md",
-    "Machine Learning/vanishing gradient problem.md",
-    "Machine Learning/gradient descent.md",
-    "Machine Learning/shatter function.md",
-    "Machine Learning/regression.md",
-    "Machine Learning/regularization.md",
     "Cognitive Science/img/looking.png",
+    "Linear Algebra/eigendecomposition.md",
+    "Probability/bernoulli distribution.md",
+    "Cognitive Science/cognitive architectures.md",
+    "Probability/exponential distribution.md",
+    "human visual system.md",
+    "Linear Algebra/multivariate gaussians.md",
+    "Linear Algebra/img/pseudo.png",
     "Cognitive Science/img",
     "Machine Learning/img/jacobian.png",
     "Machine Learning/img/convex.png",
@@ -198,9 +242,6 @@
     "Machine Learning/img/lasso.png",
     "Machine Learning/img/dendrogram.png",
     "Machine Learning/Neural Networks",
-    "Machine Learning/Decision Trees & Ensemble Learning",
-    "Machine Learning/Unsupervised Learning",
-    "Linear Algebra/img",
-    "Linear Algebra"
+    "Machine Learning/Decision Trees & Ensemble Learning"
   ]
 }
