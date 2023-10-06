@@ -1,5 +1,6 @@
-In [[artificial intelligence]], a **search problem** consists of a state space, successor function, start state, and a goal test. In these problems, we define our **search state** as all relevant information that our [[rational agents]] need to make the best decision. This is an abstraction from the *world state*, which contains all of the possible information we have about our environment.
+In [[artificial intelligence]], a **search problem** consists of a state space, successor function, start state, and a goal test. In these problems, we define our **search state** as all relevant information that our [[rational agent]] need to make the best decision. This is an abstraction from the *world state*, which contains all of the possible information we have about our environment.
 
+# defining search problems
 #### state space
 The **state space** is the discrete set of all possible configurations of the system, or world that we're dealing with.
 - We can use [[graph theory]] to create a mathematical representation of a search problem. Here, the nodes will be states, and edges are created by succesors.

@@ -4,71 +4,139 @@
     "type": "split",
     "children": [
       {
-        "id": "fa68308a88823da1",
+        "id": "4adc39900f9e9f96",
         "type": "tabs",
         "children": [
           {
-            "id": "a6a8f3d4f768b80a",
+            "id": "fb80b0d61b0a12b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial Intelligence/rational agents.md",
+                "file": "Machine Structures/compiler.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "240fd5f2d6857bcc",
+            "id": "4d01c991fe0a0d5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "heuristics.md",
+                "file": "game trees.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "edcaf6657b25bb7e",
+            "id": "466c43fc4a96b129",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Structures/vtables.md",
+                "file": "constraint satisfaction problems.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "19d657dff12161d3",
+            "id": "9c976c30f98cf42c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "6ec893f90cd6d0f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "memory structure.md",
+                "file": "markov chains.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "aeaca368365f465a",
+            "id": "39a727b3386d03a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "memory structure.md",
+                "file": "Artificial Intelligence/q-learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "461d53c05b8111f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "161 midterm cheat sheet notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63bf48818af86ae0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Probability/random variable.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cd47b9d225b6419e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "161 midterm cheat sheet notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1490655e3c769aa0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Structures/cryptography.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dba6e015e34a3d49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pseudo-randomness.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -97,7 +165,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "arti",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206.5
+    "width": 225.5
   },
   "right": {
     "id": "39399c717678d550",
@@ -134,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "memory structure.md",
+                "file": "pseudo-randomness.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "memory structure.md",
+                "file": "pseudo-randomness.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +242,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "memory structure.md"
+                "file": "pseudo-randomness.md"
+              }
+            }
+          },
+          {
+            "id": "392dd601afe2cc43",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -182,7 +260,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -195,53 +273,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aeaca368365f465a",
+  "active": "dba6e015e34a3d49",
   "lastOpenFiles": [
-    "search tree.md",
-    "running.md",
-    "memory structure.md",
-    "buffer overflows.md",
+    "pseudo-randomness.md",
+    "public key cryptography.md",
+    "markov chains.md",
     "heuristics.md",
-    "Artificial Intelligence/rational agents.md",
-    "Artificial Intelligence/search problems.md",
+    "greedy algorithms.md",
+    "game trees.md",
+    "diffie-hellman key exchange.md",
+    "Machine Structures/cryptography.md",
+    "Untitled.canvas",
+    "161 midterm cheat sheet notes.md",
+    "Machine Structures/buffer overflows.md",
+    "Machine Structures/memory structure.md",
+    "Machine Structures/symmetric key encryption.md",
+    "Probability/entropy.md",
+    "Computer Science/entropy.md",
+    "Machine Learning/Decision Trees & Ensemble Learning/decision trees.md",
+    "Probability/random variable.md",
+    "Probability/probability.md",
+    "Machine Structures/x86.md",
+    "Computer Science/hashing.md",
+    "Algorithms & Data Structures",
+    "constraint satisfaction problems.md",
+    "block ciphers.md",
+    "deterministic games.md",
+    "Machine Structures/compiler.md",
     "Machine Structures/vtables.md",
-    "Computer Science/graph theory.md",
-    "Cognitive Science/preference acquisition.md",
-    "Cognitive Science/learning.md",
-    "Computer Science/dynamic programming.md",
+    "Artificial Intelligence/rational agent.md",
+    "Artificial Intelligence/q-learning.md",
+    "Machine Learning/img/lasso.png",
+    "Machine Learning/img/l2.png",
+    "Discrete Math",
+    "Computer Science/img/npcomplete.png",
+    "Computer Science/img/reduction.png",
+    "Computer Science/img",
     "sear",
     "Artificial Intelligence",
-    "information theory.md",
-    "artificial intelligence.md",
-    "colonialism.md",
-    "Artificial Intelligence/artificial intelligence.md",
     "Machine Structures",
-    "Cognitive Science/memory.md",
-    "Machine Learning/risk.md",
-    "Machine Learning/Neural Networks/neural networks.md",
-    "Computer Science/entropy.md",
     "Cognitive Science/img/actr.png",
     "Cognitive Science/img/looking.png",
-    "Linear Algebra/eigendecomposition.md",
-    "Probability/bernoulli distribution.md",
-    "Cognitive Science/cognitive architectures.md",
-    "Probability/exponential distribution.md",
-    "human visual system.md",
-    "Linear Algebra/multivariate gaussians.md",
     "Linear Algebra/img/pseudo.png",
     "Cognitive Science/img",
     "Machine Learning/img/jacobian.png",
     "Machine Learning/img/convex.png",
     "Screen Shot 2023-05-11 at 11.49.07 AM.png",
-    "Machine Learning/img/gradient.png",
     "Cognitive Science",
     "Computer Science",
-    "Probability",
-    "Machine Learning/Classification",
-    "Machine Learning/img/l2.png",
-    "Machine Learning/img/lasso.png",
-    "Machine Learning/img/dendrogram.png",
-    "Machine Learning/Neural Networks",
-    "Machine Learning/Decision Trees & Ensemble Learning"
+    "Probability"
   ]
 }
