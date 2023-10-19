@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fb80b0d61b0a12b3",
+            "id": "55e2e9bdc21bb603",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Structures/compiler.md",
+                "file": "Artificial Intelligence/heuristics.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4d01c991fe0a0d5b",
+            "id": "b27170a1b71df8f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "game trees.md",
+                "file": "Discrete Math/markov chains.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "466c43fc4a96b129",
+            "id": "15bba08380c53b13",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,99 +44,43 @@
             }
           },
           {
-            "id": "9c976c30f98cf42c",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "6ec893f90cd6d0f0",
+            "id": "3f287ced9d5135aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "markov chains.md",
+                "file": "constraint satisfaction problems.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "39a727b3386d03a0",
+            "id": "f52ab8eac12d3d5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial Intelligence/q-learning.md",
+                "file": "bayes' nets.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "461d53c05b8111f3",
+            "id": "232f030bbb10e2d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "161 midterm cheat sheet notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "63bf48818af86ae0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Probability/random variable.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cd47b9d225b6419e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "161 midterm cheat sheet notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1490655e3c769aa0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Structures/cryptography.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dba6e015e34a3d49",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pseudo-randomness.md",
+                "file": "bayes' nets.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -186,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 303.5
   },
   "right": {
     "id": "39399c717678d550",
@@ -202,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pseudo-randomness.md",
+                "file": "bayes' nets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pseudo-randomness.md",
+                "file": "bayes' nets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pseudo-randomness.md"
+                "file": "bayes' nets.md"
               }
             }
           },
@@ -273,36 +217,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dba6e015e34a3d49",
+  "active": "61641501b03c8a9b",
   "lastOpenFiles": [
-    "pseudo-randomness.md",
-    "public key cryptography.md",
-    "markov chains.md",
-    "heuristics.md",
-    "greedy algorithms.md",
-    "game trees.md",
+    "misc 161 notes.md",
+    "reinforcement learning.md",
     "diffie-hellman key exchange.md",
-    "Machine Structures/cryptography.md",
-    "Untitled.canvas",
-    "161 midterm cheat sheet notes.md",
-    "Machine Structures/buffer overflows.md",
-    "Machine Structures/memory structure.md",
-    "Machine Structures/symmetric key encryption.md",
-    "Probability/entropy.md",
-    "Computer Science/entropy.md",
-    "Machine Learning/Decision Trees & Ensemble Learning/decision trees.md",
-    "Probability/random variable.md",
-    "Probability/probability.md",
-    "Machine Structures/x86.md",
-    "Computer Science/hashing.md",
-    "Algorithms & Data Structures",
     "constraint satisfaction problems.md",
-    "block ciphers.md",
-    "deterministic games.md",
+    "bayes' nets.md",
+    "Machine Learning/vanishing gradient problem.md",
+    "Machine Structures/x86.md",
+    "Security & Internet/internet.md",
+    "Security & Internet",
+    "Probability/conditional probability.md",
+    "Probability/bernoulli distribution.md",
+    "Probability/poisson processes.md",
+    "Machine Learning/Neural Networks/neural networks.md",
+    "Machine Learning/learning theory.md",
+    "Probability/entropy.md",
+    "Artificial Intelligence/markov decision processes.md",
+    "Machine Structures/buffer overflows.md",
     "Machine Structures/compiler.md",
-    "Machine Structures/vtables.md",
+    "Probability/binomial distribution.md",
+    "Probability/poisson distribution.md",
+    "Probability/pseudo-randomness.md",
+    "Probability/random variable.md",
+    "Artificial Intelligence/search tree.md",
+    "Artificial Intelligence/search problems.md",
     "Artificial Intelligence/rational agent.md",
-    "Artificial Intelligence/q-learning.md",
+    "Computer Science/greedy algorithms.md",
+    "Artificial Intelligence/heuristics.md",
+    "Discrete Math",
+    "Untitled.canvas",
+    "Algorithms & Data Structures",
     "Machine Learning/img/lasso.png",
     "Machine Learning/img/l2.png",
     "Discrete Math",
@@ -319,8 +265,6 @@
     "Machine Learning/img/jacobian.png",
     "Machine Learning/img/convex.png",
     "Screen Shot 2023-05-11 at 11.49.07 AM.png",
-    "Cognitive Science",
-    "Computer Science",
-    "Probability"
+    "Cognitive Science"
   ]
 }

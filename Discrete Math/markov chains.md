@@ -1,3 +1,5 @@
+#eecs126
+
 Let $X$ be a finite set representing our static state space.
 
 #### notation
@@ -11,3 +13,9 @@ $$ \pi_t(j) = \sum_{i \in X} \pi_{t-1}(i) \cdot \mathbb{P}_{i, j} $$
 - We can visualize these transitions in a **state transition diagram**
 
 Given some state $X_n = x$, $X_{n-1}$ and $X_{n+1}$ are independent from one another, but both are dependent on $X_n$. If $X_n$ is not known, then $X_{n+1}$ may depend on $X_{n-1}$.
+
+# markov property
+The thing that makes Markov chains *"Markovian"* is that fact that they must be **memoryless**. This means that, given the present state $s$, the past and future states are conditionally independent. The future state is dependent on the present only, and the present state is dependent on the past, but the past and future are independent. If we look at the definition of the *transition matrix*
+$$\mathbb{P}_{s, s'} = P(s' | s)$$
+
+> [!tip] Next: [[markov decision processes]]

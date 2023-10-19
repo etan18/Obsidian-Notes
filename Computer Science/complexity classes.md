@@ -1,3 +1,5 @@
+#cs170
+
 [[Search problems]] are defined by their property of being easily-checkable. This means that for all search problems, there exists an algorithm $C(I, S)$ for some instance of the problem $I$ and proposed solution $S$ such that $C(I, S) = \text{True iff } S$ is a valid solution to $I$. Additionally, $C$ must run in polynomial time to $|I|$.
 
 ## np search problems

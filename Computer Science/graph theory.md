@@ -1,3 +1,4 @@
+#cs170 #cs188 
 ## djikstra's algorithm
 Shortest paths from vertex $A$ to all others on a graph. $O((|V| + |E|)\log |V|)$ runtime.
 1. Set the distance of your start node to 0, and all other nodes to +INF. The start node is selected as the current node.

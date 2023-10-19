@@ -1,4 +1,6 @@
-In [[artificial intelligence|artificial intelligence]], an **agent** is any entity that perceives and acts. Our goal is to create *rational* agents which maximize their expected *utility*. This implies that the agent is given some understanding of its environment, as well as a defined goal.
+#cs188 
+
+In [[artificial intelligence]], an **agent** is any entity that perceives and acts. Our goal is to create *rational* agents which maximize their expected *utility*. This implies that the agent is given some understanding of its environment, as well as a defined goal.
 
 [[heuristics]]
 
