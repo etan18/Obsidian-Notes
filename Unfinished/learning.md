@@ -1,4 +1,4 @@
-[[preference acquisition]]
+[[preferences]]
 
 ## hebbian learning
 - Associative learning

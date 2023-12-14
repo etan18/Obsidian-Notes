@@ -1,3 +1,5 @@
+#cs188 #cs189 
+
 The key migration from classical [[regression]] or [[classification]] methods to neural networks is the **neural networks are trying to learn a decision function**, rather than weights in a pre-selected decision function.
 
 ## background
@@ -6,7 +8,7 @@ $$f: \mathbb{R}^d \rightarrow \mathbb{R}^k$$
 The magic of neural networks is that it learns additional features in the hidden layers that can be used to find the optimal $f$. These learned features are linear combinations of existing features.
 
 ## architecture
-The neural network architecture can be thought of as [[perceptrons]] connected together using [[graph theory]].
+The neural network architecture can be thought of as multi-layer [[perceptrons]] connected together using [[graph theory]].
 - The NN is composed of **layers**. The dimensionality (# of nodes) in the input and output layers are determined by the problem. 
 	- **Hidden layers** are all layers other than the input and output. The depth and number of hidden layers are hyperparameters. Hidden layers are essentially learning linear combinations of the input features and using them as new features.
 - **Connections** are the edges connecting the layers, each with a corresponding *weight*.

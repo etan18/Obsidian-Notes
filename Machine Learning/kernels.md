@@ -1,3 +1,5 @@
+#cs189 
+
 >[!warning] Problem Statement
 > Degree-$p$ multivariate polynomial functions of dimension $d$ have $O(d^p)$ features. This is computationally expensive. We want to be able to represent and perform computations on these functions in a more efficient way.
 

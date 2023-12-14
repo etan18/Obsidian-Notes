@@ -1,3 +1,5 @@
+#eecs126 
+
 The exponential distribution is the continuous version of the [[geometric distribution]]. It's commonly used to represent the time to first arrival, or occurence, of some event.
 
 For random variable $Y \sim Exp(\lambda)$, we have PMF

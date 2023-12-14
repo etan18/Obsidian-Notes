@@ -1,4 +1,4 @@
-
+#cs189 
 ### diagonal matrices
 Let $D \in \mathbb{R}^{n \times d}$ be a *diagonal* matrix (not necessarily square). The **pseudoinverse** of $D$, notated $D^+$, can be found by replacing all non-zero entries of $D^\top$  with its reciprocal.![[pseudo.png]]
 ###### notes on diagonal pseudoinverse

@@ -48,7 +48,7 @@ Linguist responsible for the shift away from strictly behaviorist perspectives t
 
 ---
 ## information theoretic view
-In cognitive science, [[Probability/entropy]] is a framework for analyzing communication as a means of expressing thought. The things you say are encodings of thoughts that must be deciphered by the person you speak to.
+In cognitive science, [[Probability/entropy|entropy]] is a framework for analyzing communication as a means of expressing thought. The things you say are encodings of thoughts that must be deciphered by the person you speak to.
 
 This viewpoint of words and sentences as *encodings* is actually the basis for [[natural language processing]] in machine learning.
 

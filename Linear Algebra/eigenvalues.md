@@ -1,3 +1,5 @@
+#eecs16a #cs189 
+
 Given a square matrix $A$, if there exists a vector $\overrightarrow{v}$ and corresponding scalar value $\lambda$ such that
 $$ Av = \lambda v $$
 Then $\overrightarrow{v}$ is an **eigenvector** and $\lambda$ is an **eigenvalue** of $A$. Conceptually, this means that the direction of $\overrightarrow{v}$ remains unchanged after being multiplied by $A$, or that it points backwards.

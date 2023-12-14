@@ -11,7 +11,7 @@ In comparison to anterograde amnesia, **retrograde amnesia** is the inability to
 2. **Kim Peek**
 Kim Peek was born without a *corpus callosum*, which caused him to have *Savant Syndrome*, a phenomenon that gives people with mental disabilities extraordinary abilities on specific tasks. Peek had an unlimited memory.
 
-This was due to the fact that his brain adapted and learned typically cross-hemisphere tasks, like language, independently in *both* hemispheres of his brain.
+This was due to the fact that his brain adapted and learned typically cross-hemisphere tasks, like [[language]], independently in *both* hemispheres of his brain.
 > [!info] The 1984 movie *Rain Man* was inspired by Kim Peek.
 
 ---

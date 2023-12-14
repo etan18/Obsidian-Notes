@@ -1,4 +1,4 @@
-
+#cs70 #eecs126 
 ## expectation
 The **expectation** of a discrete random variable X provides a summary of its distribution that is easier to compute than the complete distribution. The discrete and continuous definitions of exepectation, respectively, are
 $$ \mathbb{E}[X] = \sum_{a \in \mathscr{A}} a * \mathbb{P}[X = a] $$

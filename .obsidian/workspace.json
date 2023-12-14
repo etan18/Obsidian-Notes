@@ -4,83 +4,167 @@
     "type": "split",
     "children": [
       {
-        "id": "4adc39900f9e9f96",
+        "id": "5b1c6b5b6f6bbccb",
         "type": "tabs",
         "children": [
           {
-            "id": "55e2e9bdc21bb603",
+            "id": "3ff3770a83ed09c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial Intelligence/heuristics.md",
+                "file": "misc 161 notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b27170a1b71df8f3",
+            "id": "dbb8d7ea118eb39b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discrete Math/markov chains.md",
+                "file": "Probability/bayesian network.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "15bba08380c53b13",
+            "id": "4ff43479a3e020b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "constraint satisfaction problems.md",
+                "file": "Artificial Intelligence/markov decision processes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3f287ced9d5135aa",
+            "id": "bd6f1e2b8c177c0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "constraint satisfaction problems.md",
+                "file": "Security & Internet/internet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f52ab8eac12d3d5d",
+            "id": "17d80804d7fbc440",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bayes' nets.md",
+                "file": "Security & Internet/internet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "232f030bbb10e2d5",
+            "id": "cceef69bae9e59ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bayes' nets.md",
+                "file": "Unfinished/network.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2eb9daa298863a6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security & Internet/world wide web.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "136c790462f83f75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/SQL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c79d9937ef7e2e9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Probability/conditional probability.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "501e9f46c8fcdeb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Artificial Intelligence/bellman equations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0df2908e5f4e2b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security & Internet/world wide web.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "102133ef92ea08c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/hashing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4c14db6feb33b17b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Probability/bayesian network.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -109,7 +193,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "log like",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,7 +214,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 303.5
+    "width": 259.5
   },
   "right": {
     "id": "39399c717678d550",
@@ -146,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bayes' nets.md",
+                "file": "Computer Science/hashing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bayes' nets.md",
+                "file": "Computer Science/hashing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bayes' nets.md"
+                "file": "Computer Science/hashing.md"
               }
             }
           },
@@ -199,13 +283,22 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "8ecdda16b71612ee",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Computer Science/hashing.md"
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,35 +310,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "61641501b03c8a9b",
+  "active": "102133ef92ea08c6",
   "lastOpenFiles": [
-    "misc 161 notes.md",
-    "reinforcement learning.md",
-    "diffie-hellman key exchange.md",
-    "constraint satisfaction problems.md",
-    "bayes' nets.md",
-    "Machine Learning/vanishing gradient problem.md",
-    "Machine Structures/x86.md",
-    "Security & Internet/internet.md",
-    "Security & Internet",
-    "Probability/conditional probability.md",
-    "Probability/bernoulli distribution.md",
-    "Probability/poisson processes.md",
-    "Machine Learning/Neural Networks/neural networks.md",
-    "Machine Learning/learning theory.md",
-    "Probability/entropy.md",
-    "Artificial Intelligence/markov decision processes.md",
-    "Machine Structures/buffer overflows.md",
-    "Machine Structures/compiler.md",
-    "Probability/binomial distribution.md",
-    "Probability/poisson distribution.md",
-    "Probability/pseudo-randomness.md",
-    "Probability/random variable.md",
-    "Artificial Intelligence/search tree.md",
-    "Artificial Intelligence/search problems.md",
-    "Artificial Intelligence/rational agent.md",
     "Computer Science/greedy algorithms.md",
-    "Artificial Intelligence/heuristics.md",
+    "Computer Science/hashing.md",
+    "Computer Science/golang.md",
+    "Linear Algebra/singular value decomposition.md",
+    "Linear Algebra/pseudoinverse.md",
+    "Linear Algebra/eigenvalues.md",
+    "Linear Algebra/gradients.md",
+    "Linear Algebra/eigendecomposition.md",
+    "Linear Algebra/convexity.md",
+    "Discrete Math/modular arithmetic.md",
+    "Discrete Math/markov chains.md",
+    "Cognitive Science/cognitive architectures.md",
+    "Cognitive Science/cognitive development.md",
+    "Cognitive Science/intelligence.md",
+    "Cognitive Science/language.md",
+    "Cognitive Science/memory.md",
+    "Cognitive Science/sentience.md",
+    "Cognitive Science/preferences.md",
+    "Unfinished/learning.md",
+    "Artificial Intelligence/automatic speech recognition.md",
+    "Unfinished/robotics.md",
+    "Unfinished",
+    "Artificial Intelligence/rationality.md",
+    "Artificial Intelligence/rational agent.md",
+    "Machine Learning/logistic regression.md",
+    "Machine Learning/Neural Networks/perceptrons.md",
+    "Machine Learning/Classification/bayes classifiers.md",
+    "Probability/Distributions",
+    "diagram.jpg",
+    "Probability/img/hmm.png",
+    "Artificial Intelligence/img/Screen Shot 2023-11-06 at 3.47.17 PM.png",
+    "Artificial Intelligence/Screen Shot 2023-11-06 at 3.47.17 PM.png",
+    "Probability/img",
+    "robotics",
+    "Security & Internet",
     "Discrete Math",
     "Untitled.canvas",
     "Algorithms & Data Structures",
@@ -256,15 +357,7 @@
     "Computer Science/img/reduction.png",
     "Computer Science/img",
     "sear",
-    "Artificial Intelligence",
-    "Machine Structures",
     "Cognitive Science/img/actr.png",
-    "Cognitive Science/img/looking.png",
-    "Linear Algebra/img/pseudo.png",
-    "Cognitive Science/img",
-    "Machine Learning/img/jacobian.png",
-    "Machine Learning/img/convex.png",
-    "Screen Shot 2023-05-11 at 11.49.07 AM.png",
-    "Cognitive Science"
+    "Cognitive Science/img/looking.png"
   ]
 }

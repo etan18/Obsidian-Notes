@@ -1,3 +1,5 @@
+#eecs126 
+
 Each occurence of a Poisson process occurs according to some i.i.d. random variables $S_i \sim Exp(\lambda)$. Let $T^{(i)}$ be the time step of the $i$-th occurence of a Poisson process, $T^{(n)} = \sum_{i = 1}^n S_i$.
 
 Then, we define functions

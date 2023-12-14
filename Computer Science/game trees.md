@@ -4,9 +4,9 @@ Game trees are a common representation of games. We can define *games* in this c
 
 >[!note] Zero-sum Games
 >A **zero-sum game** is one in which there are multiple [[rational agent]] who are competing *adversarially*. These agents have opposing utilities—i.e. when one player does well, it means the other is doing poorly.
-# deterministic games
+## deterministic games
 In [[artificial intelligence]]. **deterministic games** are well-defined games wherein the optimal solution for a player is a set *policy*.
-## minimax
+### minimax
 **Minimax**, also known as *adversarial search*, can be applied to deterministic zero-sum games. In the game tree here, each layer of the tree represents the set of moves a single player, and the successive layer will represent moves by the opponent. In minimax, we have a *value function* $V(s)$, wherein $s$ is our current state, and
 $$V(s) = \max_{\substack{s' \in \mathrm{children}(s)}} V(s')$$
 In layman's terms, $V(s)$ returns the *best possible outcome* for the current player given their current state. If we were to represent this as a game tree, this would be the leaf node of highest value.
@@ -24,5 +24,10 @@ In alpha-beta pruning, we stop looking at a node's children once we find a value
 
 ---
 Removing ourselves from the previous sections, we now want to consider a case where our opponent does not necessarily act optimally. Instead, we insert an aspect of *randomness* into our decision-making process.
-# expectimax
+## expectimax
 **Expectimax** is a generalization of minimax, which sees the addition of *chance nodes*. Chance nodes replace minimizing nodes in that they now take calculate the *expected utility* of the next move.
+
+
+---
+## decision networks
+Decision networks combine expectimax trees with [[bayesian network]] principles to model utility.

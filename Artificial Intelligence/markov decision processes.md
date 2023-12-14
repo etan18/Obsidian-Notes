@@ -32,3 +32,7 @@ $$
 \end{align}
 $$
 
+
+
+>[!info] Next: [[hidden markov models]]
+

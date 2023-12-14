@@ -1,3 +1,5 @@
+#cs161 
+
 CSPs, short for **constraint satisfaction problems**, are a subset of [[search problems]] wherein
 - The state is defined by a set of variables $X_i$ 
 - The *domain* of any single $X_i$ is the set of all values $X_i$ can take on while satisying constraints

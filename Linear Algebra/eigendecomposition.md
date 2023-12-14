@@ -1,3 +1,5 @@
+#cs189 
+
 aka *PDP decomposition* or *diagonalization*
 
 Given square, symmetric matrix A with [[eigenvalues]] $\lambda_1, \lambda_2, \dots, \lambda_k$ and corresponding linearly-independent eigenvectors $X_1, X_2, \dots, X_k$, define the following matrices:

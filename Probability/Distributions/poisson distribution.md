@@ -1,3 +1,5 @@
+#eecs126 
+
 The poisson distrubtion is a limiting distribution for rare events. 
 
 For a **poisson** [[random variable]] $X \sim \mathrm{Pois}(\lambda)$, we have probability mass function

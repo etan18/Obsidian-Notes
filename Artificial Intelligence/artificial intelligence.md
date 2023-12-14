@@ -1,9 +1,10 @@
 #cogsci1
 
-The science of defining [[rational agent]] that [[cognitive architectures|think]] and act rationally.
->“For if every instrument could accomplish its own work, obeying or anticipating the will  of others, like the statues of Daedalus, or the tripods of Hephaestus, which, says the poet, "of their own accord entered the assembly of the Gods;" if, in like manner, the shuttle would weave and the plectrum touch the lyre without a hand to guide them, chief workmen would not want servants, nor masters slaves.” ~ Aristotle
+The science of defining [[rational agent|rational agents]] that [[cognitive architectures|think]] and act rationally.
 
-## relation to the brain
+>“For if every instrument could accomplish its own work, obeying or anticipating the will  of others, like the statues of Daedalus, or the tripods of Hephaestus, which, says the poet, "of their own accord entered the assembly of the Gods;" if, in like manner, the shuttle would weave and the plectrum touch the lyre without a hand to guide them, chief workmen would not want servants, nor masters slaves.” - Aristotle
+
+### relation to the brain
 We can't yet build AI on the scale of the brain--there's about 100 trillion synapses compacted into a human brain, and around 500 billion weights in state-of-the-art neural networks. And while the brain can be viewed as inspiration for AI, brains are not modular enough for us to reverse engineer.
 
 Artificial intelligence has triggered many discussions on [[consciousness]] and the [[sentience]] of modern machines. Specifically, there's been a lot of interest in AI safety and ethics because of the dangers of how powerful these machines can be.
@@ -13,11 +14,6 @@ Superintelligent agents that far surpass human intelligence.
 
 > [!note] The Paperclip Maximizer
 > The Paperclip Maximizer is a thought experiment that demonstrates the threats of a highly intelligent agent or AI whose goals are completely alien to ours. Here, a paperclip maximizer is a hypothetical AI whose goal is to maximize paperclips in the universe, a completely useless task. Such a machine with such a pointless goal could *pose an existential threat* by consuming resources essential to our survival.
-
-#### paperclip maximizer
-Thought experiment that demonstrates the threats of a highly intelligent agent or AI whose goals are completely alien to ours.
--   A paperclip maximizer is a hypothetical AI whose goal is to maximize paperclips in the universe, a completely useless task
-- Such a machine with such a pointless goal could pose an existential threat by consuming resources essential to our survival
 
 # the history of ai
 

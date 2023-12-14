@@ -1,3 +1,5 @@
+#cs70 #eecs126 
+
 The **geometric distribution** is a *memoryless* distribution that finds the time to first success. Given a [[random variable]] $X \sim Geo(p)$, we have
 $$ \mathbb{P}[X=k] = (1-p)^{k - 1}\cdot p $$
 with expectation and variance

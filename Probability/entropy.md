@@ -1,4 +1,6 @@
-**Entropy** is the expected amount of surprise that some discrete random variable will provide. Within information theory, the more surprising an outcome is, the more information is gained. How surprising a specific outcome $x$ is is defined by the function
+#eecs126 
+
+**Entropy** is the expected amount of surprise that some discrete random variable will provide. Within [[information theory]], the more surprising an outcome is, the more information is gained. How surprising a specific outcome $x$ is is defined by the function
 
 $$ h(x) = \log \frac{1}{\Pr[X=x]} $$
 
@@ -22,7 +24,7 @@ Conditional Entropy
 
 $$ \begin{align*} H(Y|X) &:= \sum_{x \in \mathcal{X}} f_X(x) \cdot H(Y|X=x) \\ &:= \sum_{x \in \mathcal{X}} f_X(x) \sum_{y \in \mathcal{Y}} \Pr[Y=y | X=x] \end{align*} $$
 
-The value of the conditional entropy $H(Y|X)$ can be interpreted as the amount of information we can still gain from $Y$even though we know $X$. Formalizing this intuition, we have the **Chain Rule of Entropy**, which states
+The value of the [[conditional probability|conditional]] entropy $H(Y|X)$ can be interpreted as the amount of information we can still gain from $Y$even though we know $X$. Formalizing this intuition, we have the **Chain Rule of Entropy**, which states
 
 $$ \begin{align*} H(X, Y) &= H(X) + H(Y|X) &&\text{iff X and Y are independent}\\ H(X, Y) &< H(X) + H(Y|X) &&\text{else} \\ \end{align*} $$
 
