@@ -1,4 +1,4 @@
-In C, there are four main stages that comprise of taking the code from the *.c* file to a fully-functional executable. These stages are the **compiler**, **assembler**, **linker**, and **loader**.
+In [[C]], there are four main stages that comprise of taking the code from the *.c* file to a fully-functional executable. These stages are the **compiler**, **assembler**, **linker**, and **loader**.
 
 ### 1. compiler
 The compiler converts the program from the source language—Python, Java, C/C++, etc.— into a lower-level assembly language, such as x86 or RISC-V.

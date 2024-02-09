@@ -1,6 +1,6 @@
 #data8 #cs161 
 
-**Structured query language**, or SQL, is a language used to interact with [[databases]].
+**Structured query language**, or SQL, is a language used to interact with [[databases]]. It is a *declarative* programming language, meaning that we use it to state the desired result, rather than the process of getting to the result.
 ### syntax
 
 As the name suggests, SQL is a query-based language. This means that we create statements to tell the database server to tell it what data we're looking for. Queries are comprised of a few syntactic features:
