@@ -30,9 +30,6 @@ Trithemius
 ibn-Khaldun
 - Written word has a unique purpose
 
-### print revolution
-Printing led to the Renaissance, Protestant Reformation, and Scientific Revolution, according to Elizabeth Einstein.
-
 ---
 # counting systems
 The origins of numbers 

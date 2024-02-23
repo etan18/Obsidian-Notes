@@ -1,4 +1,4 @@
- #cogsci1 #cogsci126
+#cogsci1 #cogsci126
 
 ## eyeball structure
 #### retina
