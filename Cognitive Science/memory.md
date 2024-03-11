@@ -31,6 +31,9 @@ The next phase of memory is **short term memory**, or working memory.
         1.  *Chunking* — grouping related items
         2.  *Rehearsal* — repetition of an item
 
+>[!tip] Miller's Law
+>Miller's Law states that the average person's working memory can only store 7 pieces of information at any given time. It is for this reason that chunking is a helpful tool used in things like UI/UX design, driven by [[gestalt principles]].
+>
 ###### long term memory
 Finally, information deemed important is encoded into **long term memory**. There are two types of LTM: declarative and procedural memory.
 	1.  *Declarative Memory* — symbolically encoded information

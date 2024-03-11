@@ -2,7 +2,7 @@
 
 *These notes focus on [[C]] memory structure, specifically.*
 
-At runtime, the operating system allocates the program an **address space** to store any state necessary for the program's execution. The address space is a large, contiguous section of the computer's memory. Critically, the address space is further split into 4 sections, detailed in the next sections. 
+At runtime, the operating system allocates the program an **address space** in [[virtual memory]] to store any state necessary for the program's execution. The address space is a large, contiguous section of the computer's memory. Critically, the address space is further split into 4 sections, detailed in the next sections. 
 ## code segment
 The **code segment** is the program software. It stores the written program as bytecode. This bytecode is what's output by the [[compiler |assembler and linker]]. 
 - Ideally fixed in size, more memory should not be allocated after the program is loaded
@@ -39,20 +39,9 @@ A **segmentation fault**, or segfault, is a memory error that gets thrown when a
 ---
 # memory vulnerabilities
 **Memory safety bugs** are cases where an attacker can read or write beyond the valid range of memory regions.
-
 ### address space layout randomization (ASLR)
 ASLR is a security measure that makes it more difficult for attackers to predict the memory addresses they need to access. Although we showed that C memory is traditionally arranged with the code section starting at the lowest address and the stack section starting at the highest address, nothing is stopping us from shifting or rearranging the memory layout. 
 
 - With ASLR, the addresses of variables, saved registers, and code instructions will be different each time the program is run.
 - Each time the program is run, the beginning of each section of memory is randomly chosen. 
 - If the program imports libraries, we can also randomize the starting addresses of each library’s source code.
----
-## virtual memory
-Instead of directly accessing physical memory, programs request **virtual adresses** which are translated by the [[operating system]] into a physical address. There's a few different ways which we can represent a virtual memory address space.
-
-#### base and bounds
-This is a simple method of protection to limit the access that threads have to memory from the hardware side. To start, each process is allocated a fixed chunk of memory.
-
-We introduce two registers, the base and bound registers; the base register stores the address of the start of the allocated chunk of memory, and the bound register stores the size of the chunk.
-
-#### page tables

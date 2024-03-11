@@ -4,411 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5b1c6b5b6f6bbccb",
+        "id": "7b0b6a55659df8ed",
         "type": "tabs",
         "children": [
           {
-            "id": "dbb8d7ea118eb39b",
+            "id": "d84845d76f383fe3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cognitive Science/perception.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6fd37b87dd3a8a3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Humanities/writing systems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dca658fc26a21584",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "print revolution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e1c121ce07ca6764",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "optics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ff43479a3e020b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artificial Intelligence/markov decision processes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bd6f1e2b8c177c0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security & Internet/internet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "17d80804d7fbc440",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security & Internet/internet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cceef69bae9e59ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Unfinished/network.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2eb9daa298863a6e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security & Internet/world wide web.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "136c790462f83f75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Science/SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c79d9937ef7e2e9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Probability/conditional probability.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "501e9f46c8fcdeb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artificial Intelligence/bellman equations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c0df2908e5f4e2b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security & Internet/world wide web.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "102133ef92ea08c6",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "ee6d82d6c868c964",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Humanities/labor exploitation in the food industry.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "88d22d3fcde5e620",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "facbe90b336ba789",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cognitive Science/language.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "acfc2236231672da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Structures/operating system.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4cf3303ec65cceaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Structures/operating system.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "63bdb81201d5e8c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Structures/memory structure.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "82c2db8e2dc76b4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Structures/x86.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ec0ca5f87af2a42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cognitive Science/visual cortex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ec473ffa870c63a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cognitive Science/visual cortex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e46e3f3fa7e212a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cognitive Science/visual cortex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84ded86c4961a81e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Structures/processes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59f9e485c0711656",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/gradient descent.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fdad17ddeaac4ef4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cognitive Science/visual cortex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1544c0bc6a606dc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cognitive Science/visual cortex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "618fe0e7798d55ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cognitive Science/perception.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f9a5e29b08efb2af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Structures/processes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ea1a39d5cc2f096",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Structures/threads.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09a8e2248c32d65f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "causal inference.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5775383a653ad17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conformal prediction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4c14db6feb33b17b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Probability/bayesian network.md",
+                "file": "Cognitive Science/memory.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -437,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "miller",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -454,11 +65,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 259.5
+    "width": 200
   },
   "right": {
     "id": "39399c717678d550",
@@ -474,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "optics.md",
+                "file": "Cognitive Science/memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -491,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "optics.md",
+                "file": "Cognitive Science/memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -514,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "optics.md"
+                "file": "Cognitive Science/memory.md"
               }
             }
           },
@@ -536,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "optics.md"
+                "file": "Cognitive Science/memory.md"
               }
             }
           }
@@ -557,53 +169,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e1c121ce07ca6764",
+  "active": "d84845d76f383fe3",
   "lastOpenFiles": [
-    "neural ode.md",
-    "causal inference.md",
-    "conformal prediction.md",
-    "Machine Structures/vtables.md",
-    "Machine Structures/x86.md",
-    "Machine Structures/operating system.md",
-    "Machine Structures/scheduling.md",
+    "Cognitive Science/language.md",
+    "Cognitive Science/neurons.md",
+    "organization of knowledge.md",
+    "print revolution.md",
+    "Machine Structures/virtual memory.md",
+    "info 103 discussant notes.md",
+    "info 103 seen questions.md",
+    "Cognitive Science/perception.md",
+    "img.md",
+    "Cognitive Science/optics.md",
+    "Untitled.md",
+    "Cognitive Science/img/light.png",
+    "Cognitive Science/gestalt principles.md",
+    "Cognitive Science/imaging.md",
+    "Cognitive Science/cognitive architectures.md",
+    "Cognitive Science/visual cortex.md",
+    "Humanities/technological determinism.md",
+    "Humanities/information technology development.md",
+    "Cognitive Science/receptive fields.md",
+    "Cognitive Science/img/cortices.webp",
+    "Cognitive Science/img/imaging.png",
+    "Cognitive Science/img/simple.jpeg",
+    "Unfinished/conformal prediction.md",
+    "Unfinished/design ethics.md",
+    "Unfinished/greedy algorithms.md",
+    "Unfinished/learning.md",
+    "Unfinished/network.md",
+    "Cognitive Science/preferences.md",
+    "Machine Learning/learning theory.md",
+    "Machine Learning/shatter function.md",
+    "Cognitive Science/img/ganglion.jpeg",
+    "Cognitive Science/img/Slide4.jpeg",
+    "Machine Learning/img/causal.jpeg",
+    "Machine Learning/img/causal.png",
+    "Cognitive Science/img/modal.jpeg",
     "Machine Structures/img/mlfq.png",
     "Machine Structures/img",
-    "Machine Structures/systems design.md",
-    "optics.md",
-    "organization of knowledge.md",
-    "receptive fields.md",
-    "Cognitive Science/perception.md",
-    "Machine Structures/threads.md",
-    "print revolution.md",
-    "Humanities/writing systems.md",
-    "Cognitive Science/gestalt principles.md",
-    "Cognitive Science/visual cortex.md",
-    "Cognitive Science/neurons.md",
-    "Probability/bayesian network.md",
-    "Machine Learning/machine learning.md",
-    "Machine Structures/processes.md",
-    "Machine Structures/parallelism.md",
-    "Machine Structures/memory structure.md",
-    "Machine Structures/buffer overflows.md",
-    "Cognitive Science/cognitive architectures.md",
     "Humanities",
     "Unfinished",
     "Probability/Distributions",
-    "diagram.jpg",
-    "Probability/img/hmm.png",
-    "Artificial Intelligence/img/Screen Shot 2023-11-06 at 3.47.17 PM.png",
-    "Artificial Intelligence/Screen Shot 2023-11-06 at 3.47.17 PM.png",
     "Probability/img",
     "robotics",
     "Security & Internet",
     "Discrete Math",
     "Untitled.canvas",
     "Algorithms & Data Structures",
-    "Machine Learning/img/lasso.png",
-    "Machine Learning/img/l2.png",
-    "Discrete Math",
-    "Computer Science/img/npcomplete.png",
-    "Computer Science/img/reduction.png",
-    "Cognitive Science/img/actr.png"
+    "Discrete Math"
   ]
 }

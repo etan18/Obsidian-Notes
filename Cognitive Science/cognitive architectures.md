@@ -1,5 +1,37 @@
-Proposed models for how we think, particularly in terms of how we organize and process information.
+#cogsci1 #cogsci126 
+## localization
+Localization of function is the notion that specific areas of the brain control specific aspects of who we are, which is to some degrees the way our brain actually works. 
+- *Broca's area* controls [[language]], particularly speech production
+- The *fusiform face area* (FFA) controls our ability to recognize faces and people.
+- The *frontal lobe* controls planning and emotion, which was discovered when **Phineas Gage** impaled this area of his brain
 
+Each of our 5 senses has some form of **adjacency principle**, wherein the layout of the processing mechanism in the brain reflects the way that they are physically organized, or the way that we perceive them.
+
+>[!danger] Phrenology
+>Phrenology is an early localization theory, which assigned functions to areas on the *surface* of the skull, which is completely wrong.
+>
+
+Our **cerebral cortex** is divided up into 4 primary *lobes*—frontal, parietal, temporal, and occipital. This serves as a high-level division of tasks, but these regions are always communicating with one another. There are a few regions which have a highly localization-based structure, and can be mapped out:
+- **Somatosensory cortex**: perception of tactile stimulus (including light, temperature, motion, and pain)
+- **Primary motor cortex**: controls movement
+For both of these cortices, the left hemisphere corresponds to the right side of the body, and the right hemisphere controls the left side.
+
+![cortices](img/cortices.webp)
+
+One major observation we can make from the above maps is that not all parts of the body are represented equally. For example, notice how the hands and mouth are dedicated very large portions of the somatosensory cortex relative to their size. This is known as **cortical magnification**. There's many examples of this:
+- The **fovea** in the retina is dedicated almost the same amount of space in the [[visual cortex]] as the entire periphery. This is the **retinoptopic organization**.
+#### tonotopy
+Tonotopy is another adjacency organization theory dealing with *auditory signals*.
+
+## modularity
+Within the brain, modularity refers to dividing up complex processes, such as visual [[perception]], into smaller subtasks which are each processed by different areas of the brain. On a macro scale, this begins with the 
+- [[visual cortex#v4 ventral stream|"What" pathway]]: after exiting the primary visual cortex, processed image data goes to the ventral stream for object identification.
+- [[visual cortex#v5 dorsal stream|"Where" pathway]]: This is where processed image data goes for locating objects and detecting movement.
+Within the ventral stream, further modularization occurs, with specific areas for identifying color, faces (FFA), and other features. Similarly, specific modules within the dorsal stream pinpoint the motion of the images.
+
+
+---
+Proposed models for how we think, particularly in terms of how we organize and process information.
 ### **computational representational understanding of the mind (CRUM)**
 Thinking is performed when computational procedures operate on representational structures.
 -   Representational structures include

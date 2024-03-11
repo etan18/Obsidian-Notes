@@ -15,3 +15,9 @@ At a high level, **bias** and **variance** are the two sources of error in a mod
 - Bias is error due to incompatibility of $h$ in modeling the true distribution $g$
 - Variance is error due to random noise in the data during training
 	- more features $\implies$ more variance
+
+## metrics
+
+>[!quote] Goodhart's Law
+>When a metric becomes a good target, it ceases to be a good metric.
+

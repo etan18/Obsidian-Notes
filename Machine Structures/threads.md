@@ -20,7 +20,7 @@ Everything else is stored in memory.
 A multi-threaded program allows a single application to run multiple threads which have shared states, allowing for both [[parallelism]] and data transfer between multiple threads. These are called *cooperating threads*. This is enabled by the fact that 
 - Threads inside the same process are not isolated from one another
 - Threads inside the same process share an address space and file descriptor table
-### synchronization
+## synchronization
 Concurrency with threads is *non-deterministic* in nature. The OS [[scheduling|scheduler]] can run threads in any order, and switch between threads at any time. This means that the OS must ensure that the correct behavior is achieved every time *by design*.
 
 **Synchronization** enables the cooperation of multiple threads. 
@@ -32,8 +32,8 @@ Concurrency with threads is *non-deterministic* in nature. The OS [[scheduling|s
 - Only one thread can "hold" the lock at any time. Before performing an action, check if the lock is available and acquire it.
 - Perform the action. This part is known as the **critical section**.
 - Return the lock upon completion of the action.
-##### busy waiting
-Busy waiting is a naive synchronization method that relies on atomic loads and stores to continuously check if a thread can proceed execution.
+##### condition variables
+**Busy waiting**, or *spinlocking*, is a naive synchronization method that relies on atomic loads and stores to continuously check if a thread can proceed execution.
 ```
 // Thread A
 
@@ -43,16 +43,36 @@ Busy waiting is a naive synchronization method that relies on atomic loads and s
 ```
 
 This technique burns CPU cycles and makes it such that the waiting thread cannot execute other tasks in the meantime.
-##### semaphores
+
+**Condition variables** is another synchronization method which implements a queue of threads which are all waiting to access some critical section. They go a step beyond solely providing mutual exclusion—they also allow threads to atomically sleep *inside* the critical section until some waking condition is met.
+- **`wait(condition, lock)`**: release lock, put thread to sleep until condition is signaled; when thread wakes up again, re-acquire lock before returning.
+- **`signal(condition, lock)`**: if any threads are waiting on condition, wake up one of them. Caller must hold lock, which must be the same as the lock used in the wait call.
+- **`broadcast(condition, lock)`**: same as signal, except wake up all waiting threads.
+### semaphores
 Semaphores are essentially integer variables used to ensure synchronization. They were introduced by Dijkstra in the 1960s, and they have two primary atomic operations:
 - **Down/Wait/P**: waits for semaphore’s value to become strictly positive, then decrements it by 1.
 - **Up/Post/V**: increments the value of the semaphore by 1.
-Semaphores can be used as locks (down to acquire, up to release), or as a scheduling tool. 
+Semaphores can be used as locks (init to $1$, down to acquire, up to release). 
 
-### scheduling
-There are a few POSIX built-in functions which allow for forced [[scheduling]] manipulation. 
-- `sched_yield()`: calling thread relinquishes the CPU and is put at the end of the run queue
-	- The order in which threads execute is now dependent on the scheduling algorithm
-- `pthread_join(pthread_t thread)`: suspend execution of the calling thread until the target _thread_ terminates
-	- This is better than `sched_yield` to better ensure the order of thread execution. 
-	- Calling `pthread_create` without `pthread_join` is dangerous and can waste threads such that they are never run.
+Another semaphore workflow allows it to act as a [[scheduling]] constraint, where one thread needs to wait for another thread to terminate.
+1. Initialize the semaphore to $0$
+2. Waiting thread downs the semaphore (goes to sleep)
+3. The current thread ups the semaphore (waking the other thread) when it finishes execution.
+### monitors
+Monitors compose of a lock and zero or more condition variables. Monitors represent a higher-level abstraction of the synchronization logic of the program. 
+```
+// Basic structure of MESA MONITOR program
+acquire(&lock);
+while (waiting condition) {
+	cond_var.wait();
+}
+release(&lock);
+
+// Do stuff in non-critical section
+
+// Wake waiting thread in queue
+acquire(&lock);
+cond_var.signal()
+release(&lock);
+
+```

@@ -1,3 +1,4 @@
+#cogsci1 #ling100
 ### complexities of language
 1.  Relies on _mental representations_
     -   Provides a counterargument to behaviorism
@@ -27,7 +28,6 @@ _The sensory-motor system of the brain is multimodal, not modular, just based on
 ---
 ## noam chomsky
 Linguist responsible for the shift away from strictly behaviorist perspectives towards the internal processes that produce the behaviors we observe.
-
 #### language acquisition
 **Universal Grammar**, proposed by Noam Chomsky
 -   If linguistic experience is missing during the **critical period**, language ability is permanently impaired
@@ -37,12 +37,13 @@ Linguist responsible for the shift away from strictly behaviorist perspectives t
 --- 
 ## language in the brain
 **Broca’s Area** near the motor cortex of the left frontal premotor cortex is the motor speech area. This area regulates breathing patterns while speaking and vocalizations required for normal speech.
+
 **Wernicke’s Area** in the left posterior temporal/parietal cortex is the center of comprehension for language and speech sounds.
 
 >[!note] The Wada Test
->In most people, language is dominated in the left hemisphere. The **Wada Test** is used to determine which hemisphere a person’s language center is in. The process involves sedating one hemisphere of the brain at a time, or using fMRI to map the active regions of the brain when speaking.
+>In most people, language is dominated in the left hemisphere. The **Wada Test** is used to determine which hemisphere a person’s language center is in. The process involves sedating one hemisphere of the brain at a time, or using [[imaging|fMRI]] to map the active regions of the brain when speaking.
 
-*Aphasia -* impairment of language
+*[[aphasia]] -* impairment of language
 *Apaxia -* inability to perform some task coherently (e.g. Broca’s Aphasia)
 *Agnosia -* inability to process or interpret sensations (e.g. Wernicke’s Aphasia)
 
