@@ -19,7 +19,7 @@ The complexity of a stimulus depends on context; it could be anything from its i
 
 **It was found that infants are drawn to either extremely familiar or extremely novel stimuli.**
 >[!note] Surprisal
->In [[Probability/entropy]], surprisal quantifies the amount of uncertainty that some random variable X takes on value x given the priors.
+>In [[entropy]], surprisal quantifies the amount of uncertainty that some random variable X takes on value x given the priors.
 
 Formalizing the familiarity vs. novelty theorem above, we can observe selective attention in infants for events with intermediate surprisal (Kidd et al, 2010).
 ![[looking.png|400]]

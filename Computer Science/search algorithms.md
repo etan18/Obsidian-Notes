@@ -34,7 +34,7 @@ Implementation of DFS typically involves a last-in, first-out (LIFO) stack as th
 
 >[!info] BFS has $O(b^s)$ time complexity and $O(b^s)$ space complexity
 ##### implementation
-Implementation of BFS uses a first-in, first-out (FIFO) queue as the fringe.
+Implementation of BFS uses a first-in, first-out (FIFO) [[queue]] as the fringe.
 
 ## uniform cost search
 **Uniform Cost Search (UCS)** is in the class of [[greedy algorithms]], meaning it always chooses the *lowest-cost* node on the fringe to explore. UCS is both complete and optimal if we assume all costs are non-negative. 

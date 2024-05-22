@@ -2,7 +2,7 @@
 ## djikstra's algorithm
 Shortest paths from vertex $A$ to all others on a graph. $O((|V| + |E|)\log |V|)$ runtime.
 1. Set the distance of your start node to 0, and all other nodes to +INF. The start node is selected as the current node.
-2. For all nodes adjacent to your current node, add each to a min-priority queue based on the distance of the current node to the start node + the distance from the node to the current node.
+2. For all nodes adjacent to your current node, add each to a min-priority [[queue]] based on the distance of the current node to the start node + the distance from the node to the current node.
 3. Pop the node with the minimum distance from the queue and set it to current node.
 
 Djikstra’s assumes that all edge weights are positive, and therefore a path from node $a$ to $b$ should never pass through a node that is farther away from $a$ than $b$. With negative edges this is not always the case.  **Bellman-Ford** takes this case into account.

@@ -27,7 +27,7 @@ There are a few POSIX built-in functions which allow for forced [[scheduling]] m
 >[!definition] Pre-emption
 >In the context of the OS, preemption is the ability of the OS to pause or stop a currently scheduled task. This is how we implement **context switching** to schedule higher-priority tasks. 
 ### first come first serve
-First come first serve (FCFS) scheduling simply schedules tasks in the order they arrive in the queue.
+First come first serve (FCFS) scheduling simply schedules tasks in the order they arrive in the [[queue]].
 - Cheap to implement, and good for maximizing throughput because it minimizes the overhead of context switching
 - **Convoy effect**: short tasks will get stuck with long wait times behind long tasks, which makes the average completion time vary a lot.
 
@@ -47,7 +47,7 @@ Round Robin (RR) schedules tasks such that each thread takes turns using the res
 Round Robin ensures fairness because of the uniform $q$. For example, if there are $n$ tasks in the queue, each task gets exactly $\frac{1}{n}$ of the resource, and will not wait more than $(n-1) \cdot q$ time units to be scheduled.
 
 ### multi-level feedback queue
-Multi-level Feedback Queue (MLFQ) uses multiple queues which each follow different scheduling policies. Tasks begin at the highest priority queue and move down to lower priority queues as they hog up more and more of a resource.
+Multi-level Feedback [[queue]] (MLFQ) uses multiple queues which each follow different scheduling policies. Tasks begin at the highest priority queue and move down to lower priority queues as they hog up more and more of a resource.
 - Ensures that long running tasks (e.g. CPU bound) can't hog resources by keeping short running tasks (e.g. I/O bound) at higher priority
 
 ![mlfq](img/mlfq.png)
@@ -115,4 +115,3 @@ Implementation-wise, when we have multiple resources that each need to have effi
 	- However, if threads are scheduled across the CPUs in a very imbalanced manner (many threads on one core), the OS will have a background thread tasked with rebalancing.
 - **Gang scheduling**: when multiple threads work together, the OS will try to parallelize their running time across multiple cores. 
 	- In these situations, threads may get stuck [[threads#condition variables|busy waiting]] until all of its reliant threads also finish.
-

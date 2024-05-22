@@ -8,18 +8,151 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d84845d76f383fe3",
+            "id": "c2ff5f31c4c4b71c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cognitive Science/memory.md",
+                "file": "Linear Algebra/gradients.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "139c2c9a7a7badd2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/fairness.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea77af13cbd28117",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Structures/operating system.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7bd733f5a9a1bea4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/graph theory.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1794d682776689cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/queue.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63933c67980a875a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Structures/pages.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "509f71da6c8bb037",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Structures/distributed systems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bcf752ce941f8be4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cognitive Science/preferences.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96451c2e8463401b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cognitive Science/depth perception.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "612211f76f1209cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Structures/distributed systems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78c2228b1e5da063",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "optimization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e0024549861b1b6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cognitive Science/color.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -48,7 +181,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "miller",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +198,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cognitive Science/memory.md",
+                "file": "optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cognitive Science/memory.md",
+                "file": "optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cognitive Science/memory.md"
+                "file": "optimization.md"
               }
             }
           },
@@ -148,7 +280,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Cognitive Science/memory.md"
+                "file": "optimization.md"
               }
             }
           }
@@ -169,54 +301,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d84845d76f383fe3",
+  "active": "78c2228b1e5da063",
   "lastOpenFiles": [
-    "Cognitive Science/language.md",
-    "Cognitive Science/neurons.md",
-    "organization of knowledge.md",
-    "print revolution.md",
-    "Machine Structures/virtual memory.md",
+    "generalizability.md",
+    "attention.md",
+    "optimization.md",
+    "Unfinished/cache.md",
+    "Humanities/info 103 seen questions.md",
+    "Humanities/info 103 midterm.md",
     "info 103 discussant notes.md",
-    "info 103 seen questions.md",
-    "Cognitive Science/perception.md",
-    "img.md",
-    "Cognitive Science/optics.md",
-    "Untitled.md",
-    "Cognitive Science/img/light.png",
-    "Cognitive Science/gestalt principles.md",
-    "Cognitive Science/imaging.md",
-    "Cognitive Science/cognitive architectures.md",
+    "Machine Structures/distributed systems.md",
+    "Machine Learning/Unsupervised Learning/k-d tree algorithm.md",
+    "Machine Structures/file systems.md",
+    "Humanities/cluster theory.md",
+    "Cognitive Science/depth perception.md",
     "Cognitive Science/visual cortex.md",
-    "Humanities/technological determinism.md",
-    "Humanities/information technology development.md",
+    "Cognitive Science/optics.md",
+    "Cognitive Science/cognitive architectures.md",
     "Cognitive Science/receptive fields.md",
+    "Cognitive Science/motion.md",
+    "Cognitive Science/color.md",
+    "Cognitive Science/perception.md",
+    "Cognitive Science/preferences.md",
+    "img/reichardt.md",
+    "img",
+    "Cognitive Science/img/reichardt.png",
+    "().md",
+    "Cognitive Science/img/ray-tracing.jpeg",
+    "Cognitive Science/img/ray-tracing.jpeg.crdownload",
+    "Cognitive Science/gestalt principles.md",
+    "Unfinished/spatial frequency.md",
+    "Unfinished/information theory.md",
+    "Unfinished/learning.md",
+    "Pasted image 20240423002618.png",
+    "Machine Learning/img/svm.png",
+    "Untitled",
+    "Machine Learning/img/Info 103 - Assignment 8 - Google Docs.pdf",
+    "Machine Learning/img/lifecycle.png",
+    "Machine Learning/img/1-1-loop_small.png",
+    "Cognitive Science/img/light.png",
     "Cognitive Science/img/cortices.webp",
     "Cognitive Science/img/imaging.png",
     "Cognitive Science/img/simple.jpeg",
-    "Unfinished/conformal prediction.md",
-    "Unfinished/design ethics.md",
-    "Unfinished/greedy algorithms.md",
-    "Unfinished/learning.md",
-    "Unfinished/network.md",
-    "Cognitive Science/preferences.md",
-    "Machine Learning/learning theory.md",
-    "Machine Learning/shatter function.md",
-    "Cognitive Science/img/ganglion.jpeg",
-    "Cognitive Science/img/Slide4.jpeg",
-    "Machine Learning/img/causal.jpeg",
-    "Machine Learning/img/causal.png",
-    "Cognitive Science/img/modal.jpeg",
-    "Machine Structures/img/mlfq.png",
     "Machine Structures/img",
     "Humanities",
     "Unfinished",
     "Probability/Distributions",
     "Probability/img",
     "robotics",
-    "Security & Internet",
-    "Discrete Math",
-    "Untitled.canvas",
-    "Algorithms & Data Structures",
-    "Discrete Math"
+    "Untitled.canvas"
   ]
 }

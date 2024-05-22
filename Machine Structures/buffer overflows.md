@@ -24,7 +24,7 @@ where `AAAAAAAAAAAA` are 8 bytes of garbage to fill the pre-defined buffer, as w
 
 #### mitigation
 ###### data execution prevention
-One way to mitigate stack smashing attacks is to designate areas as *either executable OR writeable*. If a user can write to a page, it can't be executed, and if a program can execute a page, it can't be written to. This defense is known in practice as **W^X**—write XOR execute—or **Data Execution Prevention** (DEP). This can also be implemented using a *No Execute (NX)-bit*.
+One way to mitigate stack smashing attacks is to designate areas as *either executable OR writeable*. If a user can write to a [[pages|page]], it can't be executed, and if a program can execute a page, it can't be written to. This defense is known in practice as **W^X**—write XOR execute—or **Data Execution Prevention** (DEP). This can also be implemented using a *No Execute (NX)-bit*.
 ###### stack canaries
 When we call a function, the [[compiler]] places a known dummy value, the _stack canary_, on the stack. When the function returns, the compiler checks that the canary value has not been changed.
 - If it has been changed, this is evidence that something bad has happened

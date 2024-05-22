@@ -48,4 +48,4 @@ One-way communication between two processes on the same physical machine—one p
 - The OS blocks read actions when the pipe is *empty*
 #### sockets
 Two-way communication channels between any two processes. There are three main types of sockets: client, server, and connection sockets.
-- Uses two queues, one in each direction
+- Uses two [[queue|queues]], one in each direction

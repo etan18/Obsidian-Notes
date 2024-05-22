@@ -12,7 +12,7 @@ Each of our 5 senses has some form of **adjacency principle**, wherein the layou
 >
 
 Our **cerebral cortex** is divided up into 4 primary *lobes*—frontal, parietal, temporal, and occipital. This serves as a high-level division of tasks, but these regions are always communicating with one another. There are a few regions which have a highly localization-based structure, and can be mapped out:
-- **Somatosensory cortex**: perception of tactile stimulus (including light, temperature, motion, and pain)
+- **Somatosensory cortex**: perception of tactile stimulus (including light, temperature, [[motion]], and pain)
 - **Primary motor cortex**: controls movement
 For both of these cortices, the left hemisphere corresponds to the right side of the body, and the right hemisphere controls the left side.
 

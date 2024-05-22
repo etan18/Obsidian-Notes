@@ -6,6 +6,13 @@ Within statistics and data science, one of the basic lessons is that within an o
 - Outcome $Y$, the observed effect
 
 ![causal inference](img/causal.png)
+This image depicts the **common cause principle**, also known as the Reichenbach Principle. It status that if two variables $X$ and $Y$ are statistically dependent, then there exists a variable $Z$ that causally influences both and explains the entire dependence of the relationship. As a result, $X$ and $Y$ become independent when conditioned on $Z$.
+
+>[!idea] Identifiability in Causal Inference
+>There are a few key assumptions we must make to validate any results from a causal model. 
+>1. No hidden confounders (**causal sufficiency**)
+>2. Positivity
+>3. Consistency
 
 
 Within causal inference, there are two primary schools of thought.
@@ -17,10 +24,14 @@ For each data point (e.g. patient) $x_i$, there are two potential outcomes:
 | Control Outcome | $Y_0(x_i)$ | The potential outcome $y_i$ had $x_i$ not been given treament |
 | Treated Outcome | $Y_1(x_i)$ | The potential outcome $y_i$ had $x_i$ been given treatment    |
 Take note of the fact that these outcomes are represented as a [[random variable]]. Because of this, there are two notable values that we can calculate: the conditional average treatment effect (CATE) and the average treatment effect (ATE).
-$$CATE(x_i) = $$
+$$CATE(x_i) = \mathbb{E}[Y_1 - Y_0|X =x_i]$$
 $$ATE(x) := \mathbb{E}[Y_1 - Y_0] \cong \mathbb{E}_x[CATE(x)]$$
 The CATE can be interpreted as the expected outcome of a patient if treated, given their underlying feature set $x_i$.
 
 >[!danger] The fundamental problem of causal inference
 >We only ever observe one of the possible outcomes. The **counterfactual** is the expected value of the outcome we *didn't* observe, making it an entirely non-empirical value.
+
+
+---
+## causal representation learning
 

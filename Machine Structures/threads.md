@@ -44,7 +44,7 @@ Concurrency with threads is *non-deterministic* in nature. The OS [[scheduling|s
 
 This technique burns CPU cycles and makes it such that the waiting thread cannot execute other tasks in the meantime.
 
-**Condition variables** is another synchronization method which implements a queue of threads which are all waiting to access some critical section. They go a step beyond solely providing mutual exclusion—they also allow threads to atomically sleep *inside* the critical section until some waking condition is met.
+**Condition variables** is another synchronization method which implements a [[queue]] of threads which are all waiting to access some critical section. They go a step beyond solely providing mutual exclusion—they also allow threads to atomically sleep *inside* the critical section until some waking condition is met.
 - **`wait(condition, lock)`**: release lock, put thread to sleep until condition is signaled; when thread wakes up again, re-acquire lock before returning.
 - **`signal(condition, lock)`**: if any threads are waiting on condition, wake up one of them. Caller must hold lock, which must be the same as the lock used in the wait call.
 - **`broadcast(condition, lock)`**: same as signal, except wake up all waiting threads.

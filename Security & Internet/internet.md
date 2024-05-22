@@ -27,7 +27,7 @@ $$\max \mathbb{P}[r_0, \dots, r_{N-1}, c_0, \dots, c_{N-1}, p_0, \dots, p_{N-1}]
 The network layer uses *32-bit, 4-byte* **IP addresses** to uniquely identify all machines globally. These addresses are typically represented as 4 integers between 0 and 256 (ex. `128.32.131.10`), but more recent versions of the network layer protocol have expanded to 128-bit addresses to accomodate the growing size of the internet.
 
 >[!tip] Address Resolution Protocol
->The ARP Protocol translates Layer 3 IP addresses into Layer 2 MAC addresses. The protocol itself does not ensure authenticity, which makes it vulnerable to spoofing (a type of man-in-the-middle attack). To protect against that, we can uses **switches**, which cache IP -> MAC address pairings, and returns the cached value for known IP addresses instead of broadcasting the packet to the entire network.
+>The ARP Protocol translates Layer 3 IP addresses into Layer 2 MAC addresses. The protocol itself does not ensure authenticity, which makes it vulnerable to spoofing (a type of man-in-the-middle attack). To protect against that, we can uses **switches**, which [[cache]] IP -> MAC address pairings, and returns the cached value for known IP addresses instead of broadcasting the packet to the entire network.
 
 #### 4. transport layer
 The transport layer solves a few problems presented by IP addresses in the network layer:

@@ -44,3 +44,18 @@ There are three types of kernel mode transfer, which trigger a toggle between th
 - **Interrupt**: external asynchronous events trigger a context switch, save the current execution state and jump to a kernel interrupt handler.
 - **Trap or exception**: If a process triggers an internal hardware event, typically caused by undesired behavior, then execution stops and control is transferred to an exception handler in the kernel to allow the system to continue operating normally.
 	- Some examples include segfaults, read/write access violations, and divide by zero errors.
+
+---
+## i/o
+
+I/O implementations typically have clean and easy-to-use interfaces. However, because of the hardware cooperation necessary to perform I/O operations, they are typically extremely difficult to implement.
+
+Types of I/O Devices:
+- **Character devices**: access data as a character stream (i.e. data not addressable)
+- **Block devices**: access data in fixed-sized blocks (i.e. data is addressable)
+- **Network devices**: have a separate interface for [[network]] purposes
+
+Device interfaces can have various timing mechanisms as well.
+- **Synchronous**: also known as *blocking* interfaces, these devices wait until an I/O request is fulfilled
+- **Non-blocking**: return quickly from a request without waiting
+- **Asynchronous**: allow for other processing to continue without waiting
