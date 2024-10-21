@@ -31,7 +31,7 @@ Stimulus input is initially **sensory memory**.
 
 One prevalent theory suggests that sensory information is stored as **encoded representations** in the brain, where each memory has a unique mapping to some pattern of stimulation in the brain. This theory is an oversimplification, and also suggests that if we were to have access to the "wiring diagram" of the brain, we would be able to recover the sensory information that is currently being perceived.
 
-Finally, the most complex explanation is based in **Hebbian [[Learning]]**. 
+Finally, the most complex explanation is based in **Hebbian [[learning]]**. 
 ###### short term memory
 The next phase of memory is **short term memory**, or working memory. 
     1.  Limited duration (a few seconds), but can be lengthened by

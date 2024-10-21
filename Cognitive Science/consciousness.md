@@ -1,4 +1,6 @@
-*Consciousness* is defined as the subjective quality of mental states. Anatomically, the thalamus is thought to be important for human consciousness.
+*Consciousness* is defined as the subjective quality of mental states. This is the critical property of human beings that separates us from all other living species known to man.
+
+Anatomically, the thalamus is thought to be important for human consciousness.
 
 >[!note] the 40 hertz hypothesis
 Consciousness is synchronized waves of neuronal firing at a frequency of 40 times per second in gamma waves, starting at the thalamus and moving from the front to the back of the brain

@@ -57,6 +57,13 @@ Rule-based architecture created by John Anderson
 Working memory, or perceptions, are categorized into a knowledge form.
 ![[actr.png|350]]
 
+### david marr's computational theory of vision
+The [[visual cortex]] is an information processor, and our [[perception]] is created in the following steps:
+1. Image - _raw data to be processed_
+2. Primal Sketch - _feature abstraction_
+3. 2D View
+4. 3D View - _your view of the world_
+
 ---
 ## prototypes & categorization
 Categories exist in three levels: superordinate, basic level, and subordinate. Members of the basic level can be quickly identified by one overall shape and mental image.

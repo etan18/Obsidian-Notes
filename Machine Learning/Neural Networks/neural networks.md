@@ -7,6 +7,9 @@ Our problem can be described as having $d$-dimensional input data, and wanting t
 $$f: \mathbb{R}^d \rightarrow \mathbb{R}^k$$
 The magic of neural networks is that it learns additional features in the hidden layers that can be used to find the optimal $f$. These learned features are linear combinations of existing features.
 
+>[!important] Universal Approximation Theorem
+>This theorem suggests that artificial neural networks with at least 1 hidden layer can approximate any continuous function arbitrarily well, thus making them **universal function approximators**.
+
 ## architecture
 The neural network architecture can be thought of as multi-layer [[perceptrons]] connected together using [[graph theory]].
 - The NN is composed of **layers**. The dimensionality (# of nodes) in the input and output layers are determined by the problem. 
@@ -35,3 +38,12 @@ There are two main components of backpropogation: the **forward pass** and **bac
 ## miscellaneous notes
 - Training time for neural networks is long compared to most classification methods. Techniques like [[convolutional neural networks]] are a way to simplify computations.
 - *Dropout* is a training technique that temporarily tosses out nodes at random to prevent the network from relying on any single node. Dropout rate is a hyperparameter of NNs.
+
+---
+## recurrent neural networks
+Basic, or "vanilla," [[neural networks]], like the ones described above, are known as **feedforward** neural networks. This means that the outputs of neurons in one layer are fed as inputs to neurons in the next layer only.
+
+Because of this, we now have directed weights, such that $W_{ij} \ne W_{ji}$, but both can exist for any two neurons in the network $i \ne j$.
+- RNNs are prone to the [[vanishing gradient problem]]. This is because when we train an RNN using backprop, we "unroll" the recurrent connections into an extremely deep, highly repetitive feed-forward network. 
+
+

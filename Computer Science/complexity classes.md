@@ -1,6 +1,6 @@
 #cs170
 
-[[Search problems]] are defined by their property of being easily-checkable. This means that for all search problems, there exists an algorithm $C(I, S)$ for some instance of the problem $I$ and proposed solution $S$ such that $C(I, S) = \text{True iff } S$ is a valid solution to $I$. Additionally, $C$ must run in polynomial time to $|I|$.
+[[search problems]] are defined by their property of being easily-checkable. This means that for all search problems, there exists an algorithm $C(I, S)$ for some instance of the problem $I$ and proposed solution $S$ such that $C(I, S) = \text{True iff } S$ is a valid solution to $I$. Additionally, $C$ must run in polynomial time to $|I|$.
 
 ## np search problems
 The most general class of search problems is **NP**, which encapsulates *all* search problems.
@@ -11,7 +11,7 @@ The most general class of search problems is **NP**, which encapsulates *all* se
 
 Moving deeper into our classification, all search problems that can be **deterministically**, or actually, be solved in polynomial time belong to the class **P**, for “polynomial”.
 - These algorithms are the building blocks for all reductions in search problems
-- These problems are solvable using traditional methods——[[greedy algorithms]], dynamic programming, divide-and-conquer, linear programming, etc.
+- These problems are solvable using traditional methods—[[greedy algorithms]], dynamic programming, divide-and-conquer, linear programming, etc.
 
 >[!info] 
 >One of the biggest unproven problems in algorithm theory is that $P \ne NP$. This implies that not all search problems can be deterministically solved in polynomial time. While most mathematicians accept this to be true, nobody has actually, *rigorously* proved this to be true.

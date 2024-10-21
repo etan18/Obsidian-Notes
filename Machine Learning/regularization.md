@@ -1,17 +1,28 @@
+#cs189
+
 **Regularization** is a method of decreasing the impact of outliers during training.
+#### motivation
+Notice how, with [[maximum likelihood estimation]], when two or more features are *linearly dependent*, MLE will produce infinite solutions for the optimal parameters. Similarly, with unregularized least-squares regression, we are guaranteed to obtain a [[positive semi-definite]] quadratic form.
+
+How do we decide which parameters to actually choose? The answer is that we select the smallest-norm weight vector $w$. The smaller the norm of the weights, the less susceptible it is to noise.
 
 ## $\ell_1$ regularization
 The goal of $\ell_1$ regularization is to eliminate unimportant features. Looking at the isocontour for the gradient of the $\ell_1$ norm, we can see that it is diamond-shaped. This makes it more prone to pushing points to $0$, as you can see in the graph below.
 ![[lasso.png|200]]
-- *LASSO* uses $\ell_1$ regularization
+*LASSO* is linear least squares [[regression]] with $\ell_1$ regularization. 
+
 ---
 ## $\ell_2$ regularization
 
 In $\ell_2$ regularization, we assume our ideal weights $\omega$ have a Gaussian prior, $\omega \sim \mathcal{N}(\mu, \sigma^2)$. Given our original cost function, $\ell_2$ regularization adds an additional term, called the **regularization term**. In the regularization term, we will replace $\omega$ with $\omega' \sim \mathcal{N}(0, \sigma^2)$, where we set our bias term $\alpha = 0$. Using least squares as an example, our new $\ell_2$ regularized cost function will be
 $$ J(\omega) = ||X\omega - y||^2 + \lambda||\omega '||^2 $$
-where $\lambda > 0$ acts as our regularization parameter, or how much we value the regularization term. Let’s think about how to minimize the regularization term. $\ell_2$ regularization mimics [[maximum a posteriori estimate]].
+where $\lambda > 0$ acts as our regularization parameter, or how much we value the regularization term. Let’s think about how to minimize the regularization term. $\ell_2$ regularization mimics [[maximum likelihood estimation#maximum a posteriori estimation|MAP estimation]].
 $$ f(\omega|X, y) \propto f(\omega') \propto \ln f(\omega') \propto-||\omega'||^2 $$
-The above expression states that the [[maximum a posteriori estimate]] is the same as the minimum of $||\omega'||^2$.
+The above expression states that the [[maximum likelihood estimation#maximum a posteriori estimation|MAP estimation]] is the same as the minimum of $||\omega'||^2$.
+>[!tip] Using the Least Norm
+>Notice how the $\ell_2$ regularization term favors weight vectors with smaller norms. For situations where we have two or more *linearly dependent* features, we will have infinitely many solutions the [[maximum likelihood estimation]] of $w$ which achieve the minimum cost.
+>
+>However, for the [[regression]] problem we would choose the $w$ with the smallest noise to minimize the effect of noise.
 
 #### ridge regression
 The objective function for ridge regression

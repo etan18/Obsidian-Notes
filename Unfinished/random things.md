@@ -1,0 +1,4 @@
+
+- pareto curve
+- orthogonality thesis
+- 

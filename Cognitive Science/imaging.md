@@ -14,7 +14,7 @@
 
 **Magnetic Resonance Imaging (MRI)** also produces 3D reconstructions of the brain that sharper and more detailed than a CT, and does so by manipulating _quantum spin,_ which is safer than CT.
 - This process of introducing a magnetic field to disturb the alignment of nuclear spin gave rise to _nuclear magnetic resonance_, or NMR
-    - Mapping the spatial patterns of resonant energies needed to perturb the spin of atoms can be used to determine molecule structures or even image the interior of an organism
+    - Mapping the [[spatial frequency|spatial]] patterns of resonant energies needed to perturb the spin of atoms can be used to determine molecule structures or even image the interior of an organism
 - The name was changed from NMR to MRI due to misconceptions about the technique being “nuclear”
 
 >[!note] 

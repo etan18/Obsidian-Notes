@@ -1,6 +1,6 @@
 #cs189 #cs188 
 
-> [!info] Perceptrons were first proposed by Frank Rosenblatt in 1957 as a probabilistic model of [[memory]] and information retrieval in the brain.
+> [!info] Perceptrons were first proposed by Frank Rosenblatt in 1957 and is one of the earliest probabilistic [[neuron models]] of [[memory]] and information retrieval in the brain.
 
 The perceptron algorithm is a slow, but correct, variation of [[gradient descent]] for *linearly separable* data points. 
 
@@ -24,4 +24,6 @@ which satisfies the goal of our initial training.
 ---
 # multilayer perceptrons
 
-A multi-layer perceptron links together simple perceptrons to create a powerful **universal function approximator**. 
+A multi-layer perceptron links together simple perceptrons to create a powerful **universal function approximator**. MLPs are the same thing as *feed-forward* [[neural networks]], or "vanilla" neural networks.
+- *Feed-forward* entails that the NN is unidirectional, as opposed to *recurrent*, meaning that the output from neurons may only affect future neurons.
+

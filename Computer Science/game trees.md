@@ -1,11 +1,15 @@
+#cs61b #cs188 
+
 Game trees are a common representation of games. We can define *games* in this context as multi-agent adversarial [[search problems]]. Game trees represent these scenarios, wherein
 - Nodes represent states
 - Directed edges connect a state to all possible states reachable within the next move
 
 >[!note] Zero-sum Games
 >A **zero-sum game** is one in which there are multiple [[rational agent]] who are competing *adversarially*. These agents have opposing utilities—i.e. when one player does well, it means the other is doing poorly.
-## deterministic games
-In [[artificial intelligence]]. **deterministic games** are well-defined games wherein the optimal solution for a player is a set *policy*.
+
+---
+# deterministic games
+In [[artificial intelligence]], **deterministic games** are well-defined games wherein the optimal solution for a player is a set *policy*.
 ### minimax
 **Minimax**, also known as *adversarial search*, can be applied to deterministic zero-sum games. In the game tree here, each layer of the tree represents the set of moves a single player, and the successive layer will represent moves by the opponent. In minimax, we have a *value function* $V(s)$, wherein $s$ is our current state, and
 $$V(s) = \max_{\substack{s' \in \mathrm{children}(s)}} V(s')$$
@@ -22,12 +26,10 @@ To speed this up, we present a similar technique, known as **AB pruning**.
 ### alpha-beta pruning
 In alpha-beta pruning, we stop looking at a node's children once we find a value that the adversary *definitely will not pick, no matter what*.
 
+In expectation, AB pruning takes the runtime of searching a game tree down to $O(b^{m/2})$, but that is not guaranteed---the final runtime is dependent on the structure of the tree, as we may not be able to prune any nodes.
+
 ---
 Removing ourselves from the previous sections, we now want to consider a case where our opponent does not necessarily act optimally. Instead, we insert an aspect of *randomness* into our decision-making process.
 ## expectimax
 **Expectimax** is a generalization of minimax, which sees the addition of *chance nodes*. Chance nodes replace minimizing nodes in that they now take calculate the *expected utility* of the next move.
 
-
----
-## decision networks
-Decision networks combine expectimax trees with [[bayesian network]] principles to model utility.

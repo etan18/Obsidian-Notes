@@ -35,3 +35,9 @@ The CATE can be interpreted as the expected outcome of a patient if treated, giv
 ---
 ## causal representation learning
 
+#### independent causal mechanisms
+The ICM principle states that the underlying mechanisms for each causal variable should be independent of mechanisms of other causal variables. As such, distributional changes to one mechanism should not affect another.
+
+This principle defines the base unit for disentangled causal representations, which allow for the identification of causal structures even in the face of distribution shifts.
+
+The **sparse mechanism shift hypothesis** builds on the ICM principle to suggest that most observed shifts involve only a small subset of causal mechanisms, which makes it easier to adapt models to unseen conditions by updating only those few mechanisms.

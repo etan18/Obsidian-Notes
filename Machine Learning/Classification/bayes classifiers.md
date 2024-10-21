@@ -1,3 +1,5 @@
+#cs189 
+
 The **Bayes' decision rule**, used in *bayes classifiers*, is the optimal [[classification]] function $r^*$ that minimizes risk, or expected loss.
 $$ r^* = \begin{cases} 1 &\text{if } L(-1, 1)\Pr(Y=1|Z=z) > \text{if } L(1, -1)\Pr(Y=-1|Z=z) \\ 0 &\text{if } z = y \\ -1 &\text{otherwise} \end{cases} $$
 When L is symmetric, our classifier simply chooses the largest posterior probability. When L is asymmetric, we weight both the losses as well as the probabilities.

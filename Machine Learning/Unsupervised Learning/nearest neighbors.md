@@ -5,7 +5,7 @@ Given $n \times d$ design matrix $X$, we want to separate the $n$ points into $k
 
 $$ \mathrm{argmin}_{\substack{y}} \sum_{i=1}^k \sum_{y_j = i} ||X_j - \mu_i||^2 $$
 
-In layman’s terms, this is the sum of the squared distances of points to their cluster mean.
+This is the sum of the squared distances of points to their cluster mean.
 
 ##### bonus derivation
 Another viewpoint of $k$-means is that we want to minimize the _intra-cluster variation,_ which yields a minimizing function equivalent to the previous one
