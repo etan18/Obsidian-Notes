@@ -13,4 +13,13 @@ This separation, although most widely used, has also created an industry-wide li
 
 **Neuromorphic computing** is a field dedicated to building physical computational systems based on the organizing principles of the nervous system and the brain.
 
-### efficient hardware
+---
+>[!example] Topics in Neural Computation
+>- [[representation learning]]
+>- [[pattern theory]]
+>- [[retinal encoding]]
+>- [[interpretability]]
+>- [[high-dimensional computing]]
+
+
+

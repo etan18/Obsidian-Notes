@@ -10,18 +10,6 @@ Monosemanticity introduces a new approach to the design of [[neural networks]]. 
 >[!idea] Neurological Inspiration
 >From a cognitive perspective, monosemanticity draws on theories of [[cognitive architectures#localization|localization]] or particularly the existence of [grandmother cells](https://en.wikipedia.org/wiki/Grandmother_cell). Traditional neural networks rely on **polysemantic neurons**, wherein single neurons handle may handle multiple concepts simultaneously.
 
-## representation learning
-
-Some ideal properties for interpretable representations:
-- **Decomposability**: network representations can be described in terms of independently understandable features
-- **Linearity**: features are represented by directions
-These properties are often assumed to be true in interpretability research, and is a necessity to be able to reverse engineer neural networks.
-#### dictionary learning
-
-
-#### sparse encoding
-Sparse encoding is a technique which approximates dictionary learning by decomposing data into a weighted sum of sparsely active components. 
-
 ## mechanistic interpretability
 The underlying hypothesis that enables mechanistic interpretability is that deep learning models learn *human-interpretable* algorithms that can be understood by humans if we reverse engineer them. Reverse engineering these algorithms involves learning
 - **Features**: analogous to individual neurons and understanding their behavior

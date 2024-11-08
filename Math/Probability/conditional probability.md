@@ -1,9 +1,9 @@
 #eecs126 #cs188 #cs70
 
 The conditional probability for some [[random variable]] $A$ given $B = b$ is denoted by **Bayes' Rule**
-$$\mathbb{P}[A|B] = \frac{\mathbb{P}[B|A] \cdot \mathbb{P}[A]}{\mathbb{P}[B]}$$
-Another formula for condition probability is
 $$\mathbb{P}[A=a|B=b] = \frac{\mathbb{P}[A=a \cap B=b]}{\mathbb{P}[B]}$$
+Another formula for condition probability is
+$$\mathbb{P}[A|B] = \frac{\mathbb{P}[B|A] \cdot \mathbb{P}[A]}{\mathbb{P}[B]}$$
 A key insight from the above formulas is that this means $\mathbb{P}[B|A] \cdot \mathbb{P}[A] = \mathbb{P}[A \cap B]$ regardless of whether $A$ and $B$ are independent. This is known as the **chain rule**. 
 
 ## joint distributions
@@ -26,4 +26,3 @@ This definition of conditional independence is equivalent to saying that $\mathb
 
 >[!info] Bayesian Inference
 >Bayesian inference is a type of statistical inference that is able to update probability distributions given new information. These conditional probability problems can be modeled using a [[bayesian network]].
-

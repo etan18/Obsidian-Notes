@@ -1,6 +1,6 @@
 #mcb61 #cogsci126 
 
-**Neurons** are the fundamental cell which make up our nervous system. They are responsible for receiving and relaying sensory inputs.
+The neuron doctrine is the base principle that **neurons** are the fundamental unit of the nervous system. These cells are responsible for receiving and relaying sensory inputs.
 ### cell anatomy
 There are three main parts of the neuron: cell body, dendrites, and the synapse.
 - The **soma**, or cell body

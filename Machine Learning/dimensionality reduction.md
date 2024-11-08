@@ -3,10 +3,10 @@
 >- [[principal components analysis]]
 >  - [[random projection]]
 
-The motivation for dimensionality reduction is to
-- make computations cheaper by compressing data
-- remove irrelevant features, noise, or systematic artifacts
-- find the basis for representing complex things
+The motivation for **dimensionality reduction** is to *reduce redundancy* in data. Oftentimes, raw data is a representation of many complex statistical dependencies, or redundancies. Thus, the goal of dimensionality reduction techniques is to represent that same data as the combination of some set of independent components. This allows us to
+- Make computations cheaper by compressing data
+- Remove irrelevant features, noise, or systematic artifacts
+- Find the basis for representing complex things
 
 > [!idea] Projection onto a subspace
 > Given a subspace composed of orthonormal vectors $v_1, v_2, \dots, v_k$, the projection of vector $x$ onto the subspace is $\tilde{x} = \sum_{i=1}^k (x \cdot v_i) v_i$.

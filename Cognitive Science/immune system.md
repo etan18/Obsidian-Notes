@@ -15,3 +15,10 @@ Some key components of the innate immune system include
 **Cytokines** act as messengers for the immune system. They are secreted by various immune cells and help coordinate the body's defense by promoting inflammation, recruiting immune cells to infection sites, and regulating the activity of immune cells.
 ### sleep and immune function
 Certain cytokines, like **TNF-alpha**, are involving in promoting [[sleep]]. 
+
+- One study found that sleep deprived subjects (< 4 hrs/night for at least 4 nights straight) who received the flu shot produced less than half the antibody response compared to well-rested subjects. Even after correcting their sleep schedule, the antibody levels never recovered to match the control group response. 
+- Another study found that the glucose tolerance, or rate at which glucose was able to be cleared from blood, was impaired by over 40% in sleep-deprived subjects (< 4 hrs/night for at least 5 nights). These rates were on par with pre-diabetes.
+- Sleep deprivation can also cause significant declines in the activity of natural killer (NK) cells, which are a crucial part of your innate immune system. This makes you more susceptible to infections and cancers.
+
+### metabolism
+**Leptin** is a hormone that inhibits appetite and increases energy expenditure, so it causes you to not want to eat. In contrast, **ghrelin** is a hormone which increases appetite and inhibits energy expenditure, thus causing you to want to eat.

@@ -14,6 +14,14 @@ Peception relies on priors and [[heuristics]] to process ambiguous information. 
 
 In situations of sparse information, we tend to create an interpretation that is *most likely* or familar to us.
 
+### cue integration
+Thus far, we've focused on specifically on visual perception, but when we are actually perceiving the world, we integrate cues from all sensory modalities.
+- Typically, the sensory modality with the highest resolution dominates our perception
+- For example, temporal resolution weighs auditory information more than visual info
+
+**Ventriloquist effect**
+**McGurk effect**: when the visual and auditory cues of spoken language are misaligned, it can lead to the illusion where we perceive a third sound which combines the visual and auditory information.
+
 ### illusions
 Illusions are the exceptions, not the rule, for the complex perceptive systems in our brain. Studying illusions provides us with the boundaries and heuristics of perception.
 - **Vection**: processing motion around you makes you think you are moving when you aren't. 
@@ -83,10 +91,7 @@ The shape and depth of a 3D object is heavily determined by the context of light
 - Light usually comes from above, which is our implicit assumption if we don't know for sure
 
 ---
-## cue integration
-Thus far, we've focused on specifically on visual perception, but when we are actually perceiving the world, we integrate cues from all sensory modalities.
-- Typically, the sensory modality with the highest resolution dominates our perception
-- For example, temporal resolution weighs auditory information more than visual info
-
-**Ventriloquist effect**
-**McGurk effect**: when the visual and auditory cues of spoken language are misaligned, it can lead to the illusion where we perceive a third sound which combines the visual and auditory information.
+# visual scene analysis
+Visual scene analysis is the task of understanding the composition of an image, including recognizing the objects in the scene and the relationships between them.
+- **Visual working [[memory]]**: the limited capacity of the brain to temporarily hold and manipulate visual information, allowing us to actively attend to and process visual stimuli
+- **Factorization** is the separation of a visual scene into separate components which each encompass some dimension of information (e.g. color, reflectance, motion, shape)

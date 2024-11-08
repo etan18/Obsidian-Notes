@@ -22,6 +22,18 @@ This was due to the fact that his brain adapted and learned typically cross-hemi
 ---
 ## models of memory
 
+In general, models of memories must provide an explanation for the five stages of memory:
+1. **Encoding**: how we represent and process raw data as memories
+2. **Consolidation**: how that memory is stored in our brains
+3. **Association/Integration**: how memories link together to form knowledge
+4. **Recall**: how we retrieve memories
+5. **Erasure**: how and why we forget
+
+>[!tip] The Deese–Roediger–McDermott Task 
+>In cognitive psychology, the DRM task demonstrates a false memory paradigm at the association level. For the task, subjects are asked to memorize and recall a list of related words (e.g. "blanket", "bed", "pillow", "yawn" etc.). Typical results show that subjects will recall a *critical lure* word–in this case "sleep"–with the same frequency that they recall any other word actually included in the list.
+>
+>This paradigm supports the idea of **associative networks**, such that knowledge is stored as some pattern of synaptic connections and activations, and similar pieces of information are stored as similar circuits. 
+
 ##### the multimodal approach, by atkins & shiffrin
 The multimodal approach breaks down memory into 3 areas. 
 ###### sensory memory

@@ -7,7 +7,7 @@ Say we have a random variable $X$. At each time step $t$, we sample from $X$ and
 Our **transition probabilities** are the distribution $X$, independent of any prior observations, $P_0$. The transition probabilities are *stationary*, meaning they are the same at each timestep, and we use them to update $P$. These intermediate distributions $P_t$ are known as the **hidden state**, and are used as the underlying distribution for random variable node $X_t$.
 - We additionally need to begin with a **sensor model**, or the probability distribution $\mathbb{P}[E_i | X_i]$. Like the transition model, we assume these probabilities are stationary.
 - We alias our intermediate probability distributions to be our **belief distributions**, where $$B(X_i) := P[X_i | e_{1:i}]$$The notation $e_{1:N}$ means we have $N$ observed evidence variables, one from each timestep $1$ to $N$.
-- Similarly, we'll also need to define $$B(X_i) := P[X_i | e_{1:i-1}]$$ which is the belief distribution at time $t$ before observing evidence $e_t$.
+- Similarly, we'll also need to define $$B'(X_i) := P[X_i | e_{1:i-1}]$$ which is the belief distribution at time $t$ before observing evidence $e_t$.
 
 At the end of an HMM, we are left with $P_{\infty}$, the converged probability distribution at which point no additional observations will impact it.
 
@@ -29,6 +29,11 @@ The forward algorithm is an *exact inference* technique that recursively
 #### particle filtering
 Exact inference can become computationally expensive and unnecessary as the number of variables and their domain sizes scale. **Particle filtering** uses *sampling* to efficiently approximate the desired probability distributions. 
 
+---
+## kalman filter
+The Kalman filter is a particular type of Hidden Markov Model where you assume that the state transition and observation distributions are linear and Gaussian.
+
 
 >[!info] Next: [[markov decision processes]]
 
+$$B(X_{i+1}) \propto P[e_{i+1} | X_{i+1}] \cdot \sum_{x_i} P[X_{i+1}|x_i] B(X_i)$$

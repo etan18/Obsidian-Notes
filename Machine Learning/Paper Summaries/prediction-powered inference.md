@@ -25,6 +25,6 @@ The set $\mathcal{R}$ can then be constructed using classical confidence interva
 #### algorithm
 The algorithm for applying PPI is dependent on the problem and what value of $\theta$ is being queried for (e.g. mean). This is how we would generate a confidence interval for the mean of some label $Y$ from data $X$:
 
-![](img/ppi_alg.png)
+![](ppi_alg.png)
 
 

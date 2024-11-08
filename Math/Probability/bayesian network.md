@@ -24,7 +24,7 @@ There are a few base rules regarding the conditional independence of nodes:
 ## bayesian inference
 Bayesian inference, or **probabilistic inference**, uses the joint probability distributions provided by Bayes Nets to then estimate any other desired probability distribution between the variables in the network.
 #### inference by enumeration
-Inference by enumeration is a naive rough estimation of a desired probability distribution. It doesn't actually require conditional probabilities or a Bayes Net, it instead uses the joint probability table, which is a pre-requisite to be able to perform this al
+Inference by enumeration is a naive rough estimation of a desired probability distribution. It doesn't actually require conditional probabilities or a Bayes Net, it instead uses the joint probability table, which is a pre-requisite to be able to perform this algorithm.
 
 Given a joint probability table—denoting $\mathbb{P}[X_1 = x_1, X_2 = x_2, \dots X_n = x_n] = p$ for all possible combinations of outcomes—we can compute our desired marginal distribution (e.g. $\mathbb{P}[X_1 | X_2 = x_2]$) by:
 1. Consider only the rows in the table that are consistent with our evidence variables (i.e. where $X_2 = x_2$)
