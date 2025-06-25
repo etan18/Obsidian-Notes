@@ -6,7 +6,6 @@
 As the name suggests, SQL is a query-based language. This means that we create statements to tell the database server to tell it what data we're looking for. Queries are comprised of a few syntactic features:
 - **Keywords** perform specific, pre-defined tasks. These are denoted by being all caps.
 - **Identifiers** are named parts of the database schema, like tables, columns, and views
-
 ---
 ## sql injection
 
@@ -30,3 +29,4 @@ This is the expected input, where `username` is a plaintext string. However, an 
 ```
 http://vulnerable.com/users?username='; DROP TABLE users --
 ```
+

@@ -4,11 +4,13 @@ Neural **plasticity** refers to the capacity of the nervous system to modify its
 
 ---
 # hebbian learning
-Hebbian learning is also known as **associative learning**, which in general terms is is the process by which living things learn to connect stimuli or responses to form associations. The theory of Hebbian learning, in neuropsychology, states that when one neuron repeatedly activates another neuron, the connection between the two neurons strengthens. 
+Hebbian learning is also known as **associative learning**, which in general terms is is the process by which living things learn to connect stimuli or responses to form associations. The theory of Hebbian learning, in neuropsychology, states that when one neuron repeatedly activates another neuron, the connection between the two [[neurons]] strengthens. 
 
 >[!quote] Neurons that wire together, fire together.
 
-In the theory of artificial [[neural networks]], Hebbian learning has been used as a method of determining how to update the weights between neurons in the network. From a computational perspective, a **learning rule** describes how the weights or parameters of a model are updated based on some new information.
+This is a **local** learning rule, meaning that the change in a neuron's synaptic strength is dependent only on its *pre-synaptic* and *post-synaptic* connections.
+
+In the theory of artificial [[neural networks]], Hebbian learning has been used as a *biologically-plausible* method of determining how to update the weights between neurons in [[unsupervised learning]] settings. From a computational perspective, a **learning rule** describes how the weights or parameters of a model are updated based on some new information.
 #### linear hebbian learning
 Intuitively, when trying to learn the weight vector $\textbf{w}$ for a linear neuron
 $$y = \sum_i w_i \cdot x_i$$
@@ -21,10 +23,10 @@ where $C$ is the covariance matrix. This causes the weight vector to grow in the
 >$$C_{ij} = \langle x_i, x_j \rangle$$
 >An important characteristic of this matrix is that $C_{ij} = C_{ji}$, so it is symmetric. All diagonal values $C_{ii}$ are $0$.
 
-**Oja's rule** is an extension of Hebb's rule that bounds the weight vector which, under Hebb's rule, will continue to grow to infinity.
+**Oja's rule** is an extension of Hebb's rule that bounds the weight vector which, under Hebb's rule, will continue to grow to infinity. Now, the weights will converge to the principal (largest) component eigenvector of $Q = \mathbb{E}[\textbf{xx}^{\top}]$ 
 $$\textbf{w} \leftarrow \langle y \cdot (\textbf{x} - y \cdot  \textbf{w}) \rangle$$
-
-Finally, we have **Sanger's rule**, which now allows us to incorporate more than just the largest eigenvector, and now learn multiple eigenvectors.
+#### generalized hebbian algorithm
+Finally, we have **Sanger's rule**, also known as the Generalized Hebbian Algorithm, which now allows us to incorporate more than just the largest eigenvector, and now learn multiple eigenvectors. Importantly, the algorithm learns the eigenvectors *without* computing the correlation matrix, which is typically a memory intensive operation.
 $$\textbf{w} \leftarrow \langle y_i \cdot (\textbf{x} - \sum_{j \le i} y_j \cdot w_j) \rangle$$
 There are many other variants of Hebb's rule out there, including ones that can handle non-linear neurons.
 

@@ -39,7 +39,6 @@ The origin of a webpage is defined by its protocol, domain name, and port. Two w
 ##### data storage
 Many websites require lots of backend data to be stored which cannot be handled by the server. Instead, [[databases]] are often times stored elsewhere (e.g. in the cloud) and queried by the server, usually in [[SQL]], when the client makes a request. 
 
-
 ---
 # web security attacks
 ### cross-site scripting

@@ -37,18 +37,23 @@ Created by McCulloch & Pitts
 - Groundbreaking intersection between computer science and neuroscience
 - Served as a precursor to neural networks
 
-## the birth of ai
-
->An attempt will be made to find how to make machines use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves. We think that a significant advance can be made in one or more of these problems if a carefully selected group of scientists *work on it together for a summer*. 
->John McCarthy and Claude Shannon, 1956 Dartmouth Workshop Proposal
-
-### alan turing (1912 - 1954)
+## the advent of ai
+#### alan turing (1912 - 1954)
 Father of Theoretical Computer Science & Artificial Intelligence
 **Turing Machine -** thought experiment that demonstrated the limits of mechanical computation
 **Turing Test -** method of evaluating the [[sentience]] artificial intelligence
 -   If a machine can pass the Turing Test, then it must be truly intelligent
 -   A machine passes the Turing Test if a human cannot distinguish between the machine and another human
 
-## evolution of approaches
+#### the symbolic era
+The actual term "artificial intelligence" was first coined in 1956 at Dartmouth University:
+>	An attempt will be made to find how to make machines use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves. We think that a significant advance can be made in one or more of these problems if a carefully selected group of scientists *work on it together for a summer*. 
+>	**John McCarthy and Claude Shannon**, 1956 Dartmouth Workshop Proposal
+
+Their work on AI during this time was primarily based on the idea that intelligence could be reduced to *symbolic manipulation*. These systems were not particularly complex or flexible---taking the form of highly task-specific parsing algorithms or pattern matching programs.
+#### evolution of approaches
 Between 1970 and 1990, there were not many significant advances in AI. Most academia in the area explored knowledge-based expert systems. In the 1990s, there was a resurgence in AI developments, mostly using statistical approaches.
 - 1997 - Deep Blue defeats Kasparov in a chess match
+- 2011 - IBM Watson wins Jeopardy
+
+![[ai.png]]

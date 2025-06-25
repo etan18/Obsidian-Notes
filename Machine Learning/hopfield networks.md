@@ -1,6 +1,8 @@
 #vissci265 
 
 John Hopfield (2024 Nobel Prize in Physics) is well-known for bringing the principles of statistical physics to machine learning. One such contribution was the **Hopfield network**, also known as a point attractor network, which is a type of [[neural networks#recurrent neural networks|RNN]] which incorporates the *energy* of a neuron.
+
+Hopfield Networks are touted as being a biologically-plausible model of associative [[memory]], which means that they don't directly *learn* per se, rather they store patterns or archetypes found in the data within their learned parameters. 
 #### attractor dynamics
 In physics, a dynamical system is a set of variables and the set of rules that determine their evolution over time. The instantaneous value of these variables is the **state** of the system at that time.
 - An **attractor** is a state or set of states that neighboring states flow towards over time
@@ -25,5 +27,3 @@ These stable states act as "basins of attraction", which can correspond to memor
 Hopfield networks have been shown to be excellent models of **associative [[memory]]**. One of the key features of Hopfield networks is their ability to recover complete patterns from partial or noisy inputs, making them robust in the face of incomplete or corrupted data.
 
 From the setup presented above, we still need to add a mechanism for storing multiple basins of attraction in order for our model of memory to be able to actually recall information.
-
-**TODO: capacity of Hopfield nets**

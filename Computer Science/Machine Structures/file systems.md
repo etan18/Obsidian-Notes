@@ -6,7 +6,7 @@ The **file system** is a layer of abstraction provided by the [[operating system
 
 A **directory** is a list of filename to file (or subdirectory) mappings.
 - *Hard links* are directory entries that map different names to the same file number
-- *Soft links* are directory entries that map a name to another name
+- *Soft links*, or symbolic links, are directory entries that map a name to another name
 
 ---
 

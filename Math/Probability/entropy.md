@@ -31,3 +31,10 @@ $$ \begin{align*} H(X, Y) &= H(X) + H(Y|X) &&\text{iff X and Y are independent}\
 Finally, to build off of Chain Rule, the overlapping information that we remove from conditional entropy is known as **Mutual Information.**
 
 $$ I(X;Y) = H(Y) - H(Y|X) $$
+>[!tip] The Principle of Maximum Entropy
+>The principle of maximum entropy described how to find the probability distribution $\mathcal{D}$ that best represents your current state of knowledge, incorporating all datapoints seen up to this point. 
+>
+>The principle states that among all distributions which satisfy your observed constraints, or datapoints, choose the distribution which maximizes entropy. Intuitively, this is the distribution that is "maximally non-committal" in describing unseen or missing information.
+>
+>Max-entropy distributions can generally be succinctly represented using a small number of parameters proportional to the dimensionality of the data. This is a consequence of [[linear programming#dual linear program|duality]].
+

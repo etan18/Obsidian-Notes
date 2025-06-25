@@ -13,6 +13,8 @@ The fairness criterion is the most subjective and vague of them all. It often ti
 
 As a general rule, scheduling policies should be designed to prevent **starvation**, a situation where a thread fails to make progress for an indefinite period of time. If a scheduling policy never runs a particular thread on the CPU, the thread will starve. Threads can also starve if they wait for each other or are spinning in a way that will never be resolved.
 
+In practice, schedulers are implemented using **runqueues**, a key data structure which can track all tasks waiting to be scheduled and select which task to run next. There is one runqueue associated with each CPU in a system.
+
 ### posix
 There are a few POSIX built-in functions which allow for forced [[scheduling]] manipulation. 
 - `sched_yield()`: calling thread relinquishes the CPU and is put at the end of the run queue
@@ -27,7 +29,7 @@ There are a few POSIX built-in functions which allow for forced [[scheduling]] m
 >[!definition] Pre-emption
 >In the context of the OS, preemption is the ability of the OS to pause or stop a currently scheduled task. This is how we implement **context switching** to schedule higher-priority tasks. 
 ### first come first serve
-First come first serve (FCFS) scheduling simply schedules tasks in the order they arrive in the [[queue]].
+First Come First Serve (FCFS) or First In First Out (FIFO) scheduling simply schedules tasks in the order they arrive in the [[queue]].
 - Cheap to implement, and good for maximizing throughput because it minimizes the overhead of context switching
 - **Convoy effect**: short tasks will get stuck with long wait times behind long tasks, which makes the average completion time vary a lot.
 
@@ -71,7 +73,14 @@ $$\text{stride} = \frac{W}{n_i}$$
 Where $W$ is a really big number and $n_i$ is the number of tickets given to task $i$. At every time slice, the task with the lowest *pass* is chosen. All tasks start with pass equal to 0. When a task is chosen, its pass is incremented by $\text{stride}$. Hence, a smaller stride will allow a task to run more often.
 
 ### linux completely fair scheduler
-The Linux Completely Fair Scheduler (CFS) aims to give each task an equal share of the CPU by giving an illusion that each task executes simultaneously on $\frac{1}{n}$ of the CPU.
+In Linux, scheduling is based on threads, not processes. Each thread is assigned an associated **nice value**, a number between $- 20$  and $+19$, corresponding to the thread's priority. *Lower* nice values mean *higher* priority, but only system administrators can assign negative nice values to threads. The default nice value is $0$.
+
+Real-time threads in Linux use either FIFO or Round Robin scheduling. However, non-real-time threads use the **Linux Completely Fair Scheduler** (CFS) algorithm, which aims to give each task an equal share of the CPU by giving an illusion that each task executes simultaneously on $\frac{1}{n}$ of the CPU.
+
+For each task to be scheduled, we store its running virtual runtime (*vruntime*), the amount of time in nanoseconds it has had to run on the CPU thus far.
+- Uses a **red-black tree** as the runqueue data structure
+- A thread's nice value determines the rate at which vruntime goes up (for low priority threads, vruntime will increase more quickly while on CPU)
+- This method is helpful for prioritizing I/O-bound or interactive threads 
 
 ---
 ## deadlock

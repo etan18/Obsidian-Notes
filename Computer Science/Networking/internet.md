@@ -34,10 +34,16 @@ The transport layer solves a few problems presented by IP addresses in the netwo
 - IP addresses uniquely identify machines, but can't differentiate between multiple processes running on the same machine on the same network (browser tabs/windows)
 - The IP protocol is a *best effort protocol*, meaning that packets can still get dropped or corrupted
 The transport layer introduces *16-bit* **port numbers** to help. These addresses are specific to a single machine, and are used together with the IP address to pinpoint the exact destination point.
+
+###### transmission control protocol
+TCP ensures the reliability of transmitted data. It uses a three-way handshake to establish connections. 
+###### user datagram protocol
+UDP is an alternative to TCP--it is a connectionless protocol that prioritizes speed over reliability. This is preferable in real-time use cases such as gaming or streaming where some packet loss is acceptable.
+
 ###### transport layer security
 TLS protocol is the sub-layer that ensures **end-to-end** security between the transport layer and the 7th layer. It ensures that even if part of the communication channel is compromised, only the sender and receiver are able to read or modify data.
 
-Some examples of TLS applications include, **HTTPS**—which is HTTP with TLS—and **VPN**—virtual private network connections.
+Some examples of TLS applications include, **HTTPS**—which is HTTP with TLS—and **VPN**—virtual private network connections. 
 
 #### 7. application layer
 The application layer is what actually allows users to interact with applications and services on the Internet. Any type of web-based browsing, messing, gaming, or calling employs the application layer.
@@ -45,10 +51,21 @@ The application layer is what actually allows users to interact with application
 ---
 # dns
 The **Domain Name System**, DNS, is the common method for indexing human-readable domains to their IP addresses.
-
 #### dns hierarchy
 Recall the structure of a domain. These are all examples of domains:
 - `www.google.com`
 - `eecs.berkeley.edu`
-- `.com`
-- `.` (root server)
+- Top-level domains: `.com`, `.net`, `.edu`, etc.
+- Root server: `.`
+
+In a web browser, users query resources (e.g. webpages) using their domain names. The **recursive DNS resolver** is the computer that responds to client requests by making requests starting from the top-level domain (TLD) all the way until it reaches the **authoritative nameserver**, which gives the definitive IP address of the requested resource.
+#### dns records
+DNS servers store information in the form of **DNS records**. These records are essentially a series of text files written in DNS syntax about a particular domain, including its corresponding IP address. It also includes a **time-to-live** (TTL) field, indicating how often that record is refreshed. Common types of DNS records include
+- **A**: holds the IPv4 address of the domain
+- **AAAA**: holds the IPv6 address of the domain
+- **CNAME**: "canonical name", forwards one domain to another (used for aliasing)
+- **NS**: "name server", stores the authoritative nameserver of where to find the IP
+
+
+
+

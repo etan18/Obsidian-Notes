@@ -10,3 +10,11 @@ Set theory definitions:
 There is a nuanced difference between infimum/supremum and minimum/maximum. Every set that has a maximum also has a supremum, but not every set that has a supremum necessarily has a maximum, and same for infimum/minimum.
 
 ![img/mum.pbm](mum.jpg)
+
+Finally, there also exist **saddle points**, which are critical points where
+$$\triangledown_{\theta} \ \mathcal{L}(\theta) = 0$$
+which are *neither* minimum or maximum points in the loss function. Mathematically, we can look at the [[gradients#hessian matrix|Hessian matrix]] of the loss function to examine what type of critical point we're at.
+- If all entries of the diagonal of the Hessian are positive, we are at a local maxima
+- If all entries of the diagonal of the Hessian are negative, we are at a local minima
+- Otherwise, it's a saddle point
+

@@ -6,3 +6,5 @@ The *two-phase commit* (2PC) is a distributed transaction as an atomic commit pr
 
 >[!tip] General's Paradox
 >General’s paradox demonstrates the impossibility of reaching consensus over an unreliable network. Suppose two generals need to attack simultaneously in order for an attack to succeed, but they can only communicate via a messenger who might be a traitor.
+
+

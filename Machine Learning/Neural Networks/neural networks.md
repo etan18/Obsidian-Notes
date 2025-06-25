@@ -34,16 +34,27 @@ The goal of backpropogation is to compute the gradient of the neural network's o
 There are two main components of backpropogation: the **forward pass** and **backward pass**. 
 1. **Forward pass** - compute and cache all $\frac{dz}{dx}$, the the gradients of the outputs of each layer with respect to their inputs
 2. **Backward pass** - the gradients of the final weights with respect to the outputs of each layer
-
-## miscellaneous notes
-- Training time for neural networks is long compared to most classification methods. Techniques like [[convolutional neural networks]] are a way to simplify computations.
-- *Dropout* is a training technique that temporarily tosses out nodes at random to prevent the network from relying on any single node. Dropout rate is a hyperparameter of NNs.
-
+3. **Update** - compute the new weights by moving in the direction of the computed gradient.
+$$\textbf{w} \leftarrow \textbf{w} + \gamma \cdot \frac{dz}{dx}$$
+The size of the update is determined by the learning rate hyper-parameter $\gamma$ , where larger $\gamma$ values lead to larger updates. This is generally favorable in earlier stages of training, while more granular updates in later epochs will help the model reach convergence. Oftentimes, **schedulers** are used to dynamically decrease the learning rate hyper-parameter across a training run.
 ---
-## recurrent neural networks
-Basic, or "vanilla," [[neural networks]], like the ones described above, are known as **feedforward** neural networks. This means that the outputs of neurons in one layer are fed as inputs to neurons in the next layer only.
+# training
+Training time for neural networks is long compared to most classification methods.
 
-Because of this, we now have directed weights, such that $W_{ij} \ne W_{ji}$, but both can exist for any two neurons in the network $i \ne j$.
-- RNNs are prone to the [[vanishing gradient problem]]. This is because when we train an RNN using backprop, we "unroll" the recurrent connections into an extremely deep, highly repetitive feed-forward network. 
+An **epoch** is defined as one loop through the entire training dataset, where each training instance is seen once.
 
+**Batch Size ($bs$)**
+Batch gradient descent (BGD) involves splitting the training dataset into segments of $bs$ samples each and performing updates on each batch one at a time. The updates are performed based on the sum or average of the computed gradients for each example in the batch. Taking the average is generally favorable to summing the gradients, although either work. Summing generally results in very large losses, requiring small learning rates. 
+![[bgd.png]]
 
+The choice of batch size is an important one with many considerations:
+- Smaller batch sizes require less memory - with large datasets or memory-constrained systems, you may not be able to fit the entire dataset in memory. Thus, batching is necessary.
+- Faster convergence - for each epoch, we perform one update for every batch. Thus, for a dataset of size $n$, we perform $n / bs$ updates each epoch. If we train on the entire dataset, we would perform only one update.
+
+>[!quote] From the [Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=memory_usage_in_transformers)
+>A small batch size can be useful early in training to quickly move through the training landscape to reach an optimal learning point. However, further along in the model training, small batch sizes will keep gradients noisy, and the model may not be able to converge to the most optimal final performance. At the other extreme, a large batch size, while giving very accurate gradient estimations, will tend to make less use of each training token, rendering convergence slower and potentially wasting compute resources.
+>
+>Batch size also affects the time it takes to train on a given text dataset: a small batch size will require more optimizer steps to train on the same amount of samples. Optimizer steps are costly (in compute time), and the total time to train will thus increase compared to using a larger batch size. That being said, note that the batch size can often be adjusted quite widely around the optimal batch size without major impact on the performance of the model - that is, the sensitivity of final model performance to the exact batch size value is usually rather low around the optimal batch size.
+
+**Dropout**
+Dropout is a training technique that temporarily tosses out nodes at random to prevent the network from relying on any single node, thereby improving the generalization capabilities of the model. Dropout rate is a hyper-parameter of NNs.

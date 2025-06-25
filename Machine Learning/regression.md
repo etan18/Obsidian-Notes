@@ -15,10 +15,15 @@ which is functionally equivalent to $h(x) = x\cdot w + \alpha$ in a **linear reg
 
 Notice how, in the above equation, the bias term $\alpha$ is represented as an additional feature with fixed value $1$, where $\alpha$ is its corresponding weight. This is done to simplify training.
 ### training
-We evaluate a set of point predictions $\hat{y} = h(x) = x \cdot w + \alpha$ using our cost function, also known as a **loss function**. For linear regression, the loss function is 
-$$\mathcal{L} = \sum_{i=1}^n (y_i - \hat{y}_i)^2 $$
-This is known as **least squares** regression. During training, we iteratively learn the $w$ and $\alpha$ values which minimize the least square loss function.
+We evaluate a set of point predictions $\hat{y} = h(x) = x \cdot w + \alpha$ using our cost function, also known as a **loss function**. The most commonly used loss function is **mean squared error**
+$$\mathcal{L} = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2 $$
+This is known as **least squares** regression. During training, we iteratively learn the $w$ and $\alpha$ values which minimize the least square loss function. 
 
+In statistics, the total variability in the response variable \(y\) is often measured using the **Sum of Squares Total (SST)**: $$\text{SST} = \sum_{i=1}^n (y_i - \overline{y})^2$$ where $\overline{y}$ is the mean of $y$.
+
+The SST formula encompasses both types of error: [[machine learning#the bias-variance tradeoff|bias and variance]]. We can see this to be true by decomposing the SST formula into two further components, the Sum of Squares due to Regression (SSR) and the Sum of Squares Error (SSE), respectively.
+$$\begin{align}\text{SST} &= \sum_{i=1}^n (\overline{y}- \hat{y}_i)^2 \end{align} +  \sum_{i=1}^n (\hat{y}_i - y_i)^2 $$
+For an unbiased estimator, the SSR term approaches zero. When evaluating model performance using \(R^2\), we compare the model's error to SST: $$R^2 = 1 - \frac{\text{SSE}}{\text{SST}}$$
 >[!info] Convex Loss Functions
 >One important thing to note about least squares is that, because it is a quadratic equation, it has a *single*, closed-form solution. 
 >

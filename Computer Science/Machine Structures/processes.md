@@ -18,13 +18,11 @@ One of the four main elements of an OS is [[operating system|protection]]. The p
 >Processes provide **isolation** between programs, creating the illusion that each process can use all of the machine's compute power at all times, which is not actually the case.
 
 Processes provide **reliability** to the system such that bugs can only overwrite memory of the process they're currently in. **Applications** are further abstractions wherein one or more processes are working together.
-
----
 # managing processes
-
 Everything outside of the kernel is running in a process. Trickily, processes are created and managed by other processes. The first `init` process is created by the kernel on boot-up.
 
-Allowing multiple threads to run on the same process introduces many optimizations and conveniences for running programs.
+Allowing multiple threads to run on the same process introduces many optimizations and conveniences for running programs. 
+- **Daemons** are programs that run solely as background processes, not under the direct control of an interactive user. The process name of a daemon will typically have a *d* appended to the end (e.g. `syslogd`)
 
 ### process control block
 The kernel represents processes with a PCB, or process control block. The PCB stores metadata on the process state, such as
@@ -49,3 +47,10 @@ One-way communication between two processes on the same physical machine—one p
 #### sockets
 Two-way communication channels between any two processes. There are three main types of sockets: client, server, and connection sockets.
 - Uses two [[queue|queues]], one in each direction
+#### signals
+Processes can send **signals** to other processes within their process group. This consists of its ancestors, siblings, and descendants. 
+
+A process can specify what it wants to happen when it receives a signal:
+- Terminate itself (most common)
+- Ignore the signal
+- Catch the signal - in this case, a signal handler must be specified (analogous to an I/O interrupt handler)

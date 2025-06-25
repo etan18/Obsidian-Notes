@@ -1,8 +1,10 @@
 #cs61c #cs161 #cs162 
 
-*These notes focus on [[C]] memory structure, specifically.*
+The physical memory structure of a computer consists of different layers of storage, including the CPU registers, CPU [[cache]], RAM, and disk. Accessing these different layers of memory consumes increasingly more time, as they are physically spaced farther and farther away from the CPU.
 
-At runtime, the operating system allocates the program an **address space** in [[virtual memory]] to store any state necessary for the program's execution. The address space is a large, contiguous section of the computer's memory. Critically, the address space is further split into 4 sections, detailed in the next sections. 
+At runtime, the [[operating system]] allocates the program an **address space** in [[virtual memory]] to store any state necessary for the program's execution. 
+- The size of the address space is the size of a CPU register. For example, $32$-bit systems can address up to $2^{32}$ addresses, or $4$ GB of memory.
+The address space is a large, contiguous section of the computer's memory. Critically, the address space is further split into 4 sections, detailed in the next sections. 
 ## code segment
 The **code segment** is the program software. It stores the written program as bytecode. This bytecode is what's output by the [[compiler |assembler and linker]]. 
 - Ideally fixed in size, more memory should not be allocated after the program is loaded

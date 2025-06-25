@@ -1,3 +1,5 @@
+
+### AdaBoost
 AdaBoost is an [[ensemble learning]] method that weights the impact of each learner, as well as each sample point.
 
 ## training in depth

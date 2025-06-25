@@ -3,8 +3,9 @@
 ## procedure
 
 Our goal is to project matrix $X \in \mathbb{R}^{n \times d}$ onto a lower-dimensional subspace $S \subset \mathbb{R}^d$. To randomly generate the subspace, we have hyperparameters
-		- $\epsilon$, which typically takes on values in range $[0.02, 0.5]$
-		- $\delta$, which typically takes on values in range $[\frac{1}{n^3}, 0.05]$
+-  $\epsilon$, which typically takes on values in range $[0.02, 0.5]$
+- $\delta$, which typically takes on values in range $[\frac{1}{n^3}, 0.05]$
+
 $S$ will be of dimension $k < d$,
 $$k =
 \bigg\lceil \frac{2 \ln \frac{1}{\delta}}{\epsilon^2/2 - \epsilon^2/3} \bigg \rceil$$

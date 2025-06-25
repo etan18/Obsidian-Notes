@@ -21,6 +21,8 @@ $$ \pi_i = \Pr[c_i | S] = \frac{p_i q_i}{\sum^j p_j q_j} $$
 
 The posterior probability finds the probability that some underlying factor caused an observation, given the observation.
 
+>[!tip] Negative Log Likelihood
+> In practice, minimizing the negative logarithm of the likelihood function is the equivalent proxy to maximizing the likelihood function itself. Reformulating the problem in this way can make this a more computationally efficient problem (taking the log of a product becomes a sum, which is easier to calculate) and also provides more numerical stability (logarithms can handle small probabilities without the threat of vanishing gradients).
 ## maximum a posteriori estimation
 
 In comparison to MLE, we begin maximum a posteriori estimation already having a prior for what the values of our model parameters might be. For example, we believe that the probability of voters choosing between two candidates is 50/50.

@@ -5,7 +5,7 @@ When it comes to deploying [[machine learning]] models in the real world, we oft
 >
 >Under I.I.D. conditions, we use **empirical [[risk]] minimization** (ERM) to evaluate model performance, but this technique may fail in the face of biased distribution shifts.
 
-## problem definition
+## out-of-distribution generalization
 The general problem definition for out-of-distribution (OOD) generalization uses a classical [[supervised learning]] framework. We are given random variables $X$ and $Y$, representing our input and output respectively, which form the probability distributions which our training and testing sets are drawn from, $P_{\text{train}}(X, Y)$ and $P_{\text{test}}(X, Y)$. 
 - Under these conditions, we assume that each training data point is sampled i.i.d.
 $$(x_i, y_i) \sim P_{\text{train}}(X, Y)$$
@@ -84,3 +84,5 @@ $$R_\rho(\theta) := \rho \cdot \max_{\theta' \in B(\theta, \rho)} ||\triangledow
 >    - Identify types of distribution shift which may be specific to multimodal or high-dimensional data
 >    - Idea: contradictory information (is this just covariate shift?)
 >    - Idea: confounding from irrelevant information (introduction of negative/harmful attributes) (can disentangled causal models fix this problem?)
+
+

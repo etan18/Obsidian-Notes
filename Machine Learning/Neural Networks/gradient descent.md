@@ -9,7 +9,7 @@ Newton’s Method is an iterative approach that uses quadratic approximation.
 3.  Update $w \leftarrow w + e$.
 4.  Repeat until convergence.
 ![[newton.png]]
-Newton's method is often fast than gradient descent
+Newton's method is often faster than gradient descent.
 
 ---
 

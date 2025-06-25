@@ -17,9 +17,12 @@ How does the circadian rhythm express itself physiologically? There are a few cy
 2. **Melatonin secretion**: begins about 2 hours before sleep onset, remains high across the night and is suppressed during the day
 	1. Released in response to darkness
 
+A person's **chronotype** is their natural preference for when they feel the most awake and alert. To the general public, this is typically recognized as the distinction between a "morning person" and a "night owl".
+- Chronotype is influenced by many factors, including genetics, environment, and age
+- **Sentinel hypothesis**: having different chronotypes within a group is beneficial for survival
 ### zeitgebers
 **Zeitgebers** (German for *time givers*) are any stimuli that can reset or calibrate the circadian rhythm to be about 24 hours. Light, or specifically daylight, is the most important zeitgeber because the sun is such a reliable 24-hour signal. There are other zeitgebers, such as
-- food
+- food - the timing of when you eat throughout the day is as important as quality/quantity
 - socializing
 - physical activity
 Zeitgebers are capable of synchronizing the SCN (master clock) with other peripheral clocks in other organs for optimal brain-body coordination.

@@ -33,14 +33,6 @@ In comparison, compound interest recomputes the interest earned based on the amo
 For example, if we have an $8\%$ rate of return, it will take $72 / 8 = 9$ years to double your money.
 
 
-## inflation
-
-#### consumer price index
-CPI is a metric used to quantify the monthly change in prices paid by US consumers. It compares the cost of a fixed "basket" of goods across time to measure the purchasing power of a dollar at some point in time.
-
-We use the CPI to adjust for inflation.
-
-
 ---
 # financial goals
 
@@ -53,7 +45,7 @@ Money for retirement will be supported by
 - Social Security
 - Personal savings
 - Pension
-The asset allocation of your retirement accounts is one of the biggest ways you can customize your retirement plan. These investments should be divided amongst domestic stocks, international stocks, and domestic bonds.
+The **asset allocation** of your retirement accounts is one of the biggest ways you can customize your retirement plan. These investments should be divided amongst domestic stocks, international stocks, and domestic bonds.
 
 >[!tip] Take more risks when you're younger, and be safer closer to retirement.
 >Most financial experts recommend investing more in stocks when you're younger, and more in bonds closer to retirement. Some rules of thumb include investing $(100 - \text{your age})$% in stocks and $(\text{your age})$% in bonds.
@@ -69,3 +61,11 @@ There are two primary retirement accounts: IRA and 401(k). Both have Roth and Tr
 Social Security was a federal program that started during the Great Depression as part of Franklin D. Roosevelt's New Deal. It is set up as a pay-go system wherein current retirement benefits are paid for by current members of the workforce. Once these workers retire, they will get to reap the benefits from future workers.
 - If you are healthy, begin claiming Social Security benefits at age 70, no earlier no later. Social Security benefits are adjusted according to change in cost-of-living, so monthly payments will be higher the later you claim.
 
+### spending in retirement
+The **4% rule** is a simple rule of thumb for determining how much you can spend each month in retirement. It basically says that the first year after you retire, you can spend 4% of your total savings. Each subsequent year, you can spend the same amount, adjusted for inflation.
+- Spending power is irrelevant of investment returns
+
+**RMD Approach**
+**Required minimum distribution**: minimum amount the IRS requires you to withdraw from Traditional retirement accounts (*does not apply to Roth*), starting from the calendar year you turn 70.5
+- Calculated from a **withdrawal factor**, where your $$RMD = \text{Previous Year-End Account Balance } / \text{ Withdrawal Factor}$$
+The RMD approach says you should withdraw and spend the RMD from your retirement savings (even if you have Roth) each year, as well as your Social Security benefits. RMD calculations adjust for life expectancy and portfolio returns.

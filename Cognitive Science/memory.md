@@ -4,6 +4,10 @@ The *form* in which information is stored in the brain is one of the fundamental
 
 In the 1950s, Karl Lashley led the scientific search for the **engram**, the physical location of memory storage in the brain. As we know today, the engram does not exist, and memory behaves more like [[distributed systems]] across regions of our brain.
 
+Despite this, there are regions of the brain critical for memory formation, consolidation, and storage. 
+- **Hippocampus**: responsible for initial memory formation, and temporarily stores early memories.
+- **Neocortex** (medial prefrontal cortex): long-term storage, as memories are consolidated they are "relocated" to the neocortex.
+
 ## case studies
 
 **H.M.’s Hippocampus**
@@ -62,3 +66,6 @@ Finally, information deemed important is encoded into **long term memory**. Ther
 	        1.  Hippocampus
 	2.  *Procedural Memory* — performance of tasks and skills
 	    1.  Basal Ganglia and Motor Cortex
+
+#### sparse distributed memory
+SDM is a basic model of associative memory.
