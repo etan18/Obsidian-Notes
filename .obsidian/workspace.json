@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ml systems.md",
+                "file": "Unfinished/transformers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ml systems"
+              "title": "transformers"
             }
           },
           {
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "backpro",
+                "query": "softmax",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +117,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -220,10 +221,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ee717310b377f8e1",
+  "active": "1de59410c4c9b11b",
   "lastOpenFiles": [
-    "Machine Learning/Neural Networks/neural networks.md",
     "ml systems.md",
+    "Machine Learning/Neural Networks/neural networks.md",
     "systems & networking prep.md",
     "recurrent neural networks.md",
     "Machine Learning/random projection.md",
