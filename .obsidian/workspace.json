@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unfinished/transformers.md",
+                "file": "Machine Learning/Neural Networks/perceptrons.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "transformers"
+              "title": "perceptrons"
             }
           },
           {
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "softmax",
+                "query": "mlp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,8 +117,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -221,12 +220,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1de59410c4c9b11b",
+  "active": "ee717310b377f8e1",
   "lastOpenFiles": [
+    "recurrent neural networks.md",
+    "Machine Learning/Neural Networks/perceptrons.md",
+    "Unfinished/transformers.md",
     "ml systems.md",
     "Machine Learning/Neural Networks/neural networks.md",
     "systems & networking prep.md",
-    "recurrent neural networks.md",
     "Machine Learning/random projection.md",
     "Machine Learning/img/bgd.png",
     "Machine Learning/Neural Networks/gradient descent.md",
@@ -255,8 +256,6 @@
     "Machine Learning/Paper Summaries/model scaling.md",
     "Research/Pasted image 20250204135243.png",
     "Unfinished/large language models.md",
-    "Machine Learning/Paper Summaries/interpretability.md",
-    "Machine Learning/Paper Summaries/digital twins.md",
     "Research/Pasted image 20250124164146.png",
     "Research/Pasted image 20250127172635.png",
     "Research/Pasted image 20250124163747.png",

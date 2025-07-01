@@ -28,9 +28,7 @@ If $\hat{y} = y^*$, we don't update the weights. If the prediction is incorrect,
 $$w_{\hat{y}} = w_{\hat{y}} - \text x$$
 $$w_{y^*} = w_{y^*} + \text x$$
 
----
-# multilayer perceptrons
-
-A multi-layer perceptron links together simple perceptrons to create a powerful **universal function approximator**. MLPs are the same thing as *feed-forward* [[neural networks]], or "vanilla" neural networks.
-- *Feed-forward* entails that the NN is unidirectional, as opposed to *recurrent*, meaning that the output from neurons may only affect future neurons.
+## multilayer perceptrons
+A multi-layer perceptron links together simple perceptrons to create a powerful **universal function approximator**. MLPs are the same thing as fully-connected *feed-forward* [[neural networks]], or "vanilla" neural networks.
+- *Feed-forward* entails that the NN is unidirectional, as opposed to *recurrent*, meaning that the output from neurons may only affect future neurons. (see: [[recurrent neural networks]])
 
