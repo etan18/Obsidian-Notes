@@ -10,7 +10,19 @@ This method of model editing uses only element-wise vector operations (which are
 ## task arithmetic
 There are many benefits of using task vectors to edit models, chief among them being the ability to combine multiple task vectors using basic vector operations in order to achieve more complex goals. Some basic properties of task vectors include:
 - **Addition**: adding task vectors together creates better multi-task models.
+$$\tau_{new} = \sum_{i} \tau_i$$
 - **Negation**: negating task vectors serves to forget a given task or set of behaviors. This can be used to mitigate undesirable behaviors, for example.
+$$\tau_{new} = - \tau$$
 - **Analogy**: we can create task analogies of the form "$A$ is to $B$ as $C$ is to $D$", where each variable is a separate task. What we observe is that combining any three task vectors from the analogy improves performance on the fourth task.
+$$\tau_D \approx \tau_{new} = \tau_C + (\tau_B - \tau_A)$$
 
-Concretely, a **task** is defined by a dataset and loss function which are used for fine-tuning.
+## experiments
+Model editing via task vectors should not have a substantial effect on how models behave when processing data outside the scope of the edit.
+
+
+**Baselines**: gradient *ascent* on the task, transposing the task vector in a random direction of the same magnitude as the computed task vector
+**Pre-trained model**: CLIP (text and image shared embedding space)
+**Tasks**: MNIST, EuroSAT, Cars, etc. (8 total)
+**Control task**: ImageNet
+
+Concretely, a **task** is defined by a dataset and loss function which are used for fine-tuning. 
