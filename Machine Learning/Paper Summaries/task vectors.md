@@ -26,3 +26,15 @@ Model editing via task vectors should not have a substantial effect on how model
 **Control task**: ImageNet
 
 Concretely, a **task** is defined by a dataset and loss function which are used for fine-tuning. 
+
+
+---
+**Task vectors** are used to steer or edit the behavior of pre-trained models, which can be useful for improving model performance on downstream tasks, mitigating bias, [[alignment]], or updating the model with new information kind of like fine-tuning. 
+
+Conceptually, task vectors exist in the *weight space* of the original model, and define a direction to interpolate the pre-trained model weights in order to satisfy a specified task. In order to compute the task vector, you start by defining a base pre-trained model, and the task you want to edit your model to be able to perform better at. You fine-tune the model to do that task, and the difference between the weights of your fine-tuned and base models is your task vector.
+
+There's a few reasons why it's desirable to use task vectors.
+- The paper discusses "task arithmetic", specifically three operations (addition, negation, and analogy), which are nice properties of task vectors that allow us to more modularly perform model edits.
+- This method of model editing uses only element-wise vector operations (which are computationally cheap). Computing the task vector subtracts two sets of weights, which is an element-wise operation. Addition, negation, and analogy also only use element-wise operations. 
+- We also incur no extra inference-time memory or compute.
+- Finally, due to the multitude of publicly available fine-tuned models, it is entirely possible to derive task vectors without performing any additional training.
