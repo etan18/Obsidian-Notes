@@ -25,8 +25,18 @@ From the paragraph above, notice how the number of similarity scores, or weights
 #### value
 Given the computed attention pattern, we now need to perform an update to modify the original token embedding $E_i$ to more accurately represent the meaning of the token in this context. The **value vector** $V_i$, which has the same dimensions as $E_i$, tells us exactly how much to transpose $E_i$ by.
 
-In practice, we decompose the value matrix into the product of two matrices in order to create fewer tunable parameters. Ideally, we have that the number of value parameters is equal to the sum of the number of key and query parameters.
+In practice, we decompose the value matrix into the product of two matrices in order to create fewer tunable parameters. Ideally, we have that the number of value parameters is equal to the sum of the number of key and query parameters---achieved by having the dimensions of each matrix be $\text{embedding space size} \times \text{key-query space size}$. This serves to act as a low-[[rank]] transformation.
 
 We synthesize the procedure above into the following formula:
 $$\text{Attention}(Q, K, V) = \text{softmax}\bigg(\frac{K^\top Q}{\sqrt{d_k}}\bigg) \cdot V$$
 The division by $\sqrt{d_k}$, the dimension of the key vectors, is added to provide numerical stability in the key-query space. 
+
+## multi-headed attention
+Everything described in the previous section refers to a single head of self-attention. The attention pattern captured by a single head of attention may represent a single type of relationship between words. Some high level examples may include how adjectives modify nouns or how nouns modify proper nouns, although the true attention pattern is typically much more complex to interpret in practice.
+
+In practice, these many attention heads process the same input in parallel, and each head outputs a final attention value to modify the original embedding by. We sum together the outputs of each head and add that total to the embedding of the target token.
+
+## cross-attention
+Cross attention is used for [[sequential modeling|sequence-to-sequence models]] which deal with two different types of data. 
+
+The key difference in cross attention is that the key and query matrices are learned from two different datasets (ex. French and English datasets for translation, audio and text datasets for transcription).

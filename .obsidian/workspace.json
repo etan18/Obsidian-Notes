@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -235,12 +235,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "884a18aafde8a928",
+  "active": "c8083c1518782aba",
   "lastOpenFiles": [
-    "master's research.md",
-    "Machine Learning/Paper Summaries/task vectors.md",
-    "Untitled",
+    "Unfinished/sequential modeling.md",
     "Unfinished/attention.md",
+    "Machine Learning/Paper Summaries/task vectors.md",
+    "master's research.md",
+    "Untitled",
     "Unfinished/transformers.md",
     "Machine Learning/Neural Networks/neural networks.md",
     "Unfinished/large language models.md",
@@ -269,7 +270,6 @@
     "Machine Learning/Paper Summaries/calibration.md",
     "Machine Learning/Decision Trees & Ensemble Learning/random forests.md",
     "Machine Learning/Decision Trees & Ensemble Learning/decision trees.md",
-    "Research/Mean Consistency Population Calibration.md",
     "Research/Data Addition Dilemma.canvas",
     "Research/Pasted image 20250204135243.png",
     "Research/Pasted image 20250124164146.png",
