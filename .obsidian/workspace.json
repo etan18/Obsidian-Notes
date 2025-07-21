@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unfinished/transformers.md",
+                "file": "Unfinished/attention.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "transformers"
+              "title": "attention"
             }
           },
           {
@@ -131,8 +131,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -235,11 +234,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "884a18aafde8a928",
+  "active": "6949e9cc34ed3631",
   "lastOpenFiles": [
-    "Machine Learning/Neural Networks/perceptrons.md",
+    "qkv.png",
     "Unfinished/transformers.md",
     "Unfinished/attention.md",
+    "Machine Learning/Neural Networks/perceptrons.md",
     "Unfinished/sequential modeling.md",
     "Unfinished/representation learning.md",
     "Machine Learning/Paper Summaries/task vectors.md",
@@ -269,7 +269,6 @@
     "mlsysbook.ai.md",
     "Machine Learning/Artificial Intelligence/artificial intelligence.md",
     "Machine Learning/img/ai.png",
-    "Machine Learning/Paper Summaries/calibration.md",
     "Research/Data Addition Dilemma.canvas",
     "Research/Pasted image 20250204135243.png",
     "Research/Pasted image 20250124164146.png",

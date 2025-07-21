@@ -9,6 +9,7 @@ Self-attention is most commonly implemented as **scaled dot-product attention**,
 
 Self-attention utilizes three weight matrices, referred to as $W_Q$, $W_K$, $W_V$, which are adjusted as model parameters during training. These matrices serve to project the inputs into query, key, and value components of the sequence, respectively.
 
+![[qkv.png]]
 #### query
 Firstly, the **query** vector $\overrightarrow{Q}_i$ is of lower dimension than the embedding space and represents the meaning of the queried token *in this context*. This is different from the meaning encoded by the token's embedding $\overrightarrow{E}_i$, which is an aggregate representation of the token *in all contexts*. The query vector is obtained by multiplying $\overrightarrow{E}_i$ with a learned query weight vector $W_Q$.
 
