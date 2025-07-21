@@ -28,7 +28,7 @@ Given the computed attention pattern, we now need to perform an update to modify
 In practice, we decompose the value matrix into the product of two matrices in order to create fewer tunable parameters. Ideally, we have that the number of value parameters is equal to the sum of the number of key and query parameters---achieved by having the dimensions of each matrix be $\text{embedding space size} \times \text{key-query space size}$. This serves to act as a low-[[rank]] transformation.
 
 We synthesize the procedure above into the following formula:
-$$\text{Attention}(Q, K, V) = \text{softmax}\bigg(\frac{K^\top Q}{\sqrt{d_k}}\bigg) \cdot V$$
+$$\text{Attention}(Q, K, V) = \text{softmax}\bigg(\frac{Q K^\top }{\sqrt{d_k}}\bigg) \cdot V$$
 The division by $\sqrt{d_k}$, the dimension of the key vectors, is added to provide numerical stability in the key-query space. 
 
 ## multi-headed attention

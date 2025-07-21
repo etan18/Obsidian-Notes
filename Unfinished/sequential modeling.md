@@ -23,6 +23,8 @@ The choice of tokenization level is generally a tradeoff between model efficienc
 
 The pre-processing step of **tokenization** takes sequential input data and transforms it into base units (tokens) which can then be represented in numeric form.
 
+### byte-pair encoding
+
 ## $n$-grams
 $n$-gram models are the most basic type of language model. We first define an **$n$-gram** as a sequence of $n$ tokens. For example
 

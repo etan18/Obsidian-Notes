@@ -8,7 +8,6 @@ In physics, a dynamical system is a set of variables and the set of rules that d
 - An **attractor** is a state or set of states that neighboring states flow towards over time
 - States are represented as point vectors in phase space
 
-## hopfield networks
 Let's introduce the dynamics of the network. The network is structured as a fully connected recurrent network of $N$ neurons.
 
 The weights are defined to be birectional and symmetric, so $W_{ij} = W_{ji}$. The state of each unit $U_i$ in the RNN can be represented as a weighted sum of all neighboring units $U_j$ which feed input to the unit.
