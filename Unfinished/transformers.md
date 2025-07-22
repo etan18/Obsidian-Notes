@@ -23,7 +23,7 @@ For a text-generation example, the data is first [[sequential modeling#tokenizat
 ## transformer block
 The **Transformer block** is what actually processes and transforms the input data. Each block includes:
 - **[[Attention]] mechanism**, the core component of the Transformer block. It allows tokens to communicate with other tokens, capturing contextual information and relationships between words. The attention mechanism may include multiple heads of self-attention.
-- **[[perceptrons#multilayer perceptrons|MLP]] Layer**, a feed-forward network that operates on each token independently. While the goal of the attention layer is to route information between tokens, the goal of the MLP is to refine each token's representation.
+- **[[perceptrons#multilayer perceptrons|MLP]] Layer**, a feed-forward network that operates on each token independently. The MLP layer projects the outputted self-attention representations into higher dimensions to enhance the model's representational capacity.
 
 Most models contain multiple Transformer blocks, each stacked sequentially one after the other. The token representations evolve through layers, from the first block to the last one, allowing the model to build up an intricate understanding of each token. This layered approach leads to higher-order representations of the input. After the Transformer blocks, the final linear and softmax layers transform the processed embeddings into probabilities, enabling the model to make predictions about the next token in a sequence.
 
