@@ -27,6 +27,14 @@ The **Transformer block** is what actually processes and transforms the input d
 
 Most models contain multiple Transformer blocks, each stacked sequentially one after the other. The token representations evolve through layers, from the first block to the last one, allowing the model to build up an intricate understanding of each token. This layered approach leads to higher-order representations of the input. After the Transformer blocks, the final linear and softmax layers transform the processed embeddings into probabilities, enabling the model to make predictions about the next token in a sequence.
 
+## next token prediction
+After passing through each transformer block, the final representations are passed through a  linear layer with  `vocab_size` output dimensions, assigning each token in the vocabulary a **logit** value. Taking the softmax over the logits, we get our output probabilities assigning the probability of a token being the next in the input sequence.
+
+To actually generate the next token, though, we don't always just choose the token with the highest probability. Instead, we sample from the distribution.
+- **Temperature**: this hyperparameter controls the randomness of the sample by scaling the logit values. $T > 1$ softens the distribution, increasing randomness and "creativity" in the output, whereas $T < 1$ sharpens the distribution, leading to higher confidence and deterministic output.
+- **Top-$k$ Sampling**: Limits the candidate tokens to the top k tokens with the highest probabilities, filtering out less likely options.
+- **Top-$p$ Sampling**: Considers the smallest set of tokens whose cumulative probability exceeds a threshold $p$, ensuring that only the most likely tokens contribute while still allowing for diversity.
+
 ---
 ## mamba
 Mamba is a deep learning architecture 

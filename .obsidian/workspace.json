@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Neural Networks/vanishing gradient problem.md",
+                "file": "Unfinished/attention.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vanishing gradient problem"
+              "title": "attention"
             }
           },
           {
@@ -53,14 +53,10 @@
             "id": "c8083c1518782aba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/hopfield networks.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "hopfield networks"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -78,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mlp",
+                "query": "rnn",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -234,28 +230,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ee717310b377f8e1",
+  "active": "c8083c1518782aba",
   "lastOpenFiles": [
     "Unfinished/transformers.md",
+    "Machine Learning/Neural Networks/neural networks.md",
+    "recurrent neural networks.md",
+    "normalization.png",
+    "Machine Learning/regularization.md",
+    "Machine Learning/hopfield networks.md",
     "Unfinished/attention.md",
+    "Machine Learning/Neural Networks/vanishing gradient problem.md",
     "Machine Learning/Neural Networks/perceptrons.md",
     "qkv.png",
     "Unfinished/sequential modeling.md",
     "Unfinished/representation learning.md",
     "Machine Learning/Paper Summaries/task vectors.md",
-    "Machine Learning/hopfield networks.md",
     "master's research.md",
     "Untitled",
-    "Machine Learning/Neural Networks/neural networks.md",
     "Unfinished/large language models.md",
-    "recurrent neural networks.md",
     "ml systems.md",
     "systems & networking prep.md",
     "Machine Learning/random projection.md",
     "Machine Learning/img/bgd.png",
     "Machine Learning/Neural Networks/gradient descent.md",
     "Machine Learning/Paper Summaries/generalizability.md",
-    "Machine Learning/Neural Networks/vanishing gradient problem.md",
     "meta.md",
     "Research/data accumulation strategies for subgroup robustness.md",
     "Research/Pasted image 20250410130740.png",
@@ -267,12 +265,10 @@
     "Machine Learning/img/mllifecycle.png",
     "Machine Learning/img/lifecycle.png",
     "mlsysbook.ai.md",
-    "Machine Learning/Artificial Intelligence/artificial intelligence.md",
     "Machine Learning/img/ai.png",
     "Research/Data Addition Dilemma.canvas",
     "Research/Pasted image 20250204135243.png",
     "Research/Pasted image 20250124164146.png",
-    "Research/Pasted image 20250127172635.png",
     "Research",
     "Daily Notes",
     "Math",

@@ -56,5 +56,15 @@ The choice of batch size is an important one with many considerations:
 >
 >Batch size also affects the time it takes to train on a given text dataset: a small batch size will require more optimizer steps to train on the same amount of samples. Optimizer steps are costly (in compute time), and the total time to train will thus increase compared to using a larger batch size. That being said, note that the batch size can often be adjusted quite widely around the optimal batch size without major impact on the performance of the model - that is, the sensitivity of final model performance to the exact batch size value is usually rather low around the optimal batch size.
 
-**Dropout**
-Dropout is a training technique that temporarily tosses out nodes at random to prevent the network from relying on any single node, thereby improving the generalization capabilities of the model. Dropout rate is a hyper-parameter of NNs.
+#### dropout
+Dropout is a [[regularization]] technique used in training that temporarily "tosses out", or zeroes, node weights at random to prevent the network from relying on any single node, thereby improving the generalization capabilities of the model. 
+
+**Dropout rate** is a hyper-parameter of NNs. Dropout is performed by passing the weights through **dropout layers**, which are deactivated during inference time. 
+
+#### layer normalization
+Layer Norm normalizes the inputs across the features, ensuring that the mean and variance of activations are consistent across each dimension. This helps stabilize weights during training, improve convergence, and reduce sensitivity to the initial weights. Layer normalization is used in [[transformers]].
+
+#### batch normalization
+Batch Norm normalizes each feature independently across a mini-batch. It is effective for stabilizing training, accelerating convergence, and reducing overfitting. BN is especially useful for [[regularization]] of image-like data.
+
+![[normalization.png]]
