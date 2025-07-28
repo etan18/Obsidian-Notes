@@ -35,6 +35,9 @@ To actually generate the next token, though, we don't always just choose the tok
 - **Top-$k$ Sampling**: Limits the candidate tokens to the top k tokens with the highest probabilities, filtering out less likely options.
 - **Top-$p$ Sampling**: Considers the smallest set of tokens whose cumulative probability exceeds a threshold $p$, ensuring that only the most likely tokens contribute while still allowing for diversity.
 
+## training
+Transformers are trained by minimizing **cross-entropy loss**, or log loss, function. In [[information theory]], the cross-[[entropy]] between two probability distributions $p$ and $q$, over the same set of events, measures how different the two distributions are in bits. In this case, it measures the distance between the models predictions ($p$) and the true distribution of data ($q$).
+
 ---
 ## mamba
 
