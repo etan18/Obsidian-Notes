@@ -1,4 +1,4 @@
-
+In [[artificial intelligence]], a critical challenge is ensuring that trained models and agents act in a way that aligns with human goals and values (see: the [[artificial intelligence#superintelligence and ai++|Paperclip Maximizer]]).  Thus, the field of **alignment** works to steer the behavior of intelligent systems toward a person's or group's intended goals, preferences, or ethical principles.
 ## rlhf
 The subjectivity of generated output produced by [[large language models]] creates a challenge for evaluation. For open-ended tasks like story writing or generating ideas, writing a loss function which accurately captures "creativity" and other complex human values is intractable. **Reinforcement learning from human feedback (RLHF)** uses methods from [[reinforcement learning]] to directly optimize a language model with human feedback.
 
@@ -33,4 +33,7 @@ where $\pi_{\theta}$ is the current policy and $\pi_{\theta_{\text{old}}}$ is th
 Importantly, PPO is an **on-policy algorithm**, which means that each update is performed using only the data sampled from the current version of the policy.
 
 ## weak-to-strong generalization
-The problem with RLHF is that it relies on human annotations to create the reward model. This can become expensive to obtain.
+The problem with RLHF is that it relies on human supervision to create the feedback for the reward model. This can become expensive to obtain, and as AI systems become larger and more complex, human supervision may not be reliable.
+
+**Weak-to-strong generalization** was presented by OpenAI as a training approach to use smaller models to supervise more powerful ones.
+![[weak-to-strong.png]]
