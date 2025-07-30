@@ -15,3 +15,7 @@
 
 ---
 ## [ncyl] llms
+
+**Long-term memory in LLMs**
+- [Survey](https://arxiv.org/pdf/2404.13501v1)
+- 

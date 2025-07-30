@@ -4,7 +4,9 @@
 	- we can use negative log likelihood to estimate what our loss should be. for a language modeling task with vocabulary size $n$, the expected value of our loss is
 $$-\ln (\frac{1}{n})$$
 - [[attention]]
-- context window: number of *tokens* that an llm can consider in a single prompt/query
+- context window: working memory of an LLM, the number of *tokens* that an llm can consider in a single prompt/query
+	- tradeoff: computational cost scales quadratically with size of context window. this is because the relationships between each token must be computed.
+	- Large context windows may also dilute relevant information and confuse the model. a 2023 study found that LLMs perform best when the most relevant information is at the beginning or end of the input
 - mmlu, benchmarks
 - positional encoding
 - Chain of thought prompting
@@ -32,7 +34,7 @@ One drawback of traditional full fine-tuning is that it retrains *all* parameter
 LoRA works on the assumption of the [[dimensionality reduction#manifold learning|manifold hypothesis]] that over-parameterized large models actually reside on a low intrinsic dimension. Because of this, it assumes that the change in weights at each layer 
 
 #### retrieval augmented generation (RAG)
-RAG is a popular alternative to fine-tuning an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
+[[Retrieval Augmented Generation]] is a popular alternative to fine-tuning an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
 
 #### in-context learning (ICL)
 Large language models have the capability of learning downstream tasks directly from examples provided by the input prompt, without the need for re-training. 
