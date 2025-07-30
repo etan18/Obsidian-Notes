@@ -8,10 +8,6 @@ $$-\ln (\frac{1}{n})$$
 	- tradeoff: computational cost scales quadratically with size of context window. this is because the relationships between each token must be computed.
 	- Large context windows may also dilute relevant information and confuse the model. a 2023 study found that LLMs perform best when the most relevant information is at the beginning or end of the input
 - mmlu, benchmarks
-- positional encoding
-- Chain of thought prompting
-	- include an example of whatever question/task you want the llm to answer/do
-	- include the answer to the example, as well as the logical steps taken to arrive at the end result
 
 ---
 # fine-tuning
@@ -39,4 +35,7 @@ LoRA works on the assumption of the [[dimensionality reduction#manifold learning
 #### in-context learning (ICL)
 Large language models have the capability of learning downstream tasks directly from examples provided by the input prompt, without the need for re-training. 
 
+#### chain-of-thought prompting (CoT)
+- Include an example of whatever question/task you want the llm to answer/do
+- Include the answer to the example, as well as the logical steps taken to arrive at the end result
 
