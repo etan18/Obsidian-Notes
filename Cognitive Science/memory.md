@@ -38,6 +38,8 @@ In general, models of memories must provide an explanation for the five stages o
 >
 >This paradigm supports the idea of **associative networks**, such that knowledge is stored as some pattern of synaptic connections and activations, and similar pieces of information are stored as similar circuits. 
 
+**Ebbinghaus's theory**, also known as the forgetting curve, shows that memory retention decreases over time, with a steeper initial rate of forgetting which slows over time. His work also describes the **spacing effect**, which states that information is better retained when [[learning]] events are spaced out over time, rather than crammed together.
+
 ##### the multimodal approach, by atkins & shiffrin
 The multimodal approach breaks down memory into 3 areas. 
 ###### sensory memory
@@ -69,3 +71,4 @@ Finally, information deemed important is encoded into **long term memory**. Ther
 
 #### sparse distributed memory
 SDM is a basic model of associative memory.
+
