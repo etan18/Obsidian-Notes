@@ -18,4 +18,7 @@
 
 **Long-term memory in LLMs**
 - [Survey](https://arxiv.org/pdf/2404.13501v1)
-- 
+
+**RAG**
+- Modify top-$k$ to min-$k$. If less than $k$ chunks are relevant, send less than $k$ chunks and pad the rest. Use the elbow method to determine a cutoff.
+	- https://arxiv.org/pdf/2503.01713
