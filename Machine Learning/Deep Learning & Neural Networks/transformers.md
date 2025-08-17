@@ -5,7 +5,7 @@ Transformers are a sophisticated variant of [[neural networks]] that were first 
 >- Andrej Karpathy's YouTube video ["Let's build GPT: from scratch, in code, spelled out"](https://www.youtube.com/watch?v=kCc8FmEb1nY&ab_channel=AndrejKarpathy)
 >- [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
 
-## data
+# data
 To pre-process sequential data to be passed into a Transformer, we must first generate the **embeddings**. 
 
 For a text-generation example, the data is first [[sequential modeling#tokenization|tokenized]] and then converted into vector embeddings which capture the semantic meaning of each token. Next, we add the **positional encoding** to each embedding---these can be thought of as vectors in the embedding space that encode only the index position of each token in the sequence. This information is crucial for the self-[[attention]] mechanism. Adding the positional encoding to the token embedding gives us our final embedding for each token.
@@ -20,14 +20,18 @@ For a text-generation example, the data is first [[sequential modeling#tokenizat
 
 - Masking - given a sequence of $n$ tokens, a neat trick is that we can treat the prediction of every $i$-th token as its own training example. Thus, if we are trying to predict the $i$-th token, we want to *mask* all tokens that come after it in the sequence so they cannot influence the prediction. This is commonly implemented when learning the attention pattern (described below), where we give all successive tokens a similarity score of $-\infty$ so that they are zeroed out when fed into the softmax while still ensuring normalized probabilities.
 
-## transformer block
+# architecture
 The **Transformer block** is what actually processes and transforms the input data. Each block includes:
-- **[[attention]] mechanism**, the core component of the Transformer block. It allows tokens to communicate with other tokens, capturing contextual information and relationships between words. The attention mechanism may include multiple heads of self-attention.
+- **[[Attention]] mechanism**, the core component of the Transformer block. It allows tokens to communicate with other tokens, capturing contextual information and relationships between words. The attention mechanism may include multiple heads of self-attention.
 - **[[perceptrons#multilayer perceptrons|MLP]] Layer**, a feed-forward network that operates on each token independently. The MLP layer projects the outputted self-attention representations into higher dimensions to enhance the model's representational capacity.
 
 Most models contain multiple Transformer blocks, each stacked sequentially one after the other. The token representations evolve through layers, from the first block to the last one, allowing the model to build up an intricate understanding of each token. This layered approach leads to higher-order representations of the input. After the Transformer blocks, the final linear and softmax layers transform the processed embeddings into probabilities, enabling the model to make predictions about the next token in a sequence.
 
-## next token prediction
+>[!warning] Read the note on [[Attention]] before continuing.
+#### MLP layer
+Around $2/3$ of a Transformer's total parameters are used for the MLP layers. Whereas the attention block allows the tokens in the input sequence to share information with one another, each token is input independently in parallel through the MLP. The outputs of each token are then added together.
+
+#### next token prediction
 After passing through each transformer block, the final representations are passed through a  linear layer with  `vocab_size` output dimensions, assigning each token in the vocabulary a **logit** value. The logits will be a tensor of shape `(batch_size, sequence_length, vocab_size)`, representing a raw, unnormalized score for each vocabulary token at each position in the sequence for each sequence in the batch.
 
 Taking the softmax over the logits, we get our output probabilities assigning the probability of a token being the next in the input sequence.
@@ -46,7 +50,4 @@ During training, the Transformer takes as input a batched sequence of token IDs.
 
 #### kv cache
 **Key-value caching** is used at inference time to prevent repetitive computations. This is necessary because of the **autoregressive** nature of next token prediction, wherein each token can be represented by itself and all its preceding tokens. 
-
----
-## mamba
 
