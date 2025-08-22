@@ -34,7 +34,7 @@ The BPE algorithm efficiently compresses our token representations.
 This is considered a subword-level tokenization scheme, as it ends up producing multi-character tokens that are commonly seen in text.
 
 >[!note] Byte-Level BPE
->Because the vocabulary of characters defined by the [[Unicode]] standard is prohibitively large, we use Unicode encodings to convert these characters into sequences of bytes. Bytes, containing 8 bits each, can take up $2^8 = 256$ unique values, which is a significantly more manageable vocabulary. 
+>Because the vocabulary of characters defined by the [[unicode]] standard is prohibitively large, we use Unicode encodings to convert these characters into sequences of bytes. Bytes, containing 8 bits each, can take up $2^8 = 256$ unique values, which is a significantly more manageable vocabulary. 
 >
 >Additionally, this encoding scheme solves the problem of unknown characters. Traditionally, when a tokenizer parses an unknown character, such as an emoji, it inserts an `<UNKNOWN>` token in its place. However, with byte-level encoding, any character is guaranteed to be made up of sequences of bytes in our vocabulary.
 #### special tokens

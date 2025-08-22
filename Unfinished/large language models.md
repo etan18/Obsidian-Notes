@@ -30,7 +30,7 @@ One drawback of traditional full fine-tuning is that it retrains *all* parameter
 LoRA works on the assumption of the [[dimensionality reduction#manifold learning|manifold hypothesis]] that over-parameterized large models actually reside on a low intrinsic dimension. Because of this, it assumes that the change in weights at each layer 
 
 #### retrieval augmented generation (RAG)
-[[Retrieval Augmented Generation]] is a popular alternative to fine-tuning an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
+[[Retrieval augmented generation]] is a popular alternative to fine-tuning an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
 
 #### in-context learning (ICL)
 Large language models have the capability of learning downstream tasks directly from examples provided by the input prompt, without the need for re-training. 
