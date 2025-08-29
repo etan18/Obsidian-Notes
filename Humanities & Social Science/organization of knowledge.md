@@ -27,4 +27,4 @@ Darwin
 
 >[!question]
 >Are we imposing the order on the world, or are we discovering the world? Are we artificially creating boundaries, or are we observing nature as it is?
-## time and control
+
