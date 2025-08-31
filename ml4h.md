@@ -12,7 +12,7 @@ From a practical standpoint, or in translating this work into healthcare practic
 **General Feedback**
 Narrow scope:
 - [ ] Focus is narrowly scoped: only binary ICU mortality prediction, logistic regression, and race as the sensitive attribute.  
-	- In the Introduction the authors identify the task-dependent nature of data addition as one of the big challenges of this problem, and addressing this, as the authors note implies at least extending the experiments to more downstream tasks and ideally designing a task-agnostic framework for the problem. This is inconsistent with what the authors say in the first section: “To address the first challenge -that data limitations are heavily task dependent- we focus on the case study of intensive care unit (ICU) data in particular”.
+- [x] In the Introduction the authors identify the task-dependent nature of data addition as one of the big challenges of this problem, and addressing this, as the authors note implies at least extending the experiments to more downstream tasks and ideally designing a task-agnostic framework for the problem. This is inconsistent with what the authors say in the first section: “To address the first challenge -that data limitations are heavily task dependent- we focus on the case study of intensive care unit (ICU) data in particular”.
 - [ ] Limited generalizability to other tasks, model classes, or more complex fairness definitions.
 
 **Reviewer 3**
