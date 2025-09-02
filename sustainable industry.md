@@ -10,5 +10,5 @@ Life cycle assessment (LCA) is a standardized framework for evaluating the envir
 - Distribution
 - Use
 - Disposal
-LCA involves four iterative phases: goal and scope definition, life cycle inventory analysis, life cycle impact assessment, and interpretation.
+Performing an LCA involves four iterative phases: goal and scope definition, life cycle inventory analysis, life cycle impact assessment, and interpretation.
 
