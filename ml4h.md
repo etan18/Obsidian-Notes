@@ -11,15 +11,13 @@ From a practical standpoint, or in translating this work into healthcare practic
 
 **General Feedback**
 Narrow scope:
-- [ ] Focus is narrowly scoped: only binary ICU mortality prediction, logistic regression, and race as the sensitive attribute.  
+- [x] Focus is narrowly scoped: only binary ICU mortality prediction, logistic regression, and race as the sensitive attribute.  
 - [x] In the Introduction the authors identify the task-dependent nature of data addition as one of the big challenges of this problem, and addressing this, as the authors note implies at least extending the experiments to more downstream tasks and ideally designing a task-agnostic framework for the problem. This is inconsistent with what the authors say in the first section: “To address the first challenge -that data limitations are heavily task dependent- we focus on the case study of intensive care unit (ICU) data in particular”.
-- [ ] Limited generalizability to other tasks, model classes, or more complex fairness definitions.
+- [x] Limited generalizability to other tasks, model classes, or more complex fairness definitions.
 
 **Reviewer 3**
-- [ ] Some claims made in the paper seem imprecise:  
-	Sec. 1: “This setting is highly relevant when overall hospital performance is desired in conjunction with improving subgroup outcomes.”, what do the authors mean by “overall hospital performance”?  
-	Sec. 3: “In a real-world setting, it is not ideal to throw away data”, in some settings discarding some data, for example because of bad data quality can be beneficial in terms of model performance.  
-	Sec. 4: When the authors refer to a “sufficiently-large hospital”.
-	
-	When the authors say “In light of these findings, we propose a shift from post-processing fairness interventions like calibration towards data interventions which treat fairness as a first order goal rather than a post-hoc constraint.”, this does not seem to align with the fact the authors also perform experiments using calibration as a post-processing intervention (Fig. 6 and Fig. 7).
+- [x] Sec. 1: “This setting is highly relevant when overall hospital performance is desired in conjunction with improving subgroup outcomes.”, what do the authors mean by “overall hospital performance”?  
+- [x] Sec. 3: “In a real-world setting, it is not ideal to throw away data”, in some settings discarding some data, for example because of bad data quality can be beneficial in terms of model performance.
+- [x] Sec. 4: When the authors refer to a “sufficiently-large hospital”.
+- [x] When the authors say “In light of these findings, we propose a shift from post-processing fairness interventions like calibration towards data interventions which treat fairness as a first order goal rather than a post-hoc constraint.”, this does not seem to align with the fact the authors also perform experiments using calibration as a post-processing intervention (Fig. 6 and Fig. 7).
 - [ ] In Sec. 5, when the authors say “One critical observation from 3 is that it suggests it is more important to understand the test distribution rather than just the added source distribution...”, it seems strange from a methodological perspective to try to decide on the actions to take based on test data. Normally a strict separation is enforced between test and train data to prevent overfitting and accurately evaluate the capacity to generalize of a model. The same problem arises when the authors say “The next data selection method we evaluated chooses the sources which are most similar to the test distribution.”.
