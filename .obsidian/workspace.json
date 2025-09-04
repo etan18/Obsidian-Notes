@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "climate change.md",
+                "file": "Machine Learning/Classification/classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "climate change"
+              "title": "classification"
             }
           },
           {
@@ -193,9 +193,12 @@
   },
   "active": "52ea57a409039897",
   "lastOpenFiles": [
+    "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
+    "Machine Learning/Classification/classification.md",
+    "Pasted image 20250903111749.png",
+    "climate change.md",
     "Humanities & Social Science/img/carbon.png",
     "sustainable industry.md",
-    "climate change.md",
     "food systems.md",
     "ml4h.md",
     "natural language processing.md",
@@ -218,7 +221,6 @@
     "Unfinished/vector databases.md",
     "Cognitive Science/memory.md",
     "Cognitive Science/learning.md",
-    "Computer Science/Networking/internet.md",
     "Machine Learning/img/weak-to-strong.png",
     "Machine Learning/img/reward.png",
     "Machine Learning/img/normalization.png",
@@ -228,7 +230,6 @@
     "Research/Pasted image 20250410130740.png",
     "Machine Learning/img/bagging.png",
     "Machine Learning/img/mllifecycle.png",
-    "Machine Learning/img/lifecycle.png",
     "Research/Data Addition Dilemma.canvas",
     "Research",
     "Daily Notes",
