@@ -13,7 +13,7 @@ The dominant paradigm for evaluating the performance of a classifier is to autom
 #### metrics
 A **confusion matrix**, or error matrix, is a visualization table showing the frequency of predicted labels against their true labels. The following diagram summarizes the confusion matrix and its derivative metrics for the binary case, but it can be generalized to multiclass problems:
 
-![[Pasted image 20250903111749.png]]
+![[confusion.png]]
 
 The simplest evaluation metric is classification **accuracy**, where we simply compute the percentage of correct predictions:
 $$Acc = \frac{\text{Correct Predictions}}{\text{Total Predictions}}$$
