@@ -11,3 +11,8 @@ The **greenhouse effect** is the process of trapping heat from the sun that has 
 
 
 ![[carbon.png]]
+
+
+
+### renewable energy
+Three key levers—electric vehicles, heat pumps, and renewables—can cut down reliance on fossil fuels.
