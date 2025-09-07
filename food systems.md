@@ -1,5 +1,7 @@
 
 ### supply chain
+In general, a **supply chain** can be broadly conceptualized as the interaction between various entities which are involved in the flow of products and services to their end customers.
+
 The food supply chain is unique and consists of many stages:
 1. **Farm**: the actual grower of crops, produce, livestock, etc.
 	- For local farms, farmers markets may make up some portion of the farm's revenue stream. While it is expensive to attend a farmer's market (transportation, labor, licensing), farmers are also able to keep 100% of revenue by selling direct-to-consumer, instead of losing a cut to distribution centers.
@@ -9,6 +11,9 @@ The food supply chain is unique and consists of many stages:
 4. **Wholesaler**: e.g. restaurants or grocery stores that buy goods in mass quantities
 5. **Consumer**
 These interconnected parts are heavily reliant on one another. Smaller farms may only have a few buyers act as a large portion of their revenue stream, or vice versa.
+
+Food supply chains face unique challenges that question the applicability of general supply chain strategies. For example, 
+- **Safety stock**: holding additional goods to meet demand fluctuations is not easily transferable to food supply chains due to the challenge of product deterioration, perishability, and waste.
 
 Packaging is a big issue in the food supply chain, both in terms of cost and waste.
 
