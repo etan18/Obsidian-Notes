@@ -16,7 +16,10 @@ G_3(x) = {'The big blue', 'big blue cat', 'blue cat jumped', 'cat jumped on', 'j
 ## reference-based evaluation
 For NLP tasks where you are given a reference text---ground truth text the model should try to output---we want to evaluate how close the model's output is to the reference text.
 #### BLEU
-**BLEU** is an algorithm based on **$n$-gram precision** developed for the task of machine translation. $n$-gram precision is a metric to compare how many $n$-grams in the generated text exist in the reference text.
+**BLEU** is an algorithm based on **$n$-gram precision** developed for the task of machine translation. $n$-gram precision is a metric to compare how many $n$-grams in the generated text exist in the reference text. The issue with $n$-gram precision is that it doesn't take into account very short responses.
+
+BLEU adds in a **brevity penalty** to 
+
 
 #### cosine similarity
 Other reference-base evaluation methods utilize the representation similarity of the embeddings between the predicted and reference texts (e.g. BERTScore). 
