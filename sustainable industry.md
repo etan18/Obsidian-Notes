@@ -1,4 +1,3 @@
-
 ### sustainability transitions
 Sustainability transitions are major shifts in established industries, socio-technical systems, and societies toward more sustainable modes of production and consumption. These transitions are necessary to respond to [[climate change]] and overconsumption issues.
 

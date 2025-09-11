@@ -13,11 +13,15 @@ The food supply chain is unique and consists of many stages:
 These interconnected parts are heavily reliant on one another. Smaller farms may only have a few buyers act as a large portion of their revenue stream, or vice versa.
 
 Food supply chains face unique challenges that question the applicability of general supply chain strategies. For example, 
-- **Safety stock**: holding additional goods to meet demand fluctuations is not easily transferable to food supply chains due to the challenge of product deterioration, perishability, and waste.
+- Safety stock: holding additional goods to meet demand fluctuations is not easily transferable to food supply chains due to the challenge of product deterioration, perishability, and waste.
 
 Packaging is a big issue in the food supply chain, both in terms of cost and waste.
 
-### the case for local
+### U.S. agriculture
+The US had historically run an agricultural trade surplus up until 2019 when, for the first time in over 50 years, became a net-importer of agricultural products. These deficits are mostly with Mexico---in 2019, we imported $15.7 billion in fruits and vegetables from Mexico alone, up to $21 billion in 2023.
 
+The US is focused on growing and exporting low-cost corn and soybeans, which are primarily used for livestock feed, ethanol, and to make cheap sugars, starches, and oils.
+
+#### the case for local
 **Local and regional food systems are more resilient to changes.** 
 For example, during COVID, many large supermarkets experienced shortages, but local farms were still able to produce at healthy capacities. Additionally, during recent avian flu outbreaks which saw shortages in eggs, many local suppliers were still able to supply at normal amounts.
