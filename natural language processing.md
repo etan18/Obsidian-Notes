@@ -1,5 +1,10 @@
 #eecs283a
 
+A language model takes as input a **batch** of fixed-length sequences of integer token IDs (in practice, a PyTorch `LongTensor` of shape `(batch_size, sequence_length)`). The output of the model is a corresponding normalized probability distribution over the entire vocabulary, in the shape `(batch_size, sequence_length, vocab_size)`. Each element in this output `LongTensor` represents the probability of a given token in vocabulary being next in the input sequence.
+
+During training, these outputted probability distributions are used to compute the **cross-entropy loss**, which is minimized for the task of **next-token prediction**. During inference, we repeatedly take the outputted probability distribution for the last token in the sequence and use it to generate the next token (e.g. sampling, taking the highest probability token).
+
+
 #### $n$-grams
 For a sequence of text, an $n$-gram is a contiguous subsequence of $n$ elements in the text. Let $G_n(x)$ be the set of all $n$-grams for a sequence $x$.
 ```
