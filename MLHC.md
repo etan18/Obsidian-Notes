@@ -48,3 +48,13 @@ I think this paper has many interesting avenues for productive and insightful di
 - The value of stratified DCA when disparities do not translate into observable performance differences
 - Potential performance trade-offs
 
+---
+
+# Who Does the Model Think You Are? LLMs Exhibit Implicit Bias in Inferring Patients’ Identities from Clinical Conversations
+#proceedings 
+
+**Questions**
+- Where do we draw the line between toxic vs. relevant stereotypes?
+- Are the de-identified doctor-patient dialogues guaranteed to be free of "stereotypical or potentially toxic remarks"?
+- The primary contributions seem to note the findings, not the novelty of the framework
+- Motivate further: why is it important that we are looking at "clinical doctor-patient dialogs that involve a distinct open-ended aspect"? What is different about this setting that makes it 1) more prone to implicit bias or some other reason?
