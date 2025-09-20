@@ -1,4 +1,3 @@
-
 ### supply chain
 In general, a **supply chain** can be broadly conceptualized as the interaction between various entities which are involved in the flow of products and services to their end customers.
 
@@ -16,7 +15,16 @@ These interconnected parts are heavily reliant on one another. Smaller farms may
 Food supply chains face unique challenges that question the applicability of general supply chain strategies. For example, 
 - Safety stock: holding additional goods to meet demand fluctuations is not easily transferable to food supply chains due to the challenge of product deterioration, perishability, and waste.
 
-### U.S. agriculture
+>[!idea] Barriers to Executing Change in Supply Chains 
+>- Lack of stakeholder support or participation
+>- Competing values and priorities (when sustainability impacts the bottom line)
+>- Producer or distributor constraints
+>- Misaligned incentives for decision makers (lobbying!)
+
+# the U.S. food system
+The US has historically had bipartisan support to use food as a *diplomatic* *tool*. Dating back to Eisenhower's presidency (1953-1961) during the Cold War, the U.S. sold surplus agricultural stocks to ally nations lacking food supplies on lenient loan terms. They also contributed to UN organizations, NGOs government-to-government donations for emergency needs. This was initially meant to be short-term policy to handle agricultural surplus, but has remained a mainstay of U.S. foreign policy.
+
+#### U.S. agriculture
 The US had historically run an agricultural trade surplus up until 2019 when, for the first time in over 50 years, became a net-importer of agricultural products. These deficits are mostly with Mexico---in 2019, we imported $15.7 billion in fruits and vegetables from Mexico alone, up to $21 billion in 2023.
 
 The US is focused on growing and exporting low-cost corn and soybeans, which are primarily used for livestock feed, ethanol, and to make cheap sugars, starches, and oils.

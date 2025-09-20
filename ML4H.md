@@ -53,8 +53,44 @@ I think this paper has many interesting avenues for productive and insightful di
 # Who Does the Model Think You Are? LLMs Exhibit Implicit Bias in Inferring Patients’ Identities from Clinical Conversations
 #proceedings 
 
+**Summary**
+This paper investigates how stereotypical or toxic remarks in clinical dialogs between a doctor and patient influence an LLM's implicit biases in identifying the race or gender of the patient. The authors first de-identify clinical dialogs in two datasets (MTS-Dialog and ACI-Bench) before inserting stereotypical contexts into the conversations. Before any additional context is added, the authors find that LLMs are disproportionately more likely to predict a certain gender or race. After toxic context is added, they find that the prediction rates change, suggesting that LLMs may associate certain stereotypes with certain subgroups.  
+
 **Questions**
 - Where do we draw the line between toxic vs. relevant stereotypes?
-- Are the de-identified doctor-patient dialogues guaranteed to be free of "stereotypical or potentially toxic remarks"?
+	- The point is *can* an LLM infer the race/gender of a patient, irrelevant of the ground truth label.
+
+The framework for evaluating implicit biases is strong 
+- The authors choose to evaluate the LLM's ability to infer the race/gender of a patient irrelevant of the ground truth label or base rates. 
+- The data pipeline of de-indentifying dialogs before introducing fixed stereotypical remarks ensures better isolation of the test feature while still having a realistic base conversation to work off of.
+- This work focuses on auditing biases in clinical dialogs, and performs different sets of experiments inserting stereotypical remarks into the patient and doctors' utterances. This decision pushes this work into a novel area. The findings also suggest that implicit biases in LLMs are more strongly influenced by the patient's utterances, which is a divergence from traditional bias audits which primarily look at clinical notes written by the clinician or summarized by an LLM. These choices push this paper to be a novel contribution in healthcare AI.
+
+The finding that, even before inserting any stereotypical remarks, LLMs are biased in race and gender predictions on *de-identified* dialogs is highly insightful. This finding may play into more calibration-focused fairness strategies, which is beyond the scope of this paper, but has wide-reaching implications throughout healthcare AI.
+
+This paper also shows that the implicit biases exhibited by an LLM are largely model-dependent.
+
+
+
+
+The finding that LLMs 
+
 - The primary contributions seem to note the findings, not the novelty of the framework
 - Motivate further: why is it important that we are looking at "clinical doctor-patient dialogs that involve a distinct open-ended aspect"? What is different about this setting that makes it 1) more prone to implicit bias or some other reason?
+- The authors assume ground truth label of the race/gender of the patient is irrelevant. Consideration of base rates---when is it helpful vs hurtful to include demographic-based info
+- Fig 3. finding that LLMs typically report an "inability to determine race" --- is that the goal? By definition, in the absence of demographic markers, LLMs should abstain.
+- Fig 5 (Appendix): it is consistent that shifts in prediction do occur, but not consistent to which gender those shifts go towards (model-dependent).
+
+Novelty:
+- "Our experiments demonstrate that LLMs exhibit substantial disparities in reporting patient’s background even in the absence of explicit identifiers."
+
+**Weaknesses**
+Based on section "Changing Prediction Variables Changes Shifts in Prediction Rates", more ablations are needed to fully account for sensitivity to prompt. In Figure 7, it doesn't appear that there's a consistent pattern in where the differences occur just from an eye test. Could be helpful to see if these changes are within the confidence intervals of the original "Male"/"Female" findings, or significantly different. Extending these experiments to the race case could also be helpful, as I don't believe there is a standardized set of race subgroups out there, so LLMs could very well be sensitive to that. Addition of these findings would more strongly solidify what is results actually stem from the LLM's implicit biases, and what may have arisen out of prompt variance.
+
+The actionable insights of this paper are a bit lost on me. Obviously, it's bad that models have these implicit biases to associate toxic statements with certain subgroups, but what is the actual call to action for practitioners? From the paragraph beginning on line 406:
+	"With both GPT-4o and Llama-3-70B, adding stereotypical remarks on the patient’s statements generally results in greater shifts in prediction rates across both datasets, on both gender and race."
+Especially if the biases are more sensitive to the patient's own descriptions, as this paper demonstrates, what's the solution to address problems with using LLMs to assess clinical dialogs?  What is the key takeaway that healthcare professionals or AI practitioners in the space should have?
+
+
+Some aspects of the experimental setup may require more justification:
+- Why do the authors believe the results should be evaluated irrespective of the ground truth label or base rates?
+- How was the final extracted data sample 93 dialogs from MTS and 47 from ACI-Bench if the original sizes were 1700 and 207, respectively?
