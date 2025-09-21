@@ -28,7 +28,9 @@ The US has historically had bipartisan support to use food as a *diplomatic* *to
 The US had historically run an agricultural trade surplus up until 2019 when, for the first time in over 50 years, became a net-importer of agricultural products. These deficits are mostly with Mexico---in 2019, we imported $15.7 billion in fruits and vegetables from Mexico alone, up to $21 billion in 2023.
 
 The US is focused on growing and exporting low-cost corn and soybeans, which are primarily used for livestock feed, ethanol, and to make cheap sugars, starches, and oils.
-
+- **Commodity crops**: can be traded on commodity markets; limited to wheat, corn, sorghum, barley, oats, cotton, rice, peanuts, soybeans, certain oilseeds, dry peas, lentils, and chickpeas.
+- **Specialty crops**: any non-commodity crop, including fruits, vegetables, tree nuts, culinary herbs and spices, medicinal plants, and floriculture.
+This difference is important because the USDA financially supports commodity crops through federal programs, incentivizing large-scale production of those crops. On the other hand, the US Farm Bill makes it much harder to produce specialty crops, which are typically grown on small to medium sized farms.
 #### the case for local
 **Local and regional food systems are more resilient to changes.** 
 For example, during COVID, many large supermarkets experienced shortages, but local farms were still able to produce at healthy capacities. Additionally, during recent avian flu outbreaks which saw shortages in eggs, many local suppliers were still able to supply at normal amounts.
