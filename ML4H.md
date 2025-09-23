@@ -94,3 +94,41 @@ Especially if the biases are more sensitive to the patient's own descriptions, a
 Some aspects of the experimental setup may require more justification:
 - Why do the authors believe the results should be evaluated irrespective of the ground truth label or base rates?
 - How was the final extracted data sample 93 dialogs from MTS and 47 from ACI-Bench if the original sizes were 1700 and 207, respectively?
+
+
+---
+
+# Toward Revealing Implicit Biases in Medical LLMs: Measuring Intersectional Biases with Multi-Hop Reasoning
+#proceedings 
+
+**Summary**
+
+Two-part framework for evaluating bias in Med LLMs:
+1. Line 138: "Using information retrieved from a knowledge graph, an Attacker LLM generates perturbed questions by systematically modifying specific attributes (e.g. age or comorbitidies) while keeping of information constant."
+2. Generates answers to perturbed questions using the evaluated LLM via three-stage multi-hop reasoning.
+	1. How is this revealing bias? Is the question more revealing of bias? How does the multi-hop reasoning help reveal more bias in a target LLM?
+		1. Line 402: findings suggest multi-hop reasoning increases the (Target) model's capacity to identify biases in-context
+		2. How do we know the multi-hop reasoning is not inducing more bias?
+		3. The notion of the "bias score" is not clear to me. It seems like it's just assessing the level of bias in a given answer with and without multi-step reasoning.
+The bias is assessed using a judge LLM.
+
+**Comments**
+
+How does this being specifically for Med LLMs change the framework?
+- The KG builder (pretrained SpaCy library) is customized with a rule-based approach to retrieve clinical entities.
+- Authors build a set of perturbed questions from a medical knowledge base.
+
+Line 202: what does the seed clinical text data look like that it can be parsed using regex?
+- Are there structural guarantees or other assumptions about the question context in this framework? Given that all questions have some KG type structure...
+
+Appendix A.1 and Table 3: does that mean that with filtering gives more usable samples? I'm confused what the numbers in table 3 refer to (unspecified). It's my understanding that the goal of Table 3 is to support this statement (Line 773-776):
+	We analyzed how different regular expressions affected downstream outputs, including the number of extracted relations and the resulting perturbed questions.
+
+Perturbed questions are generated using a Generator LLM. These questions should be grounded in real patient contexts stored in the knowledge base, and perturbed along a specific attribute. How is the quality of questions ensured? 
+
+Mismatch between Eq 2 and description beneath (lines 230-234)
+
+"We note that our pipeline works with any type of medical free-form text; however, the above benchmarking datasets could support a more standardized assessment of our method."
+- The efficacy of this statement is untested. The primary seed datasets used are MQA datasets; these are used to generate KG that are used to generate more questions from the KG's knowledge base. Would like to see if there's a difference in the quality of questions generated when the underlying knowledge base is not generated directly from a QA dataset.
+- In particular, it is mentioned that EquityMedQA and DiversityMedQA both already include perturbed questions and no ground truth answers? What is the justification for using perturbed questions as the seed?
+
