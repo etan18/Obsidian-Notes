@@ -104,18 +104,42 @@ Some aspects of the experimental setup may require more justification:
 **Summary**
 
 The authors present a novel two-part framework for revealing the implicit biases encoded in Med LLMs: 
-1) Using information from 
-2) Using information retrieved from a knowledge graph, an Attacker LLM generates perturbed questions by systematically modifying specific attributes (e.g. age or comorbitidies) while keeping of information constant.
+1) A knowledge graph is built from a seed dataset and used by a Generator LLM to generate unperturbed questions. An Attacker LLM takes these sentences and generates $n$ perturbed questions, where each perturbation modifies a specified attribute.
+2) The Target LLM is prompted to answer the generated perturbed questions using a three-hop reasoning process: converting the question context into KG-like triplet structures, expanding these structures using its own knowledge base, then reasoning over the result. The output is evaluated by a Judge LLM to produce a bias score.
+This framework is evaluated across three seed datasets (EquityMedQA, DiversityMedQA, and Nurse Bias) and auxillary LLMs, and applied to multiple Target LLMs. The authors find that their method reveals more bias in Target LLMs.
 
 
-Two-part framework for evaluating bias in Med LLMs:
-1. Line 138: "Using information retrieved from a knowledge graph, an Attacker LLM generates perturbed questions by systematically modifying specific attributes (e.g. age or comorbitidies) while keeping of information constant."
-2. Generates answers to perturbed questions using the evaluated LLM via three-stage multi-hop reasoning.
-	1. How is this revealing bias? Is the question more revealing of bias? How does the multi-hop reasoning help reveal more bias in a target LLM?
-		1. Line 402: findings suggest multi-hop reasoning increases the (Target) model's capacity to identify biases in-context
-		2. How do we know the multi-hop reasoning is not inducing more bias?
-		3. The notion of the "bias score" is not clear to me. It seems like it's just assessing the level of bias in a given answer with and without multi-step reasoning.
-The bias is assessed using a judge LLM.
+**Strengths**
+
+1. **Flexible framework capable of evaluating intersectional biases**
+	The systematic method of perturbing questions along certain sensitive attributes, as well as the capability of the multi-hop reasoning to represent contexts as KG structures enables evaluation of multiple attributes at once. This addresses a key shortcoming of much fairness eval work in healthcare.
+2. **Use of human studies to validate bias scores**
+	For a task with no ground truth labels, the bias score is difficult to interpret. The use of human studies to confirm the findings shows significance in 3/5 scenarios.
+3. **Comprehensive end-to-end framework**
+	Overall, this paper is very easy to read. The Method section clearly walks through each stage and sub-process of the method in order, giving a comprehensive, end-to-end view of the proposed method. 
+
+
+**Weaknesses**
+
+1.  **KG assembly from seed datasets**
+I question the decision to use seed datasets containing already-perturbed questions. Both EquityMedQA and DiversityMedQA are MQA datasets containing questions explicitly designed as "adversarial questions representing health equity-related harms." These datasets would not give a clean, *unbiased* starting point for the framework, before the Attacker LLM systematically perturbs them again. This creates a circularity in the experiment design that questions the soundness of the findings.
+
+Additionally, it is noted in Line 323:
+	"We note that our pipeline works with any type of medical free-form text; however, the above benchmarking datasets could support a more standardized assessment of our method."
+This statement should be verified with further experiments using a more diverse array of seed datasets containing diverse clinical tasks and text formats. The two primary seed datasets used are MQA datasets; these are used to generate KG that are used to generate more questions from the KG's knowledge base. I would like to see if there's a difference in the quality of questions generated when the underlying knowledge base is not generated directly from a QA dataset. Further, this is necessary as it is mentioned that the use of regular expressions improves Stage 1 of the framework by selecting the most relevant attributes from the data. For a seed dataset based on more open-ended text, such as clinical notes, which cannot be parsed using simple rule-based filtering, it remains to be seen whether the knowledge graph would be assembled as nicely, or if we would observe performance degradation in question quality for Stage 1.
+
+2. **Bias Score**
+The definition of "bias" in this paper is not clear, and thus neither is the bias score that is the central metric of this method. In my understanding, the goal of this framework is to evaluate the Target Med LLM, such that the bias score should be a proxy of the "amount" of implicit bias in the Target LLM. From the prompt in Figure 8, the judge LLM is not given any concrete guidelines for identifying what is considered bias and what is not. The Judge LLM is also not required to justify its scores, which could be helpful in validating that the scores are grounded in truth.
+
+This lack of clarity or transparency from the judge in what is being measured is especially problematic looking at the results from Figure 2---comparing plots of the same Target LLM across different judges, you can observe that different judges produce pretty significant differences in their bias scores. For example, Figure 2 (c), (g), and (h) all evaluate Mistral-7B. The bias scores for EquityMedQA w/ multi-hop and DiversityMedQA w/ multi-hop are assigned the highest scores along the gender axis when judged by LLaMa-3.2-3B, location when judged by GPT-4o, and age+gender+location when judged by Mistral-7B. The lack of consensus among judges is pretty concerning for an evaluation framework, especially when no additional justifications are provided for the scores.
+
+As an aside, I also note that Figure 2(c) presents a bias score for gender using EquityMedQA w/ multi-hop that is greater than 1. The bias score is by definition between 0 and 1.
+
+Beyond the previous concerns about the bias score, I also question whether the bias score validates the method. How does having a higher bias score mean the multi-hop method is an effective tool for measuring/evaluating bias in Med LLMs? 
+2. How is this revealing bias? Is the question more revealing of bias? How does the multi-hop reasoning help reveal more bias in a target LLM?
+	1. Line 402: findings suggest multi-hop reasoning increases the (Target) model's capacity to identify biases in-context
+	2. How do we know the multi-hop reasoning is not inducing more bias?
+	3. The notion of the "bias score" is not clear to me. It seems like it's just assessing the level of bias in a given answer with and without multi-step reasoning.
 
 **Comments**
 
@@ -123,17 +147,7 @@ How does this being specifically for Med LLMs change the framework?
 - The KG builder (pretrained SpaCy library) is customized with a rule-based approach to retrieve clinical entities.
 - Authors build a set of perturbed questions from a medical knowledge base.
 
-Line 202: what does the seed clinical text data look like that it can be parsed using regex?
-- Are there structural guarantees or other assumptions about the question context in this framework? Given that all questions have some KG type structure...
-
 Appendix A.1 and Table 3: does that mean that with filtering gives more usable samples? I'm confused what the numbers in table 3 refer to (unspecified). It's my understanding that the goal of Table 3 is to support this statement (Line 773-776):
 	We analyzed how different regular expressions affected downstream outputs, including the number of extracted relations and the resulting perturbed questions.
 
-Perturbed questions are generated using a Generator LLM. These questions should be grounded in real patient contexts stored in the knowledge base, and perturbed along a specific attribute. How is the quality of questions ensured? 
-
 Mismatch between Eq 2 and description beneath (lines 230-234)
-
-"We note that our pipeline works with any type of medical free-form text; however, the above benchmarking datasets could support a more standardized assessment of our method."
-- The efficacy of this statement is untested. The primary seed datasets used are MQA datasets; these are used to generate KG that are used to generate more questions from the KG's knowledge base. Would like to see if there's a difference in the quality of questions generated when the underlying knowledge base is not generated directly from a QA dataset.
-- In particular, it is mentioned that EquityMedQA and DiversityMedQA both already include perturbed questions and no ground truth answers? What is the justification for using perturbed questions as the seed?
-
