@@ -103,6 +103,11 @@ Some aspects of the experimental setup may require more justification:
 
 **Summary**
 
+The authors present a novel two-part framework for revealing the implicit biases encoded in Med LLMs: 
+1) Using information from 
+2) Using information retrieved from a knowledge graph, an Attacker LLM generates perturbed questions by systematically modifying specific attributes (e.g. age or comorbitidies) while keeping of information constant.
+
+
 Two-part framework for evaluating bias in Med LLMs:
 1. Line 138: "Using information retrieved from a knowledge graph, an Attacker LLM generates perturbed questions by systematically modifying specific attributes (e.g. age or comorbitidies) while keeping of information constant."
 2. Generates answers to perturbed questions using the evaluated LLM via three-stage multi-hop reasoning.
