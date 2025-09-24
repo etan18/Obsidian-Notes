@@ -22,6 +22,11 @@ Food supply chains face unique challenges that question the applicability of gen
 >- Producer or distributor constraints
 >- Misaligned incentives for decision makers (lobbying!)
 
+## food waste
+An estimated one-third of global food production becomes food loss and waste. Combined with high rates of food insecurity and food deserts around the world, this signals a major failure of current food systems. These failures arise out of
+- A mismatch between food prices and production costs: when production costs rise, food prices increase, which may leave more food unsold and unconsumed. When prices are low relative to production costs, it may not be profitable for farmers to produce and sell.
+- Deficiencies in public infrastructure: there are not many structures in place that can redirect food waste to those in need (e.g. food banks, shelters)
+
 # the U.S. food system
 The US has historically had bipartisan support to use food as a *diplomatic* *tool*. Dating back to Eisenhower's presidency (1953-1961) during the Cold War, the U.S. sold surplus agricultural stocks to ally nations lacking food supplies on lenient loan terms. They also contributed to UN organizations, NGOs government-to-government donations for emergency needs. This was initially meant to be short-term policy to handle agricultural surplus, but has remained a mainstay of U.S. foreign policy.
 
@@ -38,3 +43,7 @@ For example, during COVID, many large supermarkets experienced shortages, but lo
 
 #### certifications
 A common market solution to ensuring the quality of produce (on axes like sustainability, locality, worker conditions) is through third-party certifications.
+
+
+
+
