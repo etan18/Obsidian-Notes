@@ -4,6 +4,7 @@ In general, a **supply chain** can be broadly conceptualized as the interaction 
 The food supply chain is unique and consists of many stages:
 1. **Farm**: primary production, the actual grower of crops, produce, livestock, etc.
 	- For local farms, farmers markets may make up some portion of the farm's revenue stream. While it is expensive to attend a farmer's market (transportation, labor, licensing), farmers are also able to keep 100% of revenue by selling direct-to-consumer, instead of losing a cut to distribution centers.
+	- Aggregator: business, cooperative, or NGO that consolidates products from multiple (usually smaller) farms to give increased market access to small farmers, create a larger, more consistent supply, and pool resources between smaller farms.C
 2. **Producer**: handling and storage, only a small percentage of crops are sold as fresh produce---the rest is used to make all the other goods you may find at a grocery store, including sauces, prepackaged foods, powders, dried goods, etc.
 3. **Distribution center**: processing and packaging, act as a middleman connecting producers with buyers. 
 	- Food hub: specialized distribution focusing on locally sourced foods. Provide "market access" to smaller farmers/producers.
