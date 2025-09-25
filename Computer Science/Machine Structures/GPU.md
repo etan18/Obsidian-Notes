@@ -10,6 +10,14 @@ GPUs are meant to process simple but repetitive instructions such as matrix mult
 >
 
 ## architecture
+Modern GPUs can be roughly divided into three core components:
+1. **DRAM (Dynamic RAM)**: off-chip memory
+2. **SRAM (Static RAM)**: on-chip memory, usually organized hierarchically as L1 and L2 SRAM
+3. **ALU (Arithmetic Logic Unit)**: component in the tensor core that performs arithmetic and logical operations
+
+![[gpu.png]]
+
+### abstraction
 The general abstraction for GPU hardware consists of four layers: [[threads]], warps, blocks, and finally the GPU grid.
 
 In CUDA we have many **threads**, many times more than a CPU. These threads are organized into **blocks**. Groups of one or more blocks is called a **grid**. A block can contain up to $1024$ threads and threads within a block have some special properties.
@@ -17,3 +25,5 @@ In CUDA we have many **threads**, many times more than a CPU. These threads are 
 >[!important] CUDA
 >CUDA is a parallel computing platform developed by NVIDIA that is used to enable software to interface with GPUs to be able to run GPU-accelerated applications. It is based in [[C]]++.
 
+>[!important] Triton
+>OpenAI develops Triton, a Python-based open-source programming language to automate and simplify the GPU optimizations that typically require lower-level CUDA knowledge.
