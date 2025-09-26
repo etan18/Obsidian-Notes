@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Machine Structures/GPU.md",
+                "file": "Research/master's research.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GPU"
+              "title": "master's research"
             }
           }
         ]
@@ -178,11 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6949e9cc34ed3631",
+  "active": "3851464ad6719f60",
   "lastOpenFiles": [
+    "Research/ML4H.md",
+    "Computer Science/Machine Structures/GPU.md",
     "Computer Science/img/gpu.png",
     "Research/master's research.md",
-    "Research/ML4H.md",
     "food systems.md",
     "sustainable industry.md",
     "Machine Learning/Decision Trees & Ensemble Learning/boosting.md",
@@ -216,7 +217,6 @@
     "Machine Learning/img/bgd.png",
     "Research/Pasted image 20250410130740.png",
     "Machine Learning/img/bagging.png",
-    "Machine Learning/img/mllifecycle.png",
     "Research/Data Addition Dilemma.canvas",
     "Research",
     "Daily Notes",
