@@ -9,6 +9,7 @@ yes-man
 problems with representing patients as embeddings
 
 
+
 ---
 ### UGBA 192T Final Project Ideas
 
@@ -27,3 +28,16 @@ problems with representing patients as embeddings
 		3. Case studies based
 5. Impacts of non-food policy on food supply chains
 	1. Look for relationships between major policy decisions and food prices, etc. Policy can be categorized into key areas which may impact food: immigration, international (tariffs), climate policy
+
+---
+
+## aaji
+
+We want to enhance the reasoning capabilities of llms for embodied qa (EQA). 
+
+
+idea 1:
+- use a video detector / segmentor to build a knowledge base of key frames and snippets from the video. 
+- Ask a reasoning o1 model to give step by step logic that leads it to answer
+- Each step should be verified by items in the knowledge base --> this determines confidence score
+
