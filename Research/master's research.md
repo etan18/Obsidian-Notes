@@ -49,3 +49,6 @@ idea 1:
 - Ask a reasoning o1 model to give step by step logic that leads it to answer
 - Each step should be verified by items in the knowledge base --> this determines confidence score
 
+Paper framing:
+
+The current "meta" for episodic memory embodied QA (EM-EQA) relies heavily on memory-based models or information retrieval systems (RAG). These methods allow the agent to ground answers in concrete evidence from the memory streams. In this paper, we aim to investigate how reasoning in LLMs can further improve recall in EM-EQA. We incorporate 2/3 different reasoning modules into existing SOTA EM-EQA systems and evaluate how performance changes when reasoning is introduced.
