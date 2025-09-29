@@ -44,7 +44,6 @@ The second idea I have about policy and food is: "What are the impacts of non-fo
 
 We want to enhance the reasoning capabilities of llms for embodied qa (EQA). 
 
-
 idea 1:
 - use a video detector / segmentor to build a knowledge base of key frames and snippets from the video. 
 - Ask a reasoning o1 model to give step by step logic that leads it to answer
