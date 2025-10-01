@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/master's research.md",
+                "file": "food systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "master's research"
+              "title": "food systems"
             }
           }
         ]
@@ -180,10 +180,10 @@
   },
   "active": "3851464ad6719f60",
   "lastOpenFiles": [
+    "Research/master's research.md",
     "Research/ML4H.md",
     "Computer Science/Machine Structures/GPU.md",
     "Computer Science/img/gpu.png",
-    "Research/master's research.md",
     "food systems.md",
     "sustainable industry.md",
     "Machine Learning/Decision Trees & Ensemble Learning/boosting.md",
