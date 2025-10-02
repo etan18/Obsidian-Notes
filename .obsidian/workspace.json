@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Deep Learning & Neural Networks/sequential modeling.md",
+                "file": "embeddings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sequential modeling"
+              "title": "embeddings"
             }
           },
           {
@@ -194,8 +194,8 @@
   },
   "active": "3851464ad6719f60",
   "lastOpenFiles": [
-    "natural language processing.md",
     "Machine Learning/Deep Learning & Neural Networks/sequential modeling.md",
+    "natural language processing.md",
     "embeddings.md",
     "Machine Learning/tokenization.md",
     "food systems.md",
