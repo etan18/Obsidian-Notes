@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "d551c910bea16b14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "workspace.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "workspace"
+            }
+          },
+          {
             "id": "2847f9db68a04c1e",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "natural language processing"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,11 +207,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3851464ad6719f60",
+  "active": "d551c910bea16b14",
   "lastOpenFiles": [
+    "embeddings.md",
+    "workspace.md",
     "Machine Learning/Deep Learning & Neural Networks/sequential modeling.md",
     "natural language processing.md",
-    "embeddings.md",
     "Machine Learning/tokenization.md",
     "food systems.md",
     "Research/master's research.md",
@@ -221,7 +237,6 @@
     "Math/Linear Algebra/eigendecomposition.md",
     "Math/Linear Algebra/gradients.md",
     "Machine Learning/img/confusion.png",
-    "Machine Learning/Paper Summaries/interpretability.md",
     "Humanities & Social Science/img/carbon.png",
     "Machine Learning/img/weak-to-strong.png",
     "Machine Learning/img/reward.png",
