@@ -29,10 +29,6 @@ As a general rule, heterogeneous data should be drawn from diverse data distribu
 
 ---
 # evaluation
-Performance metrics:
-- **Worst group accuracy**: gold-standard for subpopulation shift evaluation
-- **Balanced accuracy**
-- **Subgroup disparity**: difference in accuracy between best and worst performing subgroups
 
 Often times in OOD generalization problems, we may not have access to labels for our testing data. In these situations, we must look into **OOD performance prediction**.
 - **Average threshold confidence**: the expected proportion of test samples for which the model's score will be below some threshold $t$. 

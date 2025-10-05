@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workspace.md",
+                "file": "Machine Learning/Paper Summaries/fairness.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "workspace"
+              "title": "fairness"
             }
           },
           {
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tokeni",
+                "query": "balanced",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -209,8 +210,10 @@
   },
   "active": "d551c910bea16b14",
   "lastOpenFiles": [
-    "embeddings.md",
+    "Machine Learning/Paper Summaries/generalizability.md",
+    "Machine Learning/Paper Summaries/fairness.md",
     "workspace.md",
+    "embeddings.md",
     "Machine Learning/Deep Learning & Neural Networks/sequential modeling.md",
     "natural language processing.md",
     "Machine Learning/tokenization.md",
@@ -234,8 +237,6 @@
     "Machine Learning/hopfield networks.md",
     "Humanities & Social Science/migration in america.md",
     "Math/Linear Algebra/singular value decomposition.md",
-    "Math/Linear Algebra/eigendecomposition.md",
-    "Math/Linear Algebra/gradients.md",
     "Machine Learning/img/confusion.png",
     "Humanities & Social Science/img/carbon.png",
     "Machine Learning/img/weak-to-strong.png",
