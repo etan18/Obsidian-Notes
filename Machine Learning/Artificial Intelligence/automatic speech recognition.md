@@ -6,6 +6,13 @@ The number of errors---which can come in the form of substitutions, insertions, 
 $$WER = \frac{\text{Total \# of errors}}{\text{Ground truth \# of words}}$$
 The WER can exceed 100% if, for example, too many words are inserted.
 
+# speech data
+
+Speech is produced when air passes through *vocal articulators* (tongue, lips, hard/soft palate, larynx, etc.), each of which produces vibrations of different sounds that combine together. Speech data comes in the form of **acoustic waveforms**, a continuous time series modality measuring pressure amplitude. 
+
+We use  the [[spatial frequency#fourier transform|Fourier Transform]] to convert waveforms from the time domain to the **time-frequency domain**---this process decomposes the waveform into its individual frequency components and maps each of them over time. A **spectrogram** (below) maps which frequencies are present at any time, and denotes its amplitude via pixel intensity.
+
+![[audio.png]]
 
 ### whisper
 OpenAI's **[Whisper](https://openai.com/research/whisper)** was introduced in September 2022 and has become the state-of-the-art model for ASR. 

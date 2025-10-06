@@ -26,3 +26,7 @@ BLEU adds in a **brevity penalty** to penalize incoherent or incomplete response
 
 #### cosine similarity
 Other reference-base evaluation methods utilize the representation similarity of the embeddings between the predicted and reference texts (e.g. BERTScore). 
+
+For two input words $a$ and $b$ which are transformed into [[embeddings]] $\phi(a)$ and $\phi(b)$, respectively, we have the similarity score
+$$\cos(\phi(a), \phi(b)) = \frac{\phi(a) \cdot \phi(b)}{||\phi(a)|| \cdot ||\phi(b)||}$$
+The cosine similarity measures the angle between the two embeddings. Note that this is the same thing as a dot product on *normalized vectors*. When the vectors are not normalized, the dot product takes into account both angle *and* magnitude, making the two measures different.
