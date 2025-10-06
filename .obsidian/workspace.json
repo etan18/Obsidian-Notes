@@ -103,8 +103,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -208,7 +207,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d551c910bea16b14",
+  "active": "6949e9cc34ed3631",
   "lastOpenFiles": [
     "Machine Learning/Paper Summaries/generalizability.md",
     "Machine Learning/Paper Summaries/fairness.md",
