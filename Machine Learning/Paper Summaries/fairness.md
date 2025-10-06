@@ -16,6 +16,8 @@ Given our prior setup and definitions, we can now rigorously define three condit
 1. **Independence**: random variables $(A, R)$ satisfy independence if $A \perp R$ 
 2. **Separation**: random variables $(R, A, Y)$ satisfy separation if $R \perp A|Y$
 3. **Sufficiency**: random variables $(R, A, Y)$ satisfy sufficiency if $Y \perp A |R$ 
+	1. Group [[calibration]] is a stronger form of sufficiency
+Herein lies a core problem with "fairness" as an idea in [[machine learning]]---it is impossible for any classifier to achieve both *separation* and *sufficiency* at the same time, unless the base rates are equal across all subgroups or we have a perfect classifier. 
 ### classification
 - "Implicit in this formal setup of classification is a major assumption. Whatever we do on the basis of the covariates X cannot influence the outcome Y. After all, our distribution assigns a fixed weight to each pair (x,y). In particular, our prediction $\hat{Y}$  cannot influence the outcome Y. This assumption is often violated when predictions motivate actions that influence the outcome. For example, the prediction that a student is at risk of dropout, might be followed with educational interventions that make dropout less likely."
 - **Generalization**: Ensure that small loss on the training examples implies small loss on the population that we drew the training examples from.
