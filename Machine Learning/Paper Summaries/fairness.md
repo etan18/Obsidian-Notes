@@ -32,21 +32,22 @@ Some metrics for evaluating the fairness of a classifier include
 - **Worst group accuracy**: gold-standard for subpopulation shift evaluation
 - **Balanced accuracy**
 - **Subgroup disparity**: difference in accuracy between best and worst performing subgroups
-- **Equalized odds:** False Positive Rates (FPR) and True Positive Rates (TPR) should be the same across subgroups
-- **Equal opportunity**: TPR should be the same across subgroups
-### parity
+### demographic parity
 Remaining in the context of a simple binary classifier, the notion of **parity** takes on many names and forms. Most commonly, we address *demographic parity*, which is also known as group fairness or disparate impact. Demographic parity defines independence as the following condition:
 $$\Pr[\hat{Y} = 1 | A = a] = \Pr[\hat{Y} = 1 | A = b]$$
- This is the ideal case. A more relaxed version of this condition would satisfy
+ This is the ideal case, where the inclusion rates (i.e. rate of positive predictions) are equal across subgroups. A more relaxed version of this condition would satisfy
  $$\Pr[\hat{Y} = 1 | A = a] \ge \Pr[\hat{Y} = 1 | A = b] - \epsilon$$
  for some slack variable $\epsilon$. 
+ 
+ Note that this metric does not consider the base rates of subgroups, and only ensures that model prediction rates are equal. This creates a problem for parity as a metric, as it can be satisfied with subgroups having wildly different error rates from one another. Additionally, a model which performs equally bad on all subgroups can still satisfy parity.
+
+### equalized odds
+The metrics of **equalized odds** and **equal opportunity** now condition on the true label value $Y$. Equal opportunity ensures that the True Positive Rate (TPR), or **recall**, is equal across subgroups. Mathematically,
+$$\Pr[\hat{Y} = 1 | Y=1, A = a] = \Pr[\hat{Y} = 1 | Y=1,A = b]$$
+Equalized odds is a stricter version of equal opportunity, ensuring that both True Positive Rate (TPR) and False Positive Rate (FPR) are equal across subgroups.
 
 ---
 ## unfinished misc notes
-
-- "Identifying details that are relevant to a decision might happen informally and without much thought: employers might observe that people who study math seem to perform particularly well in the financial industry. But they could test these observations against historical evidence by examining the degree to which one’s major correlates with success on the job. This is the traditional work of statistics—and it promises to provide a more reliable basis for decision-making by quantifying how much weight to assign certain details in our determinations."
-- "Machine learning promises to bring greater discipline to decision-making because it offers to uncover factors that are relevant to decision-making that humans might overlook, given the complexity or subtlety of the relationships in historical evidence."
-	- "machine learning lets us defer the question of relevance to the data themselves: which factors—among all that we have observed—bear a statistical relationship to the outcome"
 
 Risks of machine learning for automated decision making
 1. Learning involves generalizing from examples
@@ -66,7 +67,7 @@ The machine learning loop
 	- Absent specific intervention, machine learning will extract stereotypes, including incorrect and harmful ones, in the same way that it extracts knowledge.
 
 ### legitimacy
-**legitimacy** — whether it is fair to deploy such a system at all in a given scenario. That question, in turn, affects the legitimacy of the organization deploying it.
+**Legitimacy** assesses whether it is *fair* to deploy such a system at all in a given scenario. That question, in turn, affects the legitimacy of the organization deploying it.
 
 Types of automated decision making:
 1. taking decision-making rules that have been set down by hand (e.g., worked out through a traditional policy-making process) and translating these into software, with the goal of automating their application to particular cases

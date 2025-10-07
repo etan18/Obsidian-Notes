@@ -1,5 +1,3 @@
-
-
 #### greenhouse gases
 Greenhouse gases (GHGs) are a class of gases in the atmosphere that trap heat by absorbing energy that reflects off the Earth's surface, typically from the sun. Major GHGs include
 - Carbon dioxide (CO2) - 79% of Earth's GHG
