@@ -32,6 +32,7 @@ In practice, we decompose the value matrix into the product of two matrices in o
 We synthesize the procedure above into the following formula:
 $$\text{Attention}(Q, K, V) = \text{softmax}\bigg(\frac{Q K^\top }{\sqrt{d_k}}\bigg) \cdot V$$
 The division by $\sqrt{d_k}$, the dimension of the key vectors, is added to provide numerical stability in the key-query space. 
+#### kv-caching
 
 ## multi-headed attention
 Everything described in the previous section refers to a single head of self-attention. The attention pattern captured by a single head of attention may represent a single type of relationship between words. Some high level examples may include how adjectives modify nouns or how nouns modify proper nouns, although the true attention pattern is typically much more complex to interpret in practice.
