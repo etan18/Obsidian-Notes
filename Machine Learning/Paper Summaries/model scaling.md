@@ -10,6 +10,11 @@ At the end of the day, performing training and inference on deep learning models
 
 **Strong scaling** refers to the goal of increasing the number of chips used for training or inference while achieving a proportional, linear increase in throughput. Throughput refers to the rate at which the system can process information (for training, this could be measured in batches / second). 
 
+### scaling laws
+
+>[!info] Scaling Laws for Neural Language Models
+>The seminal work on scaling laws comes from the 2020 paper ["Scaling Laws for Neural Language Models"](https://arxiv.org/abs/2001.08361) by Kaplan et al.
+
 ### rooflines
 When we run algorithms on hardware, there are three main factors which limit our ability to scale:
 1. **Communication**: bandwidth for moving data around (bytes / second)

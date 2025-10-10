@@ -7,7 +7,8 @@ $$-\ln (\frac{1}{n})$$
 - context window: working memory of an LLM, the number of *tokens* that an llm can consider in a single prompt/query
 	- tradeoff: computational cost scales quadratically with size of context window. this is because the relationships between each token must be computed.
 	- Large context windows may also dilute relevant information and confuse the model. a 2023 study found that LLMs perform best when the most relevant information is at the beginning or end of the input
-- mmlu, benchmarks
+- Evaluations
+	- mmlu, benchmarks
 
 ---
 # fine-tuning
@@ -21,14 +22,16 @@ Fine-tuning methods:
 - Supervised fine-tuning
 	- introducing too much unknown information can make the llm more prone to extrinsic hallucinations. 
 	- also makes learning slower in comparison to unseen datasets that reiterates known information (but this part is relatively intuitive)
-- RLHF
-- RAG (not fine-tuning but an alternative to it)
-
+- Reinforcement learning from human feedback ([[alignment#rlhf|RLHF]])
+- Parameter efficient fine-tuning (PEFT): freezes model weights but adds **adapters**, a small number of additional trainable parameters to be combined back into the weight matrix.
 #### low rank adaptation (LoRA)
 One drawback of traditional full fine-tuning is that it retrains *all* parameters in the model, which is infeasible for extremely large language models. **Low-rank adaptation** (LoRA) was introduced to solve this problem by freezing the weights of the pre-trained model and injecting learned rank decomposition matrices into each layer of the Transformer architecture. With this method, the only trainable parameters are those for the rank decomposition matrices $A$ and $B$.
 
-LoRA works on the assumption of the [[dimensionality reduction#manifold learning|manifold hypothesis]] that over-parameterized large models actually reside on a low intrinsic dimension. Because of this, it assumes that the change in weights at each layer 
+LoRA works on the assumption of the [[dimensionality reduction#manifold learning|manifold hypothesis]] that over-parameterized large models actually reside on a low intrinsic dimension. Because of this, it assumes that the change in weights at each layer has a low **intrinsic rank**. Using this assumption, LoRA decomposes the weight update matrix into two low-rank matrices $\Delta W = AB$. 
 
+During fine-tuning, LoRA learns the two lower rank matrices $A$ and $B$ only rather than the entire weight matrix. It takes the learned $AB \approx \Delta W$ and adds it back to the frozen weight matrix $W$. This dramatically reduces the number of learnable parameters, while still preserving the performance and purpose of fine-tuning.
+
+---
 #### retrieval augmented generation (RAG)
 [[Retrieval augmented generation]] is a popular alternative to fine-tuning an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
 

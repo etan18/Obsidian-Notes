@@ -17,6 +17,7 @@ Modern GPUs can be roughly divided into three core components:
 
 ![[gpu.png]]
 
+Today's [[machine learning]] applications using GPUs typically involve training [[attention]] weights or inference. These applications are currently **memory-bound**, meaning that the constraint for [[model scaling]] lies in the ability to transfer data between components of the chip. 
 ### abstraction
 The general abstraction for GPU hardware consists of four layers: [[threads]], warps, blocks, and finally the GPU grid.
 
