@@ -1,7 +1,8 @@
 >[!warning] Source Material
->Resources for this page:
+>Resources for this page/reading list:
 >1. [How to Scale Your Model](https://jax-ml.github.io/scaling-book/) 
 >2. ["Simple Test-Time Scaling" (Muennighoff et al., 2025)](https://arxiv.org/abs/2501.19393)
+>3. https://matx.com/research/lifetime_llm_cost
 
 In practice, much of the challenge of deploying [[machine learning]] models comes from the design of ML systems. 
 
