@@ -1,4 +1,3 @@
-
 **Sequential data** refers to any ordered modality of data, wherein the specific position of each data point is meaningful to the overall representation of the data.
 - **Time series**: recorded at discrete time intervals where we have a data point for each interval
 	- examples include weather data, speech/audio data, EHR records

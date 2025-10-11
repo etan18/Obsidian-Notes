@@ -1,6 +1,6 @@
 #eecs283a
 
-A language model takes as input a **batch** of fixed-length [[sequential modeling|sequences]] of integer [[tokenization|token]] IDs (in practice, a PyTorch `LongTensor` of shape `(batch_size, sequence_length)`). The output of the model is a corresponding normalized probability distribution over the entire vocabulary, in the shape `(batch_size, sequence_length, vocab_size)`. Each element in this output `LongTensor` represents the probability of a given token in vocabulary being next in the input sequence.
+A language model takes as input a **batch** of fixed-length [[sequence modeling|sequences]] of integer [[tokenization|token]] IDs (in practice, a PyTorch `LongTensor` of shape `(batch_size, sequence_length)`). The output of the model is a corresponding normalized probability distribution over the entire vocabulary, in the shape `(batch_size, sequence_length, vocab_size)`. Each element in this output `LongTensor` represents the probability of a given token in vocabulary being next in the input sequence.
 
 During training, these outputted probability distributions are used to compute the **cross-entropy loss**, which is minimized for the task of **next-token prediction**. During inference, we repeatedly take the outputted probability distribution for the last token in the sequence and use it to generate the next token (e.g. sampling, taking the highest probability token).
 
@@ -20,9 +20,16 @@ G_3(x) = {'The big blue', 'big blue cat', 'blue cat jumped', 'cat jumped on', 'j
 ## reference-based evaluation
 For NLP tasks where you are given a reference text---ground truth text the model should try to output---we want to evaluate how close the model's output is to the reference text.
 #### BLEU
-**BLEU** is an algorithm based on **$n$-gram precision** developed for the task of machine translation. $n$-gram precision is a metric to compare how many $n$-grams in the generated text exist in the reference text. The issue with $n$-gram precision is that it doesn't take into account very short responses.
+**BLEU** is an algorithm based on **$n$-gram precision** developed for the task of **machine translation**. $n$-gram precision is a metric to compare how many $n$-grams in the generated text exist in the reference text. The issue with $n$-gram precision is that it doesn't take into account very short responses.
 
-BLEU adds in a **brevity penalty** to penalize incoherent or incomplete responses.
+BLEU score is the average $n$-gram precision, typically across values $1 \le n \le 4$. It also adds in a **brevity penalty** to penalize incoherent or incomplete responses.
+
+![[Pasted image 20251010182857.png]]
+
+Shortcomings:
+- A reference-based evaluation for machine translation is problems, because there may be more than one correct translation (i.e. synonyms or varied wording)
+- Word ordering does not matter (some modern solutions implement sliding window mechanisms)
+- Brevity penalty only penalizes short translations and not verbose (long) ones, although long translations will see decreasing values in precision.
 
 #### cosine similarity
 Other reference-base evaluation methods utilize the representation similarity of the embeddings between the predicted and reference texts (e.g. BERTScore). 

@@ -1,4 +1,4 @@
-Transformers are a sophisticated variant of [[neural networks]] that were first introduced in the  landmark paper [Attention is All You Need](https://arxiv.org/abs/1706.03762) published in 2017. Most commonly, Transformers are seen as text-generative [[sequential modeling|sequence-to-sequence]] models that perform **next token prediction** and enable us to process extremely large sequences of data in parallel. 
+Transformers are a sophisticated variant of [[neural networks]] that were first introduced in the  landmark paper [Attention is All You Need](https://arxiv.org/abs/1706.03762) published in 2017. Most commonly, Transformers are seen as text-generative [[sequence modeling|sequence-to-sequence]] models that perform **next token prediction** and enable us to process extremely large sequences of data in parallel. 
 
 >[!info] Sources
 >The source material for this page include
@@ -8,7 +8,7 @@ Transformers are a sophisticated variant of [[neural networks]] that were first 
 # data
 To pre-process sequential data to be passed into a Transformer, we must first generate the **embeddings**. 
 
-For a text-generation example, the data is first [[sequential modeling#tokenization|tokenized]] and then converted into vector embeddings which capture the semantic meaning of each token. Next, we add the **positional encoding** to each embedding---these can be thought of as vectors in the embedding space that encode only the index position of each token in the sequence. This information is crucial for the self-[[attention]] mechanism. Adding the positional encoding to the token embedding gives us our final embedding for each token.
+For a text-generation example, the data is first [[sequence modeling#tokenization|tokenized]] and then converted into vector embeddings which capture the semantic meaning of each token. Next, we add the **positional encoding** to each embedding---these can be thought of as vectors in the embedding space that encode only the index position of each token in the sequence. This information is crucial for the self-[[attention]] mechanism. Adding the positional encoding to the token embedding gives us our final embedding for each token.
 
 >[!important] Parameters
 >In this data pre-processing stage alone, we already see the need for many trainable parameters.
@@ -41,6 +41,9 @@ To actually generate the next token, though, we don't always just choose the tok
 - **Top-$k$ Sampling**: Limits the candidate tokens to the top k tokens with the highest probabilities, filtering out less likely options.
 - **Top-$p$ Sampling**: Considers the smallest set of tokens whose cumulative probability exceeds a threshold $p$, ensuring that only the most likely tokens contribute while still allowing for diversity.
 These modifications would occur directly on the logit values, before applying the softmax function.
+
+>[!warning] Greedy Sampling
+>Discussed in the Curious Case of Neural Degeneration. Model generation will get stuck in infinite loop if we always select the most probable token.
 
 ## training
 Transformers are trained by minimizing **cross-entropy loss**, or log loss, function. In [[information theory]], the cross-[[entropy]] between two probability distributions $p$ and $q$, over the same set of events, measures how different the two distributions are in bits. In this case, it measures the distance between the models predictions ($p$) and the true distribution of data ($q$).

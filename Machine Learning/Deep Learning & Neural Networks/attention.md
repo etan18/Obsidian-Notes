@@ -42,6 +42,6 @@ In practice, these many attention heads process the same input in parallel, and 
 In these cases, the $QKV$ matrices can be further split up to describe each head. 
 
 ## cross-attention
-Cross attention is used for [[sequential modeling|sequence-to-sequence models]] which deal with two different types of data. 
+Cross attention is used for [[sequence modeling|sequence-to-sequence models]] which deal with two different types of data. 
 
 The key difference in cross attention is that the key and query matrices are learned from two different datasets (ex. French and English datasets for translation, audio and text datasets for transcription).
