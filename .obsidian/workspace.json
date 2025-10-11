@@ -63,8 +63,7 @@
               "title": "cs283a midterm notes"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,10 +220,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1187efbe0851af98",
+  "active": "2847f9db68a04c1e",
   "lastOpenFiles": [
-    "Machine Learning/Deep Learning & Neural Networks/transformers.md",
     "cs283a midterm notes.md",
+    "Machine Learning/Deep Learning & Neural Networks/transformers.md",
     "linguistics.md",
     "Pasted image 20251010182857.png",
     "Pasted image 20251010182310.png",

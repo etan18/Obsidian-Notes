@@ -22,9 +22,11 @@ For NLP tasks where you are given a reference text---ground truth text the model
 #### BLEU
 **BLEU** is an algorithm based on **$n$-gram precision** developed for the task of **machine translation**. $n$-gram precision is a metric to compare how many $n$-grams in the generated text exist in the reference text. The issue with $n$-gram precision is that it doesn't take into account very short responses.
 
-BLEU score is the average $n$-gram precision, typically across values $1 \le n \le 4$. It also adds in a **brevity penalty** to penalize incoherent or incomplete responses.
+BLEU score is the average $n$-gram precision, typically across values $1 \le n \le 4$. It also adds in a **brevity penalty** to penalize incoherent or incomplete responses. If $c$ is the length of the candidate text and $r$ is the length of the reference text:
 
-![[Pasted image 20251010182857.png]]
+$$\text{BP} = \begin{cases}1 & \text{if } c>r \\ \exp(1-r/c) & \text{if } c \le r\end{cases}$$
+Then,
+$$\text{BLEU} = \text{BP} \cdot \exp \bigg( \sum_{n=1}^N w_n \log p_n \bigg)$$
 
 Shortcomings:
 - A reference-based evaluation for machine translation is problems, because there may be more than one correct translation (i.e. synonyms or varied wording)
