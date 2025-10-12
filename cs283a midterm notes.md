@@ -21,3 +21,10 @@ rnns
 attention
 - attention maps: unexpected outcome of attention, gives insight into how language models make decisions, motivates interp
 
+
+Evaluation: how well does model perform on unseen data
+
+- Traditional data splits are assumed to be IID
+
+![[Pasted image 20251011132012.png]]
+![[Pasted image 20251011140656.png]]

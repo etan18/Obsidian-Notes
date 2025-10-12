@@ -6,8 +6,10 @@ Given a **sample** of $n$ observations, where each observation contains $d$ **fe
 #### datasets
 For any [[supervised learning]] model, we need a **dataset** of sample points where we already know the label we are trying to have the model predict. Using this dataset, we need to further split it into 3 sets:
 - The *training set*, which is used to learn the weights
-- The *validation set*, which is used to tune the hyperparameters, and is split from the train set
+- The *validation set*, which is used to tune the hyperparameters or decide when to stop training, and is split from the train set
 - The *test set*, which is used to evaluate model performance without being given the labels
+	- Public test data: freely-accessible and published online for others to see and use
+	- Private "held-out" test data: only used for final model evaluation, not published to avoid contamination, overfitting, or "gaming" performance
 
 >[!example] Notes on Data
 >- [[data selection & composition]]
@@ -31,7 +33,7 @@ At a high level, **bias** and **variance** are the two sources of error in a mod
 	- more features $\implies$ more variance
 A third source of error is **noise** $\epsilon$, which is randomly distributed about a $0$ mean and added to the output of $h' = h + \epsilon$.
 
-## metrics
+## metrics & evaluation
 
 >[!quote] Goodhart's Law
 >When a metric becomes a good target, it ceases to be a good metric.
@@ -42,6 +44,13 @@ However, there are a few problems with accuracy as a metric:
 2. **Threshold sensitivity**: accuracy uses a single fixed threshold to make predictions (usually 0.5 in a binary classification), but sometimes adjusting this threshold can get you more desirable predictions.
 
 **ROC curves** are are used to evaluate classifiers after they’re trained. They plot the False Positive Rate $FPR = \frac{\text{FP}}{\text{FP} + \text{TN}}$   against the True Positive Rate  $TPR = \frac{\text{TP}}{\text{TP} + \text{FN}}$. 
+#### benchmarks
+**Benchmarks** are standardized evaluations of performance, which can span a single task or multiple tasks. Today, benchmarks are getting saturated very quickly, meaning models can achieve human-level accuracy on most tasks, making it difficult to distinguish between model capabilities.
+- **Dataset contamination**: when the model sees test data during training, evaluations become overinflated. This is a particularly big problem in the age of pre-training [[large language models]].
+- [[subpopulation shift|Spurious correlations]]: models learn relationships between concepts that are unrelated to the task being evaluated
+
+>[!warning] The Long Tail Paradox
+>LLMs can look really impressive when we are trying to challenge them with tricks, but maybe this is because we’re bad at coming up with long-tail (rare) challenging tasks. The vast majority of possible real-world scenarios are individually rare, and collectively these "long tail" cases make up a huge portion of actual usage. 
 ### model assumptions
 Statistician George Box is famously quoted for saying that “all models are
 wrong, but some are useful”. The real world is intractably complex, and models can only approximate using assumptions. Understanding what assumptions a model makes about the underlying data will help us better interpret model outcomes.

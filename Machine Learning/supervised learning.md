@@ -8,3 +8,10 @@ The goal is to learn the [[conditional probability]] function $p(y|x)$. Upon lea
 $$\hat{y} = \mathbb{E}_Y[p(Y|X=x)]$$
 - When the labels $y$ are *discrete*, this is a [[classification]] problem
 - When the labels $y$ are *continuous*, this is a [[regression]] problem
+
+### structured prediction
+**Structured prediction** is a class of supervised learning tasks which predict a combination of labels from a fixed with a specific structure. Examples of structured prediction tasks include
+- Syntactic parsing (constituency parsing)
+	- [[Automatic speech recognition]]
+- Semantic parsing
+	- Code generation (text-to-SQL or text-to-code)

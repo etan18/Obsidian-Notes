@@ -10,7 +10,14 @@
 >
 >Because of this, sequential models should be flexible to data length, given one of the paradigms above.
 
+**Autoregressive modeling** is a technique that takes advantage of these properties of sequential data. Autoregressive models predict future values based on linear combinations of its own past values. They are typically formulated using the chain rule of probability:
+$$p(\overline x) = \prod_{i=1}^{|\overline x|} p(x_i | x_1, ..., x_{i-1})$$
+
 ---
+
+A language model takes as input a **batch** of fixed-length [[sequence modeling|sequences]] of integer [[tokenization|token]] IDs (in practice, a PyTorch `LongTensor` of shape `(batch_size, sequence_length)`). The output of the model is a corresponding normalized probability distribution over the entire vocabulary, in the shape `(batch_size, sequence_length, vocab_size)`. Each element in this output `LongTensor` represents the probability of a given token in vocabulary being next in the input sequence.
+
+During training, these outputted probability distributions are used to compute the **cross-entropy loss**, which is minimized for the task of **next-token prediction**. During inference, we repeatedly take the outputted probability distribution for the last token in the sequence and use it to generate the next token (e.g. sampling, taking the highest probability token).
 
 ## recurrent neural networks
 Basic, or "vanilla," [[neural networks]]  are known as **feedforward** neural networks. This means that the outputs of neurons in one layer are fed as inputs to neurons in the next layer only.
