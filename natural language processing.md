@@ -18,6 +18,30 @@ G_3(x) = {'The big blue', 'big blue cat', 'blue cat jumped', 'cat jumped on', 'j
 N-gram models were the some of the earliest attempts at language modeling. They are autoregressive models which make a Markov assumption---the probability of a word at index $i$ depends only on the $n-1$ words that came before it. We can thus approximate the probability 
 $$p(X_i = x) \approx p(x | X_{i-n+1}, ..., X_{i-1}) \approx \frac{\text{Count}(X_{i-n+1},...,X_{i-1}, x)}{\text{Count}(X_{i-n+1},...,X_{i-1})}$$
 This is the number of times the candidate $n$-gram appears in the corpus divided by the number of times the reference $(n-1)$-gram appears.
+
+The parameters of an N-gram model are the probabilities in the distribution $p(X_i = x)$ which are learned via [[maximum likelihood estimation]]. For a vocab of size $V$, there are $V^n$ parameters, although in practice we don't need to learn probabilities for $n$-grams which do not appear in the training data. As $n$ increases, we get more fluent text, but also more sparsity from $n$-grams which do not appear.
+
+For an n-gram, we have to store the counts of all $n$-grams and $(n-1)$-grams.
+- Smoothing: because of the sparsity of counts (i.e. many plausible n-grams will have a count of 0), we can add a small number to every count
+- Backoff: when the context $(n-1)$-gram never appears in the corpus, iteratively decrement $n$ until the count is nonzero
+
+Problems with N-gram models:
+- No notion of similarity
+- Fixed context window, relevant context may be farther in the sequence
+##### bag of words
+In the simplest where $n=1$, the resultant unigram model simply models
+$$p(X_i=x) \approx \frac{\text{Count} (x)}{\text{Corpus (not vocab) size}}$$
+and the probability of a sequence is thus
+$$p(\overline X) = \prod_{x \in \overline X} p(x)$$
+Given this formulation where each word is not conditioned on any other word in the sequence, word order does not matter. Hence, the name "bag of words". 
+
+---
+# evaluation
+
+For a language model which produces probabilities of sequences of text $p(\overline X)$, we want to evaluate fit over a test set for which it produces sequences $\overline X_i$ for $1 \le i \le m$:
+- **Likelihood**
+- **Negative log likelihood**: fixes float underflow problem of likelihood, more numerical stability
+- **Perplexity**: [[information theory]]-based metric, computes the uncertainty
 ## reference-based evaluation
 For NLP tasks where you are given a reference text---ground truth text the model should try to output---we want to evaluate how close the model's output is to the reference text.
 #### BLEU

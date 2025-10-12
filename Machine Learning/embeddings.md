@@ -29,6 +29,6 @@ $$\mathbb P[(w, c) \in \mathcal{D}] = \frac{1}{1+ \exp(-\cos(\phi(w), \phi(c)))}
 The negative probability is computed as $\mathbb P[(w, c) \notin \mathcal D] = 1 - \mathbb{P}[(w, c) \in \mathcal D]$.
 
 Intuitively, we are trying to differentiate between pairs which do and don't exist in the same context.
-#### bag of words
+
 Algorithms like Skip-Gram produce embedding vectors for individual wordtypes. If we wanted to get the representation for a sequence of wordtypes, such as a whole sentence, we could use a **bag of words** approach. For a sentence $X$,
 $$\phi(X) = \frac{1}{|X|} \sum_{i=1}^{|X|} \phi(X_i)$$
