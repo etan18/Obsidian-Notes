@@ -1,6 +1,8 @@
 Basic, or "vanilla," [[neural networks]], are known as **feedforward** neural networks. This means that the outputs of neurons in one layer are fed as inputs to neurons in the next layer only. Because of this, we now have directed weights, such that $W_{ij} \ne W_{ji}$, but both can exist for any two neurons in the network $i \ne j$.
 
-The key idea behind **recurrent neural networks** is that we want to add a **latent space** whose values 
+The key idea behind **recurrent neural networks** is that we want to add **hidden states** where
+1. Hidden state values depend on computations performed at previous timesteps
+2. Hidden state values can be taken in as input at any timestep
 
 
 >[!danger] Vanishing Gradient Problem
