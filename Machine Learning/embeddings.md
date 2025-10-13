@@ -30,5 +30,13 @@ The negative probability is computed as $\mathbb P[(w, c) \notin \mathcal D] = 1
 
 Intuitively, we are trying to differentiate between pairs which do and don't exist in the same context.
 
+### sentence embeddings
 Algorithms like Skip-Gram produce embedding vectors for individual wordtypes. If we wanted to get the representation for a sequence of wordtypes, such as a whole sentence, we could use a **bag of words** approach. For a sentence $X$,
 $$\phi(X) = \frac{1}{|X|} \sum_{i=1}^{|X|} \phi(X_i)$$
+Here, we take the average of word embeddings in a sequence $X$, but in doing so we lose notions of word ordering and all words are weighted the same.
+
+We can also use [[recurrent neural networks#bidirectional rnn|bidirectional RNNs]] to produce sentence embeddings. To do so, we combine the forward and backward hidden states at a given step using a Pooling layer. This produces **"context-aware"** embeddings. Pooling functions map a sequence of items of type $t$ to a single item of type $t$:
+$$\text{Pool}: \mathbb{R}^{d \times n} \rightarrow \mathbb R^{d}$$
+Sentence embeddings are used for tasks like 
+- Sentiment analysis
+- Text classification

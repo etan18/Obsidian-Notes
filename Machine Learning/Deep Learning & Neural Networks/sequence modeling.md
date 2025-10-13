@@ -14,19 +14,12 @@
 $$p(\overline x) = \prod_{i=1}^{|\overline x|} p(x_i | x_1, ..., x_{i-1})$$
 
 ---
-
+## seq2seq models
 A language model takes as input a **batch** of fixed-length [[sequence modeling|sequences]] of integer [[tokenization|token]] IDs (in practice, a PyTorch `LongTensor` of shape `(batch_size, sequence_length)`). The output of the model is a corresponding normalized probability distribution over the entire vocabulary, in the shape `(batch_size, sequence_length, vocab_size)`. Each element in this output `LongTensor` represents the probability of a given token in vocabulary being next in the input sequence.
 
+At a high level, a **sequence-to-sequence** model, also known as an encoder-decoder model, [[embeddings|encodes]] some input sequential data and decodes it using autoregressive generation.
+
 During training, these outputted probability distributions are used to compute the **cross-entropy loss**, which is minimized for the task of **next-token prediction**. During inference, we repeatedly take the outputted probability distribution for the last token in the sequence and use it to generate the next token (e.g. sampling, taking the highest probability token).
-
-## recurrent neural networks
-Basic, or "vanilla," [[neural networks]]  are known as **feedforward** neural networks. This means that the outputs of neurons in one layer are fed as inputs to neurons in the next layer only.
-
-
-### long short term memory
-
-
-
 
 ## training
 When training a sequential model, it's generally infeasible to train on all data at once. Instead, we train on batches of fixed-length data, where the length of the data is determined by the **context length**, or block size, hyperparameter. This strategy is particularly necessary in [[large language models]] or other deep-learning based sequential models.
@@ -43,5 +36,6 @@ and so on for each token in the sequence.
 
 This training scheme also allows the model to handle variable length inputs, with lengths of $1$ all the way up to the context length. For reference, ChatGPT-4o has a context window of 128k.
 
-
-[[attention]] and [[transformers]]
+>[!example] Related Notes
+>- [[attention]] and [[transformers]]
+>- [[recurrent neural networks]]

@@ -28,3 +28,9 @@ Evaluation: how well does model perform on unseen data
 
 ![[Pasted image 20251011132012.png]]
 ![[Pasted image 20251011140656.png]]
+
+![[Pasted image 20251013120227.png]]
+
+**seq2seq**
+![[Pasted image 20251013131417.png]]
+
