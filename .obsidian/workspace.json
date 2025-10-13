@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Artificial Intelligence/search tree.md",
+                "file": "Machine Learning/Deep Learning & Neural Networks/transformers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "search tree"
+              "title": "transformers"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs283a midterm notes.md",
+                "file": "Machine Learning/Deep Learning & Neural Networks/transformers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for cs283a midterm notes"
+              "title": "Backlinks for transformers"
             }
           },
           {
@@ -180,6 +180,12 @@
   },
   "active": "2f28253a29439b78",
   "lastOpenFiles": [
+    "Cognitive Science/img/neurotransmitters.png",
+    "Computer Science/search algorithms.md",
+    "Pasted image 20251011132012.png",
+    "Pasted image 20251011134241.png",
+    "Machine Learning/Artificial Intelligence/search problems.md",
+    "Machine Learning/Artificial Intelligence/search tree.md",
     "Machine Learning/Deep Learning & Neural Networks/sequence modeling.md",
     "Unfinished/systems & networking prep.md",
     "Unfinished/meta.md",
@@ -194,8 +200,6 @@
     "climate change.md",
     "sustainable industry.md",
     "Pasted image 20251011140656.png",
-    "Pasted image 20251011134241.png",
-    "Pasted image 20251011132012.png",
     "Machine Learning/Deep Learning & Neural Networks/neural networks.md",
     "Math/Probability/hidden markov models.md",
     "linguistics.md",
@@ -208,10 +212,6 @@
     "Pasted image 20251010182310.png",
     "Pasted image 20251010182857.png",
     "Machine Learning/Artificial Intelligence/artificial intelligence.md",
-    "Computer Science/high-dimensional computing.md",
-    "Machine Learning/alignment.md",
-    "Machine Learning/Paper Summaries/model scaling.md",
-    "Computer Science/Machine Structures/parallelism.md",
     "Machine Learning/img/cbow.png",
     "Machine Learning/img/audio.png",
     "Computer Science/img/gpu.png",

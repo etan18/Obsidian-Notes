@@ -40,6 +40,8 @@ To actually generate the next token, though, we don't always just choose the tok
 - **Temperature**: this hyperparameter controls the randomness of the sample by scaling the logit values. $T > 1$ softens the distribution, increasing randomness and "creativity" in the output, whereas $T < 1$ sharpens the distribution, leading to higher confidence and deterministic output.
 - **Top-$k$ Sampling**: Limits the candidate tokens to the top k tokens with the highest probabilities, filtering out less likely options.
 - **Top-$p$ Sampling**: Considers the smallest set of tokens whose cumulative probability exceeds a threshold $p$, ensuring that only the most likely tokens contribute while still allowing for diversity.
+- $\epsilon$-**Sampling**: Consider only the tokens with $p(x_i|x_1, ..., x_{i-1}) \ge \epsilon$, and renormalize the distribution  
+- **Constrained decoding**: If we have additional information about which tokens can appear next in the sequence (e.g. it must be a noun, or it must be punctuation), we constrain our output space to be $\mathcal C \subseteq \mathcal V$, renormalize over the distribution of words in $\mathcal C$.
 These modifications would occur directly on the logit values, before applying the softmax function.
 
 >[!warning] Greedy Sampling

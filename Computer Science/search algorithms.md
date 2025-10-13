@@ -49,3 +49,20 @@ Let $C^*$ be the cost of the optimal path, and $\epsilon$ be the min cost betwee
 Implementation of UCS uses a heap-based priority queue.
 
 ---
+## search tree
+The concept of a **search tree** is very similar to [[graph theory]], with some additional characteristics that come from the properties of the graph being a *tree*. In addition to general search algorithms, there's a few ways that we can make algorithms more comprehensive with a search tree.
+
+### iterative deepening
+**Iterative deepening** combines DFS and BFS to take advantage of the time and space efficiency of DFS while producing a shortest-path solution that we get from BFS. For the algorithm, we want to
+1. Set a maximum depth $d$ and run DFS up to that $d$. 
+2. If a solution was found, return.
+3. Else, set $d = d+1$ and return to step 1.
+
+### beam search
+Beam search is an efficient method of exploring a search tree, where at each layer, we select the $n$ most probable next nodes to explore and maintain only those paths. $n$ is a hyper-parameter for the "beam" size maintained at each step. 
+
+Algorithm: 
+- For the current node, select the $n$ most probable child nodes. This will produce $n^2$ active paths ($n$ nodes expanded from each of $n$ parents). 
+- Choose the $n$ most likely paths, and discard the rest.
+- At the end (i.e. max depth), choose the most probable path.
+Beam search is widely used in [[natural language processing]] and [[sequence modeling]] when generating elements in a sequence.
