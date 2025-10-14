@@ -29,12 +29,15 @@ Problems with N-gram models:
 - No notion of similarity
 - Fixed context window, relevant context may be farther in the sequence
 ##### bag of words
+**Continuous bag of words** (CBOW) looks at the pooled likelihood of a word appearing among some context. CBOW is agnostic of the relative position of the context words, and considers all context equally. 
+
 In the simplest where $n=1$, the resultant unigram model simply models
 $$p(X_i=x) \approx \frac{\text{Count} (x)}{\text{Corpus (not vocab) size}}$$
 and the probability of a sequence is thus
 $$p(\overline X) = \prod_{x \in \overline X} p(x)$$
 Given this formulation where each word is not conditioned on any other word in the sequence, word order does not matter. Hence, the name "bag of words". 
 
+![[cbow.png]]
 ---
 # evaluation
 

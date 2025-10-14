@@ -12,10 +12,6 @@ There are some major problems with this approach:
 We instead want to represent language via continuous vectors, where each dimension represents some hidden feature of language. Continuous embeddings are based on the **distributional hypothesis** that words used in similar contexts have similar meaning.
 
 In contrast to one hot vectors---which are long, sparse vectors---embeddings are short, dense vectors, making them more powerful representations. **Word2vec** is a software package that enables us to learn **static embeddings** from data.
-
-**Continuous bag of words** (CBOW) looks at the pooled likelihood of a word appearing among some context. CBOW is agnostic of the relative position of the context words, and considers all context equally. 
-
-![[cbow.png]]
 #### skip-gram
 The Skip-Gram model uses [[maximum likelihood estimation]] to represent $\mathbb{P}[c | w;\theta]$, the probability of a context word $c$ given that we observe word $w$. To train this model, we find the optimal parameters $\theta$ for this task:
 $$\arg\max_{\theta} \prod_{(w, c) \in \mathcal{D}} \mathbb{P}[c|w;\theta]$$
@@ -25,7 +21,7 @@ Intuitively, the probability can be computed by taking the softmax over the [[na
 
 $$\arg\max_{\theta} \prod_{(w, c) \in \mathcal D} \mathbb P[(w, c) \in \mathcal D] \prod_{(w, c) \in \mathcal D'} \mathbb P[(w, c) \notin \mathcal D]$$
 Here, $\mathcal D'$ is assembled by sampling $n$ pairs ($w'$, $c'$) where $w' \sim \mathbb P(W)$ and $c' \sim \mathbb{P}(C)$. In practice, we work with log probabilities for numerical stability. Here, we compute the probability by taking the [[logistic regression|sigmoid]] of the cosine similarity,
-$$\mathbb P[(w, c) \in \mathcal{D}] = \frac{1}{1+ \exp(-\cos(\phi(w), \phi(c)))}$$
+$$\mathbb P[(w, c) \in \mathcal{D}] = \sigma(\cos(\phi(w), \phi(c))) = \frac{1}{1+ \exp(-\cos(\phi(w), \phi(c)))}$$
 The negative probability is computed as $\mathbb P[(w, c) \notin \mathcal D] = 1 - \mathbb{P}[(w, c) \in \mathcal D]$.
 
 Intuitively, we are trying to differentiate between pairs which do and don't exist in the same context.
@@ -35,7 +31,7 @@ Algorithms like Skip-Gram produce embedding vectors for individual wordtypes. If
 $$\phi(X) = \frac{1}{|X|} \sum_{i=1}^{|X|} \phi(X_i)$$
 Here, we take the average of word embeddings in a sequence $X$, but in doing so we lose notions of word ordering and all words are weighted the same.
 
-We can also use [[recurrent neural networks#bidirectional rnn|bidirectional RNNs]] to produce sentence embeddings. To do so, we combine the forward and backward hidden states at a given step using a Pooling layer. This produces **"context-aware"** embeddings. Pooling functions map a sequence of items of type $t$ to a single item of type $t$:
+We can also use [[recurrent neural networks#bidirectional rnn|bidirectional RNNs]] to produce sentence embeddings. To do so, we combine the forward and backward hidden states at a given step using a Pooling layer. This produces **"context-aware"** embeddings which may be different for a given word depending on context. Pooling functions map a sequence of items of type $t$ to a single item of type $t$:
 $$\text{Pool}: \mathbb{R}^{d \times n} \rightarrow \mathbb R^{d}$$
 Sentence embeddings are used for tasks like 
 - Sentiment analysis
