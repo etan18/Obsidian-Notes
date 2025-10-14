@@ -27,3 +27,4 @@ know how to do simple parses
 cross-attention:
 ![[Pasted image 20251013155239.png]]
 
+![[Pasted image 20251014111214.png]]
