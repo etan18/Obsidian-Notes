@@ -37,3 +37,4 @@ Evaluation: how well does model perform on unseen data
 
 cross-attention:
 ![[Pasted image 20251013155239.png]]
+
