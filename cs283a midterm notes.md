@@ -20,11 +20,11 @@ know how to do simple parses
 
 ![[Pasted image 20251013120227.png]]
 
-**seq2seq**
-![[Pasted image 20251013131417.png]] 
 
 
 cross-attention:
 ![[Pasted image 20251013155239.png]]
 
-![[Pasted image 20251014111214.png]]
+Transformers
+
+![[Pasted image 20251014122720.png]]
