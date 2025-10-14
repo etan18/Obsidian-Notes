@@ -3,7 +3,7 @@ When we're trying to learn a very specific task (e.g. object identification in a
 **Self-attention** is a mechanism found in modern machine learning models which deal with sequential data (most notably, [[transformers]]). It essentially includes all of the surrounding contextual data in the sequence and reweighs their importance on the current time step.
 
 ### QKV
-Self-attention is most commonly implemented as **scaled dot-product attention**, which is what's used in transformers. This is done using the QKV procedure, which is meant to formulate the problem as a [[search problems|search problem]].
+Self-attention is most commonly implemented as **scaled dot-product attention**, which is what's used in [[transformers]]. This is done using the QKV procedure, which is meant to formulate the problem as a [[search problems|search problem]]. The goal is, for some input **query**, to find the **keys** which are most similar to it. These keys map to **values**, which encode the "answer" or information requested by the query. We take the weighted average of values by the similarity of their key to the vector.
 
 Self-attention utilizes three weight matrices, referred to as $W_Q$, $W_K$, $W_V$, which are adjusted as model parameters during training. These matrices serve to project the input embeddings into query, key, and value components of the sequence, respectively.
 
@@ -42,6 +42,6 @@ In practice, these many attention heads process the same input in parallel, and 
 In these cases, the $QKV$ matrices can be further split up to describe each head. 
 
 ## cross-attention
-Cross attention is used for [[sequence modeling|sequence-to-sequence models]] which deal with two different types of data. 
+Cross attention is used for [[sequence modeling|sequence-to-sequence models]] which deal with two different types of data. In cross-attention, tokens in one sequence attend to tokens in another sequence. In contrast, in self-attention tokens in the same sequence attend to each other.
 
 The key difference in cross attention is that the key and query matrices are learned from two different datasets (ex. French and English datasets for translation, audio and text datasets for transcription).

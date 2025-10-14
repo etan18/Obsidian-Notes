@@ -34,3 +34,6 @@ Evaluation: how well does model perform on unseen data
 **seq2seq**
 ![[Pasted image 20251013131417.png]]
 
+
+cross-attention:
+![[Pasted image 20251013155239.png]]
