@@ -1,6 +1,11 @@
 ### sustainability transitions
 Sustainability transitions are major shifts in established industries, socio-technical systems, and societies toward more sustainable modes of production and consumption. These transitions are necessary to respond to [[climate change]] and overconsumption issues.
 
+>[!tip] Creative Destruction
+>Creative destruction is a process in capitalist economies where new innovations constantly replace old technologies, products, and industries. The intuition is that incumbent companies have financial stake in existing technologies, and are not likely to push for innovation. This cycle of "creative destruction" is essential for economic growth and innovation.
+>
+>The concept was introduced by economist Joseph Schumpeter, who won the 2025 Nobel Prize in Economics for this work.
+
 ### natural capitalism
 **Natural capital** includes all naturally-occurring resources, living systems, and ecosystem services. *Natural Capitalism* (1999) critiques the system of capitalism:
 > It neglects to assign any value to the largest stocks of capital it employs — the natural resources and living systems, as well as the social and cultural systems that are the basis of human capital.

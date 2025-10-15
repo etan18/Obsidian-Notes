@@ -15,3 +15,6 @@ The **greenhouse effect** is the process of trapping heat from the sun that has 
 
 ### renewable energy
 Three key levers—electric vehicles, heat pumps, and renewables—can cut down reliance on fossil fuels.
+
+One of the biggest barriers to clean energy comes from its **overcapacity** problem. This occurs when global production capacity for clean energy technologies, such as solar panels and batteries, exceeds the sustainable demand. Overcapacity drives down clean energy prices, which some argue deters expansion of clean energy. This is particularly salient in China, where substantial government subsidies are said to be the driving force of overcapacity.
+

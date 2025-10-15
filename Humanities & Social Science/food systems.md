@@ -24,7 +24,6 @@ Food supply chains face unique challenges that question the applicability of gen
 
 ## retail sales
 The biggest consideration for food producers is sales.
-
 #### certifications
 A common market solution to ensuring the quality of produce (on axes like sustainability, locality, worker conditions) is through third-party certifications.
 - **USDA Certified Organic**
