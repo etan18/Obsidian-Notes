@@ -47,9 +47,6 @@ Most single use packaging is non-recyclable, and there are barriers to widesprea
 1. High collection costs
 2. Complex sorting
 3. Unknown contamination leading to safety concerns.
-
-extended producer responsibility (EPR) laws
-
 ## food waste
 An estimated one-third of global food production becomes food loss and waste. Combined with high rates of food insecurity and food deserts around the world, this signals a major failure of current food systems. These failures arise out of
 - A mismatch between food prices and production costs: when production costs rise, food prices increase, which may leave more food unsold and unconsumed. When prices are low relative to production costs, it may not be profitable for farmers to produce and sell.
