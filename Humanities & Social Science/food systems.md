@@ -35,6 +35,20 @@ A common market solution to ensuring the quality of produce (on axes like sustai
 - **Certified Humane**: sets animal welfare standards for meat, dairy, and eggs 
 - **Fair Trade**: Requires supply chain audit to ensure safe working conditions, sustainable livelihoods/wages, and environmental protection measures
 Certifications are generally expensive to obtain, and require rigorous auditing. To consumers, certifications are an impactful method of signaling company values, but it's important to recognize that obtaining certifications are essentially just checking a set of boxes and may not be feasible for smaller producers to obtain, even though they may be ethical actors.
+#### packaging
+Packaging serves many purposes:
+- Marketing
+- Convey information: nutritional labels, nutrition facts, certifications
+- Convenience of consumption
+- Food safety: some packaging is mandated by the USDA, can reduce liability for the manufacturer
+Most food and beverage products include some type of single-use packaging. The environmental cost of packaging is typically far less than either 1) impacts on the farm or 2) wastage along the supply chain, but is an issue that has gained a lot of publicity.
+
+Most single use packaging is non-recyclable, and there are barriers to widespread adoption of **post-consumer recycled** (PCR) plastic packaging, including:
+1. High collection costs
+2. Complex sorting
+3. Unknown contamination leading to safety concerns.
+
+extended producer responsibility (EPR) laws
 
 ## food waste
 An estimated one-third of global food production becomes food loss and waste. Combined with high rates of food insecurity and food deserts around the world, this signals a major failure of current food systems. These failures arise out of
