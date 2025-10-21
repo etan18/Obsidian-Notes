@@ -21,4 +21,13 @@ What we want to consider when composing datasets from heterogeneous sources is w
 - What do we know about a dataset?
 	- base rates, subgroup averages, dataset size
 
+What characteristics of datasets train well-calibrated models?
+- Synthetic versus data addition
+
+
+#### how to frame calibration as a dataset composition problem
+
+We cannot simply align the mean of the train set with the mean of the test set. 
+
+Question: what should the mean of the train dataset be, given differences in feature distributions?
 #### how does miscalibration affect llms?
