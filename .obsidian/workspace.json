@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/data calibration.md",
+                "file": "Research/master's research.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data calibration"
+              "title": "master's research"
             }
           }
         ]
@@ -180,10 +180,10 @@
   },
   "active": "b6e159953bcbb4ad",
   "lastOpenFiles": [
-    "Machine Learning/Paper Summaries/calibration.md",
+    "Research/Mean Consistency Population Calibration.md",
     "Research/data calibration.md",
     "Research/master's research.md",
-    "Research/Mean Consistency Population Calibration.md",
+    "Machine Learning/Paper Summaries/calibration.md",
     "Humanities & Social Science/food systems.md",
     "Untitled.md",
     "Research/ML4H.md",
