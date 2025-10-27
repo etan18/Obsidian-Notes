@@ -20,7 +20,7 @@ For a text-generation example, the data is first [[sequence modeling#tokenizatio
 
 - Masking - given a sequence of $n$ tokens, a neat trick is that we can treat the prediction of every $i$-th token as its own training example. Thus, if we are trying to predict the $i$-th token, we want to *mask* all tokens that come after it in the sequence so they cannot influence the prediction. This is commonly implemented when learning the attention pattern (described below), where we give all successive tokens a similarity score of $-\infty$ so that they are zeroed out when fed into the softmax while still ensuring normalized probabilities.
 
-# architecture
+# transformer block
 The **Transformer block** is what actually processes and transforms the input data. Each block includes:
 - **[[Attention]] mechanism**, the core component of the Transformer block. It allows tokens to communicate with other tokens, capturing contextual information and relationships between words. The attention mechanism may include multiple heads of self-attention.
 - **[[perceptrons#multilayer perceptrons|MLP]] Layer**, a feed-forward network that operates on each token independently. The MLP layer projects the outputted self-attention representations into higher dimensions to enhance the model's representational capacity.
@@ -31,7 +31,18 @@ Most models contain multiple Transformer blocks, each stacked sequentially one a
 #### MLP layer
 Around $2/3$ of a Transformer's total parameters are used for the MLP layers. Whereas the attention block allows the tokens in the input sequence to share information with one another, each token is input independently in parallel through the MLP. The outputs of each token are then added together.
 
-#### next token prediction
+# transformer language model
+
+The output of the final hidden state from the transformer block 
+# training
+Transformers are trained by minimizing **cross-entropy loss**, or log loss, function. In [[information theory]], the cross-[[entropy]] between two probability distributions $p$ and $q$, over the same set of events, measures how different the two distributions are in bits. In this case, it measures the distance between the models predictions ($p$) and the true distribution of data ($q$).
+
+During training, the Transformer takes as input a batched sequence of token IDs. These values are stored in a tensor of shape `(batch_size, sequence_length)`. The Transformer outputs a batched, normalized probability distribution of shape `(batch_size, sequence_length, vocab_size)` where the predicted distribution is over the next word for each input token. We take the cross-entropy loss between the actual next word and the predicted distribution for each token, giving us `batch_size * sequence_length`training samples per batch.
+
+---
+# inference
+To actually generate text from a Transformer language model, we are essentially performing **next token prediction** from an input sequence. This is an *autoregressive* sampling task.
+
 After passing through each transformer block, the final representations are passed through a  linear layer with  `vocab_size` output dimensions, assigning each token in the vocabulary a **logit** value. The logits will be a tensor of shape `(batch_size, sequence_length, vocab_size)`, representing a raw, unnormalized score for each vocabulary token at each position in the sequence for each sequence in the batch.
 
 Taking the softmax over the logits, we get our output probabilities assigning the probability of a token being the next in the input sequence.
@@ -46,12 +57,6 @@ These modifications would occur directly on the logit values, before applying th
 
 >[!warning] Greedy Sampling
 >Discussed in the Curious Case of Neural Degeneration. Model generation will get stuck in infinite loop if we always select the most probable token.
-
-## training
-Transformers are trained by minimizing **cross-entropy loss**, or log loss, function. In [[information theory]], the cross-[[entropy]] between two probability distributions $p$ and $q$, over the same set of events, measures how different the two distributions are in bits. In this case, it measures the distance between the models predictions ($p$) and the true distribution of data ($q$).
-
-During training, the Transformer takes as input a batched sequence of token IDs. These values are stored in a tensor of shape `(batch_size, sequence_length)`. The Transformer outputs a batched, normalized probability distribution of shape `(batch_size, sequence_length, vocab_size)` where the predicted distribution is over the next word for each input token. We take the cross-entropy loss between the actual next word and the predicted distribution for each token, giving us `batch_size * sequence_length`training samples per batch.
-## inference
 
 #### kv cache
 **Key-value caching** is used at inference time to prevent repetitive computations. This is necessary because of the **autoregressive** nature of next token prediction, wherein each token can be represented by itself and all its preceding tokens. 
