@@ -35,7 +35,7 @@ Around $2/3$ of a Transformer's total parameters are used for the MLP layers. Wh
 
 The output of the final hidden state from the transformer block 
 # training
-Transformers are trained by minimizing **cross-entropy loss**, or log loss, function. In [[information theory]], the cross-[[entropy]] between two probability distributions $p$ and $q$, over the same set of events, measures how different the two distributions are in bits. In this case, it measures the distance between the models predictions ($p$) and the true distribution of data ($q$).
+Transformers are trained by minimizing **cross-entropy loss**, or log loss, function. In [[information theory]], the cross-[[entropy]] between two probability distributions $p$ and $q$, over the same set of events, measures how different the two distributions are in bits. In this case, it measures the distance between the models predictions ($p$) and the true distribution of data ($q$). Conceptually, cross-entropy and **negative log likelihood** are the same.
 
 During training, the Transformer takes as input a batched sequence of token IDs. These values are stored in a tensor of shape `(batch_size, sequence_length)`. The Transformer outputs a batched, normalized probability distribution of shape `(batch_size, sequence_length, vocab_size)` where the predicted distribution is over the next word for each input token. We take the cross-entropy loss between the actual next word and the predicted distribution for each token, giving us `batch_size * sequence_length`training samples per batch.
 

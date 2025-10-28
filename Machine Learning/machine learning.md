@@ -1,7 +1,7 @@
 General topics and ideas in machine learning.
 
 ---
-## data
+# data
 Given a **sample** of $n$ observations, where each observation contains $d$ **features**, machine learning attempts to use this sample to solve larger problems.
 #### datasets
 For any [[supervised learning]] model, we need a **dataset** of sample points where we already know the label we are trying to have the model predict. Using this dataset, we need to further split it into 3 sets:
@@ -33,7 +33,7 @@ At a high level, **bias** and **variance** are the two sources of error in a mod
 	- more features $\implies$ more variance
 A third source of error is **noise** $\epsilon$, which is randomly distributed about a $0$ mean and added to the output of $h' = h + \epsilon$.
 
-## metrics & evaluation
+# metrics & evaluation
 
 >[!quote] Goodhart's Law
 >When a metric becomes a good target, it ceases to be a good metric.
@@ -61,3 +61,9 @@ Some common model assumptions include:
 3. **Normal distribution**: many statistical methods assume that data is normally distributed.
 4. **Boundary form**: for example, a linear classifier assumes that decision boundaries are linear.
 5. **Tractability**: Let $X$ be the input and $Z$ be the latent representation of $X$. Every generative model makes the assumption that it’s tractable to compute the probability $P(Z|X)$.
+
+# training
+Training aims to learn a set of model-dependent **parameters**, or weights, from training data. There are a few key components of a typical training pipeline:
+1. **Loss**
+2. **Optimizer**
+3. **Training loop**
