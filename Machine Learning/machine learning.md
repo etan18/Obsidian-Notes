@@ -67,3 +67,7 @@ Training aims to learn a set of model-dependent **parameters**, or weights, from
 1. **Loss**
 2. **Optimizer**
 3. **Training loop**
+
+During training, we may also want to incorporate additional mechanisms to boost convergence time or [[regularization]].
+- **Learning rate scheduling**
+- **Gradient clipping**
