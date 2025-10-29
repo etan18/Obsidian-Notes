@@ -8,3 +8,6 @@ yes-man
 
 problems with representing patients as embeddings
 - Domain-specific embeddings: https://arxiv.org/html/2409.18511v3
+
+---
+
