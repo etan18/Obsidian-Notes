@@ -2,15 +2,36 @@
 In general, a **supply chain** can be broadly conceptualized as the interaction between various entities which are involved in the flow of products and services to their end customers.
 
 The food supply chain is unique and consists of many stages:
-1. **Farm**: primary production, the actual grower of crops, produce, livestock, etc.
-	- For local farms, farmers markets may make up some portion of the farm's revenue stream. While it is expensive to attend a farmer's market (transportation, labor, licensing), farmers are also able to keep 100% of revenue by selling direct-to-consumer, instead of losing a cut to distribution centers.
-	- Aggregator: business, cooperative, or NGO that consolidates products from multiple (usually smaller) farms to give increased market access to small farmers, create a larger, more consistent supply, and pool resources between smaller farms.C
-2. **Producer**: handling and storage, only a small percentage of crops are sold as fresh produce---the rest is used to make all the other goods you may find at a grocery store, including sauces, prepackaged foods, powders, dried goods, etc.
-3. **Distribution center**: processing and packaging, act as a middleman connecting producers with buyers. 
-	- Food hub: specialized distribution focusing on locally sourced foods. Provide "market access" to smaller farmers/producers.
-	- Packaging is a big issue in the food supply chain, both in terms of cost and waste.
-4. **Wholesale/Retail Sales**: can be B2B or B2C, e.g. restaurants or grocery stores that buy goods in mass quantities
-5. **Consumer**: demand, aka "fork"
+##### **1. farm** 
+The farm, also known as **primary production**, the actual grower of crops, produce, livestock, or other raw materials which can either be consumed fresh or used to make value-added food products.
+
+Only a small percentage of crops are sold **direct-to-consumer** (DTC). For local farms, DTC channels like farmers markets may make up some portion of the farm's revenue stream. While it is expensive to attend a farmer's market (transportation, labor, licensing), farmers are also able to keep 100% of revenue by selling direct-to-consumer, instead of losing a cut to distribution centers.
+
+>[!tip] Aggregators
+>An aggregator is a business, cooperative, or NGO that consolidates products from multiple (usually smaller) farms to give increased market access to small farmers, create a larger, more consistent supply, and pool resources between smaller farms.
+##### **2. producer/manufacturer** 
+Only a small percentage of crops are sold as fresh produce---the rest is used to make all the other goods you may find at a grocery store, including sauces, prepackaged foods, powders, or dried goods. **Food production** is the umbrella term for large-scale industrial processes that convert raw agricultural materials into processed, edible products for a larger market. Food manufacturing generally refers to the transformation into finished, packaged products.
+
+- **Private label**: products made by third-party manufacturers sold under a retailer or distributor's brand name (e.g. Trader Joe's, Kirkland, Whole Foods 365)
+	- Food manufacturers bid on private label to produce certain items for the retailer
+	- Retailers control product design, specs, and pricing without needing specialized production facilities
+- **White label**: generic products made by third-party manufacturers that are sold under different brands with minimal customization. This is different from private label where brands create whole product lines that meet their designated quality or standard. In white-labeling, brands take the generic product as-is and market it.
+- **Co-packing/Co-manufacturing**: copackers package and label food products made by manufacturers.
+
+>[!tip] Cottage Industries
+>Cottage industries are small businesses which operate from a home, often producing goods through craft, small-batch, and traditional methods. These businesses may be start-ups or just intentionally artisanal.
+>
+>Many states have separate laws/policies for cottage industries compared to commercial businesses. These regulations, often called "cottage food laws," are designed to create exemptions for small, home-based food producers from the more burdensome requirements of commercial food establishments.
+##### 3. distributor
+A **distribution center** handles storage (warehouses) and transportation (trucking) and act as a middleman connecting producers with buyers. In the US, there are three major **broadliners**: Sysco, US Foods, and Performance Food Group (PFG).
+- Food hub: specialized distribution focusing on locally sourced foods. Provide "market access" to smaller farmers/producers.
+##### 4. wholesalers/retailers
+Wholesalers or retailers are the consumer-facing outlets, primarily including supermarkets and restaurants that buy goods in mass quantities to sell to consumers. These can also include schools, hospitals, or companies that offer cafeteria services, or the food services companies (e.g. Aramark, Sodexo) that are employed by institutions.
+
+**Buyers** or procurement managers for these places stock food products based on consumer demand or consumer expectations. From a logistics standpoint, buying through distribution minimizes the amount of drop-offs and increases convenience for buyers.
+##### 5. consumer
+Demand, aka the "fork" in "farm-to-fork".
+
 These interconnected parts are heavily reliant on one another. Smaller farms may only have a few buyers act as a large portion of their revenue stream, or vice versa.
 
 Food supply chains face unique challenges that question the applicability of general supply chain strategies. For example, 
@@ -26,14 +47,16 @@ Food supply chains face unique challenges that question the applicability of gen
 The biggest consideration for food producers is sales.
 #### certifications
 A common market solution to ensuring the quality of produce (on axes like sustainability, locality, worker conditions) is through third-party certifications.
-- **USDA Certified Organic**
+- **USDA Certified Organic**: federal standard for organic food
 	- Non-GMO
 	- No synthetic fertilizers or pesticides
 	- 3-year transition period, soil must go 36 months without being treated with prohibited substances
 	- For packages goods: no artificial colors, flavors, or preservatives
 	- For meat, dairy, eggs: no growth hormones or antibiotics
+	- State-level organizations like CCOF (California) and Oregon Tilth also have organic certs, but after the introduction of Certified Organic, mostly do auditing of farms on behalf of USDA
 - **Certified Humane**: sets animal welfare standards for meat, dairy, and eggs 
 - **Fair Trade**: Requires supply chain audit to ensure safe working conditions, sustainable livelihoods/wages, and environmental protection measures
+
 Certifications are generally expensive to obtain, and require rigorous auditing. To consumers, certifications are an impactful method of signaling company values, but it's important to recognize that obtaining certifications are essentially just checking a set of boxes and may not be feasible for smaller producers to obtain, even though they may be ethical actors.
 #### packaging
 Packaging serves many purposes:
@@ -65,7 +88,6 @@ The US is focused on growing and exporting low-cost corn and soybeans, which are
 - **Specialty crops**: any non-commodity crop, including fruits, vegetables, tree nuts, culinary herbs and spices, medicinal plants, and floriculture.
 This difference is important because the USDA financially supports commodity crops through federal programs, incentivizing large-scale production of those crops. On the other hand, the US Farm Bill makes it much harder to produce specialty crops, which are typically grown on small to medium sized farms.
 #### U.S. agricultural policy
-
 U.S. agricultural policy has two consistent main themes:
 1. The use of food as a **diplomatic tool**.
 2. Controlling the price of food and avoiding volatility.
