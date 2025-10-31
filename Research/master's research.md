@@ -11,3 +11,12 @@ problems with representing patients as embeddings
 
 ---
 
+**baselines:**
+fit a model to all data (across all hospitals)
+- model: https://catboost.ai/ 
+- add a feature that tells you what hospital the patient is from
+	- run one with and one without the feature included
+	- theoretically, the tree could split by hospital feature at the first node, then subtrees would be per-hospital classifiers. or, would at least group together similar hospitals.
+- look at accuracy, auc, and r^2
+
+one-to-one train test per-hospital
