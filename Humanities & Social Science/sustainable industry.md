@@ -25,6 +25,6 @@ raw material production, manufacturing, distribution, use, and disposal.
 
 Performing an LCA involves four iterative phases: 
 1. **Goal and scope definition**: define system boundaries, goals, metrics
-2. **Life cycle inventory analysis**: list out and measure inputs and outputs to the defined system
+2. **Life cycle inventory**: list out and measure inputs and outputs to the defined system
 3. **Life cycle impact assessment**: consolidate LCIA data into composite numbers (e.g. CO2e)
 4. **Interpretation**; what are the key takeaways, what actions can we take based on findings
