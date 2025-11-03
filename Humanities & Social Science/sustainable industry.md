@@ -6,6 +6,9 @@ Sustainability transitions are major shifts in established industries, socio-tec
 >
 >The concept was introduced by economist Joseph Schumpeter, who won the 2025 Nobel Prize in Economics for this work.
 
+There are a number of ideas that come up over and over in discussions of sustainable industrial transitions.
+- **Circular economy**: keep materials and products in use for as long as possible by emphasizing reuse, repair, and recycling
+
 ### natural capitalism
 **Natural capital** includes all naturally-occurring resources, living systems, and ecosystem services. *Natural Capitalism* (1999) critiques the system of capitalism:
 > It neglects to assign any value to the largest stocks of capital it employs — the natural resources and living systems, as well as the social and cultural systems that are the basis of human capital.
@@ -18,10 +21,10 @@ containing, provisioning, and sustaining the entire economy."
 4. Investing in Natural Capital: reinvestments in sustaining, restoring, and expanding stocks of natural capital, so that the biosphere can produce more abundant ecosystem services and natural resources.
 ### life cycle assessment
 Life cycle assessment (LCA) is a standardized framework for evaluating the environmental impacts of a product or service. It evaluates a subject across all stages of its life cycle, including 
-- Raw material production
-- Manufacturing
-- Distribution
-- Use
-- Disposal
-Performing an LCA involves four iterative phases: goal and scope definition, life cycle inventory analysis, life cycle impact assessment, and interpretation.
+raw material production, manufacturing, distribution, use, and disposal.
 
+Performing an LCA involves four iterative phases: 
+1. **Goal and scope definition**: define system boundaries, goals, metrics
+2. **Life cycle inventory analysis**: list out and measure inputs and outputs to the defined system
+3. **Life cycle impact assessment**: consolidate LCIA data into composite numbers (e.g. CO2e)
+4. **Interpretation**; what are the key takeaways, what actions can we take based on findings
