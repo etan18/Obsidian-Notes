@@ -1,5 +1,5 @@
 ### supply chain
-In general, a **supply chain** can be broadly conceptualized as the interaction between various entities which are involved in the flow of products and services to their end customers.
+In general, a **[[supply chain]]** can be broadly conceptualized as the interaction between various entities which are involved in the flow of products and services to their end customers.
 
 The food supply chain is unique and consists of many stages:
 ##### **1. farm** 
@@ -44,7 +44,7 @@ Food supply chains face unique challenges that question the applicability of gen
 >- Misaligned incentives for decision makers (lobbying!)
 
 ## retail sales
-The biggest consideration for food producers is sales.
+The biggest consideration for food producers is sales. 
 #### certifications
 A common market solution to ensuring the quality of produce (on axes like sustainability, locality, worker conditions) is through third-party certifications.
 - **USDA Certified Organic**: federal standard for organic food
@@ -70,6 +70,8 @@ Most single use packaging is non-recyclable, and there are barriers to widesprea
 1. High collection costs
 2. Complex sorting
 3. Unknown contamination leading to safety concerns.
+
+The **Country of Origin Labeling (COOL) Law** requires food retailers (e.g. supermarkets) to identify 1) the country of origin and 2) the method of production at the point of sale. The law applies to certain "covered commodities", including meat, seafood, fruits, and vegetables, but generally does not apply to processed foods.
 ## food waste
 An estimated one-third of global food production becomes food loss and waste. Combined with high rates of food insecurity and food deserts around the world, this signals a major failure of current food systems. These failures arise out of
 - A mismatch between food prices and production costs: when production costs rise, food prices increase, which may leave more food unsold and unconsumed. When prices are low relative to production costs, it may not be profitable for farmers to produce and sell.
@@ -80,6 +82,7 @@ An estimated one-third of global food production becomes food loss and waste. Co
 >
 >This is a big problem ecologically and economically, as bycatch can slow the rebuilding of over-fished areas, put at-risk species in further danger, or damage marine habitats.
 
+---
 # the U.S. food system
 The US had historically run an agricultural trade surplus up until 2019 when, for the first time in over 50 years, became a net-importer of agricultural products. These deficits are mostly with Mexico---in 2019, we imported $15.7 billion in fruits and vegetables from Mexico alone, up to $21 billion in 2023.
 

@@ -19,6 +19,15 @@ containing, provisioning, and sustaining the entire economy."
 2. Biomimicry: redesigning industrial systems on biological lines to allow for resource reuse in closed cycles, reducing wasteful throughput of materials
 3. Service and Flow Economy: calls for a fundamental change in the relationship between producer and consumer, a shift from an economy of goods and purchases to one of service and flow
 4. Investing in Natural Capital: reinvestments in sustaining, restoring, and expanding stocks of natural capital, so that the biosphere can produce more abundant ecosystem services and natural resources.
+
+---
+## quantifying impact
+When a company reports their emissions, they are categorized into three scopes:
+1. **Scope 1**: direct emissions from company-owned or controlled sources
+2. **Scope 2**: indirect emissions from company-purchased sources, such as the generation of purchased electricity, steam, heating, or cooling
+3. **Scope 3**: upstream and downstream emissions in the company's [[supply chain]]
+	1. Downstream impacts from product/service distribution, use, and end-of-life disposal
+	2. Upstream impacts from raw material production or supplier emissions
 ### life cycle assessment
 Life cycle assessment (LCA) is a standardized framework for evaluating the environmental impacts of a product or service. It evaluates a subject across all stages of its life cycle, including 
 raw material production, manufacturing, distribution, use, and disposal.
