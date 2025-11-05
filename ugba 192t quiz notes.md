@@ -79,7 +79,10 @@ Results
 - No one can reasonably argue that innovation isn’t needed to make our food supply chains more efficient, environmentally responsible, or better able to serve hungry people, though we don’t always agree on what innovations we want - or are willing to pay for. 
 - Review the Rachel Stinebaugh transcript. 
 	- What are some challenges that venture capitalists (who are called on to provide larger sums of money at one time than, say, consumers at the end of the supply chain) see as impeding innovation? 
+		- **Enterprise software adoption has been slow.** Many operators hesitated to adopt software that required manual data entry; even with AI, many startups look undifferentiated (“doing what OpenAI/Claude allow”), making it hard to pick winners.
 	- According to Stinebaugh (and her view is widely shared), What are some characteristics that make supply chain innovators more “investable” than other applicants? By investable, we mean more likely to be financially successful at scaling innovations, using a successful business model, that creates something “better” we can include in future supply chains?
+		- Minimal disruption to existing workflows
+		- Founder-market fit in food/supply chains
 
 ##### extended producer responsibility
 - How might it apply to food supply chains and food supply chain decision-making?
