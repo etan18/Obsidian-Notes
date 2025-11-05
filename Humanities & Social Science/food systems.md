@@ -1,5 +1,8 @@
 ### supply chain
-In general, a **[[supply chain]]** can be broadly conceptualized as the interaction between various entities which are involved in the flow of products and services to their end customers.
+In general, a **[[supply chain]]** can be broadly conceptualized as the interaction between various entities which are involved in the flow of products and services to their end customers. 
+
+Food supply chains face unique challenges that question the applicability of general [[supply chain]] strategies. For example, perishability management is crucial to food supply management, requiring relatively short chains and rapid turnover to prevent spoilage. 
+- Safety stock: holding additional goods to meet demand fluctuations is not easily transferable to food supply chains due to the challenge of product deterioration, perishability, and waste.
 
 The food supply chain is unique and consists of many stages:
 ##### **1. farm** 
@@ -23,8 +26,15 @@ Only a small percentage of crops are sold as fresh produce---the rest is used to
 >
 >Many states have separate laws/policies for cottage industries compared to commercial businesses. These regulations, often called "cottage food laws," are designed to create exemptions for small, home-based food producers from the more burdensome requirements of commercial food establishments.
 ##### 3. distributor
-A **distribution center** handles storage (warehouses) and transportation (trucking) and act as a middleman connecting producers with buyers. In the US, there are three major **broadliners**: Sysco, US Foods, and Performance Food Group (PFG).
+A **distribution center** handles storage (warehouses) and transportation (trucking) and act as a middleman connecting producers with buyers. 
+
+Broadline [[supply chain#distribution|distribution]] is a business model most commonly seen in the food service industry, wherein distributors act as a "one-stop shop" for all food service operators. This means they offer fresh produce, frozen food, and even restaurant and cooking supplies. In the US, there are three major **broadliners**: Sysco, US Foods, and Performance Food Group (PFG).
 - Food hub: specialized distribution focusing on locally sourced foods. Provide "market access" to smaller farmers/producers.
+
+>[!tip] Redistribution
+>Redistribution is the practice of moving resources from distributors and manufacturers to retailers. It is a component specific to food supply chains for fulfilling small, high-cost-to-serve orders, such as to restaurants, institutions, or smaller retailers and wholesalers.
+>
+>At a major scale, the cheapest method of transportation for distributors is to load an entire truckload of a single item---most small retailers don't need that much. A redistributor takes these mass quantities of goods and warehouses them to fulfill small-to-midsize orders which may combine, say, half pallets of 50 different items and ship them to the end customer.
 ##### 4. wholesalers/retailers
 Wholesalers or retailers are the consumer-facing outlets, primarily including supermarkets and restaurants that buy goods in mass quantities to sell to consumers. These can also include schools, hospitals, or companies that offer cafeteria services, or the food services companies (e.g. Aramark, Sodexo) that are employed by institutions.
 
@@ -34,8 +44,6 @@ Demand, aka the "fork" in "farm-to-fork".
 
 These interconnected parts are heavily reliant on one another. Smaller farms may only have a few buyers act as a large portion of their revenue stream, or vice versa.
 
-Food supply chains face unique challenges that question the applicability of general supply chain strategies. For example, 
-- Safety stock: holding additional goods to meet demand fluctuations is not easily transferable to food supply chains due to the challenge of product deterioration, perishability, and waste.
 
 >[!idea] Barriers to Executing Change in Supply Chains 
 >- Lack of stakeholder support or participation
@@ -44,20 +52,11 @@ Food supply chains face unique challenges that question the applicability of gen
 >- Misaligned incentives for decision makers (lobbying!)
 
 ## retail sales
-The biggest consideration for food producers is sales. 
-#### certifications
-A common market solution to ensuring the quality of produce (on axes like sustainability, locality, worker conditions) is through third-party certifications.
-- **USDA Certified Organic**: federal standard for organic food
-	- Non-GMO
-	- No synthetic fertilizers or pesticides
-	- 3-year transition period, soil must go 36 months without being treated with prohibited substances
-	- For packages goods: no artificial colors, flavors, or preservatives
-	- For meat, dairy, eggs: no growth hormones or antibiotics
-	- State-level organizations like CCOF (California) and Oregon Tilth also have organic certs, but after the introduction of Certified Organic, mostly do auditing of farms on behalf of USDA
-- **Certified Humane**: sets animal welfare standards for meat, dairy, and eggs 
-- **Fair Trade**: Requires supply chain audit to ensure safe working conditions, sustainable livelihoods/wages, and environmental protection measures
+The biggest consideration for food producers is sales. When items are sold through retail outlets, such as supermarkets or wholesalers, there are a few key considerations from different stakeholders. 
 
-Certifications are generally expensive to obtain, and require rigorous auditing. To consumers, certifications are an impactful method of signaling company values, but it's important to recognize that obtaining certifications are essentially just checking a set of boxes and may not be feasible for smaller producers to obtain, even though they may be ethical actors.
+For the retailer, deciding what items to place on the shelves is determined by anticipating customer demand---this is done by the **buyer** or **procurement** team, typically segmented by category. Deciding *where* on the shelf to place items can be contractual, where the manufacturer pays a **slotting fee** to get more ideal (eye-level) placement; or, it can be used to signal retailer values, placing healthier or more popular items at eye level. 
+
+From a manufacturer perspective, they may want to create a **brand block**, which is a merchandising strategy such that all products from the same brand are grouped together at the **point-of-sale** to create a visually striking presence on the shelf. 
 #### packaging
 Packaging serves many purposes:
 - Marketing
@@ -72,6 +71,20 @@ Most single use packaging is non-recyclable, and there are barriers to widesprea
 3. Unknown contamination leading to safety concerns.
 
 The **Country of Origin Labeling (COOL) Law** requires food retailers (e.g. supermarkets) to identify 1) the country of origin and 2) the method of production at the point of sale. The law applies to certain "covered commodities", including meat, seafood, fruits, and vegetables, but generally does not apply to processed foods.
+
+#### certifications
+A common market solution to ensuring the quality of produce (on axes like sustainability, locality, worker conditions) is through third-party certifications.
+- **USDA Certified Organic**: federal standard for organic food
+	- Non-GMO
+	- No synthetic fertilizers or pesticides
+	- 3-year transition period, soil must go 36 months without being treated with prohibited substances
+	- For packages goods: no artificial colors, flavors, or preservatives
+	- For meat, dairy, eggs: no growth hormones or antibiotics
+	- State-level organizations like CCOF (California) and Oregon Tilth also have organic certs, but after the introduction of Certified Organic, mostly do auditing of farms on behalf of USDA
+- **Certified Humane**: sets animal welfare standards for meat, dairy, and eggs 
+- **Fair Trade**: Requires supply chain audit to ensure safe working conditions, sustainable livelihoods/wages, and environmental protection measures; addresses [[labor exploitation in the food industry]]
+
+Certifications are generally expensive to obtain, and require rigorous auditing. To consumers, certifications are an impactful method of signaling company values, but it's important to recognize that obtaining certifications are essentially just checking a set of boxes and may not be feasible for smaller producers to obtain, even though they may be ethical actors.
 ## food waste
 An estimated one-third of global food production becomes food loss and waste. Combined with high rates of food insecurity and food deserts around the world, this signals a major failure of current food systems. These failures arise out of
 - A mismatch between food prices and production costs: when production costs rise, food prices increase, which may leave more food unsold and unconsumed. When prices are low relative to production costs, it may not be profitable for farmers to produce and sell.
@@ -81,6 +94,11 @@ An estimated one-third of global food production becomes food loss and waste. Co
 >In the fishing industry, **bycatch** is the discarded biomass of marine animals caught accidentally that fishermen do not want, cannot sell, or cannot keep. These animals commonly suffer injuries or die due to these encounters.
 >
 >This is a big problem ecologically and economically, as bycatch can slow the rebuilding of over-fished areas, put at-risk species in further danger, or damage marine habitats.
+
+**Extended producer responsibility (EPR) laws** make food producers, including manufacturers and brand owners, financially and operationally responsible for the end-of-life management of their products and packaging. 
+- Shifts the burden of waste collection, recycling, and disposal from local governments and taxpayers to the producers
+- Encourages more sustainable, less wasteful, and more easily recyclable products. 
+- EPR laws are being introduced at the state level (as of November 2025, introduced in 7 states and proposed legislation in at least 8 more).
 
 ---
 # the U.S. food system

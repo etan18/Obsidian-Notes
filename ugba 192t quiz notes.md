@@ -64,3 +64,24 @@ Results
 - What is the role within supermarkets who oversee what is purchased? **Buyers or procurement managers**
 - How might a small producer of “better” snacks get considered by a supermarket? **Going through a distributor used by the supermarket**
 - What is the typical margin that a supermarket adds to products they buy? **40%**
+
+#### food loss & waste
+- Where does food waste occur in supply chains? 
+- What are some steps that supply chain managers can take to reduce food loss and waste in different types of organizations?
+
+#### distribution
+- Food is moved from farm gate to warehouse to retail locations. Most food is also distributed to processing facilities before being moved to warehouses or distribution centers. 
+- What is the role of 3PLs, redistributors, broadline and specialty distributors? 
+- Who (what kinds of institutions) would use one kind or another type of distributor? 
+- What are their relative advantages and disadvantages?
+
+#### sustainable financing
+- No one can reasonably argue that innovation isn’t needed to make our food supply chains more efficient, environmentally responsible, or better able to serve hungry people, though we don’t always agree on what innovations we want - or are willing to pay for. 
+- Review the Rachel Stinebaugh transcript. 
+	- What are some challenges that venture capitalists (who are called on to provide larger sums of money at one time than, say, consumers at the end of the supply chain) see as impeding innovation? 
+	- According to Stinebaugh (and her view is widely shared), What are some characteristics that make supply chain innovators more “investable” than other applicants? By investable, we mean more likely to be financially successful at scaling innovations, using a successful business model, that creates something “better” we can include in future supply chains?
+
+##### extended producer responsibility
+- How might it apply to food supply chains and food supply chain decision-making?
+
+#### specs and standards

@@ -9,7 +9,7 @@ The localization of industry arises in multiple ways.
 
 Localized industries create specialized public spheres which, by definitioin, allows for the sharing of ideas and fosters innovation within that locale.
 - Concentrating the industry into a single locale creates a consolidated labor market. 
-- Increased opportunities for shared resources or supply chain optimizations
+- Increased opportunities for shared resources or [[supply chain]] optimizations
 - Localized industries are liable to extreme economic depression.
 
 There are many different types of clusters that we can observe. 
