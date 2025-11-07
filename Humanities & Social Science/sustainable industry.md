@@ -8,6 +8,8 @@ Sustainability transitions are major shifts in established industries, socio-tec
 
 There are a number of ideas that come up over and over in discussions of sustainable industrial transitions.
 - **Circular economy**: keep materials and products in use for as long as possible by emphasizing reuse, repair, and recycling
+- **Wright's law**: every cumulative doubling of a technology’s global production will reduce its cost by a constant percentage
+- **S-curves**: the adoption rate of innovations is non-linear; it is slow at first, then rapidly rises before flattening out again as it reaches market saturation
 
 ### natural capitalism
 **Natural capital** includes all naturally-occurring resources, living systems, and ecosystem services. *Natural Capitalism* (1999) critiques the system of capitalism:
