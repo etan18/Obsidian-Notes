@@ -20,3 +20,15 @@ fit a model to all data (across all hospitals)
 - look at accuracy, auc, and r^2
 
 one-to-one train test per-hospital
+
+
+**11/7**
+propose a method
+- pool all data, run this thing, you'll do no worse than the one-to-one baseline
+
+outstanding questions
+- hosp 73 diagnostic: why acc so much higher than the baseline but R^2 so bad?
+- from baselines: why are we not lower bounded by one-to-one? look at feature splits
+
+Baseline
+- run a kernel method --- LR on top of mapped features (https://scikit-learn.org/stable/modules/generated/sklearn.kernel_approximation.RBFSampler.html)
