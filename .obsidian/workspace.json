@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-11-08.md",
+                "file": "Research/master's research.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-08"
+              "title": "master's research"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-11-08.md",
+                "file": "Research/master's research.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-08"
+              "title": "Backlinks for master's research"
             }
           },
           {
@@ -180,11 +180,11 @@
   },
   "active": "42a980fdc2aa5677",
   "lastOpenFiles": [
-    "Machine Learning/kernels.md",
     "2025-11-08.md",
+    "Research/master's research.md",
+    "Machine Learning/kernels.md",
     "Math/Linear Algebra/singular value decomposition.md",
     "Math/Linear Algebra/positive semi-definite.md",
-    "Research/master's research.md",
     "2025-11-01.md",
     "reviews.md",
     "Humanities & Social Science/supply chain.md",
