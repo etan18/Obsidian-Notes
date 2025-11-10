@@ -28,7 +28,8 @@ propose a method
 
 outstanding questions
 - hosp 73 diagnostic: why acc so much higher than the baseline but R^2 so bad?
-- from baselines: why are we not lower bounded by one-to-one? look at feature splits
+- from baselines: why are we not lower bounded by one-to-one? 
+- look at feature splits
 
 Baseline
 - run a kernel method --- LR on top of mapped features (https://scikit-learn.org/stable/modules/generated/sklearn.kernel_approximation.RBFSampler.html)
