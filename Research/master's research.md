@@ -10,6 +10,7 @@ problems with representing patients as embeddings
 - Domain-specific embeddings: https://arxiv.org/html/2409.18511v3
 
 ---
+## data addition dilemma
 
 **baselines:**
 fit a model to all data (across all hospitals)
@@ -33,3 +34,20 @@ outstanding questions
 
 Baseline
 - run a kernel method --- LR on top of mapped features (https://scikit-learn.org/stable/modules/generated/sklearn.kernel_approximation.RBFSampler.html)
+
+
+---
+## ai scribes
+
+Data:
+- ~50,000 encounters from Dec. 2024 - Present
+- 470 unique clinicians
+
+Tables:
+- Encounters
+- Edit Data
+- Press-Ganey Patient Feedback
+
+Literature:
+- From Abridge AI (2024): [Circumstantial Inference](https://aclanthology.org/2024.acl-long.677/)
+
