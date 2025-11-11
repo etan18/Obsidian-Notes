@@ -25,3 +25,8 @@ In 2021, Anthropic researchers discovered a special type of [[attention]] head i
 - The first head (known as the "**query head**"), scans for specific patterns by looking for tokens that appear multiple times within a sequence, focusing on identifying repetitions.
 - The second head (known as the "**attention head**") then retrieves and copies tokens that follow the patterns detected by the query head, effectively predicting and repeating sequences based on learned associations.
 The method of copying the pattern based on previous instances demonstrated that the attention heads were capable of implementing simple algorithms, rather than just memorizing a fixed table of $n$-gram statistics. This suggests that Transformer-based (or any attention-based) models could be capable of more general, out-of-distribution behaviors.
+
+### probing 
+**Probing** is an interpretability technique to understand what information is encoded in different layers of a neural network. Probing classifiers are trained on top of the probed network's internal representations to predict specific features---such as part-of-speech or other speech or linguistic properties. The intuition is that if the classifier predicts these features well, then these features should be encoded in the probed layer.
+ 
+Note that when training probes, the aim is to not maximize on accuracy but reflect the true information content in features, and hence you should not overparameterize your classifier.

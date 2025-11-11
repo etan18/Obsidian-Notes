@@ -25,3 +25,6 @@ $$\epsilon(W) = \sum_{i} \bigg| X_i - \widetilde{X_i} \bigg|^2$$
 Solving this out becomes a convex [[optimization]] problem. Now using our learned weight matrix $W$, we can map 
 $$\Phi(Y) = \sum_{i} \bigg| Y_i - \sum_j \big( W_{ij}  Y_j \big) \bigg|^2$$
 This new cost function is the same as the old one, with the caveat that now we fix the weight matrix, and learn the optimal $Y$. 
+
+>[!note] T-SNE Plots
+>t-SNE (t-Distributed Stochastic Neighbor Embedding) is a dimensionality reduction technique used to visualize high-dimensional data by mapping it into a low-dimensional space, typically two or three dimensions

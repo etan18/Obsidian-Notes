@@ -14,6 +14,17 @@ We use  the [[spatial frequency#fourier transform|Fourier Transform]] to convert
 
 ![[audio.png]]
 
+##### mel-frequency cepstral coefficients
+**MFCC** are acoustic features that capture the spectral characteristics of speech. MFCCs are computed by:
+1. **Windowing** the audio signal into short frames (typically 25ms)
+2. **Computing FFT** to get frequency spectrum
+3. **Mel-scale filtering** to simulate human auditory perception
+4. **Log transformation** to compress dynamic range
+5. **DCT (Discrete Cosine Transform)** to decorrelate coefficients
+
+The 13 MFCC coefficients capture different aspects of the acoustic signal, with lower coefficients representing broader spectral characteristics and higher coefficients capturing finer details.
+
+---
 ### whisper
 OpenAI's **[Whisper](https://openai.com/research/whisper)** was introduced in September 2022 and has become the state-of-the-art model for ASR. 
 ###### architecture
@@ -24,3 +35,6 @@ Another popular ASR model is **[wav2vec2](https://huggingface.co/docs/transforme
 - **CNN Feature Extraction**
 - **[[transformers|Transformer]]-based Encoding**
 - **Quantization Module**, discretizes the continuous output
+
+# text-to-speech
+While ASR converts audio data to text, **TTS** synthesis converts text to spoken language.
