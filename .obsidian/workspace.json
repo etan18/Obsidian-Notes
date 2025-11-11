@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "unfinished/pytorch.md",
+                "file": "2025-11-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pytorch"
+              "title": "2025-11-08"
             }
           }
         ],
@@ -207,12 +207,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6949e9cc34ed3631",
+  "active": "9afe5de5739b6834",
   "lastOpenFiles": [
-    "2025-11-08.md",
-    "unfinished/pytorch.md",
-    "Research/master's research.md",
     "EECS 283a HW4 Report.md",
+    "unfinished/pytorch.md",
+    "2025-11-08.md",
+    "Research/master's research.md",
     "Research/ML4H.md",
     "Research/Mean Consistency Population Calibration.md",
     "Research/data calibration.md",
