@@ -25,6 +25,10 @@ We use  the [[spatial frequency#fourier transform|Fourier Transform]] to convert
 The 13 MFCC coefficients capture different aspects of the acoustic signal, with lower coefficients representing broader spectral characteristics and higher coefficients capturing finer details.
 
 ---
+Today, most speech recognition pipelines are trained end-to-end, meaning one model implicitly performs the many intermediate steps requires to recover text from speech, including
+- Feature extraction
+- Acoustic modeling
+- Language modeling
 ### whisper
 OpenAI's **[Whisper](https://openai.com/research/whisper)** was introduced in September 2022 and has become the state-of-the-art model for ASR. 
 ###### architecture
@@ -37,4 +41,4 @@ Another popular ASR model is **[wav2vec2](https://huggingface.co/docs/transforme
 - **Quantization Module**, discretizes the continuous output
 
 # text-to-speech
-While ASR converts audio data to text, **TTS** synthesis converts text to spoken language.
+While ASR converts audio data to text, **TTS** synthesis converts text to spoken language. 
