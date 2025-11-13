@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Humanities & Social Science/sustainable industry.md",
+                "file": "2025-11-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sustainable industry"
+              "title": "2025-11-08"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "biomim",
+                "query": "science",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -196,13 +195,15 @@
   },
   "active": "36ea0bdaa38e4b6b",
   "lastOpenFiles": [
+    "EECS 283a HW4 Report.md",
+    "Humanities & Social Science/climate change.md",
+    "Humanities & Social Science/sustainable industry.md",
     "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
     "2025-11-08.md",
     "Machine Learning/dimensionality reduction.md",
     "Machine Learning/principal components analysis.md",
     "Machine Learning/img/pca.png",
     "Machine Learning/Paper Summaries/interpretability.md",
-    "EECS 283a HW4 Report.md",
     "unfinished/pytorch.md",
     "Research/master's research.md",
     "Research/ML4H.md",
@@ -221,8 +222,6 @@
     "tmp/eecs283a/Pasted image 20251110004051.png",
     "tmp/eecs283a/Pasted image 20251110003652.png",
     "tmp/eecs283a/Pasted image 20251110003640.png",
-    "Humanities & Social Science/climate change.md",
-    "Humanities & Social Science/sustainable industry.md",
     "Machine Learning/kernels.md",
     "Math/Linear Algebra/singular value decomposition.md",
     "Math/Linear Algebra/positive semi-definite.md",
