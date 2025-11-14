@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-11-08.md",
+                "file": "Research/master's research.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-08"
+              "title": "master's research"
             }
           }
         ],
@@ -195,11 +195,11 @@
   },
   "active": "36ea0bdaa38e4b6b",
   "lastOpenFiles": [
+    "2025-11-08.md",
     "EECS 283a HW4 Report.md",
     "Humanities & Social Science/climate change.md",
     "Humanities & Social Science/sustainable industry.md",
     "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
-    "2025-11-08.md",
     "Machine Learning/dimensionality reduction.md",
     "Machine Learning/principal components analysis.md",
     "Machine Learning/img/pca.png",
