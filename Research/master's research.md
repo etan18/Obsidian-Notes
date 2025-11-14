@@ -36,6 +36,12 @@ Baseline
 - run a kernel method --- LR on top of mapped features (https://scikit-learn.org/stable/modules/generated/sklearn.kernel_approximation.RBFSampler.html)
 
 
+**11/14**
+- whole hospital similarity scores
+- look at feature splits
+- Summary of findings so far
+- Idea: Section 6 of https://arxiv.org/pdf/2506.11848
+
 ---
 ## ai scribes
 
