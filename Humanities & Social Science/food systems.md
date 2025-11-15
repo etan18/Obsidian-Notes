@@ -122,6 +122,20 @@ Federal subsidies for farms date back to WWII, when they were introduced in orde
 #### the case for local
 **Local and regional food systems are more resilient to changes.** For example, during COVID, many large supermarkets experienced shortages, but local farms were still able to produce at healthy capacities. Additionally, during recent avian flu outbreaks which saw shortages in eggs, many local suppliers were still able to supply at normal amounts.
 
+---
+# sustainable agriculture
 
+For decades, the bulk of food in the US has been produced through **industrial agriculture**, a system of large factory farms which typically employ practices like
+- **Monocropping**: growing large amounts of the same crop/crops, which can be damaging to soil health because the same crops over-utilize the same nutrients.
+- **Conventional farming**: the use of chemical pesticides and fertilizers that are polluting to the soil, air, and water.
+
+A new wave of **sustainable agriculture** aims to build environmentally, economically, and socially responsible systems of farming. 
+
+The field of **agroecology** specifically looks at the science of managing farms as integrated ecosystems.
+- Crop rotations
+- Planting cover crops
+- Reducing tillage
+- Regenerative agriculture
+	- Integrating livestock and crops
 
 
