@@ -39,7 +39,6 @@ Baseline
 **11/14**
 - whole hospital similarity scores
 - look at feature splits
-- Summary of findings so far
 - Idea: Section 6 of https://arxiv.org/pdf/2506.11848
 
 ---
