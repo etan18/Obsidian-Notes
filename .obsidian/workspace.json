@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "google.md",
+                "file": "Math/Linear Algebra/optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "google"
+              "title": "optimization"
             }
           },
           {
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "science",
+                "query": "supre",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -221,22 +221,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "766c2dfc25985203",
+  "active": "6949e9cc34ed3631",
   "lastOpenFiles": [
-    "unfinished/design ethics.md",
+    "2025-11-08.md",
+    "defensive forecasting.md",
+    "EECS 283a HW4 Report.md",
     "google.md",
+    "unfinished/design ethics.md",
     "unfinished/large language models.md",
     "unfinished/pytorch.md",
     "unfinished/importance sampling.md",
     "unfinished/influence functions.md",
     "unfinished/meta.md",
     "unfinished/data structures.md",
-    "2025-11-08.md",
     "unfinished/systems & networking prep.md",
-    "defensive forecasting.md",
     "Research/master's research.md",
     "Humanities & Social Science/food systems.md",
-    "EECS 283a HW4 Report.md",
     "Humanities & Social Science/climate change.md",
     "Humanities & Social Science/sustainable industry.md",
     "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
