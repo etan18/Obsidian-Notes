@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Linear Algebra/optimization.md",
+                "file": "2025-11-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "optimization"
+              "title": "2025-11-08"
             }
           },
           {
@@ -221,8 +221,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6949e9cc34ed3631",
+  "active": "766c2dfc25985203",
   "lastOpenFiles": [
+    "Math/Linear Algebra/optimization.md",
     "2025-11-08.md",
     "defensive forecasting.md",
     "EECS 283a HW4 Report.md",
@@ -262,7 +263,6 @@
     "tmp/eecs283a/Pasted image 20251110003640.png",
     "Machine Learning/kernels.md",
     "Math/Linear Algebra/singular value decomposition.md",
-    "Math/Linear Algebra/positive semi-definite.md",
     "Research",
     "Daily Notes",
     "Math",
