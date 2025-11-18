@@ -14,7 +14,7 @@ To kernelize, we take the *dual* of the above equation using [[linear programmin
 Kernelizing these operations breaks the problem into a vectorized form in $O(d)$ that can be used without computing the final form. This is used by [[regularization#kernel ridge regression | kernel ridge regression]]. 
 
 For all possible sets of data points $\{ x_1, x_2, \dots, x_n \}$, the kernel matrix produced by a valid kernel function $K$ must be [[positive semi-definite]]. The **kernel matrix** is formed by computing $K(x_i, x_j)$ for all pairs of points. This PSD property (known as **Mercer's theorem**) guarantees that
-1. The kernel function $K$ corresponds to the inner product in *some* feature space
+1. The kernel function $K$ corresponds to the [[inner product]] in *some* feature space
 2. There exists a valid feature mapping $\Phi$ that transforms the data to a space where the $K$ computes dot products
 #### the kernel trick
 Using the dual, we will form a *polynomial kernel* of degree $p$ using only monomial terms. Define our **kernel function** as

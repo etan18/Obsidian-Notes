@@ -9,7 +9,7 @@ For SVD, we define vectors $U$ and $V$, which are the left and right *singular v
 $$XX^{\top} = UD^2U^{\top}$$
 $$X^{\top}X = VD^2V^{\top}$$
 ---
-- these are the [[eigendecomposition]] of the inner and outer products of $X$
+- These are the [[eigendecomposition]] of the [[inner product]] and outer product of $X$
 - it is necessarily true that $U^{\top}U = V^{\top}V = I$ 
 - the columns of $U$ are the eigenvectors of $XX^{\top}$, and the rows of $V^{\top}$ are the [[eigenvalues|eigenvectors]] of $X^{\top}X$
 ---
