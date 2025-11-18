@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Linear Algebra/singular value decomposition.md",
+                "file": "2025-11-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "singular value decomposition"
+              "title": "2025-11-08"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,8 +193,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "42a980fdc2aa5677",
+  "active": "71d446a424bf1c52",
   "lastOpenFiles": [
+    "defensive forecasting.md",
+    "recruiting.md",
     "Math/Linear Algebra/singular value decomposition.md",
     "Machine Learning/kernels.md",
     "Math/Linear Algebra/inner product.md",
@@ -201,9 +204,7 @@
     "2025-11-08.md",
     "unfinished/design ethics.md",
     "Math/Linear Algebra/optimization.md",
-    "defensive forecasting.md",
     "EECS 283a HW4 Report.md",
-    "google.md",
     "unfinished/large language models.md",
     "unfinished/pytorch.md",
     "unfinished/importance sampling.md",
