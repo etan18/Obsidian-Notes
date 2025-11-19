@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "defensive forecasting.md",
+                "file": "recruiting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "defensive forecasting"
+              "title": "recruiting"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-11-08.md",
+                "file": "Math/Linear Algebra/optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-08"
+              "title": "optimization"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "inner produc",
+                "query": "feasib",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -193,18 +192,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71d446a424bf1c52",
+  "active": "42a980fdc2aa5677",
   "lastOpenFiles": [
-    "defensive forecasting.md",
+    "2025-11-08.md",
+    "EECS 283a HW4 Report.md",
+    "Machine Learning/Paper Summaries/defensive forecasting.md",
+    "Computer Science/linear programming.md",
+    "Pasted image 20251119000543.png",
+    "Machine Learning/img/df.png",
+    "Math/Linear Algebra/inner product.md",
+    "Math/Linear Algebra/optimization.md",
     "recruiting.md",
     "Math/Linear Algebra/singular value decomposition.md",
     "Machine Learning/kernels.md",
-    "Math/Linear Algebra/inner product.md",
     "Math/Linear Algebra/positive semi-definite.md",
-    "2025-11-08.md",
     "unfinished/design ethics.md",
-    "Math/Linear Algebra/optimization.md",
-    "EECS 283a HW4 Report.md",
     "unfinished/large language models.md",
     "unfinished/pytorch.md",
     "unfinished/importance sampling.md",
@@ -221,7 +223,6 @@
     "Machine Learning/principal components analysis.md",
     "Machine Learning/img/pca.png",
     "Machine Learning/Paper Summaries/interpretability.md",
-    "Research/ML4H.md",
     "Research/Data Addition Dilemma.canvas",
     "tmp/interventions/Pasted image 20250124161739.png",
     "tmp/interventions/Pasted image 20250130165800.png",
@@ -233,8 +234,6 @@
     "tmp",
     "tmp/eecs283a/Pasted image 20251110004153.png",
     "tmp/eecs283a/Pasted image 20251110004051.png",
-    "tmp/eecs283a/Pasted image 20251110003652.png",
-    "tmp/eecs283a/Pasted image 20251110003640.png",
     "Research",
     "Daily Notes",
     "Math",

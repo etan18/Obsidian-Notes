@@ -19,9 +19,6 @@ Introduce yourself
 	- I previously focused on data scaling solutions for correcting distribution shift in predictive models
 	- Right now, I'm looking more at the algorithmic side of things --- distributionally-aware prediction
 
-### applied
-
-- Your own in-car OS
 
 ---
 
