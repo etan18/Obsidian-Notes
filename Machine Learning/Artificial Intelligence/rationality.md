@@ -34,3 +34,6 @@ Indifference between any two outcomes $A \sim B$ makes $A$ and $B$ substitutable
 $$A \sim B \implies [p, A; (1-p), C] \sim [p, B; (1-p), C]$$
 ###### 5. monotonicity
 If the agent prefers $A \succ B$, then in a lottery containing only $A$ and $B$, the agent seeks to enter any lottery which maximizes $p_A$, the probability of $A$ occurring.
+
+>[!note] Regret
+>Mathematically, regret is expressed as the difference between the utility of a possible action and the utility of the action that has been actually taken.

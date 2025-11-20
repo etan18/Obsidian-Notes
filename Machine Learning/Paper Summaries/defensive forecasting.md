@@ -1,6 +1,6 @@
 Defensive forecasting is a technique that uses a model's past mistakes to make new predictions. It was first introduced as a game-theoretic approach to prediction, framing the problem as a sequential game where you make a new prediction at every turn.
 
-Processing these data inputs sequentially and making updates to the model based on these inputs is known as **online learning**.
+Processing these data inputs sequentially and making updates to the model based on these inputs is known as **online learning**. 
 
 ## algorithm
 Say we are trying to make the $t$-th prediction in some sequence of predictions $1, \dots, t$, given some input context $x_t$. We have some vector-valued function $F(x_t, p_t, y_t) \rightarrow \mathbb{R}^n$  defining the [[optimization]] objective. 
@@ -9,7 +9,7 @@ Say we are trying to make the $t$-th prediction in some sequence of predictions 
 
 Then, defensive forecasting says to choose the value of $p_t$ that ensure the following condition is satisfied:
 $$\sup_{y \in \mathcal{Y}} \bigg \langle F(x_t, p_t, y), \sum_{s=1}^{t-1} F(x_s, p_s, y_s)) \bigg \rangle \le 0$$
-The [[inner product]] of the error of prediction $t$ and the sum of all errors from previous predictions $1, \dots, t-1$ must have a tight upper bound (**supremum**) that is non-positive. 
+The [[inner product]] of the error of prediction $t$ and the sum of all errors from previous predictions $1, \dots, t-1$ must have a tight upper bound (**supremum**) that is non-positive. This formulation is generalizable to infinite-dimensional [[kernels]].
 
 ![[df.png]]
 
@@ -28,4 +28,6 @@ $$\bigg|\bigg| \sum_{t=1}^T (y_t - p_t)\Phi(x_t, p_t) \bigg|\bigg|_2 \le O(1 / \
 That is, the norm of the sum of our moment discrepancies should be on the order of $1 / \sqrt{T}$ or smaller.
 
 This guarantees that we can retrospectively treat labels $y_i$ for $i < t$ as being drawn from a [[Bernoulli distribution]] with probability $p_i$. This is known as **outcome indistinguishability**. 
+
+With this condition, we recover standard online regret guarantees from [[risk#empirical risk minimization|empirical risk minimization]], without needing to enforce a convex loss function or perform convex optimization. Instead, we can just predict by predicting from our "Bernoulli" distribution.
 
