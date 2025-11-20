@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Paper Summaries/calibration.md",
+                "file": "unfinished/data structures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "calibration"
+              "title": "data structures"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "empirical risk min",
+                "query": "chr",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -178,8 +179,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a08c1f7a29b8292",
+  "active": "1de59410c4c9b11b",
   "lastOpenFiles": [
+    "unfinished/image generation.md",
+    "unfinished/influence functions.md",
+    "unfinished/large language models.md",
+    "unfinished/music critique.md",
+    "unfinished/neural ode.md",
+    "unfinished/pytorch.md",
+    "unfinished/representation learning.md",
+    "unfinished/robotics.md",
+    "unfinished/systems & networking prep.md",
+    "Machine Learning/Paper Summaries/calibration.md",
     "recruiting.md",
     "Machine Learning/Paper Summaries/defensive forecasting.md",
     "2025-11-08.md",
@@ -196,18 +207,8 @@
     "Math/Linear Algebra/optimization.md",
     "Machine Learning/machine learning.md",
     "Cognitive Science/learning.md",
-    "Machine Learning/Paper Summaries/arbitrariness.md",
-    "Math/Probability/random variable.md",
-    "Research/master's research.md",
-    "EECS 283a HW4 Report.md",
-    "Computer Science/linear programming.md",
     "Pasted image 20251119000543.png",
     "Machine Learning/img/df.png",
-    "Math/Linear Algebra/inner product.md",
-    "Math/Linear Algebra/singular value decomposition.md",
-    "Math/Linear Algebra/positive semi-definite.md",
-    "unfinished/design ethics.md",
-    "unfinished/large language models.md",
     "Machine Learning/img/pca.png",
     "Research/Data Addition Dilemma.canvas",
     "tmp/interventions/Pasted image 20250124161739.png",
