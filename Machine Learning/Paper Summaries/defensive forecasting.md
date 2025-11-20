@@ -2,7 +2,7 @@ Defensive forecasting is a technique that uses a model's past mistakes to make n
 
 Processing these data inputs sequentially and making updates to the model based on these inputs is known as **online learning**.
 
-#### algorithm
+## algorithm
 Say we are trying to make the $t$-th prediction in some sequence of predictions $1, \dots, t$, given some input context $x_t$. We have some vector-valued function $F(x_t, p_t, y_t) \rightarrow \mathbb{R}^n$  defining the [[optimization]] objective. 
 - This is a generalized, vector-valued error signal---if the model were to predict probability $p_t$ and the true outcome ends up as $y_t$, how "wrong" would it be?
 - The critical point of $F$ being vector-valued is that it implies error *directionality* in multidimensional space.
@@ -21,4 +21,11 @@ In practice, we perform an **anti-correlation search**. We find an efficiently-c
 1. If $S_t(1) \ge 0$, predict $p_t = 1.0$
 2. If $S_t(0) \le 0$, predict $p_t = 0.0$
 3. Else, we are guaranteed that $S_t$ has a root $0 \le r \le 1$. Predict $p_t = r$.
+
+#### moment-matching
+When $F = (y_t - p_t) \Phi(x_t, p_t)$ for some feature encoder $\Phi$, this essentially describes the difference in [[moments]] of a model's prediction and the labels. Then, we would ensure our predictor satisfies
+$$\bigg|\bigg| \sum_{t=1}^T (y_t - p_t)\Phi(x_t, p_t) \bigg|\bigg|_2 \le O(1 / \sqrt{T})$$
+That is, the norm of the sum of our moment discrepancies should be on the order of $1 / \sqrt{T}$ or smaller.
+
+This guarantees that we can retrospectively treat labels $y_i$ for $i < t$ as being drawn from a [[Bernoulli distribution]] with probability $p_i$. This is known as **outcome indistinguishability**. 
 
