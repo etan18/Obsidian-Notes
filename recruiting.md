@@ -51,6 +51,10 @@ Hypotheticals:
 
 ## built-ins
 
+- **lst.sort()** (in place), **sorted(lst)** (copy)
+	- N log N time complexity
+	- key = sort function, reverse = True if descending (ascending default)
+
 `import bisect`
 Given a sorted list:
 Bisect O(log n)
