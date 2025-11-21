@@ -41,6 +41,15 @@ Baseline
 - look at feature splits
 - Idea: Section 6 of https://arxiv.org/pdf/2506.11848
 
+### 11/20
+Model ([[defensive forecasting]])
+- Pass features through feature map ($\Phi$) , then concatenate one-hot hosp_id features
+	- Algorithm 4 in paper 
+	- Essentially two kernels, one for the features, one for the hospital IDs (to check if they belong to the same hospital)
+- Idea: minimize 13 loss functions (1 per hospital, then overall), such that we can treat each hospital as outcome indistinguishable
+	- Do anti-correlation search on the kernel (provided by Juanky)
+
+
 ---
 ## ai scribes
 
@@ -55,4 +64,5 @@ Tables:
 
 Literature:
 - From Abridge AI (2024): [Circumstantial Inference](https://aclanthology.org/2024.acl-long.677/)
+
 
