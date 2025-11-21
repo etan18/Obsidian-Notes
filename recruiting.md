@@ -14,7 +14,7 @@ Why AMD?
 - Being from primarily academia, one of the most frustrating things is compute constraints and not really being able to scale to the level that is being demanded -- an issue that AMD certainly doesn't face given its product line
 
 Introduce yourself
-- I am currently doing research on AI for healthcare, making sure that the tools we integrate into real-world clinics are actually improving clinician load and patient care
+- I am currently doing research on AI for healthcare, making sure that the tools we integrate into real-world clinics are actually improving clinician load and patient care (human AI interaction)
 - One particular problem with deploying predictive clinical decision models is the differences between different hospitals (protocols, levels of care, etc.)
 	- I previously focused on data scaling solutions for correcting distribution shift in predictive models
 	- Right now, I'm looking more at the algorithmic side of things --- distributionally-aware prediction
