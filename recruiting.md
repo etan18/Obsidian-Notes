@@ -46,3 +46,24 @@ Hypotheticals:
 4. Support for your solutions: Are you providing rationale for why a certain solution is best, despite previously stated pros and cons? Did you describe potential success metrics to support your solution?
 5. Strong communication: Are your responses structured and logical? Do you balance brevity and detail?
 
+---
+# python programming
+
+## built-ins
+
+`import bisect`
+Given a sorted list:
+Bisect O(log n)
+- `bisect_left(sorted_list, new_item, key=Optional_fn) --> leftmost insertion index`
+- `bisect_right(sorted_list, new_item) --> rightmost insertion index`
+Insort = Insert O(n) + Search O(log n) = O(n)
+- `insort(sorted_list, new_item, key=Optional_search_fn) --> None` , inserts new_item into sorted_list in place
+	- Does insort_right, insort_left also exists
+
+## data structures
+
+`from collections import ...`
+- **deque** (double ended queue)
+	- append, pop, appendleft, popleft
+	- `rotate(n)`: rotates n elements right (or left if negative)
+	- `deque(maxlen=Optional_int)`: once maxlen reached, evict from other side

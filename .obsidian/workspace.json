@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/master's research.md",
+                "file": "recruiting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "master's research"
+              "title": "recruiting"
             }
           }
         ]
@@ -180,6 +180,9 @@
   },
   "active": "1a08c1f7a29b8292",
   "lastOpenFiles": [
+    "Computer Science/queue.md",
+    "recruiting.md",
+    "Research/master's research.md",
     "unfinished/data structures.md",
     "unfinished/image generation.md",
     "unfinished/influence functions.md",
@@ -191,7 +194,6 @@
     "unfinished/robotics.md",
     "unfinished/systems & networking prep.md",
     "Machine Learning/Paper Summaries/calibration.md",
-    "recruiting.md",
     "Machine Learning/Paper Summaries/defensive forecasting.md",
     "2025-11-08.md",
     "Machine Learning/kernels.md",
@@ -204,8 +206,6 @@
     "Math/Probability/Distributions/bernoulli distribution.md",
     "Machine Learning/embeddings.md",
     "Machine Learning/Decision Trees & Ensemble Learning/random forests.md",
-    "Math/Linear Algebra/optimization.md",
-    "Machine Learning/machine learning.md",
     "Pasted image 20251119000543.png",
     "Machine Learning/img/df.png",
     "Machine Learning/img/pca.png",
