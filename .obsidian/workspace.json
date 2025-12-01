@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "recruiting.md",
+                "file": "HW5 Report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "recruiting"
+              "title": "HW5 Report"
             }
           }
         ]
@@ -180,8 +180,8 @@
   },
   "active": "44bd06d214c97d46",
   "lastOpenFiles": [
-    "HW5 Report.md",
     "recruiting.md",
+    "HW5 Report.md",
     "Computer Science/queue.md",
     "Research/master's research.md",
     "unfinished/data structures.md",
