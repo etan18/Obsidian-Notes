@@ -61,9 +61,23 @@ The opposite is true of **execution accuracy**. When we only care that the outpu
 Do some open-ended exploration to try to improve your performance on this dataset as much as possible (whether for finetuning or prompting). No hard requirement on how much to improve (or to improve at all), but please discuss the ideas you tried + how effective they were in your report. 150-300 words.
 
 1. For fine-tuning, I changed learning rate scheduler from linear to cosine annealing. This minorly improved test accuracy from 0.48 to 0.491. The improvement makes sense because cosine annealing typically leads to smoother and faster convergence; in our training setup, we do not train a lot so faster convergence is ideal.
-2. For the few shot model, I increased the number of provided prompts from 4 to 5. To accomodate this, I changed the base model from GPT2-Medium to HuggingFaceTB/SmolLM2-360M because the context window for all GPT2 models is 1024 tokens, which is not always large enough to fit the entire prompt. The choice of base model was because the SmolLM2 model is similar size to GPT2-Medium while having a larger (2048 tokens) context window, so the comparison should be similar.
-	1. baseline: 0.35018050541516244
-3. For the few shot model, I tried to improve the prompt to see if there was any prompt sensitivity. In particular, because the few-shot model was observing more trouble with semantically matching the question intent, I adjusted the prompt to be specific about the task's goal. This is the new prompt:
+2. For the few shot model, I tried to improve the prompt by adding more context. In particular, because the few-shot model was observing syntactic errors from making up table and column names which did not exist in the database, I adjusted the prompt to include the database schema explicitly. This is the new prompt:
 ```
+few_shot_prompt = "You are a SQL query generator. Write a SQL query that correctly answers the given question.\n" + \
 
+"Use only the tables and columns that exist in the provided database schema.\n" + \
+f"Database schema:\n{schema_text}\n\n" + \
+
+"Question: {question0}\n\nSQL: {sql0}\n\n\n\n" + \
+
+"Question: {question1}\n\nSQL: {sql1}\n\n\n\n" + \
+
+"Question: {question2}\n\nSQL: {sql2}\n\n\n\n" + \
+
+"Question: {question3}\n\nSQL: {sql3}\n\n\n\n" + \
+
+"Question: {question}\n\nSQL:"
 ```
+To accomodate this, I changed the base model from GPT2-Medium to HuggingFaceTB/SmolLM2-360M because the context window for all GPT2 models is 1024 tokens, which is not always large enough to fit the entire prompt. The choice of base model was because the SmolLM2 model is similar size to GPT2-Medium while having a larger (2048 tokens) context window, so the comparison should be similar.
+
+This change significantly improved the few-shot prompting validation accuracy from **0.35 to 0.4296**. Since this was over 5% improvement, I did not attempt a third strategy (per Kayo ed comment).
