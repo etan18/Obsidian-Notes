@@ -29,6 +29,8 @@ Today, most speech recognition pipelines are trained end-to-end, meaning one mod
 - Feature extraction
 - Acoustic modeling
 - Language modeling
+
+**Rational speech acts** (RSA)
 ### whisper
 OpenAI's **[Whisper](https://openai.com/research/whisper)** was introduced in September 2022 and has become the state-of-the-art model for ASR. 
 ###### architecture
