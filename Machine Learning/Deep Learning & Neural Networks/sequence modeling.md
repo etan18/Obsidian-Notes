@@ -12,6 +12,7 @@
 
 **Autoregressive modeling** is a technique that takes advantage of these properties of sequential data. Autoregressive models predict future values based on linear combinations of its own past values. They are typically formulated using the chain rule of probability:
 $$p(\overline x) = \prod_{i=1}^{|\overline x|} p(x_i | x_1, ..., x_{i-1})$$
+In [[natural language processing]], we define the training objective of a language model as either autoregressive modeling (e.g. ChatGPT) or masked language modeling (e.g. BERT).
 
 ---
 ## seq2seq models

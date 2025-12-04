@@ -7,7 +7,7 @@ When trying to model language, one concern is how to represent sequences of text
 - **Word level**: "The cat sleeps" → ["The", "cat", "sleeps"]
 The choice of tokenization level is generally a tradeoff between model efficiency and linguistic expressiveness. With character-level tokens, for example, we have a small vocabulary size (e.g. the 26 letters of the alphabet), but this leads to longer input sequences.
 
-In tokenization, we build a **vocabulary** of unique wordtypes (which don't need to be whole words) from our training data, known as the **corpus**. Typically, vocab size is a hyperparameter of the model.
+In tokenization, we build a **vocabulary** of unique wordtypes (which don't need to be whole words) from our training data, known as the **corpus**. Typically, vocab size is a hyperparameter of the model. Training a tokenizer to build a vocabulary is an important step because, once the tokenizer is trained, our vocabulary is thus a fixed look-up table which is efficient for future pre-processing.
 
 #### rule-based tokenizers
 The simplest tokenization method is to split on spaces. This produces a sequence of words:

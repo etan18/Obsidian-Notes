@@ -1,20 +1,13 @@
+In [[natural language processing]], LLMs arose as a *task-universal* architecture trained on massive general-domain text data. These models could simultaneously perform various language modeling tasks, including machine translation, text summarization, or content generation.
 
-- perplexity -> negative log likelihood
-	- metric used in [[information theory]] to quantify uncertainty
-	- we can use negative log likelihood to estimate what our loss should be. for a language modeling task with vocabulary size $n$, the expected value of our loss is
-$$-\ln (\frac{1}{n})$$
-- [[attention]]
-- context window: working memory of an LLM, the number of *tokens* that an llm can consider in a single prompt/query
-	- tradeoff: computational cost scales quadratically with size of context window. this is because the relationships between each token must be computed.
-	- Large context windows may also dilute relevant information and confuse the model. a 2023 study found that LLMs perform best when the most relevant information is at the beginning or end of the input
-- Evaluations
-	- mmlu, benchmarks
+These base LLMs trained on general-domain text data are referred to as "**pre-trained**" models. From the core dataset (e.g. OpenWebText), the model learns strong representations which produce generally good outputs on any task. 
 
----
 # fine-tuning
 LLMs are **foundation models**, meaning they are trained on large, general knowledge bases with the intention of being applicable across many domains and use cases. However, in many practical settings, we want to deploy a LLM that is an expert in one specific domain, such as code generation or healthcare diagnosis. 
 
-**Fine-tuning** is the process of introducing an unseen dataset to a ***pre-trained*** LLM in order to make the model better suited for specific tasks. There are two types of fine-tuning tasks:
+**Fine-tuning** is the process of introducing an unseen dataset to a pre-trained LLM in order to make the model better suited for specific tasks. Starting from a pre-trained model ensures we have a strong starting point, and can be especially helpful for downstream tasks where minimal additional data is available.
+
+There are two types of fine-tuning tasks:
 1. **Domain adaptation**: fine-tuning to create an LLM that is an "expert" on a narrow domain
 2. **Task adaptation**: calibrating the LLM to perform specific tasks
 
@@ -42,3 +35,15 @@ Large language models have the capability of learning downstream tasks directly 
 - Include an example of whatever question/task you want the llm to answer/do
 - Include the answer to the example, as well as the logical steps taken to arrive at the end result
 
+
+
+---
+- perplexity -> negative log likelihood
+	- metric used in [[information theory]] to quantify uncertainty
+	- we can use negative log likelihood to estimate what our loss should be. for a language modeling task with vocabulary size $n$, the expected value of our loss is
+$$-\ln (\frac{1}{n})$$
+- context window: working memory of an LLM, the number of *tokens* that an llm can consider in a single prompt/query
+	- tradeoff: computational cost scales quadratically with size of context window. this is because the relationships between each token must be computed.
+	- Large context windows may also dilute relevant information and confuse the model. a 2023 study found that LLMs perform best when the most relevant information is at the beginning or end of the input
+- Evaluations
+	- mmlu, benchmarks
