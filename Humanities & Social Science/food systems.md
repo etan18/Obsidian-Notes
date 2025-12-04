@@ -1,4 +1,4 @@
-### supply chain
+## supply chain
 In general, a **[[supply chain]]** can be broadly conceptualized as the interaction between various entities which are involved in the flow of products and services to their end customers. 
 
 Food supply chains face unique challenges that question the applicability of general [[supply chain]] strategies. For example, perishability management is crucial to food supply management, requiring relatively short chains and rapid turnover to prevent spoilage. 
@@ -64,6 +64,8 @@ Packaging serves many purposes:
 - Convenience of consumption
 - Food safety: some packaging is mandated by the USDA, can reduce liability for the manufacturer
 Most food and beverage products include some type of single-use packaging. The environmental cost of packaging is typically far less than either 1) impacts on the farm or 2) wastage along the supply chain, but is an issue that has gained a lot of publicity.
+
+**Consumer packaged goods** (CPGs) are non-durable items which are used regularly and replaced regularly. Food items are CPGs (as opposed to durable goods), as are things like toiletries and cleaning supplies. Fast-moving consumer goods (FMCGs) are a subgroup of CPGs with especially high turnover rates; for food products, this includes products with shorter shelf lives.
 
 Most single use packaging is non-recyclable, and there are barriers to widespread adoption of **post-consumer recycled** (PCR) plastic packaging, including:
 1. High collection costs

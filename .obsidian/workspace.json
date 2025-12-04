@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HW5 Report.md",
+                "file": "Humanities & Social Science/sustainable industry.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HW5 Report"
+              "title": "sustainable industry"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "chr",
+                "query": "scope 1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,8 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44bd06d214c97d46",
+  "active": "6949e9cc34ed3631",
   "lastOpenFiles": [
+    "Humanities & Social Science/food systems.md",
+    "Humanities & Social Science/supply chain.md",
     "recruiting.md",
     "HW5 Report.md",
     "Computer Science/queue.md",
@@ -204,8 +206,6 @@
     "Machine Learning/Artificial Intelligence/rationality.md",
     "Machine Learning/Artificial Intelligence/rational agent.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
-    "Math/Probability/Distributions/bernoulli distribution.md",
-    "Machine Learning/embeddings.md",
     "Pasted image 20251119000543.png",
     "Machine Learning/img/df.png",
     "Machine Learning/img/pca.png",
