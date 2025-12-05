@@ -41,7 +41,7 @@ Baseline
 - look at feature splits
 - Idea: Section 6 of https://arxiv.org/pdf/2506.11848
 
-### 11/20
+**11/20**
 Model ([[defensive forecasting]])
 - Pass features through feature map ($\Phi$) , then concatenate one-hot hosp_id features
 	- Algorithm 4 in paper 
@@ -49,6 +49,9 @@ Model ([[defensive forecasting]])
 - Idea: minimize 13 loss functions (1 per hospital, then overall), such that we can treat each hospital as outcome indistinguishable
 	- Do anti-correlation search on the kernel (provided by Juanky)
 
+**12/5**
+- K29 algorithm: base runs, hyper-parameter sweep
+- Initial runs on 1000 or so data points.
 
 ---
 ## ai scribes

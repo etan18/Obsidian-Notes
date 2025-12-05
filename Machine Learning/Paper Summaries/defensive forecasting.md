@@ -2,7 +2,7 @@ Defensive forecasting is a technique that uses a model's past mistakes to make n
 
 Processing these data inputs sequentially and making updates to the model based on these inputs is known as **online learning**. 
 
-## algorithm
+## general algorithm
 Say we are trying to make the $t$-th prediction in some sequence of predictions $1, \dots, t$, given some input context $x_t$. We have some vector-valued function $F(x_t, p_t, y_t) \rightarrow \mathbb{R}^n$  defining the [[optimization]] objective. 
 - This is a generalized, vector-valued error signal---if the model were to predict probability $p_t$ and the true outcome ends up as $y_t$, how "wrong" would it be?
 - The critical point of $F$ being vector-valued is that it implies error *directionality* in multidimensional space.
@@ -31,3 +31,5 @@ This guarantees that we can retrospectively treat labels $y_i$ for $i < t$ as be
 
 With this condition, we recover standard online regret guarantees from [[risk#empirical risk minimization|empirical risk minimization]], without needing to enforce a convex loss function or perform convex optimization. Instead, we can just predict by predicting from our "Bernoulli" distribution.
 
+## k29
+Online [[calibration]] algorithm.

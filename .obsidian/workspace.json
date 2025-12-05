@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
+                "file": "HW6 Report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "automatic speech recognition"
+              "title": "HW6 Report"
             }
           }
         ],
@@ -195,6 +195,10 @@
   },
   "active": "c546d8776fca7637",
   "lastOpenFiles": [
+    "Pasted image 20251205134028.png",
+    "Machine Learning/Paper Summaries/defensive forecasting.md",
+    "Research/master's research.md",
+    "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
     "HW6 Report.md",
     "Pasted image 20251204123923.png",
     "Pasted image 20251204123850.png",
@@ -210,7 +214,6 @@
     "recruiting.md",
     "HW5 Report.md",
     "Computer Science/queue.md",
-    "Research/master's research.md",
     "unfinished/data structures.md",
     "unfinished/image generation.md",
     "unfinished/influence functions.md",
@@ -221,9 +224,7 @@
     "unfinished/robotics.md",
     "unfinished/systems & networking prep.md",
     "Machine Learning/Paper Summaries/calibration.md",
-    "Machine Learning/Paper Summaries/defensive forecasting.md",
     "2025-11-08.md",
-    "Machine Learning/kernels.md",
     "Pasted image 20251119000543.png",
     "Machine Learning/img/df.png",
     "Machine Learning/img/pca.png",

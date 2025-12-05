@@ -30,3 +30,18 @@ Description: Two-door sedan with a man standing behind it
 ![[Pasted image 20251204123923.png]]
 
 In both of the examples provided, the caption offers more precise descriptions of the items in the photo, whereas the description is quite vague. For example, "Trabant 1.1." vs. "two-door sedan" and "USB3.0 Standard-A" vs. "rectangular opening". This dataset may contain multiple images matching the broad descriptions of these examples, causing description-based retrieval to fail. These examples also suggest that the model does have some more specific domain knowledge, such as knowledge of specific car models or port types. The success of caption-based retrieval is then possible dependent on the model and the data the model was trained on.
+
+
+## Qualitative Analysis Part 2: RSA
+
+23 / 89 of the previously incorrect samples were now correct by RSA.
+
+**Discuss 1 qualitative example that provides an intuition of why RSA fixes these issues (e.g. compare the literal listener probabilities to the pragmatic listener probabilities and think about why they changed).**
+
+Caption: The Missouri in North Dakota, which was the furthest upstream that French explorers traveled on the river
+
+![[Pasted image 20251205134028.png]]
+
+This image is quite vague, it's difficult to tell which river this is and why it's significant. This is probably why a literal listener fails to retrieve the image based on the given caption. However, when we consider the pragmatics caption itself against the set of available images to retrieve, it becomes much more plausible why this caption would go along with this image. 
+
+While this image is not clearly the Missouri River, it is more likely to be the Missouri River than any other image in the dataset, which is why a pragmatic listener would choose it.
