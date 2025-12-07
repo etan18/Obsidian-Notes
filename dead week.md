@@ -10,8 +10,7 @@ AI Scribes
 Defensive Forecasting
 - [ ] Run K29 algorithm - send results to Juanky before meeting
 
-
 **Other**
 - [x] EECS 283A HW6 [Monday]
 - [ ] ESPM 136 Final Project [Friday]
-- [ ] Nuro HackerRank
+- [ ] Nuro HackerRank [Thursday]

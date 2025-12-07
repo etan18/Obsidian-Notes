@@ -57,7 +57,3 @@ These modifications would occur directly on the logit values, before applying th
 
 >[!warning] Greedy Sampling
 >Discussed in the Curious Case of Neural Degeneration. Model generation will get stuck in infinite loop if we always select the most probable token.
-
-#### kv cache
-**Key-value caching** is used at inference time to prevent repetitive computations. This is necessary because of the **autoregressive** nature of next token prediction, wherein each token can be represented by itself and all its preceding tokens. 
-
