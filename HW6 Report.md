@@ -45,3 +45,27 @@ Caption: The Missouri in North Dakota, which was the furthest upstream that Fren
 This image is quite vague, it's difficult to tell which river this is and why it's significant. This is probably why a literal listener fails to retrieve the image based on the given caption. However, when we consider the pragmatics caption itself against the set of available images to retrieve, it becomes much more plausible why this caption would go along with this image. 
 
 While this image is not clearly the Missouri River, it is more likely to be the Missouri River than any other image in the dataset, which is why a pragmatic listener would choose it.
+
+
+
+## [BONUS] Qualitative Analysis Part 3: Captioning
+
+One qualitative trend I observe is that the pragmatic captions tend to be more descriptive than the literal captions. Two examples of this trend are included below. While in both examples the literal captions are accurate to the image, they are quite vague, whereas their pragmatic counterparts are more precise, allowing for more confident and accurate retrieval. For example, "a drawing" becomes "a *black and white* drawing". 
+
+![[Pasted image 20251206184533.png]]
+Literal caption: a drawing of a boat with a man on it 
+Pragmatic caption: the sea is a black and white drawing with a boat in the middle
+
+![[Pasted image 20251206184607.png]]
+Literal caption: a group of people sitting in a room 
+Pragmatic caption: a group of people sit on couches in a room with two men reading and one woman sitting on
+
+A second trend I observe is that when multiple images of similar subjects exist in the dataset, the literal captions tend to be quite similar. In comparison, the pragmatic captions tend to differ more greatly, making it easier for a listener to differentiate between similar images. An example is provided below of two images of men on bikes. While one caption stays the same, the other becomes more descriptive to include that the image is black and white.
+
+![[Pasted image 20251206185620.png]]
+Literal caption: a man riding a bike down a road 
+Pragmatic caption: black and white photograph of a man riding a bike
+
+![[Pasted image 20251206185638.png]]
+Literal caption: a man riding a bike down a street 
+Pragmatic caption: a man riding a bike down a street

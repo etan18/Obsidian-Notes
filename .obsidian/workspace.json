@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dead week.md",
+                "file": "HW6 Report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dead week"
+              "title": "HW6 Report"
             }
           }
         ],
@@ -209,8 +209,12 @@
   },
   "active": "c0a50bfdc984a5b0",
   "lastOpenFiles": [
-    "Research/master's research.md",
+    "Pasted image 20251206185638.png",
+    "Pasted image 20251206185620.png",
+    "Pasted image 20251206184607.png",
+    "Pasted image 20251206184533.png",
     "dead week.md",
+    "Research/master's research.md",
     "recruiting.md",
     "HW6 Report.md",
     "Pasted image 20251205134028.png",
@@ -239,13 +243,9 @@
     "unfinished/robotics.md",
     "unfinished/systems & networking prep.md",
     "Machine Learning/Paper Summaries/calibration.md",
-    "2025-11-08.md",
     "Pasted image 20251119000543.png",
     "Machine Learning/img/df.png",
-    "Machine Learning/img/pca.png",
     "Research/Data Addition Dilemma.canvas",
-    "tmp/interventions/Pasted image 20250124161739.png",
-    "tmp/interventions/Pasted image 20250130165800.png",
     "tmp/interventions",
     "tmp/eecs283a",
     "tmp",
