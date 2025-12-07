@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HW6 Report.md",
+                "file": "recruiting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HW6 Report"
+              "title": "recruiting"
+            }
+          },
+          {
+            "id": "c0a50bfdc984a5b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dead week.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "dead week"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,13 +207,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c546d8776fca7637",
+  "active": "c0a50bfdc984a5b0",
   "lastOpenFiles": [
+    "Research/master's research.md",
+    "dead week.md",
+    "recruiting.md",
+    "HW6 Report.md",
     "Pasted image 20251205134028.png",
     "Machine Learning/Paper Summaries/defensive forecasting.md",
-    "Research/master's research.md",
     "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
-    "HW6 Report.md",
     "Pasted image 20251204123923.png",
     "Pasted image 20251204123850.png",
     "Pasted image 20251204123427.png",
@@ -211,7 +227,6 @@
     "Humanities & Social Science/sustainable industry.md",
     "Humanities & Social Science/food systems.md",
     "Humanities & Social Science/supply chain.md",
-    "recruiting.md",
     "HW5 Report.md",
     "Computer Science/queue.md",
     "unfinished/data structures.md",
@@ -231,7 +246,6 @@
     "Research/Data Addition Dilemma.canvas",
     "tmp/interventions/Pasted image 20250124161739.png",
     "tmp/interventions/Pasted image 20250130165800.png",
-    "tmp/eecs283a/Pasted image 20251110003414.png",
     "tmp/interventions",
     "tmp/eecs283a",
     "tmp",
