@@ -68,4 +68,12 @@ Tables:
 Literature:
 - From Abridge AI (2024): [Circumstantial Inference](https://aclanthology.org/2024.acl-long.677/)
 
+#### preliminary modeling
+
+Things to try:
+- [ ] Original Abridge output vs. updated Abridge output: what unigrams/bigrams were likely to be changed? Which are most telling of being original vs. updated?
+	- can be modeled using only scribe data
+- [ ] Classification: looking at original Abridge output vs. DEID clinical notes (human), which unigrams/bigrams are most informative of belonging to either group?
+- [ ] Regression: trends over time - do Abridge notes show increasingly larger signs of the markers identified in classification?
+
 
