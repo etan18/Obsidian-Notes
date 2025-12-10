@@ -14,3 +14,10 @@ Defensive Forecasting
 - [x] EECS 283A HW6 [Monday]
 - [ ] ESPM 136 Final Project [Friday]
 - [ ] Nuro HackerRank [Thursday]
+
+
+
+### eecs 283a
+
+Template-based prompting (pre-training lecture)
+![[Pasted image 20251210141044.png]]

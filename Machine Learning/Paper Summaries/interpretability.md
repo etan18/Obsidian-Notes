@@ -1,5 +1,4 @@
-Interpretability is a broad topic in the field of [[artificial intelligence]] that seeks to understand the decision-making processes or algorithms employed by models in a way that is intelligible to humans.
-
+Interpretability is a broad topic in the field of [[artificial intelligence]] that seeks to understand the decision-making processes or algorithms employed by models in a way that is intelligible to humans. Because modern [[large language models]] are typically trained end-to-end, it's harder to understand the intermediate features that generate our produced output.
 ## monosemanticity
 
 >[!info] Source: Anthropic
@@ -28,5 +27,7 @@ The method of copying the pattern based on previous instances demonstrated that 
 
 ### probing 
 **Probing** is an interpretability technique to understand what information is encoded in different layers of a neural network. Probing classifiers are trained on top of the probed network's internal representations to predict specific features---such as part-of-speech or other speech or linguistic properties. The intuition is that if the classifier predicts these features well, then these features should be encoded in the probed layer.
+
+![[probe.png]]
  
-Note that when training probes, the aim is to not maximize on accuracy but reflect the true information content in features, and hence you should not overparameterize your classifier.
+Note that when training probes, the aim is to not maximize on accuracy but reflect the true information content in features, and hence you should not over-parameterize your classifier.

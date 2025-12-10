@@ -10,11 +10,15 @@ At the end of the day, performing training and inference on deep learning models
 
 **Strong scaling** refers to the goal of increasing the number of chips used for training or inference while achieving a proportional, linear increase in throughput. Throughput refers to the rate at which the system can process information (for training, this could be measured in batches / second). 
 
-### scaling laws
-
+## scaling laws
 >[!info] Scaling Laws for Neural Language Models
 >The seminal work on scaling laws comes from the 2020 paper ["Scaling Laws for Neural Language Models"](https://arxiv.org/abs/2001.08361) by Kaplan et al.
 
+Scaling laws tell us what test loss to expect given our amount of compute, data, and model size. This means we can reliably improve performance when we train for longer, increase our dataset size, and increase the model size.
+![[scaling.png]]
+Scaling laws follow a **power law**, not a linear scale, as seen in the above graphs plotted on a logarithmic scale.
+- PF-days: petaFLOP per second _day_ is a measurement of the number of floating point operations performed at a rate of one petaFLOP per second, running for an entire _day_.
+- Scaling laws generally exclude [[embeddings]] because they do not adhere to these same trends; embedding matrices can be made much smaller without affecting test loss as much
 ### rooflines
 When we run algorithms on hardware, there are three main factors which limit our ability to scale:
 1. **Communication**: bandwidth for moving data around (bytes / second)
