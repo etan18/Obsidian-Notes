@@ -1,4 +1,4 @@
-Public key cryptography, also known as assymetric key encryption (in contrast to [[symmetric key encryption]]), is a [[cryptography]] scheme in which has two different keys:
+**Public** key cryptography, also known as assymetric key encryption (in contrast to [[symmetric key encryption]]), is a [[cryptography]] scheme in which has two different keys:
 - **Public key**: known to everybody
 - **Private key**: only known to the recipient
 These keys come in pairs--every public key corresponds to a specific private key. The messages in these cases will be numbers.
