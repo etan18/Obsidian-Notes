@@ -1,5 +1,13 @@
-In [[natural language processing]], LLMs arose as a *task-universal* architecture trained on massive general-domain text data. These models could simultaneously perform various language modeling tasks, including machine translation, text summarization, or content generation.
+In [[natural language processing]], LLMs arose as a *task-universal* architecture trained on massive general-domain text data. These models could simultaneously perform various language modeling tasks, including machine translation, text summarization, or content generation.   
 
+The term "LLM" typically refers to *generative* models which are **decoder-only** [[transformers]], such as ChatGPT. These LLMs take the tokenized input and directly predict the next tokens in the sequence (aka the output) in an autoregressive manner, without computing the encoded hidden state beforehand.
+
+> [!aside] BERT
+> Although LLMs generally refer to generative LMs performing next-token prediction, BERT (Bidirectional Encoder Representations from Transformers) is also considered an LLM by the general definition.
+> 
+> It is an **encoder-only** model trained on **masked token prediction**, meaning it looks at all surrounding words, not only preceding ones. It is a powerful tool for generating data [[embeddings]].
+
+## pre-training
 These base LLMs trained on general-domain text data are referred to as "**pre-trained**" models. From the core dataset (e.g. OpenWebText), the model learns strong representations which produce generally good outputs on any task. 
 
 # fine-tuning
