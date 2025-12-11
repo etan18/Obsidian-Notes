@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dead week.md",
+                "file": "vLLM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dead week"
+              "title": "vLLM"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "44bd06d214c97d46",
   "lastOpenFiles": [
+    "dead week.md",
     "Pasted image 20251210141044.png",
     "unfinished/large language models.md",
     "Machine Learning/Paper Summaries/interpretability.md",
@@ -191,7 +192,6 @@
     "Machine Learning/ml systems.md",
     "vLLM.md",
     "recruiting.md",
-    "dead week.md",
     "Research/master's research.md",
     "Machine Learning/Paper Summaries/defensive forecasting.md",
     "Computer Science/Machine Structures/GPU.md",
@@ -214,7 +214,6 @@
     "Pasted image 20251206184533.png",
     "Pasted image 20251205134028.png",
     "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
-    "Pasted image 20251204123923.png",
     "Machine Learning/tokenization.md",
     "Research/Data Addition Dilemma.canvas",
     "tmp/interventions",
