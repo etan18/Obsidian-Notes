@@ -1,5 +1,4 @@
-
-Modern [[large language models]] increasingly require ultra-optimized serving infrastructure, such as **vLLM**. The idea is to maximize throughput in [[ml systems|systems]] which may receive many requests at any given time.
+Modern [[large language models]] increasingly require ultra-optimized serving infrastructure, such as **vLLM** (virtual LLM). The idea is to maximize throughput in [[ml systems|systems]] which may receive many requests at any given time.
 
 The key efficiency contributions of vLLM are
 1. **Paged Attention**: the [[attention#kv cache|KV cache]] is managed in [[pages]] to reduce wasted cache memory. This allows for packing of more concurrent sequences per [[GPU]] without OOM or fragmentation.
