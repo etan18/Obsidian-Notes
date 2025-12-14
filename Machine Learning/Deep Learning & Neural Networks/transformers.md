@@ -33,9 +33,17 @@ Around $2/3$ of a Transformer's total parameters are used for the MLP layers. Wh
 
 # transformer language model
 
-The output of the final hidden state from the transformer block 
-# training
+The output of the final hidden state from the transformer block.
+### training
 Transformers are trained by minimizing **cross-entropy loss**, or log loss, function. In [[information theory]], the cross-[[entropy]] between two probability distributions $p$ and $q$, over the same set of events, measures how different the two distributions are in bits. In this case, it measures the distance between the models predictions ($p$) and the true distribution of data ($q$). Conceptually, cross-entropy and **negative log likelihood** are the same.
+
+>[!tip] Perplexity & Negative Log Likelihood.
+> Perplexity is an evaluation metric for [[large language models]] derived from cross-entropy loss. It is used to quantify the amount of uncertainty by measuring the weighted average of the number of possible choices a model has when generating a given token.
+> 
+> The perplexity, used by convention in language modeling, is monotonically decreasing in the likelihood of the test data, such that lower test perplexity indicates better fit to the test data, or better generalization performance.
+> 
+> These metrics are also directly proportional to log-likelihood. We can use negative log likelihood to estimate what our loss should be. for a language modeling task with vocabulary size $n$, the expected value of our loss is
+$$-\ln (\frac{1}{n})$$
 
 During training, the Transformer takes as input a batched sequence of token IDs. These values are stored in a tensor of shape `(batch_size, sequence_length)`. The Transformer outputs a batched, normalized probability distribution of shape `(batch_size, sequence_length, vocab_size)` where the predicted distribution is over the next word for each input token. We take the cross-entropy loss between the actual next word and the predicted distribution for each token, giving us `batch_size * sequence_length`training samples per batch.
 

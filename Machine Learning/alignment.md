@@ -29,7 +29,11 @@ PPO is a trust region optimization algorithm, meaning it tries to ensure that th
 $$r_t(θ)=\frac{\pi_{\theta}(a_t|s_t)}{\pi_{\theta_{\text{old}}}(a_t|s_t)}$$
 where $\pi_{\theta}$ is the current policy and $\pi_{\theta_{\text{old}}}$ is the policy before the update. $s_t$ is the sequence of tokens generated so far (at time step $t$) and $a_t$ is the action taken, or the next token generated. The objective encourages increasing the probability of actions (i.e., generated tokens) that yield high reward, but prevents large changes to the model’s behavior in a single step.
 
-Importantly, PPO is an **on-policy algorithm**, which means that each update is performed using only the data sampled from the current version of the policy.
+Importantly, PPO is an **on-policy algorithm**, which means that each update is performed using only the data sampled from the current version of the policy. This is important because problems like instruction-tuning are fundamentally **off-policy**, demonstrating a short-coming of this method.
+#### group relative policy optimization (GRPO)
+GRPO is a [[reinforcement learning]]-based fine-tuning method pioneered in the DeepSeek models. The model samples multiple responses and uses a learned reward model to score each, updating the policy based on their relative performance, efficiently eliminating the need for a separate value model.
+
+![[grpo.png]]
 
 ---
 ## weak-to-strong generalization

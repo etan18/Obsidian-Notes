@@ -9,8 +9,19 @@ The term "LLM" typically refers to *generative* models which are **decoder-only*
 
 ## pre-training
 These base LLMs trained on general-domain text data are referred to as "**pre-trained**" models. From the core dataset (e.g. OpenWebText), the model learns strong representations via **self-supervised learning** which produces generally good outputs on any task. 
+#### in-context learning (ICL)
+Autoregressive large language models have the capability of learning downstream tasks directly from examples provided by the input prompt, without the need for re-training. This is because the model will attend to all tokens that come before it in the input. Some common strategies include:
+- **Few-shot prompting**: provide examples of the task at hand.
+- **Template-based prompting**: format input to the model as if it were generic webtext data.
+- **Chain-of-thought prompting**: include an example of whatever question/task you want the llm to answer/do, along with the logical steps taken to arrive at the end result.
 
-# fine-tuning
+However, these prompting methods are not ideal for the end-user, who would like to input natural language dialogue without having to worry about structured templating. Ideally, we would like the "multi-tasking" capabilities to be directly baked into the model.
+# post-training
+Post-training is the stage after pre-training, where the LLM already demonstrates strong performance and has a large core knowledge base. The goal of post-training is to now bake in specific, desirable behaviors into the model. These include:
+- [[Alignment]]: ensure model outputs align with human values, as well as general safety features
+- [[large language models#fine-tuning|Fine-tuning]]: described below, create task-specific experts from pre-trained models
+- Instruction-tuning: described below, a common form of fine-tuning to produce responses conditioned on natural language instructions, rather than text prefixes
+## fine-tuning
 LLMs are **foundation models**, meaning they are trained on large, general knowledge bases with the intention of being applicable across many domains and use cases. However, in many practical settings, we want to deploy a LLM that is an expert in one specific domain, such as code generation or healthcare diagnosis. 
 
 **Fine-tuning** is the process of introducing an unseen dataset to a pre-trained LLM in order to make the model better suited for specific tasks. Starting from a pre-trained model ensures we have a strong starting point, and can be especially helpful for downstream tasks where minimal additional data is available.
@@ -31,12 +42,17 @@ One drawback of traditional full fine-tuning is that it retrains *all* parameter
 LoRA works on the assumption of the [[dimensionality reduction#manifold learning|manifold hypothesis]] that over-parameterized large models actually reside on a low intrinsic dimension. Because of this, it assumes that the change in weights at each layer has a low **intrinsic rank**. Using this assumption, LoRA decomposes the weight update matrix into two low-rank matrices $\Delta W = AB$. 
 
 During fine-tuning, LoRA learns the two lower rank matrices $A$ and $B$ only rather than the entire weight matrix. It takes the learned $AB \approx \Delta W$ and adds it back to the frozen weight matrix $W$. This dramatically reduces the number of learnable parameters, while still preserving the performance and purpose of fine-tuning.
+### instruction-tuning
+One shortcoming of out-of-the-box pre-trained models is that they are trained to model documents scraped from the internet. This means that input prompts should also be formatted as partial documents that the LLM should complete.
+```
+Prompt: Translate this phrase from English to French. English = 'My fish is red.' French = 
+```
 
-## in-context learning (ICL)
-Autoregressive large language models have the capability of learning downstream tasks directly from examples provided by the input prompt, without the need for re-training. This is because the model will attend to all tokens that come before it in the input. Some common strategies include:
-- **Few-shot prompting**: provide examples of the task at hand.
-- **Template-based prompting**: format input to the model as if it were generic webtext data.
-- **Chain-of-thought prompting**: include an example of whatever question/task you want the llm to answer/do, along with the logical steps taken to arrive at the end result.
+This is not the most comfortable wording for a regular end-user inputting natural language dialogue. They prefer to just input: `How do you say 'My fish is red' in French?` 
+
+**Instruction-tuning** addresses this problem by fine-tuning LLMs to be conditioned on inputs generated in a more human-friendly interface. Some examples of these models are Google FLAN, OpenAI InstructGPT, and Alpaca.
+
+Fine-tuning occurs over a dataset of user instructions and corresponding demonstrations of task execution.
 
 ---
 #### retrieval augmented generation (RAG)
@@ -45,10 +61,7 @@ Autoregressive large language models have the capability of learning downstream 
 
 
 ---
-- perplexity -> negative log likelihood
-	- metric used in [[information theory]] to quantify uncertainty
-	- we can use negative log likelihood to estimate what our loss should be. for a language modeling task with vocabulary size $n$, the expected value of our loss is
-$$-\ln (\frac{1}{n})$$
+
 - context window: working memory of an LLM, the number of *tokens* that an llm can consider in a single prompt/query
 	- tradeoff: computational cost scales quadratically with size of context window in normal [[attention]]. this is because the relationships between each token must be computed.
 	- Large context windows may also dilute relevant information and confuse the model. a 2023 study found that LLMs perform best when the most relevant information is at the beginning or end of the input

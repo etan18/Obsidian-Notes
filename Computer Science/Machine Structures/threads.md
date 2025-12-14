@@ -36,10 +36,24 @@ Concurrency with threads is *non-deterministic* in nature. The OS [[scheduling|s
 **Busy waiting**, or *spinlocking*, is a naive synchronization method that relies on atomic loads and stores to continuously check if a thread can proceed execution.
 ```
 // Thread A
+// Wait until Thread B flips `ready` to 1 (spinlock / busy-wait)
+#include <stdatomic.h>
 
+atomic_int ready = 0;
+
+void thread_a(void) {
+    while (atomic_load_explicit(&ready, memory_order_acquire) == 0) {
+        // busy-wait (burns CPU cycles)
+    }
+    // proceed once ready == 1
+}
 
 // Thread B
-
+// Do some work, then signal Thread A by setting `ready`
+void thread_b(void) {
+    // ... do work that A depends on ...
+    atomic_store_explicit(&ready, 1, memory_order_release);
+}
 ```
 
 This technique burns CPU cycles and makes it such that the waiting thread cannot execute other tasks in the meantime.
