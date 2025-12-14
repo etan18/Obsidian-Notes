@@ -53,6 +53,14 @@ Model ([[defensive forecasting]])
 - K29 algorithm: base runs, hyper-parameter sweep
 - Initial runs on 1000 or so data points.
 
+**12/12**
+- Potential function can be rewritten w/ caching (current is incorrect)
+S = self_term + sum_{i=1}^t <RFF(x), RFF(x_i) (y_i-p_i)>  +  <RFF(x), RFF(x_i)(y_i - p_i)>  1 {g(x) = g(x_i)})
+S = self_term + sum_{i=1}^t <RFF(x), GLOBAL >  +  <RFF(x), COUNTER FOR i>
+- GLOBAL = sum_{i=1}^t RFF(x_i) (y_i-p_i)
+- Maintain a counter of per-hospital values
+	- COUNTER for HOSPITAL j =  sum_{i belongs to hospital j}^t RFF(x_i) (y_i-p_i)
+
 ---
 ## ai scribes
 
