@@ -7,7 +7,6 @@ $$WER = \frac{\text{Total \# of errors}}{\text{Ground truth \# of words}}$$
 The WER can exceed 100% if, for example, too many words are inserted.
 
 # speech data
-
 Speech is produced when air passes through *vocal articulators* (tongue, lips, hard/soft palate, larynx, etc.), each of which produces vibrations of different sounds that combine together. Speech data comes in the form of **acoustic waveforms**, a continuous time series modality measuring pressure amplitude. 
 
 We use  the [[spatial frequency#fourier transform|Fourier Transform]] to convert waveforms from the time domain to the **time-frequency domain**---this process decomposes the waveform into its individual frequency components and maps each of them over time. A **spectrogram** (below) maps which frequencies are present at any time, and denotes its amplitude via pixel intensity.
@@ -42,6 +41,7 @@ Another popular ASR model is **[wav2vec2](https://huggingface.co/docs/transforme
 - **[[transformers|Transformer]]-based Encoding**
 - **Quantization Module**, discretizes the continuous output
 
+---
 # text-to-speech
 While ASR converts audio data to text, **TTS** synthesis converts text to spoken language. The earliest and most basic TTS systems include:
 1. **Formant synthesis**: additive synthesis of acoustic models (e.g. band-pass filters) to mimic "formant properties" of speech, such as the resonant frequencies created by the vocal tract
@@ -53,8 +53,16 @@ Challenges to TTS:
 - **Non-standard words** (NSWs): "Dr." or numerals, higher rates of NSWs in classified documents or direct messages/text conversations
 - **Homographs**: same spelling, multiple pronunciations (e.g. "read" or "project")
 
+Alignment
+
 >[!note] Speech Synthesis Markup Language
 >Language to disambiguate text for speech synthesis. Provides pronunciations, breaks, speed, pitch. 
 >```
 ><?xml version="1.0"?><!DOCTYPE SABLE PUBLIC "-//SABLE//DTD SABLE speech mark up//EN""Sable.v0_2.dtd"[]> <SABLE> <SPEAKER NAME="male1">The boy saw the girl in the park <BREAK/> with the telescope.The boy saw the girl <BREAK/> in the park with the telescope.Some English first and then some Spanish.<LANGUAGE ID="SPANISH">Hola amigos.</LANGUAGE><LANGUAGE ID="NEPALI">Namaste</LANGUAGE>Good morning <BREAK /> My name is Stuart, which is spelled<RATE SPEED="-40%"><SAYAS MODE="literal">stuart</SAYAS> </RATE>though some people pronounce it<PRON SUB="stoo art">stuart</PRON>. My telephone numberis <SAYAS MODE="literal">2787</SAYAS>.I used to work in <PRON SUB="Buckloo">Buccleuch</PRON> Place,but no one can pronounce that.By the way, my telephone number is actually<AUDIO SRC="http://att.com/sounds/touchtone.2.au"/><AUDIO SRC="http://att.com/sounds/touchtone.7.au"/><AUDIO SRC="http://att.com/sounds/touchtone.8.au"/><AUDIO SRC="http://att.com/sounds/touchtone.7.au"/>
 >```
+
+TTS is a multi-modal task, mapping natural language text to speech waveforms. Non-E2E TTS approaches intermediately also map:
+- Text --> [[linguistics]] features
+- Linguistic features --> Acoustic features 
+- Acoustic features --> Speech
+This task can be solved using [[sequence modeling#seq2seq models|sequence-to-sequence modeling]].
