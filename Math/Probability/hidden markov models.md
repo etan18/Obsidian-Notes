@@ -29,10 +29,12 @@ The forward algorithm is an *exact inference* technique that recursively
 #### particle filtering
 Exact inference can become computationally expensive and unnecessary as the number of variables and their domain sizes scale. **Particle filtering** uses *sampling* to efficiently approximate the desired probability distributions. 
 
+#### viterbi algorithm
+Viterbi algorithm is a [[dynamic programming]] approach to recursively reconstruct the maximum probability sequence.
+
 ---
 ## kalman filter
 The Kalman filter is a particular type of Hidden Markov Model where you assume that the state transition and observation distributions are linear and Gaussian.
-
 
 >[!info] Next: [[markov decision processes]]
 

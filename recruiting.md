@@ -71,3 +71,6 @@ Insort = Insert O(n) + Search O(log n) = O(n)
 	- append, pop, appendleft, popleft
 	- `rotate(n)`: rotates n elements right (or left if negative)
 	- `deque(maxlen=Optional_int)`: once maxlen reached, evict from other side
+
+
+[[systems & networking prep]]

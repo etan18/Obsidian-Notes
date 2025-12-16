@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "unfinished/large language models.md",
+                "file": "vLLM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "large language models"
+              "title": "vLLM"
+            }
+          },
+          {
+            "id": "c053d2fc30c9460f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "unfinished/systems & networking prep.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "systems & networking prep"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "quantization",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,39 +193,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44bd06d214c97d46",
+  "active": "c053d2fc30c9460f",
   "lastOpenFiles": [
-    "Machine Learning/Paper Summaries/model scaling.md",
-    "unfinished/large language models.md",
-    "Pasted image 20251210141044.png",
-    "Machine Learning/img/pruning.png",
+    "Math/Probability/hidden markov models.md",
+    "structured prediction.md",
+    "recruiting.md",
+    "dead week.md",
     "Machine Learning/Deep Learning & Neural Networks/transformers.md",
+    "Computer Science/constraint satisfaction problems.md",
+    "Machine Learning/Artificial Intelligence/search problems.md",
+    "vLLM.md",
+    "unfinished/systems & networking prep.md",
+    "unfinished/robotics.md",
+    "unfinished/vector databases.md",
+    "Machine Learning/large language models.md",
+    "unfinished/meta.md",
+    "unfinished/music critique.md",
+    "unfinished/neural ode.md",
+    "unfinished/relational meaning.md",
+    "unfinished/pytorch.md",
+    "Pasted image 20251210141044.png",
+    "Computer Science/databases.md",
+    "Computer Science/SQL.md",
+    "Computer Science/Machine Structures/distributed systems.md",
+    "Machine Learning/Paper Summaries/model scaling.md",
+    "Machine Learning/img/pruning.png",
     "Math/Linear Algebra/rank.md",
     "Machine Learning/regularization.md",
     "2025-12-14.md",
     "Computer Science/Machine Structures/threads.md",
     "Computer Science/Machine Structures/x86.md",
     "Computer Science/img/linux.png",
-    "Computer Science/Machine Structures/operating system.md",
-    "Computer Science/Machine Structures/unix.md",
-    "Computer Science/Machine Structures/memory structure.md",
-    "Machine Learning/alignment.md",
-    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "Machine Learning/img/grpo.png",
-    "Research/ML4H.md",
-    "Machine Learning/natural language processing.md",
-    "Machine Learning/Deep Learning & Neural Networks/sequence modeling.md",
-    "Research/master's research.md",
-    "Machine Learning/kernels.md",
-    "vLLM.md",
-    "dead week.md",
-    "Machine Learning/Paper Summaries/interpretability.md",
     "Machine Learning/img/probe.png",
-    "Machine Learning/embeddings.md",
     "Machine Learning/img/scaling.png",
-    "Machine Learning/ml systems.md",
-    "recruiting.md",
-    "Machine Learning/Paper Summaries/defensive forecasting.md",
     "Machine Learning/img/kvcache.png",
     "Pasted image 20251204123222.png",
     "Pasted image 20251206185638.png",

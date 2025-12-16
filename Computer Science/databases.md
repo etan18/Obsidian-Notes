@@ -7,7 +7,7 @@ A well designed database will capture the four properties of the **ACID** acrony
 - **Durability**: changes to your data made by successfully executed transactions will be saved, even in the event of system failure.
 
 ## scaling
-SQL databases (e.g. MySQL, PostgreSQL) are also known as relational databases. They are efficient with handling many tables of structured data, which are each defined by a schema. However, the primary drawback is that SQL databases are difficult to scale horizontally due to their relational nature. **Horizontal scaling** in [[distributed systems]] involves adding more servers in order to share the load more manageably across resources.
+[[SQL]] databases (e.g. MySQL, PostgreSQL) are also known as relational databases. They are efficient with handling many tables of structured data, which are each defined by a schema. However, the primary drawback is that SQL databases are difficult to scale horizontally due to their relational nature. **Horizontal scaling** in [[distributed systems]] involves adding more servers in order to share the load more manageably across resources.
 
 **NoSQL** (e.g. MongoDB, DynamoDB) was introduced to address the horizontal scaling problems of traditional SQL. It 
 - Does not support table relationships, and data is usually stored in documents or as key-value pairs. This makes them more flexible and easy to set up.

@@ -22,5 +22,3 @@ When utilizing [[search algorithms]] to solve a search problem, there are a few 
 - **Branching Factor**: we want to minimize the number of child nodes opened up at each frontier node. At depth $k$ in a search tree, there will be $O(b^k)$ nodes
 We also want to consider our hyperparameter $m$, the maximum depth to search to, compared to $s$, the depth of the shallowest solution. Search problems are broken down into [[complexity classes]] based on their solvability.
 
----
-
