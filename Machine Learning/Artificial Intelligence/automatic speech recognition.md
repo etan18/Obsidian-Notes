@@ -1,5 +1,15 @@
 In [[artificial intelligence]], automatic speech recognition (ASR) is the task of processing human speech into readable text. Applications of ASR include caption generation, video transcription, and hearing assistive technology.
 
+The goal of ASR is to learn a model that predicts $\hat W = \arg\max_{W \in \mathcal W} \Pr[W | O]$, the most likely sequence of words $W$ given a speech input $O$. Modern ASR systems are trained end-to-end, meaning they can directly approximate this distribution.
+
+For all speech inputs of equal length $O_i \in \mathcal O^N$, the corresponding text outputs $W_i$ may be variable in length. Traditional [[recurrent neural networks]] require pre-defined alignment (how many outputs does one input map to), making them unsuitable for ASR. Instead, we require
+- [[Attention]]-based models
+- Connectionist Temporal Classifiers (CTCs):  adds an output layer to the RNN that defines a distribution over *all* alignments with all output sequences not longer than the input sequence
+	- First successful end-to-end ASR which does not require alignment for training
+	- Not a "language model": assumes that output elements are independent of each other
+#### alignment
+A key challenge in ASR is alignment 
+
 ASR is evaluated using **error rates**. For space delimited languages, such as English, we may use word error rate (WER) to capture the percentage of wrong words in the transcript. For non-space delimited languages, we may use character error rate (CER).
 
 The number of errors---which can come in the form of substitutions, insertions, or deletions---is computed using the **Levenshtein distance**, or edit distance. The WER is then computed as
@@ -22,6 +32,8 @@ We use  the [[spatial frequency#fourier transform|Fourier Transform]] to convert
 5. **DCT (Discrete Cosine Transform)** to decorrelate coefficients
 
 The 13 MFCC coefficients capture different aspects of the acoustic signal, with lower coefficients representing broader spectral characteristics and higher coefficients capturing finer details.
+
+
 
 ---
 Today, most speech recognition pipelines are trained end-to-end, meaning one model implicitly performs the many intermediate steps requires to recover text from speech, including
