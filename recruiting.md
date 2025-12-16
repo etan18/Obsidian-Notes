@@ -1,4 +1,11 @@
 
+### nuro
+- **Onboard Systems:** Our onboard system team’s software engineers provide a reliable and high-performance platform that allows our autonomy teams to integrate their autonomy software and algorithms that work across various self-driving platforms. 
+
+- **Technical Infrastructure:** this group owns few fundamental services for entire engineering organizations: generic compute platform to host mission-critical workflows such as data processing and simulation, storage management service which manages hundreds of PB of data, cloud infrastructure serves as IaaC which provisions and maintains all cloud resources, engineering productivity provides tools such as build and CI/CD to make engineering work more efficient.
+
+
+
 ### amd
 - As a primarily hardware company, what are AMD's current plans on the software AI/ML side of things?
 	- Does the company view ML development as primarily being for internal tooling or does it have plans to go to market?
@@ -72,5 +79,15 @@ Insort = Insert O(n) + Search O(log n) = O(n)
 	- `rotate(n)`: rotates n elements right (or left if negative)
 	- `deque(maxlen=Optional_int)`: once maxlen reached, evict from other side
 
+`import heapq`
+- **heapq** (heap queue)
+	- heapq.heapify(lst): list to min-heap (or heapify_max(lst))
+	- heapq.heappush(heap, item)
+	- heapq.heappop(heap): if heap is empty, [`IndexError`](https://docs.python.org/3/library/exceptions.html#IndexError "IndexError") is raised. To access the smallest item without popping it, use `heap[0]`.
+
+General purpose functions (not heapq, but use heap for efficiency)
+	- heapq.merge(lst, lst2, ..., key=None, reverse=False) --> iterable: merge n sorted lists 
+		- If reverse=True, lsts must also be sorted in descending order
+	- nlargest(n, iterable, key=None): or nsmallest
 
 [[systems & networking prep]]

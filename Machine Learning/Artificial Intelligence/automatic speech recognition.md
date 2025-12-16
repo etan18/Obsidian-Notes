@@ -43,4 +43,18 @@ Another popular ASR model is **[wav2vec2](https://huggingface.co/docs/transforme
 - **Quantization Module**, discretizes the continuous output
 
 # text-to-speech
-While ASR converts audio data to text, **TTS** synthesis converts text to spoken language. 
+While ASR converts audio data to text, **TTS** synthesis converts text to spoken language. The earliest and most basic TTS systems include:
+1. **Formant synthesis**: additive synthesis of acoustic models (e.g. band-pass filters) to mimic "formant properties" of speech, such as the resonant frequencies created by the vocal tract
+	- Cheap, well suited for embedded systems with limited memory and compute
+	- Produces artificial, robotic sounding speech, low fidelity
+2. **Waveform synthesis**: reproduce the actual sound wave (air pressure over time) beyond spectral (frequency) components.
+
+Challenges to TTS:
+- **Non-standard words** (NSWs): "Dr." or numerals, higher rates of NSWs in classified documents or direct messages/text conversations
+- **Homographs**: same spelling, multiple pronunciations (e.g. "read" or "project")
+
+>[!note] Speech Synthesis Markup Language
+>Language to disambiguate text for speech synthesis. Provides pronunciations, breaks, speed, pitch. 
+>```
+><?xml version="1.0"?><!DOCTYPE SABLE PUBLIC "-//SABLE//DTD SABLE speech mark up//EN""Sable.v0_2.dtd"[]> <SABLE> <SPEAKER NAME="male1">The boy saw the girl in the park <BREAK/> with the telescope.The boy saw the girl <BREAK/> in the park with the telescope.Some English first and then some Spanish.<LANGUAGE ID="SPANISH">Hola amigos.</LANGUAGE><LANGUAGE ID="NEPALI">Namaste</LANGUAGE>Good morning <BREAK /> My name is Stuart, which is spelled<RATE SPEED="-40%"><SAYAS MODE="literal">stuart</SAYAS> </RATE>though some people pronounce it<PRON SUB="stoo art">stuart</PRON>. My telephone numberis <SAYAS MODE="literal">2787</SAYAS>.I used to work in <PRON SUB="Buckloo">Buccleuch</PRON> Place,but no one can pronounce that.By the way, my telephone number is actually<AUDIO SRC="http://att.com/sounds/touchtone.2.au"/><AUDIO SRC="http://att.com/sounds/touchtone.7.au"/><AUDIO SRC="http://att.com/sounds/touchtone.8.au"/><AUDIO SRC="http://att.com/sounds/touchtone.7.au"/>
+>```
