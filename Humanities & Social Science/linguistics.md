@@ -1,15 +1,18 @@
 Languages can be studied at different levels:
 - Phonetics: sounds in a language (phonemes)
 	- Graphemes: atomic units in a *writing* system
-- Phonology: rules that govern the organization of sounds in a language 
+- Phonology: rules that govern the organization of sounds in a language (syllables)
 - Morphology: smallest unit of a language that has meaning or a grammatical function
 - Grammar/Syntax
 - Semantics
 - Pragmatics
 
 ## international phonetic alphabet
-**Language agnostic** alphabet containing sounds (**phonemes**) observed in spoken languages.
+**Language agnostic** alphabet containing 107 sounds (**phonemes**) observed in spoken languages. English uses about 44 of the phonemes in the IPA (20 vowels, 24 consonants).
+##### vowels
+Phonetically, **vowels** are speech sounds produced with an open vocal tract, without obstruction of airflow. Different vowel sounds are produced by changing the shape of the vocal tract by changing tongue position, lip rounding, and jaw opening.
 
+![[vowels.png]]
 
 ### phonology
 Phonology lays out the sets of grammatical rules that phonemes of a language follow. What sounds can go together, and which ones can't.

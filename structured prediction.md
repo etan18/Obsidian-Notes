@@ -4,8 +4,6 @@ Structured prediction is a class of problems wherein we want to learn a distribu
 
 The [[search problems|search space]] of possible outputs may be exponentially large, but we can utilize what we know about the structure to significantly narrow down the search at inference time. We effectively treat inference in structured prediction as [[constraint satisfaction problems]].
 - For [[Transformers]]-based structured prediction models, we can use **constrained decoding** or **reranking** to enforce valid outputs.
-- 
-
 ### general problem formulation
 We begin with a prior over the possible combinations of output label sequences $p \in \Delta^{\mathcal P ^N}$. This prior can be estimated using [[maximum likelihood estimation]] from a set of labeled training data.
 

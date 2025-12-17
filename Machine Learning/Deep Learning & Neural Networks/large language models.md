@@ -18,7 +18,7 @@ Autoregressive large language models have the capability of learning downstream 
 However, these prompting methods are not ideal for the end-user, who would like to input natural language dialogue without having to worry about structured templating. Ideally, we would like the "multi-tasking" capabilities to be directly baked into the model.
 # post-training
 Post-training is the stage after pre-training, where the LLM already demonstrates strong performance and has a large core knowledge base. The goal of post-training is to now bake in specific, desirable behaviors into the model. These include:
-- [[Alignment]]: ensure model outputs align with human values, as well as general safety features
+- [[alignment]]: ensure model outputs align with human values, as well as general safety features
 - [[large language models#fine-tuning|Fine-tuning]]: described below, create task-specific experts from pre-trained models
 - Instruction-tuning: described below, a common form of fine-tuning to produce responses conditioned on natural language instructions, rather than text prefixes
 ## fine-tuning
@@ -61,7 +61,7 @@ Fine-tuning occurs over a dataset of user instructions and corresponding demonst
 
 ---
 #### retrieval augmented generation (RAG)
-[[Retrieval augmented generation]] is a popular alternative to fine-tuning an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
+[[retrieval augmented generation]] is a popular alternative to fine-tuning an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
 
 ---
 # model compression

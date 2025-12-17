@@ -1,5 +1,5 @@
 ### covariate shift
-[[Causal inference]] is a field that closely ties into the [[generalizability]] of ML models. Traditional views on the subject focus on **covariate shifts**—also known as $X$-shifts—where there exist differences between the training and testing distributions.
+[[causal inference]] is a field that closely ties into the [[generalizability]] of ML models. Traditional views on the subject focus on **covariate shifts**—also known as $X$-shifts—where there exist differences between the training and testing distributions.
 - Covariate shifts are relevant to a lot of observed [[fairness]] outcomes, as it captures the "underrepresentation" of certain groups and attributes in the training set
 #### label shifts
 Label shifts, also known as $Y$-shifts, are observed when the prior distribution $\mathbb{P}[Y]$ of observing a certain outcome is different in the training versus testing environment.

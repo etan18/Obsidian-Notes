@@ -33,4 +33,3 @@ The third stage, the concrete operational stage, occurs from around seven to twe
 
 ###### 4. formal operational stage
 Finally, the fourth stage, the formal operational stage, occurs from around twelve years old and is characterized by the child's ability to think abstractly and reason hypothetically.
->

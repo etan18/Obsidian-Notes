@@ -1,6 +1,6 @@
+**Golang** is a systems programming language designed for scalable systems. It offers clean interfaces for concurrent processing capabilities and memory efficiency
 ## packages
 Base Go code exists within *packages*. All programs begin running package `main`. 
-
 #### function syntax
 Functions within a package are defined as follows:
 ```
