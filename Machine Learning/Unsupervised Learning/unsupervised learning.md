@@ -1,6 +1,6 @@
 [[dimensionality reduction]]
 [[clustering]]
-representation learning
+[[representation learning]]
 
 
 

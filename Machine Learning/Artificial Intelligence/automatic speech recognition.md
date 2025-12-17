@@ -7,14 +7,46 @@ For all speech inputs of equal length $O_i \in \mathcal O^N$, the corresponding 
 - Connectionist Temporal Classifiers (CTCs):  adds an output layer to the RNN that defines a distribution over *all* alignments with all output sequences not longer than the input sequence
 	- First successful end-to-end ASR which does not require alignment for training
 	- Not a "language model": assumes that output elements are independent of each other
-#### alignment
-A key challenge in ASR is alignment 
+
+Challenges of speech modeling:
+- **Coarticulation**: no clean segment boundaries; unlike text, which can be segmented into a sequence of characters or other lexical units, speech segment boundaries are unmarked and variable length.
+- No predefined vocabulary: inputs are continuous, but must be mapped to a discrete vocabulary
 
 ASR is evaluated using **error rates**. For space delimited languages, such as English, we may use word error rate (WER) to capture the percentage of wrong words in the transcript. For non-space delimited languages, we may use character error rate (CER).
 
 The number of errors---which can come in the form of substitutions, insertions, or deletions---is computed using the **Levenshtein distance**, or edit distance. The WER is then computed as
 $$WER = \frac{\text{Total \# of errors}}{\text{Ground truth \# of words}}$$
 The WER can exceed 100% if, for example, too many words are inserted.
+## speech foundation models
+The general approach for building a speech foundation model employs **self-supervised learning**. Given a large amount of *unlabeled* speech data, and a limited amount of task-specific *labeled* data, we assemble the model:
+1. Learn a "pre-text" task on unlabeled data: autoregressive/masked speech modeling, etc.
+2. Fine-tune the pre-trained model on labeled data to perform a wide variety of speech tasks 
+#### contrastive pre-text tasks
+Contrastive pre-text tasks are ones that learn to distinguish between good and bad samples.
+
+**Contrastive predictive coding** (CPC) is a [[representation learning]] method which aims to distinguish positive and negative samples in a speech waveform. 
+- For each timestep we encode the input. 
+- Learn a latent representation from all context up to and including the current timestep.
+- Use the latent to predict encodings of future timesteps.
+	- The real encoding for a future timestep $t_{i+\text{offset}}$ is the "positive sample"
+	- "Negative samples" are all other encodings, including some negatively sampled encoding outputs from the output space.
+The prediction head is trained using **InfoNCE** as the loss function; it maximizes the [[entropy#joint & conditional entropy|mutual information]] between future input samples and the current latent. This is a clever trick to convert an [[unsupervised learning]] problem into a traditional classification task for identifying the positive sample from a set of candidates.
+
+**wav2vec 2.0** is another contrastive method. It learns speech representations by maximizing the similarity between the learned contextual representation and the quantized input features at the same position. [(Good blog post)](https://jonathanbgn.com/2021/09/30/illustrated-wav2vec-2.html)
+
+>[!tip] Gumbel-Softmax
+>The Gumbel-Softmax trick provides a differentiable, continuous approximation to sampling from a discrete probability distribution. It works by adding noise sampled from a **Gumbel distribution** to log-probabilities (logits) from the discrete distribution and then applying a temperature-controlled softmax, thereby approximating a discrete $\arg\max$. 
+>
+>The Gumbel distribution is an extreme value distribution, modeling the distribution of the maximum (or minimum) observation from a number of samples.
+
+wav2vec was one of the first speech models to demonstrate strong performance in multilingual and low-resource settings.
+
+#### predictive pre-text tasks
+
+>[!note] Quantization
+>A **codebook** is the set of **discrete prototype vectors** that a continuous audio representation is mapped to during quantization.
+
+
 
 # speech data
 Speech is produced when air passes through *vocal articulators* (tongue, lips, hard/soft palate, larynx, etc.), each of which produces vibrations of different sounds that combine together. Speech data comes in the form of **acoustic waveforms**, a continuous time series modality measuring pressure amplitude. 

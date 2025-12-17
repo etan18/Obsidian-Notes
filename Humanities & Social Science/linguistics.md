@@ -12,6 +12,8 @@ Languages can be studied at different levels:
 
 
 ### phonology
+Phonology lays out the sets of grammatical rules that phonemes of a language follow. What sounds can go together, and which ones can't.
+
 **Syllable structure** is a fundamental part of phonology. Syllables are structured into components:
 - Onset: the sound at the beginning of the syllable
 - Rhyme: everything after the onset, consisting of
@@ -21,6 +23,12 @@ In English, syllable structure has the form `(C3)V(C4)`. Here, items in parenthe
 - Hawaiian: `(C)V(C)`, every single consonant must be followed by a vowel
 - Georgian: `(C8)V(C5)`, known for very large consonant clusters
 
+Lexical phonology is a phonological approach that takes into account the hierarchical structure of words and sounds in a language.
+- **Lexical stress**: depending on the word and the context in which its being spoken, syllable stress may be placed at different parts of a word (e.g. project)
+- **Allophones**: multiple pronunciations of the same phoneme, depending on the context in which its spoken (e.g. /t/ in "button" vs. "tip")
+Intonational phonology studies the fundamental frequency (F0) in relation to the intended meaning of the utterance. Placing emphasis on different parts change the meaning of the utterance (e.g. "It will be rainy today.").
+
+Pronunciation dictionaries offer mappings from words to their syllabic and phonetic "spellings", or pronunciations.
 ### grammar
 Grammatically-correct sentences do not need to be meaningful (ex. "Green colorless ideas sleep furiously").
 ##### context-free grammars
