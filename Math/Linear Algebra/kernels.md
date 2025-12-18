@@ -1,6 +1,6 @@
 #cs189 
 
-Kernel functions allows us to measure the similarity of two data points in an *implicit*, high-dimensional feature space.  
+Kernel functions allows us to measure the similarity of two data points in an *implicit*, high-dimensional feature space. They are commonly used with [[support vector machines]], where a kernel function maps points into a high-dimensional space such that points are now linearly separable, and can be classified with an SVM.
 ### background
 
 >[!warning] Problem Statement
@@ -26,3 +26,14 @@ In this case, our $\Phi$ functions are abstracted, and we never actually compute
 The output of the kernel function essentially tells us the distance between the points in this inferred high-dimensional space without ever needing to compute the coordinates in the space.
 #### miscellaneous notes
 - $\Phi(x)$ still has length $O(d^p)$, but its computed in linear time. 
+- Most kernel algorithms require calculating the kernel function (a similarity measure) between every pair of data points in the training set to build a dense kernel matrix, giving them quadratic runtimes. Because of that, practical implementations may approximate kernel functions rather than computing them directly.
+
+## rbf kernel
+The **radial basis function** kernel, also known as the Gaussian kernel, is the most common kernel type. The kernel function is defined as
+$$K(\textbf x, \textbf x') = \exp (- \gamma || \textbf x - \textbf x' ||^2)$$
+where $\gamma$ is a hyperparameter defining the "spread" of the kernel. Larger gamma values $> 1$ accentuate distances, meaning points close together are weighted more heavily. In comparison, gamma values $< 1$ "smooth" out the distribution, giving farther points slightly more influence.
+
+We exponentiate the squared Euclidean distance between the points.
+##### random fourier features
+One method of approximating a Gaussian kernel is by defining a function $z(\textbf x)$, which takes in a single vector and maps it to a higher dimension, such that we can take the inner product of $$K(\textbf x, \textbf x') \approx \langle z(\textbf x), z(\textbf x') \rangle$$
+One way to construct $z$ is by randomly sampling from the Fourier Transform of the RBF kernel function.
