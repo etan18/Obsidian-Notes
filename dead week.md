@@ -1,4 +1,9 @@
 
+### research
+- sequential combine of catBoost + K29
+	- Try: no split (train both on same data), with split
+
+
 ### eecs 283a
 
 Template-based prompting (pre-training lecture)
