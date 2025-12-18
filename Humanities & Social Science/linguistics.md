@@ -7,14 +7,15 @@ Languages can be studied at different levels:
 - Semantics
 - Pragmatics
 
-## international phonetic alphabet
+## phonetics
+##### international phonetic alphabet
 **Language agnostic** alphabet containing 107 sounds (**phonemes**) observed in spoken languages. English uses about 44 of the phonemes in the IPA (20 vowels, 24 consonants).
 ##### vowels
 Phonetically, **vowels** are speech sounds produced with an open vocal tract, without obstruction of airflow. Different vowel sounds are produced by changing the shape of the vocal tract by changing tongue position, lip rounding, and jaw opening.
 
 ![[vowels.png]]
 
-### phonology
+## phonology
 Phonology lays out the sets of grammatical rules that phonemes of a language follow. What sounds can go together, and which ones can't.
 
 **Syllable structure** is a fundamental part of phonology. Syllables are structured into components:
@@ -32,7 +33,7 @@ Lexical phonology is a phonological approach that takes into account the hierarc
 Intonational phonology studies the fundamental frequency (F0) in relation to the intended meaning of the utterance. Placing emphasis on different parts change the meaning of the utterance (e.g. "It will be rainy today.").
 
 Pronunciation dictionaries offer mappings from words to their syllabic and phonetic "spellings", or pronunciations.
-### grammar
+## grammar
 Grammatically-correct sentences do not need to be meaningful (ex. "Green colorless ideas sleep furiously").
 ##### context-free grammars
 Context-free grammars (CFGs) are sets of rules that offer arbitrary expressivity through recursive structure. Most programming languages are CFGs. A CFG contains
@@ -65,7 +66,7 @@ A dependency grammar includes:
 ##### lambda calculus
 Tool for semantic decomposition.
 
-### pragmatics
+## pragmatics
 Considerations of broader context in which a text appears or a dialogue is spoken.
 - **Presupposition**: assumptions made by a particular sentence.
 - **Implicature**: implicit suggestions made by a particular sentence.
@@ -75,3 +76,13 @@ The **Gricean Maxims** are a set of four principles for effective communication.
 2. Truth: utterances should not contain falsehoods
 3. Relation: utterances should be relevant to the conversation
 4. Manner: utterance form and meaning should be clear
+##### Rational Speech Acts
+The RSA framework is a probabilistic (Bayesian) model of pragmatics. It explains how speakers and listeners reason about each other's goals and beliefs to infer meaning beyond literal words.
+- Common ground: set of things mutually believed by both speaker and listener
+
+The existence of **speech acts** follows from the notion that speaking, or making an utterance, is a type of action. There are five classes of speech acts:
+- **Assertives**: suggesting, putting forward, swearing, boasting, concluding
+- **Directives**: asking, ordering, requesting, inviting, advising, begging
+- **Commissives**: promising, planning, vowing, betting, opposing
+- **Expressives**: thanking, apologizing, welcoming, deploring
+- **Declaration**: changing the world state via the utterance ("He died." "You're fired.")

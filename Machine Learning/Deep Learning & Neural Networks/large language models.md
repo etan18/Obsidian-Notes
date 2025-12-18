@@ -1,6 +1,6 @@
 In [[natural language processing]], LLMs arose as a *task-universal* architecture trained on massive general-domain text data. These models could simultaneously perform various language modeling tasks, including machine translation, text summarization, or content generation.   
 
-The term "LLM" typically refers to *generative* models which are **decoder-only** [[transformers]], such as ChatGPT. These LLMs take the tokenized input and directly predict the next tokens in the sequence (aka the output) in an autoregressive manner, without computing the encoded hidden state beforehand.
+The term "LLM" typically refers to *generative* models which are **decoder-only** [[transformers]], such as ChatGPT. These LLMs use byte-pair [[tokenization]] to preprocess text input and directly predict the next tokens in the sequence (aka the output) in an autoregressive manner, without computing the encoded hidden state beforehand.
 
 > [!aside] BERT
 > Although LLMs generally refer to generative LMs performing next-token prediction, BERT (Bidirectional Encoder Representations from Transformers) is also considered an LLM by the general definition.

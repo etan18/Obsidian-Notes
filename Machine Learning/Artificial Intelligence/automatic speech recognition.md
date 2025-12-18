@@ -73,6 +73,8 @@ HuBERT (Hidden Unit BERT) is a predictive speech model that performs **masked sp
 	- A small codebook size, e.g., 50,100, is used for the initial training iteration to focus on phonetic differences rather than speaker and style.
 
 >[!note] Quantization
+>Quantization is commonly used to address the continuous nature of speech data. 
+>
 >A **codebook** is the set of **discrete prototype vectors** that a continuous audio representation is mapped to during quantization.
 
 ### end-to-end systems

@@ -14,7 +14,6 @@ The process of retrieving relevant information typically looks something like th
 2. **Compute similarity scores** between the query vector and vectors stored in the vector DB
 3. **Retrieve the top-$k$** most similar chunks using cosine similarity
 The selected chunks are concatenated to the original query and used as additional context in the prompt.
-
 #### re-ranking
 Performing vector search to rank the relevance of chunks of data poses several problems:
 - Compressing large chunks of texts into numerical vector representations leads to information loss, particularly of nuanced details.
@@ -24,3 +23,11 @@ To minimize the noise inputted into the LLM, we add a new process of **re-rankin
 Because vector search is efficient, we still use it to retrieve *all* relevant chunks from the vector database at high speeds. After retrieving this set of documents, the re-ranker is applied to prioritize the most relevant chunks at the top before applying top-$k$.
 
 Re-ranking models are generally implemented as cross-encoders that process the query and relevant chunk together to assign a relevance score. This is more precise than simply using a cosine similarity metric between two vectors.
+
+---
+### silo language models
+One prominent controversy with [[large language models]] is its use of copyrighted or private data. These large datasets are commonly assembled by crawling and scraping the internet, without much permissions-based filtering. A lot of data may be publicly available online, but its re-use in commercial settings is not allowed.
+
+To get around this, the SILO language model was proposed to ensure fair attribution of ownership when protected data is cited by an LLM. In SILO, high-risk data is only retrieved at inference time.
+
+![[silo.png]]
