@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dead week.md",
+                "file": "Machine Learning/Deep Learning & Neural Networks/large language models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dead week"
+              "title": "large language models"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "adapters",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -180,12 +181,17 @@
   },
   "active": "44bd06d214c97d46",
   "lastOpenFiles": [
+    "Math/Linear Algebra/rank.md",
+    "Machine Learning/Deep Learning & Neural Networks/large language models.md",
+    "Machine Learning/Deep Learning & Neural Networks/backpropagation.md",
+    "Machine Learning/Deep Learning & Neural Networks/neural networks.md",
+    "Machine Learning/Deep Learning & Neural Networks/recurrent neural networks.md",
+    "Machine Learning/ML Systems/retrieval augmented generation.md",
+    "dead week.md",
     "Machine Learning/Artificial Intelligence/alignment.md",
     "Math/Linear Algebra/kernels.md",
     "Math/Linear Algebra/inner product.md",
-    "Machine Learning/Deep Learning & Neural Networks/large language models.md",
     "Machine Learning/ML Systems/model scaling.md",
-    "Machine Learning/ML Systems/retrieval augmented generation.md",
     "Machine Learning/img/silo.png",
     "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
     "Machine Learning/tokenization.md",
@@ -193,7 +199,6 @@
     "Cognitive Science/Perception/gestalt principles.md",
     "Cognitive Science/Perception/color.md",
     "structured prediction.md",
-    "dead week.md",
     "recruiting.md",
     "Computer Science/greedy algorithms.md",
     "Computer Science/hashing.md",
@@ -203,10 +208,6 @@
     "Computer Science/queue.md",
     "Computer Science/reductions.md",
     "Computer Science/search algorithms.md",
-    "Computer Science/SQL.md",
-    "Computer Science/Golang.md",
-    "unfinished/vector databases.md",
-    "unfinished/systems & networking prep.md",
     "Machine Learning/Classical & Theory",
     "Machine Learning/ML Systems",
     "Cognitive Science/img/vowels.png",

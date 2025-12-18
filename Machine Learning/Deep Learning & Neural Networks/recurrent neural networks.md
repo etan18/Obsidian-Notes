@@ -8,7 +8,7 @@ The key idea behind **recurrent neural networks** is that we want to add **hidde
 RNNs typically use the **tanh** activation function, computing the hyperbolic tangent of hidden state outputs.
 
 >[!danger] Vanishing Gradient Problem
->RNNs are prone to the [[vanishing gradient problem]]. This is because when we train an RNN using backpropagation, we "unroll" the recurrent connections into an extremely deep, highly repetitive feed-forward network. When we propagate through this very deep network, our error signal decreases exponentially, so that once we get back to earlier layers in the network, we don't have much signal to actual update those weights in our model by any significant amount.
+>RNNs are prone to the [[vanishing gradient problem]]. This is because when we train an RNN using [[backpropagation]], we "unroll" the recurrent connections into an extremely deep, highly repetitive feed-forward network. When we propagate through this very deep network, our error signal decreases exponentially, so that once we get back to earlier layers in the network, we don't have much signal to actual update those weights in our model by any significant amount.
 
 Tanh has some nice properties that help with vanishing/exploding gradients. Firstly, the range of tanh is $[-1, 1]$, thus clipping outputs and preventing exploding values and volatility.  In comparison to the [[logistic regression|sigmoid activation]], which takes on a very similar shape to tanh, tanh allows for positive and negative values, a desirable property for computing (non-probabilistic) scores.
 

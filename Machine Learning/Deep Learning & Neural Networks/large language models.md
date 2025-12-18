@@ -7,18 +7,25 @@ The term "LLM" typically refers to *generative* models which are **decoder-only*
 > 
 > It is an **encoder-only** model trained on **masked token prediction**, meaning it looks at all surrounding words, not only preceding ones. It is a powerful tool for generating data [[embeddings]].
 
-## pre-training
+# pre-training
 These base LLMs trained on general-domain text data are referred to as "**pre-trained**" models. From the core dataset (e.g. OpenWebText), the model learns strong representations via **self-supervised learning** which produces generally good outputs on any task. 
 #### in-context learning (ICL)
 Autoregressive large language models have the capability of learning downstream tasks directly from examples provided by the input prompt, without the need for re-training. This is because the model will attend to all tokens that come before it in the input. Some common strategies include:
 - **Few-shot prompting**: provide examples of the task at hand.
 - **Template-based prompting**: format input to the model as if it were generic webtext data.
 - **Chain-of-thought prompting**: include an example of whatever question/task you want the llm to answer/do, along with the logical steps taken to arrive at the end result.
+#### prompt-tuning
+Models are extremely sensitive to the input prompt, meaning semantically equivalent prompts can observe vastly different outputs depending on the wording. **Prompt-tuning** is an **inference-time adaptation** that avoids fine-tuning by learning prompt templates to maximize performance.
+
+Given a dataset of task-specific pairs $\mathcal D = \{ x, y \}^N$, we can formulate prompt-tuning in two ways:
+- **Discrete**: using a [[reinforcement learning]]-based approach, search over all possible prompts (sequences of wordtypes in vocabulary $\mathcal V^\dagger$) to maximize expected reward after concatenation $$\arg\max_{p \in \mathcal V^\dagger} \mathbb{E}_{x \in \mathcal D}[\mathcal R (y' \sim p;x)]$$ Note that the discrete formulation does not require true labels $y$. 
+
+- **Continuous**: treat prompts with same [[embeddings]] map $\phi$ as samples, optimize via [[backpropagation]] over log-probabilities outputted by LLM $$\arg\max_{p \in \mathbb R^d} \mathbb E_{x, y \in D} \quad LLM(y | p;\phi(x))$$The only trainable parameters are the embeddings, which are much cheaper than the LLM parameters, which are frozen.
 
 However, these prompting methods are not ideal for the end-user, who would like to input natural language dialogue without having to worry about structured templating. Ideally, we would like the "multi-tasking" capabilities to be directly baked into the model.
 # post-training
 Post-training is the stage after pre-training, where the LLM already demonstrates strong performance and has a large core knowledge base. The goal of post-training is to now bake in specific, desirable behaviors into the model. These include:
-- [[alignment]]: ensure model outputs align with human values, as well as general safety features
+- [[Alignment]]: ensure model outputs align with human values, as well as general safety features
 - [[large language models#fine-tuning|Fine-tuning]]: described below, create task-specific experts from pre-trained models
 - Instruction-tuning: described below, a common form of fine-tuning to produce responses conditioned on natural language instructions, rather than text prefixes
 ## fine-tuning
@@ -32,7 +39,7 @@ There are two types of fine-tuning tasks:
 
 Fine-tuning methods:
 - Supervised fine-tuning
-	- Introducing too much unknown information can make the llm more prone to extrinsic hallucinations. 
+	- Introducing too much unknown information can make the LLM more prone to extrinsic hallucinations. 
 	- Also makes learning slower in comparison to unseen datasets that reiterates known information (but this part is relatively intuitive)
 - Reinforcement learning from human feedback ([[alignment#rlhf|RLHF]])
 - Parameter efficient fine-tuning (PEFT): freezes model weights but adds **adapters**, a small number of additional trainable parameters to be combined back into the weight matrix.
@@ -58,10 +65,6 @@ This is not the most comfortable wording for a regular end-user inputting natura
 **Instruction-tuning** addresses this problem by fine-tuning LLMs to be conditioned on inputs generated in a more human-friendly interface. Some examples of these models are Google FLAN, OpenAI InstructGPT, and Alpaca.
 
 Fine-tuning occurs over a dataset of user instructions and corresponding demonstrations of task execution.
-
----
-#### retrieval augmented generation (RAG)
-[[retrieval augmented generation]] is a popular alternative to fine-tuning an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
 
 ---
 # model compression

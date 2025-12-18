@@ -1,6 +1,9 @@
 **Retrieval-Augmented Generation**, better known as RAG, is a method employed by [[large language models]] to enhance the accuracy and credibility of responses by incorporating data from external knowledge bases.
 
 Typically, an LLM relies solely on information seen during its pre-training phase, but there may be gaps in this knowledge (e.g. for domain-specific use cases or references to current events that occurred after pre-training).
+
+>[!note] RAG for Fine-Tuning
+>RAG is a popular alternative to [[large language models#fine-tuning|fine-tuning]] an LLM. RAG is a framework that enables us to connect LLMs to external knowledge bases, such as enterprise-specific [[databases]], without the need for re-training. This structure is relatively easy to implement and also reduces hallucinations or false responses from the LLM. It's also easier to keep the knowledge base up to date since the domain knowledge is learned by searching dynamic databases in real time.
 ### indexing
 The first challenge of RAG is to store and represent external data in a way that is efficient to semantically search and retrieve later on. 
 - **Convert to plain text**: external knowledge bases generally contain documents in diverse formats like HTML, PDF, Word, etc.
