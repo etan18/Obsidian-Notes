@@ -44,7 +44,7 @@ This dataset $\tilde{\mathcal{D}}$ is used to train a feed-forward neural networ
 The final learned neural network parameters $\hat{\phi}_{\mathcal{M}}$ are found through empirical [[risk]] minimization, such that our final neural network approximates $\mathcal{M}$
 $$\textbf{x} \approx \hat{\phi}_{\mathcal{M}} (\theta)$$
 #### finetuning
-Because the physics-based model $\mathcal M$ does not change, we now need to predict the patient-level physical parameters $\theta$ during fine-tuning to personalize our final model to a specific patient.
+Because the physics-based model $\mathcal M$ does not change, we now need to predict the patient-level physical parameters $\theta$ during [[fine-tuning]] to personalize our final model to a specific patient.
 
 Now, we freeze the learned model $\hat{\phi}_{\mathcal{M}}$ and learn $\hat{\phi}_{\mathcal{F}}$, the neural network parameters for the composite inverse problem. We use the dataset $\mathcal{D}$ defined above to train the model to predict the physiological variable $\overline{\textbf{x}}$ from noninvasive measurement $\textbf{y}$. 
 

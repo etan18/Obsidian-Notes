@@ -1,6 +1,6 @@
 #cs188 
 
-Hidden Markov Models provide use [[conditional probability]] to reason about some *sequence of observations over time*. HMMs are an improvement over [[markov chains]] because they are able to update the probability distribution of a [[rational agent]] after observing new events. 
+Hidden Markov Models use [[conditional probability]] to reason about some *sequence of observations over time*. HMMs are an improvement over [[markov chains]] because they are able to update the probability distribution of a [[rational agent]] after observing new events. 
 ### structure
 Say we have a random variable $X$. At each time step $t$, we sample from $X$ and notate that observation $X_t$, but we can use previous observation $X_{t-1}$ to update our probability distribution $P$.
 

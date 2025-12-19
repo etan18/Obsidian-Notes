@@ -14,6 +14,15 @@ Autoregressive large language models have the capability of learning downstream 
 - **Few-shot prompting**: provide examples of the task at hand.
 - **Template-based prompting**: format input to the model as if it were generic webtext data.
 - **Chain-of-thought prompting**: include an example of whatever question/task you want the llm to answer/do, along with the logical steps taken to arrive at the end result.
+
+>[! Reasoning Models]
+>Reasoning models are explicitly fine-tuned to generate long chains-of-thought. Critically, we want to use explicit reasoning to enable:
+>1. Self-verification: ensure truthfulness and validity at every step
+>2. Backtracking: self-detect when the wrong reasoning path is taken
+>3. Subgoal-setting: decompose large tasks into smaller ones
+>4. Backward chaining: work backwards from the target goal
+>   
+>These behaviors aim to improve the [[interpretability]] of the model. However, reasoning traces may not always be faithful to the underlying process or answer.
 #### prompt-tuning
 Models are extremely sensitive to the input prompt, meaning semantically equivalent prompts can observe vastly different outputs depending on the wording. **Prompt-tuning** is an **inference-time adaptation** that avoids fine-tuning by learning prompt templates to maximize performance.
 
@@ -26,34 +35,8 @@ However, these prompting methods are not ideal for the end-user, who would like 
 # post-training
 Post-training is the stage after pre-training, where the LLM already demonstrates strong performance and has a large core knowledge base. The goal of post-training is to now bake in specific, desirable behaviors into the model. These include:
 - [[Alignment]]: ensure model outputs align with human values, as well as general safety features
-- [[large language models#fine-tuning|Fine-tuning]]: described below, create task-specific experts from pre-trained models
+- [[fine-tuning]]: create task-specific experts from pre-trained models
 - Instruction-tuning: described below, a common form of fine-tuning to produce responses conditioned on natural language instructions, rather than text prefixes
-## fine-tuning
-LLMs are **foundation models**, meaning they are trained on large, general knowledge bases with the intention of being applicable across many domains and use cases. However, in many practical settings, we want to deploy a LLM that is an expert in one specific domain, such as code generation or healthcare diagnosis. 
-
-**Fine-tuning** is the process of introducing an unseen dataset to a pre-trained LLM in order to make the model better suited for specific tasks. Starting from a pre-trained model ensures we have a strong starting point, and can be especially helpful for downstream tasks where minimal additional data is available.
-
-There are two types of fine-tuning tasks:
-1. **Domain adaptation**: fine-tuning to create an LLM that is an "expert" on a narrow domain
-2. **Task adaptation**: calibrating the LLM to perform specific tasks
-
-Fine-tuning methods:
-- Supervised fine-tuning
-	- Introducing too much unknown information can make the LLM more prone to extrinsic hallucinations. 
-	- Also makes learning slower in comparison to unseen datasets that reiterates known information (but this part is relatively intuitive)
-- Reinforcement learning from human feedback ([[alignment#rlhf|RLHF]])
-- Parameter efficient fine-tuning (PEFT): freezes model weights but adds **adapters**, a small number of additional trainable parameters to be combined back into the weight matrix.
-### parameter-efficient fine-tuning
-One drawback of traditional full fine-tuning is that it retrains *all* parameters in the model, which is computationally expensive for large language models. Parameter-efficient fine-tuning (PEFT) is a strategy to speed up fine-tuning convergence by freezing a subset of model parameters---that is, to keep their values fixed and unaffected by the fine-tuning data.
-
-The question with PEFT becomes: "Which parameters do we freeze?"
-- **DiffPruning**: learn a second network from scratch whose parameters represent a “diff” of the original network, with [[regularization]] to have values of mostly 0, then add back to original model weights.
-##### low rank adaptation (LoRA)
-**Low-rank adaptation** (LoRA) was introduced to solve this problem by freezing the weights of the pre-trained model and injecting learned rank decomposition matrices into each layer of the Transformer architecture. With this method, the only trainable parameters are those for the rank decomposition matrices $A$ and $B$.
-
-LoRA works on the assumption of the [[dimensionality reduction#manifold learning|manifold hypothesis]] that over-parameterized large models actually reside on a low intrinsic dimension. Because of this, it assumes that the change in weights at each layer has a low **intrinsic [[rank]]**. Using this assumption, LoRA decomposes the weight update matrix into two low-rank matrices $\Delta W = AB$. 
-
-During fine-tuning, LoRA learns the two lower rank matrices $A$ and $B$ only rather than the entire weight matrix. It takes the learned $AB \approx \Delta W$ and adds it back to the frozen weight matrix $W$. This dramatically reduces the number of learnable parameters, while still preserving the performance and purpose of fine-tuning.
 ### instruction-tuning
 One shortcoming of out-of-the-box pre-trained models is that they are trained to model documents scraped from the internet. This means that input prompts should also be formatted as partial documents that the LLM should complete.
 ```

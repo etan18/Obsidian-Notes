@@ -42,3 +42,8 @@ Four aspects:
 - Power: energy in signal
 
 ![[Pasted image 20251215170232.png]]
+
+![[Pasted image 20251218153406.png]]
+
+- [[alignment#self-refinement]]
+- IOB tagging [[agents#slot-filling]] 

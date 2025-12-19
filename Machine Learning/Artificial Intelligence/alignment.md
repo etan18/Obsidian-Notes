@@ -2,7 +2,7 @@ In [[artificial intelligence]], a critical challenge is ensuring that trained mo
 ## rlhf
 The subjectivity of generated output produced by [[large language models]] creates a challenge for evaluation. For open-ended tasks like story writing or generating ideas, writing a loss function which accurately captures "creativity" and other complex human values is intractable. **Reinforcement learning from human feedback (RLHF)** uses methods from [[reinforcement learning]] to directly optimize a language model with human feedback.
 
-RLHF is implemented as a [[large language models#fine-tuning|fine-tuning]] method requiring multiple training stages:
+RLHF is implemented as a [[fine-tuning]] method requiring multiple training stages:
 1. **Pre-training**: RLHF begins with a base language model. For example, OpenAI's first popular RLHF model, InstructGPT, used GPT-3 as its base model.
 2. **Training the reward model (RM)**: the RM takes in a sequence of text and returns a scalar reward representing human preferences. These LMs for reward modeling can be both another fine-tuned LM or a LM trained from scratch on the preference data. 
 3. **Fine-tuning with RL**: re-train an aligned LM using the learned reward model.
@@ -34,6 +34,14 @@ Importantly, PPO is an **on-policy algorithm**, which means that each update is 
 GRPO is a [[reinforcement learning]]-based fine-tuning method pioneered in the DeepSeek models. The model samples multiple responses and uses a learned reward model to score each, updating the policy based on their relative performance, efficiently eliminating the need for a separate value model.
 
 ![[grpo.png]]
+## self-refinement
+In self-refinement, we iteratively:
+1. **Generate**: map from task description to answer/solution, possibly given existing critique of past answers/solutions
+2. **Verify**: map from task description and a proposed answer/solution to some type of feedback
+Terminate when the verifier is “satisfied”, or until some maximum number of iterations. In this method, the LLM generating the output is also performing verification, leading to several shortcomings:
+- The model doesn't know what it doesn't know --> need external feedback/oracle
+- Models struggle to identify errors they’re likely to make
+
 
 ---
 ## weak-to-strong generalization

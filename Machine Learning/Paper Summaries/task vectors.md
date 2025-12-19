@@ -3,7 +3,7 @@
 
 **Task vectors** are used to steer or edit the behavior of pre-trained models, which can be useful for improving model performance on downstream tasks, mitigating bias, [[alignment]] of model goals, or updating the model with new information. 
 
-Task vectors exist in the *weight space* of the original model, and define a direction to interpolate the pre-trained model weights in order to satisfy a specified task. This direction is found by subtracting the weights of the model [[large language models#fine-tuning|fine-tuned]] on the target task $\theta_{ft} \in \mathbb{R}^d$ by the weights of the pre-trained model $\theta_{pre} \in \mathbb{R}^d$. Concretely, we define the task vector $\tau = \theta_{ft} - \theta_{pre}$  where the edited model has weights $\theta_{new} = \theta_{pre} + \lambda \tau$ for optional scaling hyper-parameter $\lambda$.
+Task vectors exist in the *weight space* of the original model, and define a direction to interpolate the pre-trained model weights in order to satisfy a specified task. This direction is found by subtracting the weights of the model [[fine-tuning|fine-tuned]] on the target task $\theta_{ft} \in \mathbb{R}^d$ by the weights of the pre-trained model $\theta_{pre} \in \mathbb{R}^d$. Concretely, we define the task vector $\tau = \theta_{ft} - \theta_{pre}$  where the edited model has weights $\theta_{new} = \theta_{pre} + \lambda \tau$ for optional scaling hyper-parameter $\lambda$.
 
 This method of model editing uses only element-wise vector operations (which are computationally cheap). We also incur no extra inference-time memory or compute. Finally, due to the multitude of publicly available fine-tuned models, it is entirely possible to derive task vectors without performing any additional training.
 
