@@ -10,7 +10,7 @@ $$\hat{y} = \mathbb{E}_Y[p(Y|X=x)]$$
 - When the labels $y$ are *continuous*, this is a [[regression]] problem
 
 ### structured prediction
-**[[Structured prediction]]** is a class of supervised learning tasks which predict a combination of labels from a fixed with a specific structure. Examples of structured prediction tasks include
+**[[structured prediction]]** is a class of supervised learning tasks which predict a combination of labels from a fixed with a specific structure. Examples of structured prediction tasks include
 - Syntactic parsing (constituency parsing)
 	- [[Automatic speech recognition]]
 - Semantic parsing
