@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "user experience.md",
+                "file": "Machine Learning/Deep Learning & Neural Networks/convolutional neural networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "user experience"
+              "title": "convolutional neural networks"
+            }
+          },
+          {
+            "id": "bdc25f8ede9adbc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dead week.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "dead week"
             }
           },
           {
@@ -50,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -207,25 +221,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "34a320e314f5be58",
+  "active": "bdc25f8ede9adbc8",
   "lastOpenFiles": [
-    "Machine Learning/natural language processing.md",
-    "Math/Probability/hidden markov models.md",
-    "structured prediction.md",
+    "Pasted image 20251218153406.png",
+    "Pasted image 20251210141044.png",
+    "Pasted image 20251215163338.png",
+    "dead week.md",
+    "Machine Learning/Artificial Intelligence/alignment.md",
     "agents.md",
+    "Machine Learning/Artificial Intelligence/markov decision processes.md",
+    "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
+    "CLIP.md",
+    "clip.png",
+    "clip.png",
+    "Machine Learning/Deep Learning & Neural Networks/convolutional neural networks.md",
+    "Math/Probability/hidden markov models.md",
+    "Machine Learning/img/forward.png",
+    "user experience.md",
+    "Machine Learning/natural language processing.md",
+    "structured prediction.md",
     "Machine Learning/Deep Learning & Neural Networks/large language models.md",
     "Machine Learning/Deep Learning & Neural Networks/fine-tuning.md",
-    "user experience.md",
     "Cognitive Science/Perception/visual cortex.md",
     "Machine Learning/Paper Summaries/task vectors.md",
     "Machine Learning/ML Systems/retrieval augmented generation.md",
     "Machine Learning/Paper Summaries/digital twins.md",
-    "Machine Learning/Artificial Intelligence/alignment.md",
-    "dead week.md",
-    "Pasted image 20251218153406.png",
     "unfinished/image generation.md",
-    "Machine Learning/Deep Learning & Neural Networks/convolutional neural networks.md",
-    "Machine Learning/Artificial Intelligence/markov decision processes.md",
     "Machine Learning/Artificial Intelligence/search problems.md",
     "Math/Linear Algebra/rank.md",
     "Machine Learning/Artificial Intelligence/rational agent.md",
@@ -234,19 +255,12 @@
     "Cognitive Science/Perception/gestalt principles.md",
     "Machine Learning/Deep Learning & Neural Networks/backpropagation.md",
     "agent.png",
-    "Machine Learning/Deep Learning & Neural Networks/neural networks.md",
-    "Machine Learning/Deep Learning & Neural Networks/recurrent neural networks.md",
-    "Math/Linear Algebra/kernels.md",
     "Machine Learning/img/silo.png",
     "Machine Learning/Classical & Theory",
     "Machine Learning/ML Systems",
     "Cognitive Science/img/vowels.png",
     "Cognitive Science/img/ear.png",
     "Pasted image 20251215170232.png",
-    "Pasted image 20251215163338.png",
-    "Pasted image 20251210141044.png",
-    "Machine Learning/img/pruning.png",
-    "Computer Science/img/linux.png",
     "Research/Data Addition Dilemma.canvas",
     "tmp/interventions",
     "tmp/eecs283a",

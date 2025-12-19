@@ -14,7 +14,7 @@ At the end of an HMM, we are left with $P_{\infty}$, the converged probability d
 ### markovian properties
 As the name suggests, HMMs follow the basic principles of [[markov chains]]. We can see from the following diagram that an HMM is very similar to a [[bayesian network]] with a particular structure. The sequence of $X_i$s are states, and the $E_i$s are the observations resulting from that state.
 
-![[hmm.png|500]]
+![[Math/Probability/img/hmm.png|500]]
 
 As with a [[bayesian network]], the current observation $E_t$ is independent of all else given $X_t$. Critically, this does not imply that all $E_i$s are i.i.d. because the hidden state it is derived from is not independent of previous $E_i$s.
 
@@ -24,8 +24,8 @@ Once we've defined our HMM according to the problem we're trying to solve, we us
 
 To formalize the inference problem, say we are trying to compute $\mathbb{P}[X_N | e_{1:N}]$. 
 #### forward algorithm
-The forward algorithm is an *exact inference* technique that recursively
-
+The forward algorithm is an *exact inference* technique that recursively maintains a belief distribution about the underlying hidden state.
+![[forward.png]]
 #### particle filtering
 Exact inference can become computationally expensive and unnecessary as the number of variables and their domain sizes scale. **Particle filtering** uses *sampling* to efficiently approximate the desired probability distributions. 
 

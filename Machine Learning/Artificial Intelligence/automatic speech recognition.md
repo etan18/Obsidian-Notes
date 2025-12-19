@@ -37,6 +37,9 @@ ASR is evaluated using **error rates**. For space delimited languages, such as E
 The number of errors---which can come in the form of substitutions, insertions, or deletions---is computed using the **Levenshtein distance**, or edit distance. The WER is then computed as
 $$WER = \frac{\text{Total \# of errors}}{\text{Ground truth \# of words}}$$
 The WER can exceed 100% if, for example, too many words are inserted.
+#### rational speech acts
+When performing ASR on speech, the [[linguistics#pragmatics|pragmatics]] of the situation must be considered. 
+
 ## speech foundation models
 The general approach for building a speech foundation model employs **self-supervised learning**. Given a large amount of *unlabeled* speech data, and a limited amount of task-specific *labeled* data, we assemble the model:
 1. Learn a "pre-text" task on unlabeled data: autoregressive/masked speech modeling, etc.
@@ -83,7 +86,6 @@ Today, most speech recognition pipelines are trained end-to-end, meaning one mod
 - Acoustic modeling
 - Language modeling
 
-**Rational speech acts** (RSA)
 ### whisper
 OpenAI's **[Whisper](https://openai.com/research/whisper)** was introduced in September 2022 and has become the state-of-the-art model for ASR. 
 ###### architecture

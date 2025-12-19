@@ -6,11 +6,7 @@
 
 ### eecs 283a
 
-Template-based prompting (pre-training lecture)
-![[Pasted image 20251210141044.png]]
 
-• Generative model: parameterizes a joint distribution over random variables X and Y
-• Discriminative model: parameterizes a conditional distribution of target Y given observation X
 
 
 ![[Pasted image 20251215163338.png]]
@@ -43,7 +39,5 @@ Four aspects:
 
 ![[Pasted image 20251215170232.png]]
 
-![[Pasted image 20251218153406.png]]
 
-- [[alignment#self-refinement]]
-- IOB tagging [[agents#slot-filling]] 
+
