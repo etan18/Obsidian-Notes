@@ -117,3 +117,4 @@ TTS is a multi-modal task, mapping natural language text to speech waveforms. No
 - Acoustic features --> Speech
 This task can be solved using [[sequence modeling#seq2seq models|sequence-to-sequence modeling]].
 [Statistical parametric speech synthesis](https://speechprocessingbook.aalto.fi/Synthesis/Statistical_parametric_speech_synthesis.html)
+
