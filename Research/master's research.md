@@ -1,13 +1,9 @@
-
-mitigating bias via "forgetting"
-- some type of perturbation that makes distribution uniform/random along some biased dimension
-- task vectors
-
-yes-man 
-- show llm sensitivities to biased prompts --- e.g. "why is this statement true?" vs. "why is this statement false?" vs. "why is this statement true or false?"
-
-problems with representing patients as embeddings
-- Domain-specific embeddings: https://arxiv.org/html/2409.18511v3
+### todo
+- sequential combine of catBoost + K29
+	- Try: no split (train both on same data), with split
+	- https://chatgpt.com/c/69531e49-388c-8329-ad7f-be828e9b167e
+- go back to phi caching w default hyperparams
+	- Sanity check: theta-caching and phi-caching on the same dataset produce same results
 
 ---
 ## data addition dilemma
@@ -85,3 +81,14 @@ Things to try:
 - [ ] Regression: trends over time - do Abridge notes show increasingly larger signs of the markers identified in classification?
 
 
+---
+
+mitigating bias via "forgetting"
+- some type of perturbation that makes distribution uniform/random along some biased dimension
+- task vectors
+
+yes-man 
+- show llm sensitivities to biased prompts --- e.g. "why is this statement true?" vs. "why is this statement false?" vs. "why is this statement true or false?"
+
+problems with representing patients as embeddings
+- Domain-specific embeddings: https://arxiv.org/html/2409.18511v3
