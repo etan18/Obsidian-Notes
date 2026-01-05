@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "recruiting.md",
+                "file": "Research/master's research.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "recruiting"
+              "title": "master's research"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "44bd06d214c97d46",
   "lastOpenFiles": [
+    "recruiting.md",
     "unfinished/cache.md",
     "unfinished/data structures.md",
     "unfinished/animal behavior.md",
@@ -202,7 +203,6 @@
     "Machine Learning/Deep Learning & Neural Networks/fine-tuning.md",
     "Research/master's research.md",
     "dead week.md",
-    "recruiting.md",
     "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
     "Pasted image 20251215163338.png",
     "Pasted image 20251219004603.png",
