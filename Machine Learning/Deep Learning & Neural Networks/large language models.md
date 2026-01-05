@@ -74,12 +74,3 @@ Quantization reduces model space requirements by using lower-precision numerical
 > Keeping full-precision for the backward pass is important to make sure weight updates are precise.
 
 Injecting quantization-aware training into the model pipeline partially offsets the losses described by **precision [[model scaling#scaling laws|scaling laws]]**. 
-
----
-
-- context window: working memory of an LLM, the number of *tokens* that an llm can consider in a single prompt/query
-	- tradeoff: computational cost scales quadratically with size of context window in normal [[attention]]. this is because the relationships between each token must be computed.
-	- Large context windows may also dilute relevant information and confuse the model. a 2023 study found that LLMs perform best when the most relevant information is at the beginning or end of the input
-	- [[transformers]] do follow [[model scaling]] laws as context window increases, while LSTM degrade in longer contexts
-- Evaluations
-	- mmlu, benchmarks

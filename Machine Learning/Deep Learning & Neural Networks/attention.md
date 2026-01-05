@@ -22,8 +22,9 @@ For all queries, we take the dot product with all key vectors $\overrightarrow{Q
 Using all the masked dot products across a given query, we take the *softmax* over all of them to obtain a probability distribution which sums to $1$, representing the *weight* or importance of each token to our query token. This is known as the **attention pattern**.
 
 >[!warning] Context Size & Efficiency
-From the paragraph above, notice how the number of similarity scores, or weights, that you must compute for a single training example is equal to the square of the **context size**. The context size is the number of tokens in the window that you consider.
-
+From the paragraph above, notice how the number of similarity scores, or weights, that you must compute for a single training example scales quadratically with the **context size**. The context size is the working memory of an LLM, or the number of tokens in the window that you consider for a single prompt/query.
+>- Large context windows may also dilute relevant information and confuse the model. a 2023 study found that LLMs perform best when the most relevant information is at the beginning or end of the input. 
+>- [[Transformers]] do follow [[model scaling]] laws as context window increases, while LSTM degrade in longer contexts.
 #### value
 Given the computed attention pattern, we now need to perform an update to modify the original token embedding $E_i$ to more accurately represent the meaning of the token in this context. The **value vector** $V_i$, which has the same dimensions as $E_i$, tells us exactly how much to transpose $E_i$ by.
 
