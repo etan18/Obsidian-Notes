@@ -2,11 +2,11 @@
 - sequential combine of catBoost + K29
 	- Try: no split (train both on same data), with split
 	- https://chatgpt.com/c/69531e49-388c-8329-ad7f-be828e9b167e
-- go back to phi caching w default hyperparams
+- [X] go back to phi caching w default hyperparams
 	- Sanity check: theta-caching and phi-caching on the same dataset produce same results
 - clean up script
 	- don't save joblib
-	- log -1 error tensorboard
+	- [X] log -1 error tensorboard
 		- why use tensorboard at all?
 
 ---
