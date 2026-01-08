@@ -123,3 +123,19 @@ More comfortable with exam/quiz writing/grading tasks:
 2. Exam 1 essay section:  Need 3 people 3 x 3 20
 3. Exam 2 essay section:  Need 3 people 3 x 3 20
 4. Anatomy Quiz: Write and Provide review sheet 1 5
+
+TODO:
+- [ ] get cogneuro textbook from ivry's office (can walk in and take it)
+- [ ] set one hour of office hours (time + location)
+
+section:
+- quick overview (slides) of week's content + answer questions from lectures
+- assigned a reader article every week, split into 4-5 groups
+	- each group assigned a figure, one group is the summary group
+	- summary: pretend you are the first author of this paper, take 2 minutes to summarize 1) what's the paper, 2) what's the insight, 3) why do we care
+	- each figure: why is this figure in the paper? what does it say, what does it add?
+	- facilitate discussion!
+- count for 10% of overall grade
+	- 70% determined by participation (composite of attendance and contribution in attended section)
+		- semi-subjective
+	- 30%: based on RPP (nothing to do)
