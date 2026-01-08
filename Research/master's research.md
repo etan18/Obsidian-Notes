@@ -5,7 +5,7 @@
 - [X] go back to phi caching w default hyperparams
 	- Sanity check: theta-caching and phi-caching on the same dataset produce same results
 - clean up script
-	- don't save joblib
+	- don't save joblib --- save only for final model
 	- [X] log -1 error tensorboard
 		- why use tensorboard at all?
 
@@ -79,11 +79,24 @@ Literature:
 #### preliminary modeling
 
 Things to try:
-- [ ] Original Abridge output vs. updated Abridge output: what unigrams/bigrams were likely to be changed? Which are most telling of being original vs. updated?
+- [x] Original Abridge output vs. updated Abridge output: what unigrams/bigrams were likely to be changed? Which are most telling of being original vs. updated?
 	- can be modeled using only scribe data
-- [ ] Classification: looking at original Abridge output vs. DEID clinical notes (human), which unigrams/bigrams are most informative of belonging to either group?
-- [ ] Regression: trends over time - do Abridge notes show increasingly larger signs of the markers identified in classification?
+- [x] Classification: looking at original Abridge output vs. DEID clinical notes (human), which unigrams/bigrams are most informative of belonging to either group?
+- [x] Regression: trends over time - do Abridge notes show increasingly larger signs of the markers identified in classification?
 
+### check-in
+- Benchmark/metric of "precision"/"information" captured by a note: based on preliminary observations, seems like clinical notes don't entirely capture the long-tailed vocab distribution of clinical notes, use less quantitative (numerical) tokens and hyper-technical jargon.
+	- Visualization: zipfian distribution of word/token frequencies against pre-trained tokenizer of abridge vs. human notes
+		- Indicators of AI slop
+	- What this could look like:
+		- Benchmark of downstream classification tasks based on clinical notes only
+		- Balanced metric of technical jargon to transcript faithfulness: measures 1) how precise the language in a clinical note is and 2) how accurate the content is to the ground truth transcript.
+			- Perplexity-ish
+		- Irene: start with "dumb", easy-to-understand rudimentary metrics
+			- occurrence of numbers
+- What's status of UCSF annotation?
+	- By the end of the next week
+- What to do with fairness write-up - combine with current Juanky work or submit to workshop?
 
 ---
 
@@ -96,3 +109,17 @@ yes-man
 
 problems with representing patients as embeddings
 - Domain-specific embeddings: https://arxiv.org/html/2409.18511v3
+
+---
+### psych
+
+Proctor: pref Exam 1 (followed by Exam 2, then Exam 3)
+- Exam 1 Feb 23 x 3 
+- Exam 2 Apr 6 x 3
+- Exam 3 May 15   x 3
+
+More comfortable with exam/quiz writing/grading tasks:
+1. Mult Choice (Prep 1/class + Post and Grade) 3 10 
+2. Exam 1 essay section:  Need 3 people 3 x 3 20
+3. Exam 2 essay section:  Need 3 people 3 x 3 20
+4. Anatomy Quiz: Write and Provide review sheet 1 5
