@@ -84,7 +84,7 @@ Things to try:
 - [x] Classification: looking at original Abridge output vs. DEID clinical notes (human), which unigrams/bigrams are most informative of belonging to either group?
 - [x] Regression: trends over time - do Abridge notes show increasingly larger signs of the markers identified in classification?
 
-### check-in
+### irene check-in
 - Benchmark/metric of "precision"/"information" captured by a note: based on preliminary observations, seems like clinical notes don't entirely capture the long-tailed vocab distribution of clinical notes, use less quantitative (numerical) tokens and hyper-technical jargon.
 	- Visualization: zipfian distribution of word/token frequencies against pre-trained tokenizer of abridge vs. human notes
 		- Indicators of AI slop
@@ -113,16 +113,9 @@ problems with representing patients as embeddings
 ---
 ### psych
 
-Proctor: pref Exam 1 (followed by Exam 2, then Exam 3)
-- Exam 1 Feb 23 x 3 
-- Exam 2 Apr 6 x 3
-- Exam 3 May 15   x 3
-
-More comfortable with exam/quiz writing/grading tasks:
-1. Mult Choice (Prep 1/class + Post and Grade) 3 10 
-2. Exam 1 essay section:  Need 3 people 3 x 3 20
-3. Exam 2 essay section:  Need 3 people 3 x 3 20
-4. Anatomy Quiz: Write and Provide review sheet 1 5
+Tasks:
+1. Exam 2 essay section:  Need 3 people 3 x 3 20
+2. Anatomy Quiz: Write and Provide review sheet 1 5
 
 TODO:
 - [ ] get cogneuro textbook from ivry's office (can walk in and take it)
