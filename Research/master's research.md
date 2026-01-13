@@ -119,7 +119,7 @@ Tasks:
 
 TODO:
 - [ ] get cogneuro textbook from ivry's office (can walk in and take it)
-- [ ] set one hour of office hours (time + location)
+- [x] set one hour of office hours (time + location)
 
 section:
 - quick overview (slides) of week's content + answer questions from lectures
@@ -492,77 +492,3 @@ for k, v in stats.items():
     print(f"{k}: {v:,}")
 
 ```
-
-def fit(self, df: pd.DataFrame, text_columns: List[str], 
-		note_df: pd.DataFrame, note_column: str):
-	"""
-	Fit the comparator on two datasets.
-	
-	Parameters:
-	-----------
-	df : pd.DataFrame
-		First dataset with multiple text columns
-	text_columns : List[str]
-		List of column names containing text in df
-	note_df : pd.DataFrame
-		Second dataset
-	note_column : str
-		Column name containing text in note_df
-	"""
-	# Extract texts from first dataset
-	texts1 = []
-	for col in text_columns:
-		texts1.extend(df[col].fillna('').tolist())
-	
-	# Extract texts from second dataset
-	texts2 = note_df[note_column].fillna('').tolist()
-	
-	# Build vocabularies
-	print("Building vocabulary for dataset 1...")
-	self.vocab1_counts = self.extract_vocab(texts1)
-	self.vocab1 = set(self.vocab1_counts.keys())
-	
-	print("Building vocabulary for dataset 2...")
-	self.vocab2_counts = self.extract_vocab(texts2)
-	self.vocab2 = set(self.vocab2_counts.keys())
-	
-	print(f"\nDataset 1 vocabulary size: {len(self.vocab1):,}")
-	print(f"Dataset 2 vocabulary size: {len(self.vocab2):,}")
-	print(f"Shared vocabulary size: {len(self.vocab1 & self.vocab2):,}")
-	
-	return self
-
-	def compare_usage(self, df: pd.DataFrame, text_columns: List[str], 
-		note_df: pd.DataFrame, note_column: str, targets: List[str]):
-	
-		# Extract texts from first dataset
-		texts1 = []
-		for col in text_columns:
-			texts1.extend(df[col].fillna('').tolist())
-		
-		# Extract texts from second dataset
-		texts2 = note_df[note_column].fillna('').tolist()
-	
-		# Build vocabularies
-		print("Building vocabulary for dataset 1...")
-		self.vocab1_counts = self.extract_vocab(texts1)
-		self.vocab1 = set(self.vocab1_counts.keys())
-		
-		print("Building vocabulary for dataset 2...")
-		self.vocab2_counts = self.extract_vocab(texts2) # COUNTER
-		self.vocab2 = set(self.vocab2_counts.keys()) # SET
-
-		 vocab1_total = 0	
-	     for k in self.vocab1:
-		     if any(w in k for w in targets):
-			     vocab1_total += self.vocab1_counts[k]
-		vocab2_total = 0	
-		     for k in self.vocab2:
-			     if any(w in k for w in targets):
-				     vocab2_total += vocab2_counts[k]
-	
-		print(f"\nDataset 1 total occurrences: {vocab1_total:,}")
-		print(f"Dataset 2 vocabulary size: {vocab2_total:,}")
-		
-		print(f"\nDataset 1 occurrences per note: {(vocab1_total / len(texts1)):,}")
-		print(f"Dataset 2 occurrences per note: {(vocab2_total / len(texts2)):,}")

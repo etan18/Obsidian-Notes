@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "master's research"
             }
+          },
+          {
+            "id": "4a9cdb9db7350006",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Research/master's research.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "master's research"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "26969efc8052219e",
@@ -179,10 +193,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44bd06d214c97d46",
+  "active": "4a9cdb9db7350006",
   "lastOpenFiles": [
-    "Research/master's research.md",
     "recruiting.md",
+    "cognitive neuroscience.md",
+    "Research/master's research.md",
     "unfinished/cache.md",
     "unfinished/data structures.md",
     "unfinished/animal behavior.md",
@@ -209,7 +224,6 @@
     "Pasted image 20251219004603.png",
     "Pasted image 20251215170232.png",
     "Machine Learning/Deep Learning & Neural Networks/CLIP.md",
-    "Machine Learning/Classification/structured prediction.md",
     "Pasted image 20251218153406.png",
     "Pasted image 20251210141044.png",
     "Machine Learning/img/clip.png",
