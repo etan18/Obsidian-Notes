@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/master's research.md",
+                "file": "2026-01-14.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "master's research"
+              "title": "2026-01-14"
             }
           }
         ],
@@ -195,9 +195,10 @@
   },
   "active": "4a9cdb9db7350006",
   "lastOpenFiles": [
+    "Research/master's research.md",
+    "2026-01-14.md",
     "recruiting.md",
     "cognitive neuroscience.md",
-    "Research/master's research.md",
     "unfinished/cache.md",
     "unfinished/data structures.md",
     "unfinished/animal behavior.md",
@@ -223,7 +224,6 @@
     "Pasted image 20251215163338.png",
     "Pasted image 20251219004603.png",
     "Pasted image 20251215170232.png",
-    "Machine Learning/Deep Learning & Neural Networks/CLIP.md",
     "Pasted image 20251218153406.png",
     "Pasted image 20251210141044.png",
     "Machine Learning/img/clip.png",
