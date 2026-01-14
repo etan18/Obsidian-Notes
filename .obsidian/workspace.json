@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-01-14.md",
+                "file": "Research/master's research.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-14"
+              "title": "master's research"
+            }
+          },
+          {
+            "id": "ee8631f268f2ef7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Research/ai scribes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ai scribes"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,9 +207,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a9cdb9db7350006",
+  "active": "ee8631f268f2ef7b",
   "lastOpenFiles": [
     "Research/master's research.md",
+    "Research/ai scribes.md",
     "2026-01-14.md",
     "recruiting.md",
     "cognitive neuroscience.md",
@@ -220,7 +235,6 @@
     "Machine Learning/ML Systems/model scaling.md",
     "Machine Learning/Deep Learning & Neural Networks/fine-tuning.md",
     "dead week.md",
-    "Machine Learning/Artificial Intelligence/automatic speech recognition.md",
     "Pasted image 20251215163338.png",
     "Pasted image 20251219004603.png",
     "Pasted image 20251215170232.png",
