@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data addition dilemma.md",
+                "file": "Research/ai scribes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data addition dilemma"
+              "title": "ai scribes"
             }
           }
         ],
@@ -223,7 +223,7 @@
   },
   "active": "4ed3f25a97c44425",
   "lastOpenFiles": [
-    "data addition dilemma.md",
+    "Research/data addition dilemma.md",
     "Machine Learning/Paper Summaries/defensive forecasting.md",
     "Research/master's research.md",
     "cognitive neuroscience.md",
