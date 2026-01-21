@@ -14,7 +14,7 @@ For any [[supervised learning]] model, we need a **dataset** of sample points wh
 >[!example] Notes on Data
 >- [[data selection & composition]]
 >- [[distribution shifts]]
->- [[data addition dilemma]]
+>- [[Machine Learning/Paper Summaries/data addition dilemma]]
 
 #### bootstrapping
 Bootstrapping is a resampling method that generates multiple datasets by sampling with replacement from the original data of size $n$. Each "bootstrap sample" has $n$ points, and some original points may appear multiple times. This is useful in
