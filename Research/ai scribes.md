@@ -31,7 +31,9 @@ Hypothesis: AI-generated clinical notes are less precise than human-written ones
 - Less frequent use of hard quantifiers (numerical values)
 	- [ ] What is being used instead?
 - Less frequent use of hyper-technical clinical jargon [IN PROGRESS]
+	 - [ ] Generate a list of "hyper-technical clinical jargon" that is unlikely to appear in scribe notes
 - Characterized by flowery, qualitative language [IN PROGRESS]
+	- [ ] Generate a list of words that appear more frequently in scribe notes
 
 [FUTURE WORK] Implications: less predictive signal for downstream classification tasks
 - What should this setup look like?
