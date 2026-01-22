@@ -38,3 +38,6 @@ Hypothesis: AI-generated clinical notes are less precise than human-written ones
 
 [FUTURE WORK] Implications: less predictive signal for downstream classification tasks
 - What should this setup look like?
+
+
+prediction experiment setups that would make sense
