@@ -1,5 +1,6 @@
 Data:
-- ~50,000 encounters from Dec. 2024 - Present
+- ~31,000 encounters from Dec. 2024 - Present
+	- 23,801 non-empty notes (after updates)
 - 470 unique clinicians
 
 Tables:
