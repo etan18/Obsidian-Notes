@@ -39,3 +39,9 @@ Outcome: comparable to CatBoost, but models are poorly calibrated (and have low 
 2. Online random forests ([Mondrian Forests](https://proceedings.neurips.cc/paper_files/paper/2014/file/195c9c0797f42473f2c2f922c4cf52cf-Paper.pdf)) - performs worse
 	1. Can try with Gaussian features (currently running)
 3. K29 with Catboost prediction passed in as a feature.
+4. **combination: train catboost up to a certain point, then switch to k29**
+	- [ ] **does catboost R^2 flatten out at some point?**
+
+
+- **per-hospital feature maps**
+- **concatenate p before applying rff transform** 
