@@ -8,7 +8,11 @@ Localization of function is the notion that specific areas of the brain control 
 Each of our 5 senses has some form of **adjacency principle**, wherein the layout of the processing mechanism in the brain reflects the way that they are physically organized, or the way that we perceive them.
 
 >[!danger] Phrenology
->Phrenology is an early localization theory, which assigned functions to areas on the *surface* of the skull, which is completely wrong.
+>Phrenology is an early localization theory, which assigned functions to areas on the *surface* of the skull, **which is completely wrong**. The original theory was that the brain was organized to perform specific functions in specific areas, and that if a person perform one specific function *a lot*, that area of the brain would *grow*, resulting in palpable bumps in the overlying part of the skull.
+>
+>Phrenology was once a mainstream belief, with world leaders (including Napoleon) having their skull read by Gall, and some employers requiring skull reads before being hired.
+>
+>![[phrenology.png]]
 >
 
 Our **cerebral cortex** is divided up into 4 primary *lobes*—frontal, parietal, temporal, and occipital. This serves as a high-level division of tasks, but these regions are always communicating with one another. There are a few regions which have a highly localization-based structure, and can be mapped out:

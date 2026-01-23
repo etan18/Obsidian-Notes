@@ -1,6 +1,6 @@
 #mcb61 #cogsci126 
 
-The neuron doctrine is the base principle that **neurons** are the fundamental unit of the nervous system. These cells are responsible for receiving and relaying sensory inputs.
+The neuron doctrine (Ramon y Cajal, 1852-1934) is the base principle that **neurons** are the fundamental unit of the nervous system. These cells are responsible for receiving and relaying sensory inputs.
 ### cell anatomy
 There are three main parts of the neuron: cell body, dendrites, and the synapse.
 - The **soma**, or cell body
@@ -19,7 +19,6 @@ The sum of excitatory and inhibitory input received by a neuron determines its *
 When no synaptic input is observed, or the excitatory and inhibitory inputs cancel each other out, then the neuron will sill observe **spontaneous activity**, which is just the firing of the neuron at random times
 - If enough excitatory post-synaptic potential is received by the cell, then the cell will observe more action potentials than just the spontaneous activity.
 - If enough inhibitory post-synaptic potential is received, the cell will observe less action potentials, and if only ipsp is observed, the neuron will be suppressed altogether and exhibit no action potentials.
-
 
 ### glial cells
 Glial cells provide support for neurons. The **myelin sheath** insulates the axon, which serves to protect and strengthen the signal. These make up ~76% of glial cells.
