@@ -15,7 +15,7 @@ Rene Descartes' famous quote "I think, therefore I am" ("**Cogito, ergo sum**") 
 ##### empiricism
 Empiricism is the viewpoint that knowledge stems from sensory experience, and the brain begins life as a blank slate.
 
-**Associationism** views mental processes as built upon one another through experience. Psychological associationists believe that the aggregate of a person's experience determines the course of their mental development. This is a core component of empiricism, but also became a cornerstone of the study of behaviorism.
+**Associationism** views mental processes as built upon one another through experience. Psychological associationists believe that the aggregate of a person's experience determines the course of their mental development. This is a core component of empiricism, but also became a cornerstone of the study of [[behaviorism]].
 ### mechanisms of consciousness
 **Biological Mechanisms**
 -   Coma, concussions, and fainting all relate to head injury and cause loss of consciousness, suggesting that consciousness is neurological

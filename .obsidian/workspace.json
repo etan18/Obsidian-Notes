@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/graph theory.md",
+                "file": "behaviorism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "graph theory"
+              "title": "behaviorism"
+            }
+          },
+          {
+            "id": "a05f7a9afdeb8a34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cognitive Science/cognitive architectures.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cognitive architectures"
             }
           }
         ]
@@ -53,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "information processor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -180,6 +194,13 @@
   },
   "active": "44bd06d214c97d46",
   "lastOpenFiles": [
+    "Computer Science/graph theory.md",
+    "Cognitive Science/cognitive architectures.md",
+    "Cognitive Science/memory.md",
+    "behaviorism.md",
+    "Cognitive Science/imaging.md",
+    "Cognitive Science/consciousness.md",
+    "Cognitive Science/theory of mind.md",
     "unfinished/data structures.md",
     "Computer Science/img/path.png",
     "Computer Science/databases.md",
@@ -187,7 +208,6 @@
     "Machine Learning/Artificial Intelligence/heuristics.md",
     "Computer Science/Networking/network.md",
     "Machine Learning/Artificial Intelligence/markov decision processes.md",
-    "Computer Science/graph theory.md",
     "Machine Learning/Artificial Intelligence/search problems.md",
     "Computer Science/search algorithms.md",
     "Computer Science/constraint satisfaction problems.md",
@@ -195,18 +215,13 @@
     "Research/data addition dilemma.md",
     "Research/master's research.md",
     "Cognitive Science/cognitive development.md",
-    "Cognitive Science/consciousness.md",
     "Cognitive Science/language.md",
     "Cognitive Science/neurons.md",
     "cognitive neuroscience.md",
     "Cognitive Science/Perception/visual cortex.md",
-    "Cognitive Science/imaging.md",
-    "Cognitive Science/cognitive architectures.md",
     "Cognitive Science/img/phrenology.png",
-    "Cognitive Science/theory of mind.md",
     "Cognitive Science/learning.md",
     "2026-01-22.md",
-    "Machine Learning/Paper Summaries/defensive forecasting.md",
     "Pasted image 20251215163338.png",
     "Pasted image 20251219004603.png",
     "Pasted image 20251215170232.png",
