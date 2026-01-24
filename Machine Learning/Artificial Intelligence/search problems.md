@@ -2,6 +2,8 @@
 
 In [[artificial intelligence]], a **search problem** consists of a state space, successor function, start state, and a goal test. In these problems, we define our **search state** as all relevant information that our [[rational agent]] need to make the best decision. This is an abstraction from the *world state*, which contains all of the possible information we have about our environment.
 
+>[!info] See: [[search algorithms]]
+
 ## defining search problems
 Search problems consist of a few key elements: 
 - A set of *actions* that are available in each state

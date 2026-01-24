@@ -25,14 +25,14 @@ The key difference is the data structure used to store values on the fringe, whi
 ## depth-first search
 **Depth-first search (DFS)** always selects the deepest node to expand first. It is important that DFS be used with a set maximum depth, so that it does not get stuck traversing an infinite tree.
 
-> [!info] DFS has $O(b^m)$ time complexity and $O(bm)$ space complexity.
+> [!info] DFS has $O(V+E)$ time complexity and $O(V)$ space complexity.
 ##### implementation
 Implementation of DFS typically involves a last-in, first-out (LIFO) stack as the fringe.
 
 ## breadth-first search
 **Breadth-first search (BFS)** always selects the shallowest node to expand first. BFS is generally not optimal, because it expands every child node at every depth, making it inefficient. The upside of BFS is that it is guaranteed to find the shortest path, if it does find one.
 
->[!info] BFS has $O(b^s)$ time complexity and $O(b^s)$ space complexity
+>[!info] BFS has $O(V+E)$ time complexity and $O(V)$ space complexity
 ##### implementation
 Implementation of BFS uses a first-in, first-out (FIFO) [[queue]] as the fringe.
 

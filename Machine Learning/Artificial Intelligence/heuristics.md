@@ -1,7 +1,7 @@
 #cs188 
 
-Within [[artificial intelligence]], a **heuristic function** estimates how close a given state is to our goal. For [[rational agent]], heuristic functions are used to more efficiently judge the best moves to make.
-##### the basic case
+A **heuristic function** estimates how close a given state is to our goal. For [[rational agent]], heuristic functions are used to more efficiently judge the best moves to make.
+
 In the case of [[greedy algorithms]], the agent would select the step that has the smallest cost, or greatest reward.
 
 ## informed search

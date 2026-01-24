@@ -30,3 +30,32 @@ Methods:
 - `new_set.add(item)`
 - `new_set.remove(item)`
 
+### union find
+The **disjoint set** data structure, also known as the union find data structure, stores a set of elements as a series of non-overlapping sets (each element belongs to exactly one set). There are two operations that can be performed on this structure:
+- **Union**: join two disjoint sets
+- **Find**: determine which set a given element belongs to
+
+Each disjoint set is represented as a tree with **path compression** applied in the find operation. Each set is assigned a **root node** which is the parent to all other elements in the set.
+![[path.png]]
+**Implementation**
+```
+# each element begins in its own set as its own parent
+parent = [i for i in elements]
+
+def find(node):               # O(log N)
+	if parent[node] != node:
+		parent[node] = find(parent[node])
+	
+	return parent[node]
+
+def union(node1, node2):
+	root1 = find(node1)
+	root2 = find(node2)
+	
+	parent[root2] = root1     # path is uncompressed
+
+```
+
+One common optimization is **union-by-rank** which stores the rank (depth of tree) and chooses to attach the shallower tree to the deeper tree, rather than vice versa, to keep the trees as shallow as possible.
+
+Another consideration is that the above implementation requires the node labels to be $0 \dots N-1$. A label-agnostic approach may store the nodes in a hashmap. 
