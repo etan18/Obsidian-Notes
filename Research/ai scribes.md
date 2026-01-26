@@ -40,4 +40,5 @@ Hypothesis: AI-generated clinical notes are less precise than human-written ones
 - What should this setup look like?
 
 
-prediction experiment setups that would make sense
+prediction experiment setups that would make sense:
+- What should the notes offer?

@@ -1,8 +1,15 @@
 
 ## sutter hill ventures
 
-1. What are SVH's current focus areas? What are you guys particularly excited about right now?
-2. 
+1. What are SHV's current focus areas? What are you guys particularly excited about right now?
+2. How does team matching work?
+3. To what extent does SHV impact the direction that these companies go in?
+4. How do you ensure that your portfolio companies can compete in such a saturated AI space?
+
+What I'm looking for in a company:
+- at the very least reached product-market fit
+	- More ideally a more mature startup
+- I care most about the team -- being able to learn at my first FT job out of school
 
 
 ### nuro
@@ -28,7 +35,7 @@ Why AMD?
 
 Introduce yourself
 - I am currently doing research on AI for healthcare, making sure that the tools we integrate into real-world clinics are actually improving clinician load and patient care (human AI interaction)
-- One particular problem with deploying predictive clinical decision models is the differences between different hospitals (protocols, levels of care, etc.)
+- One particular problem with deploying predictive clinical decision models is the differences between different hospitals (protocols, levels of care, etc.) - more of a statistical learning theory problem
 	- I previously focused on data scaling solutions for correcting distribution shift in predictive models
 	- Right now, I'm looking more at the algorithmic side of things --- distributionally-aware prediction
 

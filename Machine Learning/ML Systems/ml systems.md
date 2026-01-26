@@ -43,3 +43,4 @@ For tasks with natural ground truth labels, the time it takes from when a predic
 >- Introducing some randomization aspect to predictions to avoid homogeneity
 >	- TikTok is very good at this
 
+**Service level objectives** (SLOs) define key performance metrics for the reliability, availability, or performance of a service over a specific period. For example, an SLO for a service could be "99% uptime" or "average <2s latency per request" for the quarter.
