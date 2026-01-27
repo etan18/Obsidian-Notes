@@ -42,3 +42,5 @@ Hypothesis: AI-generated clinical notes are less precise than human-written ones
 
 prediction experiment setups that would make sense:
 - What should the notes offer?
+- QuestEval: generates questions from one text and tries to answer them using another text
+- emrQA and EHRNoteQA: question templates, filled in using LLM

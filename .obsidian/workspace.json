@@ -13,30 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/ML Systems/ml systems.md",
+                "file": "nervous system.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ml systems"
+              "title": "nervous system"
             }
           },
           {
-            "id": "c935555927cab62d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "week log.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "week log"
-            }
-          },
-          {
-            "id": "92341ac2c85bd7b4",
+            "id": "5ec32313b2bcd648",
             "type": "leaf",
             "state": {
               "type": "webviewer",
@@ -48,23 +34,8 @@
               "icon": "globe-2",
               "title": "Large language models surpass human experts in predicting neuroscience results | Nature Human Behaviour"
             }
-          },
-          {
-            "id": "a05f7a9afdeb8a34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cognitive Science/cognitive architectures.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "cognitive architectures"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "information processor",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -221,24 +192,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92341ac2c85bd7b4",
+  "active": "44bd06d214c97d46",
   "lastOpenFiles": [
+    "Cognitive Science/neurons.md",
+    "nervous system.md",
     "week log.md",
+    "Cognitive Science/cognitive architectures.md",
     "Research/ai scribes.md",
+    "Machine Learning/ML Systems/ml systems.md",
     "Research/recruiting.md",
     "behaviorism.md",
     "cognitive neuroscience.md",
     "inference.md",
     "Machine Learning/ML Systems/vLLM.md",
     "unfinished/computational graphs.md",
-    "Machine Learning/ML Systems/ml systems.md",
     "Math/Linear Algebra/gradients.md",
     "Computer Science/img/graph.png",
     "Machine Learning/ML Systems/model scaling.md",
     "Machine Learning/img/scaling.png",
     "Computer Science/databases.md",
     "Computer Science/graph theory.md",
-    "Cognitive Science/cognitive architectures.md",
     "Cognitive Science/memory.md",
     "Cognitive Science/imaging.md",
     "Cognitive Science/consciousness.md",
@@ -250,8 +223,6 @@
     "Computer Science/Networking/network.md",
     "Machine Learning/Artificial Intelligence/markov decision processes.md",
     "Machine Learning/Artificial Intelligence/search problems.md",
-    "Computer Science/search algorithms.md",
-    "Computer Science/constraint satisfaction problems.md",
     "Cognitive Science/img/phrenology.png",
     "Pasted image 20251215163338.png",
     "Pasted image 20251219004603.png",

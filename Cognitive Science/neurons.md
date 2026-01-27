@@ -1,14 +1,20 @@
 #mcb61 #cogsci126 
 
-The neuron doctrine (Ramon y Cajal, 1852-1934) is the base principle that **neurons** are the fundamental unit of the nervous system. These cells are responsible for receiving and relaying sensory inputs.
+The **neuron doctrine** (Ramon y Cajal, 1852-1934) is the base principle that **neurons** are the fundamental unit of the nervous system. These cells are responsible for receiving and relaying sensory inputs.
+
+The form, interconnectivity, and arrangement of neurons varies depending on the location of the neurons, and these qualities relate to the functions of specific neurons.
 ### cell anatomy
 There are three main parts of the neuron: cell body, dendrites, and the synapse.
 - The **soma**, or cell body
 	- The nucleus of the cell, and other organelles, are stored in the soma
 - **Dendrites** are small arms which receive external information and pass it into the cell
+	- The **spines** are specialized protrusions from dendrites where the information is actually received
 - The **axon** is the long arm of the neuron which fires, transmitting an electrical signal if the *action potential* is reached
+	- The **axon hillock** is the region of the soma which connects to the axon and is where action potentials trigger
 
-### action potential
+### neuronal signaling
+Two neurons meet at the **synapse**, which is where the inter-neuronal communication occurs. Some axons branch to form **axon collaterals** which can transmit signals to more than one cell. Synapses can form between neurons, or from a neuron to non-neuronal cells such as muscle, glands, or blood vessels.
+#### action potential
 The action potential is triggered on all all-or-nothing basis: if the synaptic potential exceeds the threshold, then action potential is observed; otherwise, there is no action potential.
 
 There are two types of synaptic input: **excitatory** and **inhibitory**. 
@@ -20,12 +26,16 @@ When no synaptic input is observed, or the excitatory and inhibitory inputs canc
 - If enough excitatory post-synaptic potential is received by the cell, then the cell will observe more action potentials than just the spontaneous activity.
 - If enough inhibitory post-synaptic potential is received, the cell will observe less action potentials, and if only ipsp is observed, the neuron will be suppressed altogether and exhibit no action potentials.
 
-### glial cells
+## glial cells
 Glial cells provide support for neurons. The **myelin sheath** insulates the axon, which serves to protect and strengthen the signal. These make up ~76% of glial cells.
 - **Oligodendroglia**: makes up myelin in the CNS
 - **Schwann Cells**: makes up myelin in the PNS
+The resulting myelin formed by the concentration of cell membranes around the axon is a fatty substance which acts as an electrical insulator, preventing loss of electrical current as the signal travels down the axon.
 
 **Astrocytes —** star-shaped cells that provide physical and nutritional support (~17%)
+- Make contact with blood vessels via *end feet*, transporting ions across vascular wall
+- Creates the **blood brain barrier** between the CNS and blood, protecting the brain from certain chemicals
+- Astrocytes also moderate the re-uptake of neurotransmitters
 **Microglia —** digest parts of dead neurons (~7%)
 - Hyperactive microglial cells are thought to be an important contributor to the onset of Alzheimer’s
 
