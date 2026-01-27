@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nervous system.md",
+                "file": "Research/ai scribes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nervous system"
+              "title": "ai scribes"
             }
           }
         ]
@@ -180,14 +180,14 @@
   },
   "active": "44bd06d214c97d46",
   "lastOpenFiles": [
-    "Cognitive Science/learning.md",
+    "Research/recruiting.md",
     "nervous system.md",
+    "Cognitive Science/learning.md",
     "Cognitive Science/neurons.md",
     "Machine Learning/ML Systems/ml systems.md",
     "week log.md",
     "Cognitive Science/cognitive architectures.md",
     "Research/ai scribes.md",
-    "Research/recruiting.md",
     "behaviorism.md",
     "cognitive neuroscience.md",
     "inference.md",

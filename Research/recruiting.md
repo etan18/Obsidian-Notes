@@ -17,6 +17,17 @@ What I'm looking for in a company:
 
 - **Technical Infrastructure:** this group owns few fundamental services for entire engineering organizations: generic compute platform to host mission-critical workflows such as data processing and simulation, storage management service which manages hundreds of PB of data, cloud infrastructure serves as IaaC which provisions and maintains all cloud resources, engineering productivity provides tools such as build and CI/CD to make engineering work more efficient.
 
+ML Data Infrastructure org
+mini-onsite (virtual)
+- coding - algorithms
+- coding - systems
+	- memory, multithreading, concurrency
+- hiring manager
+	- resume deep dive
+
+final chat w/ VP AI Platform
+- high level, motivation, culture fit
+- could have some questions about technical experience
 
 
 ### amd

@@ -42,5 +42,23 @@ Hypothesis: AI-generated clinical notes are less precise than human-written ones
 
 prediction experiment setups that would make sense:
 - What should the notes offer?
+- What should the evaluation show?
+	- Ambient scribe models are trained to optimize some set of metrics (e.g. loss on labeled dataset), but those metrics don't tell the whole story. Here are different metrics.
 - QuestEval: generates questions from one text and tries to answer them using another text
 - emrQA and EHRNoteQA: question templates, filled in using LLM
+	- Labeled datasets
+- Clinical note rubrics are subjective: [PDQI-9](https://pmc.ncbi.nlm.nih.gov/articles/instance/3633322/bin/ACI-03-0164-s001.pdf) and [UNC Pharm](https://faopharmacy.unc.edu/wp-content/uploads/sites/200/2015/05/SOAP-Rubric-October-2012.pdf)
+
+Our setup:
+- Unlabeled, reference-free dataset (one set of human-written, one set of AI generated)
+- Outputs only (no access to original transcript of patient encounter)
+- Have access to EHRs of patients
+
+Task: EHR generation from clinical notes. (aka Clinical note extraction)
+- Using the clinical notes for a patient only, what percentage of their EHR can we reconstruct?
+
+open questions:
+- which parts of an EHR should clinical notes reasonably be expected to contain?
+	- Medications, diagnosis code, procedures and lab information
+- What does the model look like
+	- LLM probably (versa)
