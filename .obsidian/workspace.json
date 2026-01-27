@@ -20,20 +20,6 @@
               "icon": "lucide-file",
               "title": "nervous system"
             }
-          },
-          {
-            "id": "5ec32313b2bcd648",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.nature.com/articles/s41562-024-02046-9",
-                "title": "Large language models surpass human experts in predicting neuroscience results | Nature Human Behaviour",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Large language models surpass human experts in predicting neuroscience results | Nature Human Behaviour"
-            }
           }
         ]
       }
@@ -194,12 +180,13 @@
   },
   "active": "44bd06d214c97d46",
   "lastOpenFiles": [
-    "Cognitive Science/neurons.md",
+    "Cognitive Science/learning.md",
     "nervous system.md",
+    "Cognitive Science/neurons.md",
+    "Machine Learning/ML Systems/ml systems.md",
     "week log.md",
     "Cognitive Science/cognitive architectures.md",
     "Research/ai scribes.md",
-    "Machine Learning/ML Systems/ml systems.md",
     "Research/recruiting.md",
     "behaviorism.md",
     "cognitive neuroscience.md",
@@ -222,7 +209,6 @@
     "Machine Learning/Artificial Intelligence/heuristics.md",
     "Computer Science/Networking/network.md",
     "Machine Learning/Artificial Intelligence/markov decision processes.md",
-    "Machine Learning/Artificial Intelligence/search problems.md",
     "Cognitive Science/img/phrenology.png",
     "Pasted image 20251215163338.png",
     "Pasted image 20251219004603.png",
