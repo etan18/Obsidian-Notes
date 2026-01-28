@@ -59,6 +59,16 @@ Task: EHR generation from clinical notes. (aka Clinical note extraction)
 
 open questions:
 - which parts of an EHR should clinical notes reasonably be expected to contain?
-	- Medications, diagnosis code, procedures and lab information
+	- [Medications (and discontinuation)](https://arxiv.org/abs/2506.11137), [diagnosis code (ICD code assignment)](https://www.sciencedirect.com/science/article/pii/S0957417424003841#:~:text=attention%20for%20multi,Blanco%20et%20al), procedures and lab information
+		- Cannot use date fields ([shifted for DEID](https://wiki.library.ucsf.edu/spaces/DCDKB/pages/720388069/Safe+Harbor+and+Date+Shifting))
+	- [UCSF DeID OMOP](https://ucsfonline.sharepoint.com/:x:/s/ARS/EZ7KdcdPnddPgE041UqPlY0BjO2LrqRNp_M-b42JD-Os8A?e=SuRmj0) - unified by EncounterKey
+		- `procedure_occurrence`: procedure_concept_id, procedure_date, procedure_end_date, procedure_type_concept_id, procedure_source_value
+		- `measurement`: 
+		- `drug_exposure`: 
+		- `observation`: 
 - What does the model look like
 	- LLM probably (versa)
+
+housekeeping:
+- added list of patients last Wednesday (emailed Athalia, no response yet)
+- bump judy?
