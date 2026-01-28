@@ -12,3 +12,17 @@ In general, our runtime is composed of three factors:
 2. The number of cycles per instruction
 3. The time of each cycle -> cannot be sped up, the absolute limit is the speed of light
 
+### python multiprocessing pool
+Pool is a class provided in the Python standard library designed to enable parallelism in **CPU-bound** tasks by leveraging multiple CPU cores or processors. 
+
+Python's **global interpreter lock** (GIL) is a [[threads#synchronization|synchronization]] mechanism that allows only one thread to execute Python bytecode in the interpreter at any given time, even across multiple [[processes]]. Pool side-steps the GIL by instantiating separate processes each with their *own* interpreter and [[virtual memory]] space.
+
+>[!info] Running a Python Program
+>Every Python program (or program in general) is a process which spawns one thread called the `main` thread used to execute program instructions.
+
+A **process pool** manages a fixed number of worker processes. When running a program, it can be advantageous to create a pool of workers and keep them around to pick up ad-hoc tasks rather than always instantiating and destroying a new worker process for each peripheral task.
+
+The Pool controls
+1. When workers are created (e.g. as they are needed)
+2. What workers do when idle (e.g. wait without consuming resources)
+Python's `multiprocessing.Pool` class provides a process pool interface to execute ad hoc tasks with variable arguments, and does not require us to specify which process to run on, explicitly start the process, or wait for the task to complete.

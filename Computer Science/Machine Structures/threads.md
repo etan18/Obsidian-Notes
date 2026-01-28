@@ -16,7 +16,6 @@ Everything else is stored in memory.
 
 ---
 # multithreading
-
 A multi-threaded program allows a single application to run multiple threads which have shared states, allowing for both [[parallelism]] and data transfer between multiple threads. These are called *cooperating threads*. This is enabled by the fact that 
 - Threads inside the same process are not isolated from one another
 - Threads inside the same process share an address space and file descriptor table

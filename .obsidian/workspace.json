@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/ai scribes.md",
+                "file": "Computer Science/Machine Structures/parallelism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ai scribes"
+              "title": "parallelism"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "concurrency",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -180,6 +181,11 @@
   },
   "active": "44bd06d214c97d46",
   "lastOpenFiles": [
+    "Computer Science/Machine Structures/processes.md",
+    "Computer Science/Machine Structures/threads.md",
+    "Computer Science/Machine Structures/parallelism.md",
+    "Research/ai scribes.md",
+    "Computer Science/Machine Structures/operating system.md",
     "Research/recruiting.md",
     "nervous system.md",
     "Cognitive Science/learning.md",
@@ -187,7 +193,6 @@
     "Machine Learning/ML Systems/ml systems.md",
     "week log.md",
     "Cognitive Science/cognitive architectures.md",
-    "Research/ai scribes.md",
     "behaviorism.md",
     "cognitive neuroscience.md",
     "inference.md",
@@ -205,10 +210,6 @@
     "Cognitive Science/theory of mind.md",
     "unfinished/data structures.md",
     "Computer Science/img/path.png",
-    "Computer Science/Networking/internet.md",
-    "Machine Learning/Artificial Intelligence/heuristics.md",
-    "Computer Science/Networking/network.md",
-    "Machine Learning/Artificial Intelligence/markov decision processes.md",
     "Cognitive Science/img/phrenology.png",
     "Pasted image 20251215163338.png",
     "Pasted image 20251219004603.png",
