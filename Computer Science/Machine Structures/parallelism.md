@@ -1,8 +1,10 @@
 #cs61c #cs162 
 
-Parallelism is a core topic in machine structures. It is a principle of efficiency, where our goal as computer engineers is to execute as many instructions as possible at the same time. 
+Parallelism is a core topic in machine structures, dealing with managing many tasks across many cores or processes. **Concurrency** is the similar concept of managing multiple tasks at once to give the *illusion* that they are running simultaneously, even though they may all be taking turns on a single processor. This is managed 
 
-This is generally done by executing non-interfering *instruction sets* on different [[threads]] at the same time.
+Parallelism can occur at the 
+- **Thread-level**: this is generally done by executing non-interfering *instruction sets* on different [[threads]] at the same time. [[threads#multithreading|Multi-threading]] is discussed in the threads page.
+- **Process-level**: this page describes multi-processing.
 
 >[!tip] Amdahl's Law
 >The amount of instructions we can run in parallel is limited—some processes must be executed sequentially. This essentially bounds how efficient parallelizing can make our programs.
@@ -25,4 +27,35 @@ A **process pool** manages a fixed number of worker processes. When running a pr
 The Pool controls
 1. When workers are created (e.g. as they are needed)
 2. What workers do when idle (e.g. wait without consuming resources)
-Python's `multiprocessing.Pool` class provides a process pool interface to execute ad hoc tasks with variable arguments, and does not require us to specify which process to run on, explicitly start the process, or wait for the task to complete.
+Python's `multiprocessing.Pool` class provides a process pool interface to execute ad hoc tasks with variable arguments, and does not require us to specify which process to run on, explicitly start the process, or wait for the task to complete. 
+
+Tasks are submitted to the Pool as functions, and can be submitted synchronously or asynchronously.
+- **Synchronous**: caller will block until the submitted task(s) is completed
+```
+pool = multiprocessing.pool.Pool(processes=N)
+
+result = pool.apply(task, args, kwargs) # submit single task
+results = pool.map(task, items)         # parallelize repeated tasks
+results = pool.starmap(task, data)      # map function w/ args
+
+pool.close()
+```
+
+- **Asynchronous**: caller continues working and checks the result when it is needed
+	- Returns an `AsyncResult` object, which can be used to check the status of the task or read the final result if it is completed
+```
+result = pool.map_async(task, items)
+
+# keep working
+...
+
+# when needed, wait for issued task to complete
+result.wait(timeout=50)
+
+# we don't know if wait returned due to completion or timeout
+if result.ready(): 
+	value = result.get() # blocks if result not ready yet
+	# continue with code
+else:
+	result.wait()
+```

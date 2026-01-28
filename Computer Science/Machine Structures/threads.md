@@ -19,6 +19,7 @@ Everything else is stored in memory.
 A multi-threaded program allows a single application to run multiple threads which have shared states, allowing for both [[parallelism]] and data transfer between multiple threads. These are called *cooperating threads*. This is enabled by the fact that 
 - Threads inside the same process are not isolated from one another
 - Threads inside the same process share an address space and file descriptor table
+Multi-threading is ideal when tasks are I/O-bound, for example when many [[file systems]] operations or [[network]] requests are required, where much of the time is spent waiting for external resources.
 ## synchronization
 Concurrency with threads is *non-deterministic* in nature. The OS [[scheduling|scheduler]] can run threads in any order, and switch between threads at any time. This means that the OS must ensure that the correct behavior is achieved every time *by design*.
 
@@ -27,7 +28,7 @@ Concurrency with threads is *non-deterministic* in nature. The OS [[scheduling|s
 >[!pencil] Atomic Operations
 >Synchronization is made possible via atomic operations. These are methods which are guaranteed to always run to completion or not run at all. These are indivisible operations (commonly, loads and stores are atomic).
 
-**Mutual exclusion** is a basic method for synchronization that uses *locks*. This method ensures that only a single thread is performing an action at any given time. 
+**Mutual exclusion** (mutex) is a basic method for synchronization that uses *locks*. This method ensures that only a single thread is performing an action at any given time. 
 - Only one thread can "hold" the lock at any time. Before performing an action, check if the lock is available and acquire it.
 - Perform the action. This part is known as the **critical section**.
 - Return the lock upon completion of the action.
@@ -87,5 +88,5 @@ release(&lock);
 acquire(&lock);
 cond_var.signal()
 release(&lock);
-
 ```
+
