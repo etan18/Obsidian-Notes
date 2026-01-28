@@ -45,7 +45,7 @@ There are three types of kernel mode transfer, which trigger a toggle between th
 	- Some examples include segmentation faults, read/write access violations, and divide by zero errors.
 
 >[!info] System Call Procedure
->32-bit 80x86 [[UNIX]] systems use a standard [[x86#calling convention|calling convention]] to make syscalls. The high level procedure is that the calling user program should place the argument values into predefined registers (or sometimes pushes them onto the stack), and then executes a trap instruction to switch into kernel mode. The trap instructions are provided by libraries, since there is no way to write a trap instruction in C.
+>32-bit 80x86 [[unix]] systems use a standard [[x86#calling convention|calling convention]] to make syscalls. The high level procedure is that the calling user program should place the argument values into predefined registers (or sometimes pushes them onto the stack), and then executes a trap instruction to switch into kernel mode. The trap instructions are provided by libraries, since there is no way to write a trap instruction in C.
 >
 >Once the kernel finishes execution, it places the returned value(s) in predefined registers for the userprog to read. The execution of the system call should leave no trace or make no modifications that are not specified by the documentation.
 
@@ -54,7 +54,7 @@ There are three types of kernel mode transfer, which trigger a toggle between th
 
 Input/Output (I/O) operations, at a high level, are anything that involves reading or writing data. 
 
-I/O implementations typically have clean and easy-to-use interfaces. In [[UNIX]]-based systems, they are typically integrated as virtual [[file systems]]. However, because of the hardware cooperation necessary to perform I/O operations, they are typically extremely difficult to implement.
+I/O implementations typically have clean and easy-to-use interfaces. In [[unix]]-based systems, they are typically integrated as virtual [[file systems]]. However, because of the hardware cooperation necessary to perform I/O operations, they are typically extremely difficult to implement.
 
 Types of I/O Devices:
 - **Character devices**: access data as a character stream (i.e. data not addressable)
