@@ -6,6 +6,7 @@ fit a model to all data (across all hospitals)
 	- theoretically, the tree could split by hospital feature at the first node, then subtrees would be per-hospital classifiers. or, would at least group together similar hospitals.
 - look at accuracy, auc, and r^2
 - LR on top of mapped features (https://scikit-learn.org/stable/modules/generated/sklearn.kernel_approximation.RBFSampler.html)
+- TODO: TabArena
 
 one-to-one train test per-hospital
 
