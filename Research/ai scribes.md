@@ -30,7 +30,7 @@ Goal: what are indicators of AI-generated clinical notes? What implications do t
 
 Hypothesis: AI-generated clinical notes are less precise than human-written ones
 - [x] Less frequent use of hard quantifiers (numerical values)
-- [ ] Reading level
+- [x] Reading level
 - [ ] Perplexity
 
 [FUTURE WORK] Implications: more ai-generated clinical notes --> less predictive signal for downstream classification tasks ([model collapse](https://www.nature.com/articles/s41586-024-07566-y))
@@ -67,5 +67,6 @@ open questions:
 		- `measurement`: 
 		- `drug_exposure`: 
 		- `observation`: 
+		- primary diagnosis: EncounterFact.PrimaryDiagnosisKey and PrimaryDiagnosisName
 - What does the model look like
 	- LLM probably (versa)

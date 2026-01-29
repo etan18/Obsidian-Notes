@@ -13,40 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nervous system.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "nervous system"
-            }
-          },
-          {
-            "id": "9d2830874160d788",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Research/ai scribes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "ai scribes"
-            }
-          },
-          {
-            "id": "4c1a5dfe9956ef61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/Deep Learning & Neural Networks/large language models.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "large language models"
             }
           }
         ]
@@ -81,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "corpus callo",
+                "query": "perplexity",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dead week.md",
+                "file": "Research/ai scribes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for dead week"
+              "title": "Backlinks for ai scribes"
             }
           },
           {
@@ -192,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,23 +177,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6949e9cc34ed3631",
+  "active": "6430351f2ea366d0",
   "lastOpenFiles": [
-    "Cognitive Science/neurons.md",
-    "nervous system.md",
+    "week log.md",
     "cognitive neuroscience.md",
+    "nervous system.md",
+    "Machine Learning/Deep Learning & Neural Networks/large language models.md",
+    "Research/ai scribes.md",
+    "Machine Learning/natural language processing.md",
+    "Machine Learning/perplexity.md",
+    "Machine Learning/Deep Learning & Neural Networks/transformers.md",
+    "Cognitive Science/neurons.md",
     "Computer Science/Low Level/operating system.md",
     "Computer Science/Low Level/C.md",
-    "Research/ai scribes.md",
     "Computer Science/information theory.md",
     "Math/Probability/entropy.md",
     "Computer Science/Algorithms/dynamic programming.md",
     "Computer Science/Low Level/memory structure.md",
-    "week log.md",
     "Cognitive Science/behaviorism.md",
     "Machine Learning/ML Systems/inference.md",
     "Machine Learning/ML Systems/vLLM.md",
-    "Untitled.md",
     "Cognitive Science/circadian rhythm.md",
     "Cognitive Science/aphasia.md",
     "Cognitive Science/preferences.md",
@@ -232,10 +206,7 @@
     "Computer Science/high-dimensional computing.md",
     "Computer Science/Algorithms/reductions.md",
     "Computer Science/Algorithms/linear programming.md",
-    "Computer Science/hashing.md",
-    "Computer Science/Algorithms/constraint satisfaction problems.md",
     "Computer Science/Algorithms",
-    "Computer Science/Low Level/pages.md",
     "Computer Science/Low-Level",
     "Computer Science/img/graph.png",
     "Machine Learning/img/scaling.png",

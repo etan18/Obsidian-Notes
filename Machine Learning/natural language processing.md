@@ -44,7 +44,7 @@ Given this formulation where each word is not conditioned on any other word in t
 For a language model which produces probabilities of sequences of text $p(\overline X)$, we want to evaluate fit over a test set for which it produces sequences $\overline X_i$ for $1 \le i \le m$:
 - **Likelihood**
 - **Negative log likelihood**: fixes float underflow problem of likelihood, more numerical stability
-- **Perplexity**: [[information theory]]-based metric, computes the uncertaint
+- **[[perplexity]]**: [[information theory]]-based metric, computes the uncertaint
 ## reference-based evaluation
 For NLP tasks where you are given a reference text---ground truth text the model should try to output---we want to evaluate how close the model's output is to the reference text.
 #### BLEU
