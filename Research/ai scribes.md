@@ -29,14 +29,11 @@ Literature:
 Goal: what are indicators of AI-generated clinical notes? What implications do these markers have on the overall quality of notes?
 
 Hypothesis: AI-generated clinical notes are less precise than human-written ones
-- Less frequent use of hard quantifiers (numerical values)
-	- [ ] What is being used instead?
-- Less frequent use of hyper-technical clinical jargon [IN PROGRESS]
-	 - [ ] Generate a list of "hyper-technical clinical jargon" that is unlikely to appear in scribe notes
-- Characterized by flowery, qualitative language [IN PROGRESS]
-	- [ ] Generate a list of words that appear more frequently in scribe notes
+- [x] Less frequent use of hard quantifiers (numerical values)
+- [ ] Reading level
+- [ ] Perplexity
 
-[FUTURE WORK] Implications: less predictive signal for downstream classification tasks
+[FUTURE WORK] Implications: more ai-generated clinical notes --> less predictive signal for downstream classification tasks ([model collapse](https://www.nature.com/articles/s41586-024-07566-y))
 - What should this setup look like?
 
 
@@ -68,7 +65,3 @@ open questions:
 		- `observation`: 
 - What does the model look like
 	- LLM probably (versa)
-
-housekeeping:
-- added list of patients last Wednesday (emailed Athalia, no response yet)
-- bump judy?

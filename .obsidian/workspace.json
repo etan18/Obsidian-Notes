@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nervous system.md",
+                "file": "Research/ai scribes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nervous system"
+              "title": "ai scribes"
             }
           },
           {
@@ -223,8 +223,14 @@
   },
   "active": "9d2830874160d788",
   "lastOpenFiles": [
-    "cognitive neuroscience.md",
+    "Computer Science/information theory.md",
+    "Math/Probability/entropy.md",
+    "Research/ai scribes.md",
+    "Computer Science/Algorithms/dynamic programming.md",
+    "Computer Science/Low Level/memory structure.md",
+    "week log.md",
     "nervous system.md",
+    "cognitive neuroscience.md",
     "Cognitive Science/behaviorism.md",
     "Machine Learning/ML Systems/inference.md",
     "Machine Learning/ML Systems/vLLM.md",
@@ -236,7 +242,6 @@
     "Cognitive Science/cognitive development.md",
     "Cognitive Science/Psychology",
     "Computer Science/high-dimensional computing.md",
-    "Computer Science/information theory.md",
     "Computer Science/Algorithms/reductions.md",
     "Computer Science/Algorithms/linear programming.md",
     "Computer Science/hashing.md",
@@ -246,11 +251,6 @@
     "Computer Science/Low Level/pages.md",
     "Computer Science/Low Level/C.md",
     "Computer Science/Low Level/compiler.md",
-    "Computer Science/Low Level/buffer overflows.md",
-    "Computer Science/Low Level/memory structure.md",
-    "Computer Science/Low Level/vtables.md",
-    "Computer Science/Low Level/x86.md",
-    "Computer Science/Low Level/systems design.md",
     "Computer Science/Low-Level",
     "Computer Science/img/graph.png",
     "Machine Learning/img/scaling.png",
