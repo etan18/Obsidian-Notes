@@ -28,6 +28,9 @@ The sum of excitatory and inhibitory input received by a postsynaptic neuron det
 When no synaptic input is observed, or the excitatory and inhibitory inputs cancel each other out, then the neuron will sill observe **spontaneous activity**, which is just the firing of the neuron at random times
 - If enough excitatory post-synaptic potential is received by the cell, then the cell will observe more action potentials than just the spontaneous activity.
 - If enough inhibitory post-synaptic potential is received, the cell will observe less action potentials, and if only ipsp is observed, the neuron will be suppressed altogether and exhibit no action potentials.
+
+## exocytosis
+Voltage-gated calcium ion channels at the axon terminal open in response to the axon potential, allowing an influx of Ca2+ ions. This enables **exocytosis**, which causes the release of vesicles containing neurotransmitters.
 #### neurotransmitters
 The exact "message" that is sent through the synapse when neurons fire is determined by the neurotransmitter. 
 - Specific dendrites are coded to receive specific neurotransmitters
@@ -36,6 +39,7 @@ The exact "message" that is sent through the synapse when neurons fire is determ
 There are over 100 different known neurotransmitters among mammalian brains. In general, most neurons contain only one transmitter type at the axon terminal, but can have multiple receptor types.
 - Glutamate is the most common neurotransmitter in the brain
 - GABA is the primary inhibitory neurotransmitter
+Enzymes in the synaptic cleft regulate neurotransmitter activity by breaking them down into smaller molecules, called degradation.
 
 ## glial cells
 Glial cells provide support for neurons. The **myelin sheath** insulates the axon, which serves to protect and strengthen the signal. These make up ~76% of glial cells.

@@ -53,6 +53,10 @@ Our setup:
 
 Task: EHR generation from clinical notes. (aka Clinical note extraction)
 - Using the clinical notes for a patient only, what percentage of their EHR can we reconstruct?
+- Note: hypothetical 
+	- PPL-zlib ratio --> hypothesis: human notes will have higher avg. but also higher variability
+	- PPL-zlib ratio is predictive of/correlates to downstream predictive task outcomes
+		- Lower variability = lower signal
 
 open questions:
 - which parts of an EHR should clinical notes reasonably be expected to contain?

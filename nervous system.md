@@ -1,4 +1,3 @@
-
 The nervous system is comprised of two types of cells: [[neurons]] and [[neurons#glial cells|glial cells]]. There are an estimated 100B neurons in the nervous system, and a similar number of glial cells.
 
 The nervous system uses electrochemical stimulation for communication.
@@ -13,3 +12,7 @@ The **central nervous system** (CNS) consists of the brain and spinal cord and i
 
 >[!info] Dendritic Pruning
 >The dendritic branches of a neuron change throughout its lifecycle. New arms may be added, while more commonly, branches may be deleted/pruned, with remaining branches becoming visibly thicker as the organism matures. This may be an [[representation learning|efficient coding]] strategy learned from patterns of firing.
+
+**Neurogenesis** is the process of creating new neurons from stem cells. It has been observed in insects, fish, and birds. 21st century neuroscience research methods have uncovered neurogenesis in humans, most prominently in the hippocampus and olfactory bulb.
+
+## anatomy of the brain
