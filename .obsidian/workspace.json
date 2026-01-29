@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "anatomy",
+                "query": "corpus callo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -206,7 +206,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6430351f2ea366d0",
+  "active": "6949e9cc34ed3631",
   "lastOpenFiles": [
     "Cognitive Science/neurons.md",
     "nervous system.md",

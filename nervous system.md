@@ -14,5 +14,27 @@ The **central nervous system** (CNS) consists of the brain and spinal cord and i
 >The dendritic branches of a neuron change throughout its lifecycle. New arms may be added, while more commonly, branches may be deleted/pruned, with remaining branches becoming visibly thicker as the organism matures. This may be an [[representation learning|efficient coding]] strategy learned from patterns of firing.
 
 **Neurogenesis** is the process of creating new neurons from stem cells. It has been observed in insects, fish, and birds. 21st century neuroscience research methods have uncovered neurogenesis in humans, most prominently in the hippocampus and olfactory bulb.
+- **Stem cells**: early-stage cells which have not developed a specialization or cell type yet
+- GPLD1 is an enzyme found in serum (blood) that has also been [linked](https://pmc.ncbi.nlm.nih.gov/articles/PMC7879650/) to promoting neurogenesis
 
 ## anatomy of the brain
+The brain, or **cerebral cortex**, is organized in two hemispheres (left and right), and contains four main lobes.
+- **Frontal**: houses the primary motor cortex
+- **Parietal**
+- **Occipital**
+- **Temporal**
+
+A nerve is a bundle, or collection of axons, usually with similar functions.
+
+The **cortex** is the outer layer of the cerebral cortex. It is made up of **grey matter**, which is the collection of soma, or cell bodies, of the neurons in the brain. Visually, the outer layer is made up of a series of folds: 
+- Superficial areas are called **gyri**
+- Deep folds are called **sulci**. The central sulcus separates the frontal and parietal lobe.
+- Large sulci are called **fissures**
+These folds developed evolutionarily to maximize the surface area of the brain in a fixed volume skull.
+
+The inside of the brain is made up of **white matter**, containing all the axons of the neurons which are interacting with each other. The white appearance comes from the presence of glial cells supporting the propagation of neural signals.
+
+### evolution
+The human brain has evolved far beyond other primates to enable advanced cognitive processing:
+- The prefrontal cortex has evolved to be much larger
+- We have more neurons (and possible more white matter relative to brain size) than other primates
