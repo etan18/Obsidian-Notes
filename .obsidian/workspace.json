@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "human computer interaction.md",
+                "file": "week log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "human computer interaction"
+              "title": "week log"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "human computer interaction.md",
+                "file": "week log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for human computer interaction"
+              "title": "Backlinks for week log"
             }
           },
           {
@@ -194,8 +194,8 @@
   },
   "active": "004ed2fa2acb0dd1",
   "lastOpenFiles": [
-    "week log.md",
     "human computer interaction.md",
+    "week log.md",
     "nervous system.md",
     "Research/ai scribes.md",
     "Research/data addition dilemma.md",
