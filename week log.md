@@ -16,4 +16,5 @@
 - [x] set up wispr flow
 - [x] signed up for lab meeting
 - [x] did 285 lecture quizzes 1 + 2
+- [x] primary diagnosis baselines
 - [ ] 
