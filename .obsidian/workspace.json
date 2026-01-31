@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "week log"
             }
+          },
+          {
+            "id": "46660b888870724b",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.nature.com/articles/s41562-024-02046-9",
+                "title": "Large language models surpass human experts in predicting neuroscience results | Nature Human Behaviour",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Large language models surpass human experts in predicting neuroscience results | Nature Human Behaviour"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +123,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for week log"
+              "title": "Backlinks"
             }
           },
           {
@@ -192,10 +205,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "004ed2fa2acb0dd1",
+  "active": "46660b888870724b",
   "lastOpenFiles": [
-    "human computer interaction.md",
     "week log.md",
+    "human computer interaction.md",
     "nervous system.md",
     "Research/ai scribes.md",
     "Research/data addition dilemma.md",
