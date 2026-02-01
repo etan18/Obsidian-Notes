@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week log.md",
+                "file": "nervous system.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week log"
+              "title": "nervous system"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week log.md",
+                "file": "nervous system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for week log"
+              "title": "Backlinks for nervous system"
             }
           },
           {
@@ -194,13 +194,13 @@
   },
   "active": "004ed2fa2acb0dd1",
   "lastOpenFiles": [
+    "cognitive neuroscience.md",
     "week log.md",
     "human computer interaction.md",
     "nervous system.md",
     "Research/ai scribes.md",
     "Research/data addition dilemma.md",
     "Machine Learning/Paper Summaries/defensive forecasting.md",
-    "cognitive neuroscience.md",
     "Machine Learning/Deep Learning & Neural Networks/large language models.md",
     "Machine Learning/natural language processing.md",
     "Machine Learning/perplexity.md",

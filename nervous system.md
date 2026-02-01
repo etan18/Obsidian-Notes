@@ -38,3 +38,7 @@ The inside of the brain is made up of **white matter**, containing all the axons
 The human brain has evolved far beyond other primates to enable advanced cognitive processing:
 - The prefrontal cortex has evolved to be much larger
 - We have more neurons (and possible more white matter relative to brain size) than other primates
+
+
+The **limbic system** is the set of brain structures involved in emotional processing.
+- Basal ganglia: responsible for voluntary motor control, action selection, reward-based learning
