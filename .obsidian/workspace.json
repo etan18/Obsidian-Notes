@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nervous system.md",
+                "file": "Research/ai scribes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nervous system"
+              "title": "ai scribes"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nervous system.md",
+                "file": "Research/ai scribes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for nervous system"
+              "title": "Backlinks for ai scribes"
             }
           },
           {
@@ -194,10 +194,10 @@
   },
   "active": "004ed2fa2acb0dd1",
   "lastOpenFiles": [
-    "Cognitive Science/sleep.md",
-    "nervous system.md",
-    "cognitive neuroscience.md",
     "week log.md",
+    "nervous system.md",
+    "Cognitive Science/sleep.md",
+    "cognitive neuroscience.md",
     "human computer interaction.md",
     "Research/ai scribes.md",
     "Research/data addition dilemma.md",
