@@ -36,6 +36,15 @@ The origin of a webpage is defined by its protocol, domain name, and port. Two w
 >[!warning] Same-Origin Policy
 >Modern web browsers isolate each open webpage, meaning they cannot communicate with or access any information within each other. The only exception is if multiple webpages share the same origin. This is to prevent security risks from visiting malicious websites.
 
+##### REST APIs
+A representational state transfer (REST) application programming interface (API) defines design principles which enable an application or service to access a resource within another application, service or database.
+
+It is a data transfer interface that uses standard HTTP calls. A REST API is built upon guidelines that ensure it is seamlessly scalable in cloud environments:
+1. Uniform interface: resources should be uniquely identifiable through a single URL, and only by using the underlying methods of the network protocol, such as `DELETE`, `PUT` and `GET` with HTTP, should it be possible to manipulate a resource.
+2. Client-server based: There should be a clear delineation between the client and server. UI and request-gathering concerns are the client's domain. Data access, workload management and security are the server's domain. This loose coupling of the client and server enables each to be developed and enhanced independent of the other.
+3. Stateless operations: All client-server operations should be stateless, and any state management that is required should take place on the client, not the server.
+4. Resource caching: All resources should allow caching unless explicitly indicated that caching is not possible.
+
 ##### data storage
 Many websites require lots of backend data to be stored which cannot be handled by the server. Instead, [[databases]] are often times stored elsewhere (e.g. in the cloud) and queried by the server, usually in [[SQL]], when the client makes a request. 
 
