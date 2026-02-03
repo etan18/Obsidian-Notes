@@ -1,4 +1,9 @@
 
+### google
+
+- What do you think was the biggest learning curve for you moving from your previous role to Big Tech? 
+- How much room is there for bottom-up initiative versus roadmap-driven work on this team?
+
 ## sutter hill ventures
 
 1. What are SHV's current focus areas? What are you guys particularly excited about right now?
