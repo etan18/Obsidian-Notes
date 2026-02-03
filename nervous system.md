@@ -2,7 +2,6 @@ The nervous system is comprised of two types of cells: [[neurons]] and [[neurons
 
 The nervous system uses electrochemical stimulation for communication.
 - The [[neurons#action potential|action potential]] is a chemical process of transmission for synaptic action
-- 
 
 The **central nervous system** (CNS) consists of the brain and spinal cord and is the body's primary control center for information processing and planning.
 
@@ -28,17 +27,19 @@ A nerve is a bundle, or collection of axons, usually with similar functions.
 
 The **cortex** is the outer layer of the cerebral cortex. It is made up of **grey matter**, which is the collection of soma, or cell bodies, of the neurons in the brain. Visually, the outer layer is made up of a series of folds: 
 - Superficial areas are called **gyri**
-- Deep folds are called **sulci**. The central sulcus separates the frontal and parietal lobe.
+- Deep folds are called **sulci**. The central sulcus separates the frontal and parietal lobe. p
 - Large sulci are called **fissures**
 These folds developed evolutionarily to maximize the surface area of the brain in a fixed volume skull.
 
 The inside of the brain is made up of **white matter**, containing all the axons of the neurons which are interacting with each other. The white appearance comes from the presence of glial cells supporting the propagation of neural signals.
 
+The **limbic system** is the set of brain structures involved in emotional processing.
+- Hippocampus: key [[memory]] center
+- Amygdala: primary emotional center (fear)
+- Hypothalamus: controls hormones 
+- Basal ganglia: responsible for voluntary motor control, action selection, reward-based learning
+
 ### evolution
 The human brain has evolved far beyond other primates to enable advanced cognitive processing:
 - The prefrontal cortex has evolved to be much larger
 - We have more neurons (and possible more white matter relative to brain size) than other primates
-
-
-The **limbic system** is the set of brain structures involved in emotional processing.
-- Basal ganglia: responsible for voluntary motor control, action selection, reward-based learning
