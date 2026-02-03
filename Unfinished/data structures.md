@@ -63,4 +63,5 @@ Another consideration is that the above implementation requires the node labels 
 
 ##### linked lists
 
-Floyd's cycle detection algorithm
+Floyd's cycle detection algorithm ("tortoise and the hare")
+- O(1) space complexity
