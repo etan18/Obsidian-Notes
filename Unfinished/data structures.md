@@ -59,3 +59,8 @@ def union(node1, node2):
 One common optimization is **union-by-rank** which stores the rank (depth of tree) and chooses to attach the shallower tree to the deeper tree, rather than vice versa, to keep the trees as shallow as possible.
 
 Another consideration is that the above implementation requires the node labels to be $0 \dots N-1$. A label-agnostic approach may store the nodes in a hashmap. 
+
+
+##### linked lists
+
+Floyd's cycle detection algorithm
