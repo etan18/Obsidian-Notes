@@ -39,6 +39,7 @@ The **limbic system** is the set of brain structures involved in emotional proce
 - Hypothalamus: controls hormones 
 - Basal ganglia: responsible for voluntary motor control, action selection, reward-based learning
 
+The **Circle of Willis** is a ring-shaped vascular network at the base of the brain connecting seven main arteries. Its primary function is to redistribute blood flow between the anterior and posterior circulations if one vessel becomes blocked or narrowed (stenosis), preventing stroke.
 ### evolution
 The human brain has evolved far beyond other primates to enable advanced cognitive processing:
 - The prefrontal cortex has evolved to be much larger
