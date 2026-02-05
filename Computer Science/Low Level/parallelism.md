@@ -14,6 +14,11 @@ In general, our runtime is composed of three factors:
 2. The number of cycles per instruction
 3. The time of each cycle -> cannot be sped up, the absolute limit is the speed of light
 
+At scale, Python tasks fall into two main bins:
+- **I/O bound**: frequent operations like [[network]] requests, reading/writing to [[file systems]], or querying [[databases]], wherein the program is waiting for external resources
+	- Solution: [[threads#multithreading|multithreading]], asyncio
+- **CPU bound**: computation-heavy operations and data processing that max out CPU cycles
+	- Solution: multiprocessing
 ### python multiprocessing pool
 Pool is a class provided in the Python standard library designed to enable parallelism in **CPU-bound** tasks by leveraging multiple CPU cores or processors. 
 
