@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week log.md",
+                "file": "Computer Science/Low Level/parallelism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week log"
+              "title": "parallelism"
             }
           }
         ],
@@ -185,6 +185,9 @@
   },
   "active": "5363cf8c97fb7f16",
   "lastOpenFiles": [
+    "Computer Science/Low Level/threads.md",
+    "Computer Science/Low Level/parallelism.md",
+    "week log.md",
     "Cognitive Science/cognitive neuroscience.md",
     "Cognitive Science/Psychology/cognitive psychology.md",
     "Cognitive Science/circadian rhythm.md",
@@ -202,11 +205,8 @@
     "Cognitive Science/Psychology",
     "Cognitive Science/Psychology/behaviorism.md",
     "Cognitive Science/cognitive development.md",
-    "Computer Science/Low Level/parallelism.md",
-    "Computer Science/Low Level/threads.md",
     "Computer Science/Low Level/scheduling.md",
     "Machine Learning/ML Systems/model scaling.md",
-    "week log.md",
     "Research/recruiting.md",
     "Machine Learning/Artificial Intelligence/markov decision processes.md",
     "Research/ai scribes.md",

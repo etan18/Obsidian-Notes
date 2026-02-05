@@ -22,9 +22,9 @@ At scale, Python tasks fall into two main bins:
 ### python multiprocessing pool
 Pool is a class provided in the Python standard library designed to enable parallelism in **CPU-bound** tasks by leveraging multiple CPU cores or processors. 
 
-Python's **global interpreter lock** (GIL) is a [[threads#synchronization|synchronization]] mechanism that allows only one thread to execute Python bytecode in the interpreter at any given time, even across multiple [[processes]]. Pool side-steps the GIL by instantiating separate processes each with their *own* interpreter and [[virtual memory]] space.
-
->[!info] Running a Python Program
+>[!info] Python Global Interpreter Lock
+>Python's **global interpreter lock** (GIL) is a [[threads#synchronization|synchronization]] mechanism that allows only one thread to execute Python bytecode in the interpreter at any given time, even across multiple [[processes]]. Pool side-steps the GIL by instantiating separate processes each with their *own* interpreter and [[virtual memory]] space.
+>
 >Every Python program (or program in general) is a process which spawns one thread called the `main` thread used to execute program instructions.
 
 A **process pool** manages a fixed number of worker processes. When running a program, it can be advantageous to create a pool of workers and keep them around to pick up ad-hoc tasks rather than always instantiating and destroying a new worker process for each peripheral task.
@@ -64,3 +64,10 @@ if result.ready():
 else:
 	result.wait()
 ```
+
+
+## asyncio
+While multi-threading is one solution for I/O-bound tasks, because of the Python GIL it can still be suboptimal for high-concurrency I/O tasks. `asyncio` is a Python standard library that enables scalable concurrency while still running in a single thread (i.e. bad for CPU-bound tasks) through two main operations:
+- `async`: the `async` keyword is used before the normal function header for defining asynchronous functions, also known as **coroutines**, allowing for non-blocking I/O operations
+- `await`: the `await` keyword pauses coroutines without blocking the event loop, allowing other tasks to run during I/O waits.
+The **event loop** is the core of the Asyncio interface, responsible for running coroutines.

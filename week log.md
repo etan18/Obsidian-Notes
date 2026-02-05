@@ -9,6 +9,3 @@
 
 
 ## daily productivity
-- [X] HCI reading
-- [x] sec2 slides
-- [x] anatomy quiz draft
