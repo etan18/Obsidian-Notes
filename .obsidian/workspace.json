@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/data addition dilemma.md",
+                "file": "week log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data addition dilemma"
+              "title": "week log"
             }
           }
         ],
@@ -199,6 +199,7 @@
   },
   "active": "5e1e5940b9aa8c34",
   "lastOpenFiles": [
+    "Research/data addition dilemma.md",
     "week log.md",
     "Machine Learning/imitation learning.md",
     "Homework 1 Report.md",
