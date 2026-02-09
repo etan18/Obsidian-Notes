@@ -35,10 +35,18 @@ S = self_term + sum_{i=1}^t <RFF(x), GLOBAL >  +  <RFF(x), COUNTER FOR i>
 Outcome: comparable to CatBoost, but models are poorly calibrated (and have low AUC and R^2 values)
 
 
+---
+
+Current problem: 
+- K29 classifiers are poor discriminators (low AUC, R^2) out of the box
+	- Solved by including $p$ inside of Gaussian features. At this point, ACC is still lower than Catboost baseline
+- Multi-scale gamma
+- pos weighting throws off calibration and AUC
+- Currently trying: lr, weight decay
+
 #### catboost + k29
 1. Catboost with Gaussian kernel features
 2. Online random forests ([Mondrian Forests](https://proceedings.neurips.cc/paper_files/paper/2014/file/195c9c0797f42473f2c2f922c4cf52cf-Paper.pdf)) - performs worse
-	1. Can try with Gaussian features (currently running)
 3. K29 with Catboost prediction passed in as a feature.
 4. **combination: train catboost up to a certain point, then switch to k29**
 	- [ ] **does catboost R^2 flatten out at some point?**
