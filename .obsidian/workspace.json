@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Low Level/systems design.md",
+                "file": "week log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "systems design"
+              "title": "week log"
             }
           },
           {
@@ -63,7 +63,8 @@
               "title": "systems design"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,19 +211,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aa233ced624ef7a8",
+  "active": "5363cf8c97fb7f16",
   "lastOpenFiles": [
-    "week log.md",
+    "Computer Science/io.md",
     "unfinished/systems & networking prep.md",
+    "Computer Science/Low Level/operating system.md",
+    "Computer Science/Low Level/systems design.md",
+    "week log.md",
     "Research/recruiting.md",
     "Cognitive Science/cognitive neuroscience.md",
     "Cognitive Science/Psychology/cognitive psychology.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
-    "Computer Science/Low Level/systems design.md",
     "Computer Science/Low Level/scheduling.md",
     "Computer Science/Low Level/processes.md",
-    "Computer Science/io.md",
-    "Computer Science/Low Level/operating system.md",
     "Computer Science/Low Level/parallelism.md",
     "Research/data addition dilemma.md",
     "Machine Learning/imitation learning.md",

@@ -13,7 +13,3 @@
 TODO: scribes
 - [ ] bin by ppl-zlib ratio, train primary diagnosis baseline predictors for each compare acc/performance
 - [ ] recompute ppl-zlib ratio using clinical finetuned model
-
-
-# Spreadsheet Data Manipulation Using Examples
-I don't know that programming by example is necessarily a more intuitive interface than natural language, which makes me wonder if this methodology will stand up in the LLM/agents era.

@@ -12,7 +12,8 @@ In order for a computer to interact with a specific type of device, the OS must 
 Device interfaces can have various timing mechanisms as well.
 - **Synchronous**: also known as *blocking* interfaces, these devices wait until an I/O request is fulfilled
 - **Non-blocking**: return quickly from a request without waiting
-- **Asynchronous**: allow for other processing to continue without waiting
+	- Polling, interrupts, signals, spinning
+	- **Asynchronous**: allow for other processing to continue without waiting
 
 ### blocking interfaces
 Calling an API that requests data from IO will cause the running thread to **block**---i.e. it is waiting until the requested data has returned to the caller. 

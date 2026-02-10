@@ -206,3 +206,22 @@ async def main():
 
 asyncio.run(main())
 ```
+
+- `result = await asyncio.to_thread(blocking_function, *args)`
+	- offload a blocking function to another thread. the thread does not schedule until `await` is called on it.
+	- Alternative: wrap it in a task to schedule it now and `await` later 
+```
+task = asyncio.create_task(asyncio.to_thread(blocking_function, *args))
+... ...
+result = await task
+```
+
+- `asyncio.run(main())`
+	- Creates the event loop and handles cleanup
+- `asyncio.create_task()`:
+	- Schedules a coroutine immediately
+	- Returns a Task object
+- `asyncio.gather(*iterable, return_exceptions=True)`:
+	- Awaits multiple awaitables
+	- Aggregates results
+	- Cancels remaining tasks if one fails (by default)
