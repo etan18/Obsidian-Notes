@@ -167,3 +167,35 @@ In terms of technical skills:
 - Solid understanding of how computers work, kernels, operating systems, tools to introspect what they are all doing. This is the vmstat/iostat/netstat/atop sort of system introspection commands, **understanding /proc data such as smaps/fd/etc**, data and memory allocation in heap/stack/data segment, **objdump/ldd/etc stuff, profiling tools**, ...
 - Solid understanding of how networks work, the responsibilities and duties of various devices, the kernel, and userland processes, **failure cases (bad link quality/packet loss, misbehaving/broken devices doing full packet drops or forgetting connections or rehashing to a different flow) and the responses to those failure cases**, understanding of flow/congestion control.
 - Ability to write good, idiomatic, code in various languages, in the prevailing style of an existing codebase (or company style, even if you dislike it), and to be able to conceptualise the working of the large code bases.
+
+---
+# concurrency
+
+#### synchronization
+
+
+
+#### asyncio
+
+```
+import asyncio
+import aiohttp
+
+async def fetch_url(session, url):
+    async with session.get(url) as response:
+        return await response.text()
+
+async def main():
+    urls = [
+        'https://example.com',
+        'https://httpbin.org/get',
+        'https://python.org'
+    ]
+    async with aiohttp.ClientSession() as session:
+        tasks = [fetch_url(session, url) for url in urls]
+        results = await asyncio.gather(*tasks)
+        for i, content in enumerate(results):
+            print(f"URL {urls[i]} returned {len(content)} characters")
+
+asyncio.run(main())
+```

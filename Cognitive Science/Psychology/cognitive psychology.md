@@ -7,3 +7,4 @@ Some key topics in cognitive psychology include:
 
 At its core, there is a relationship between how we process information and how information is represented internally.
 
+Pharmacology: the study of drugs, manipulating neurotransmitters

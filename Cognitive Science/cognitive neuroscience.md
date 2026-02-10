@@ -24,3 +24,17 @@ Neural stimulation is a method of manually modulating action potentials in the b
 
 Neuropixel probes (microlevel mapping)
 Human connectome (macrolevel mapping)
+
+>[!info] FDA Approval
+>The standard for approving drugs and treatments is that the method must only
+>1. Do no harm
+> 2. Demonstrate improvement from placebo
+
+### brain stimulation
+There are three primary methods of non-invasive brain stimulation for humans:
+1. **Transcranial magnetic stimulation** (TMS): giant capacitor
+	- Animal studies show there are no lasting changes in cell viability even from high stimulation rates.
+	- Used for treatment of depression (repeated stimulation of the prefrontal cortex)
+2. **Transcranial electrical stimulation** (tES)
+3. **Transcranial focused ultrasound stimulation** (tFUS)
+These methods transiently perturb brain function from the outside of the skull, where disruption has limited spatial and temporal effect. These methods differ in the medium which is used for stimulation (magnetic field, electrical current, sound waves). 
