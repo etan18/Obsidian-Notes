@@ -173,7 +173,14 @@ In terms of technical skills:
 
 #### synchronization
 
+```
+import threading
 
+lock = threading.Lock()
+lock.acquire()
+...
+lock.release()
+```
 
 #### asyncio
 

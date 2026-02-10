@@ -2,6 +2,9 @@
 
 Computer systems is a sub-field of computer science that involves low-level implementations like the [[operating system]], [[compiler]], databases, and distributed systems.
 
+>[!tip] Occam's Razor
+>Occam's razor is a problem-solving principle, also called the principle of parsimony, that suggests the simplest explanation requiring the fewest assumptions is usually the best, or "shaves away" unnecessary complexity.
+
 Systems design deals with multiple interrelated and interacting parts.
 ### programming languages
 Not all programming languages are designed for writing systems software. Some properties of a good systems language include

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cognitive Science/cognitive neuroscience.md",
+                "file": "Computer Science/Low Level/systems design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cognitive neuroscience"
+              "title": "systems design"
             }
           },
           {
@@ -212,10 +212,11 @@
   },
   "active": "aa233ced624ef7a8",
   "lastOpenFiles": [
-    "Cognitive Science/Psychology/cognitive psychology.md",
+    "week log.md",
     "unfinished/systems & networking prep.md",
     "Research/recruiting.md",
-    "week log.md",
+    "Cognitive Science/cognitive neuroscience.md",
+    "Cognitive Science/Psychology/cognitive psychology.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "Computer Science/Low Level/systems design.md",
     "Computer Science/Low Level/scheduling.md",
@@ -232,7 +233,6 @@
     "Pasted image 20260208003539.png",
     "Machine Learning/Artificial Intelligence/agents.md",
     "Computer Science/Low Level/threads.md",
-    "Cognitive Science/cognitive neuroscience.md",
     "Cognitive Science/circadian rhythm.md",
     "Cognitive Science/imaging.md",
     "Cognitive Science/nervous system.md",
