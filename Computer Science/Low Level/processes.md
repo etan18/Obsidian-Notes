@@ -35,7 +35,7 @@ As a process executes, it changes between various states:
 1. **New**: the process is being created
 2. **Ready**: the process is waiting to run
 3. **Running**: instructions are being executed
-4. **Waiting**: the process is waiting for some event to occur (e.g. I/O or event completion)
+4. **Waiting**: the process is waiting for some event to occur (e.g. [[io|I/O]] or event completion)
 5. **Terminated**: the process has finished execution
 
 ### inter-process communication

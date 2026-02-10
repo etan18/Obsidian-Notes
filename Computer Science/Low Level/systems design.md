@@ -17,7 +17,7 @@ Not all programming languages are designed for writing systems software. Some pr
 
 In general, a system should be designed to comprise of a small number of basic elements that can be combined in an infinite variety of ways. A basic guideline in support of this is to make it such that every program should just do one thing very well. For example, the `ls` program produces listings, `cp` copies files, and so on without overlap in function among programs.
 #### uniformity
-All I/O is regularized behind a single common interface. 
+All [[io|I/O]] is regularized behind a single common interface. 
 - Open before use
 	- metadata bookkeeping, implement checks
 - Everything is a file: at the lowest level, a file is just a collection of bytes

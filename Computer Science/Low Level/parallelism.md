@@ -64,10 +64,3 @@ if result.ready():
 else:
 	result.wait()
 ```
-
-
-## asyncio
-While multi-threading is one solution for I/O-bound tasks, because of the Python GIL it can still be suboptimal for high-concurrency I/O tasks. `asyncio` is a Python standard library that enables scalable concurrency while still running in a single thread (i.e. bad for CPU-bound tasks) through two main operations:
-- `async`: the `async` keyword is used before the normal function header for defining asynchronous functions, also known as **coroutines**, allowing for non-blocking I/O operations
-- `await`: the `await` keyword pauses coroutines without blocking the event loop, allowing other tasks to run during I/O waits.
-The **event loop** is the core of the Asyncio interface, responsible for running coroutines.

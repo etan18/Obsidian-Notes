@@ -48,22 +48,3 @@ There are three types of kernel mode transfer, which trigger a toggle between th
 >32-bit 80x86 [[unix]] systems use a standard [[x86#calling convention|calling convention]] to make syscalls. The high level procedure is that the calling user program should place the argument values into predefined registers (or sometimes pushes them onto the stack), and then executes a trap instruction to switch into kernel mode. The trap instructions are provided by libraries, since there is no way to write a trap instruction in C.
 >
 >Once the kernel finishes execution, it places the returned value(s) in predefined registers for the userprog to read. The execution of the system call should leave no trace or make no modifications that are not specified by the documentation.
-
----
-## i/o
-
-Input/Output (I/O) operations, at a high level, are anything that involves reading or writing data. 
-
-I/O implementations typically have clean and easy-to-use interfaces. In [[unix]]-based systems, they are typically integrated as virtual [[file systems]]. However, because of the hardware cooperation necessary to perform I/O operations, they are typically extremely difficult to implement.
-
-Types of I/O Devices:
-- **Character devices**: access data as a character stream (i.e. data not addressable)
-- **Block devices**: access data in fixed-sized blocks (i.e. data is addressable)
-	- Enables seeks and random accesses
-- **Network devices**: have a separate interface for [[network]] purposes
-In order for a computer to interact with a specific type of device, the OS must implement **device drivers**, which are a special type of software that allows the OS kernel to interact with hardware devices.
-
-Device interfaces can have various timing mechanisms as well.
-- **Synchronous**: also known as *blocking* interfaces, these devices wait until an I/O request is fulfilled
-- **Non-blocking**: return quickly from a request without waiting
-- **Asynchronous**: allow for other processing to continue without waiting
