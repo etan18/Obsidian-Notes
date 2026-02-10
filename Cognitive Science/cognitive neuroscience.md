@@ -35,6 +35,8 @@ There are three primary methods of non-invasive brain stimulation for humans:
 1. **Transcranial magnetic stimulation** (TMS): giant capacitor
 	- Animal studies show there are no lasting changes in cell viability even from high stimulation rates.
 	- Used for treatment of depression (repeated stimulation of the prefrontal cortex)
-2. **Transcranial electrical stimulation** (tES)
+2. **Transcranial electrical stimulation** (tES): low-intensity current applied to scalp changes the excitability of neurons
+	- Anodal electrode: puts neurons closer to threshold (more excitable)
+	- Cathodal electrode: puts neurons farther from threshold (less excitable)
 3. **Transcranial focused ultrasound stimulation** (tFUS)
 These methods transiently perturb brain function from the outside of the skull, where disruption has limited spatial and temporal effect. These methods differ in the medium which is used for stimulation (magnetic field, electrical current, sound waves). 
