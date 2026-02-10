@@ -217,7 +217,7 @@ result = await task
 ```
 
 - `asyncio.run(main())`
-	- Creates the event loop and handles cleanup
+	- Creates the event loop and handles cleanup - pass top-level entrypoint
 - `asyncio.create_task()`:
 	- Schedules a coroutine immediately
 	- Returns a Task object

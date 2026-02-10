@@ -37,13 +37,10 @@ Python's `multiprocessing.Pool` class provides a process pool interface to execu
 Tasks are submitted to the Pool as functions, and can be submitted synchronously or asynchronously.
 - **Synchronous**: caller will block until the submitted task(s) is completed
 ```
-pool = multiprocessing.pool.Pool(processes=N)
-
-result = pool.apply(task, args, kwargs) # submit single task
-results = pool.map(task, items)         # parallelize repeated tasks
-results = pool.starmap(task, data)      # map function w/ args
-
-pool.close()
+with multiprocessing.Pool(processes=N) as pool:
+	result = pool.apply(task, args, kwargs) # submit single task
+	results = pool.map(task, items)         # parallelize repeated tasks
+	results = pool.starmap(task, data)      # map function w/ args
 ```
 
 - **Asynchronous**: caller continues working and checks the result when it is needed
