@@ -54,3 +54,10 @@ Current problem:
 
 - **per-hospital feature maps**
 - **concatenate p before applying rff transform** 
+
+
+TODO:
+- [ ] plot histogram of p by prediction labels
+- [ ] plot confidence intervals by p bins
+	- https://www.statsmodels.org/dev/generated/statsmodels.stats.proportion.proportion_confint.html
+		- method = "binom_test"
