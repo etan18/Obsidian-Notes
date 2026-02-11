@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/data addition dilemma.md",
+                "file": "week log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data addition dilemma"
+              "title": "week log"
             }
           }
         ],
@@ -213,6 +213,7 @@
   },
   "active": "10da868e0fa3a13b",
   "lastOpenFiles": [
+    "Research/data addition dilemma.md",
     "Machine Learning/Paper Summaries/defensive forecasting.md",
     "week log.md",
     "unfinished/systems & networking prep.md",
@@ -227,7 +228,6 @@
     "Cognitive Science/Psychology/cognitive psychology.md",
     "Computer Science/Low Level/scheduling.md",
     "Computer Science/Low Level/processes.md",
-    "Research/data addition dilemma.md",
     "Machine Learning/imitation learning.md",
     "Homework 1 Report.md",
     "human computer interaction.md",
