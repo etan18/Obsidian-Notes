@@ -180,6 +180,19 @@ lock = threading.Lock()
 lock.acquire()
 ...
 lock.release()
+
+sema = threading.Semaphore(initial_value)
+sema.acquire()     # sema value -= 1
+...                # sema blocks if initial_value = 0
+sema.release()     # sema value += 1
+
+
+event = threading.Event()
+event.wait(timeout=10)   # calling thread blocks until event is set 
+                         # or (optional) timeout expires (have to check which)
+event.set()              # set event flag to True, unblock waiting threads
+event.clear()            # reset event flag to False for reuse
+
 ```
 
 #### asyncio

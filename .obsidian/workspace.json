@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Low Level/systems design.md",
+                "file": "unfinished/systems & networking prep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "systems design"
+              "title": "systems & networking prep"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -211,16 +211,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5363cf8c97fb7f16",
+  "active": "10da868e0fa3a13b",
   "lastOpenFiles": [
-    "law of large numbers.md",
-    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
+    "Computer Science/Low Level/systems design.md",
+    "Computer Science/Low Level/operating system.md",
     "week log.md",
+    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
+    "law of large numbers.md",
     "Computer Science/Low Level/parallelism.md",
     "unfinished/systems & networking prep.md",
     "Computer Science/io.md",
-    "Computer Science/Low Level/operating system.md",
-    "Computer Science/Low Level/systems design.md",
     "Research/recruiting.md",
     "Cognitive Science/cognitive neuroscience.md",
     "Cognitive Science/Psychology/cognitive psychology.md",
