@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Low Level/parallelism.md",
+                "file": "Machine Learning/Artificial Intelligence/reinforcement learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "parallelism"
+              "title": "reinforcement learning"
             }
           },
           {
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "i/o",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -213,18 +213,19 @@
   },
   "active": "5363cf8c97fb7f16",
   "lastOpenFiles": [
+    "law of large numbers.md",
+    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
+    "week log.md",
+    "Computer Science/Low Level/parallelism.md",
     "unfinished/systems & networking prep.md",
     "Computer Science/io.md",
     "Computer Science/Low Level/operating system.md",
     "Computer Science/Low Level/systems design.md",
-    "week log.md",
     "Research/recruiting.md",
     "Cognitive Science/cognitive neuroscience.md",
     "Cognitive Science/Psychology/cognitive psychology.md",
-    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "Computer Science/Low Level/scheduling.md",
     "Computer Science/Low Level/processes.md",
-    "Computer Science/Low Level/parallelism.md",
     "Research/data addition dilemma.md",
     "Machine Learning/imitation learning.md",
     "Homework 1 Report.md",
@@ -240,7 +241,6 @@
     "Cognitive Science/language.md",
     "Cognitive Science/memory.md",
     "Cognitive Science/Computational Modeling/learning.md",
-    "Cognitive Science/aphasia.md",
     "Cognitive Science/Psychology",
     "Cognitive Science/Psychology",
     "Computer Science/Algorithms",

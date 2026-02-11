@@ -18,7 +18,7 @@ Training an RL agent typically involves a few key aspects:
 ### model-based learning
 Model-based learning builds off of [[markov decision processes]]. The key difference here is that we don't know the *transition probabilities* $T(s, a, s')$ or the reward function of each state, so we have to estimate it empirically. This is also known as **online learning**, as opposed to *offline planning* that we see in MDPs. Examples of model-based learning include [[q-learning]].
 
-The estimated transition function $\hat{T}(s, a, s')$ is calculated simply by observing the fraction of times that an agent lands in state $s'$ after taking action $a$ from state $s$. By [[law of large numbers]], we can prove that $\hat{T} \longrightarrow T$ as our number of samples $n \rightarrow \infty$. 
+The estimated transition function $\hat{T}(s, a, s')$ is calculated simply by observing the fraction of times that an agent lands in state $s'$ after taking action $a$ from state $s$. By law of large numbers, we can prove that $\hat{T} \longrightarrow T$ as our number of samples $n \rightarrow \infty$. 
 
 ### model-free learning
 ###### passive reinforcement learning
