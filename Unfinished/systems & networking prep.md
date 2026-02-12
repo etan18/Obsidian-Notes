@@ -238,3 +238,59 @@ result = await task
 	- Awaits multiple awaitables
 	- Aggregates results
 	- Cancels remaining tasks if one fails (by default)
+
+### parallelism
+**Multiprocessing**
+```
+import multiprocessing as mp
+
+# ONE CHILD EXAMPLE
+def child_process(arg1, arg2):
+	...
+	return 
+	
+process = multiprocessing.Process(target=child_process, args=(arg1, arg2))
+
+# fork and execute the child process
+process.start()
+
+# caller is blocked until process terminates
+process.join(timeout=optional_int)
+
+```
+
+- `process.exitcode`
+- `process.is_alive()`
+
+### Multiprocessing Pool
+**Synchronous**: caller will block until the submitted task(s) is completed
+```
+with multiprocessing.Pool(processes=N) as pool:
+	result = pool.apply(task, args, kwargs)          # submit single task
+	results = pool.map(task, lst, chunksize=n)       # parallelize repeated tasks
+	results = pool.starmap(task, lst_of_tuples)      # map function w/ args	
+```
+
+- `results = pool.imap(task, lst, chunksize=n)`
+- `results = pool.imap_unordered(tasl, lst, chunksize=n)`
+	- Iterable, async, memory efficient
+	- Can process result from one element/chunk as soon as available, don't need to wait for whole iterable to be processed
+	- use when iterable is large enough that converting it to a list would cause you to run out of/use too much memory.
+
+- **Asynchronous**: caller continues working and checks the result when it is needed
+	- Returns an `AsyncResult` object, which can be used to check the status of the task or read the final result if it is completed
+```
+result = pool.map_async(task, items)
+
+# keep working
+...
+
+# when needed, wait for issued task to complete
+result.wait(timeout=50)
+
+# we don't know if wait returned due to completion or timeout
+if result.ready(): 
+	value = result.get() # blocks if result not ready yet
+	# continue with code
+else:
+	result.wait()

@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cognitive Science/imaging.md",
+                "file": "unfinished/data structures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "imaging"
+              "title": "data structures"
             }
           }
         ],
@@ -213,10 +213,13 @@
   },
   "active": "10da868e0fa3a13b",
   "lastOpenFiles": [
+    "unfinished/systems & networking prep.md",
+    "Computer Science/Low Level/operating system.md",
+    "Computer Science/Low Level/parallelism.md",
+    "Cognitive Science/imaging.md",
     "Cognitive Science/nervous system.md",
     "Cognitive Science/brain waves.md",
     "Cognitive Science/cognitive neuroscience.md",
-    "Cognitive Science/imaging.md",
     "Cognitive Science/sleep.md",
     "Cognitive Science/Perception/optics.md",
     "Cognitive Science/consciousness.md",
@@ -225,12 +228,9 @@
     "Research/ai scribes.md",
     "Research/data addition dilemma.md",
     "Machine Learning/Paper Summaries/defensive forecasting.md",
-    "unfinished/systems & networking prep.md",
     "Computer Science/Low Level/systems design.md",
-    "Computer Science/Low Level/operating system.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "law of large numbers.md",
-    "Computer Science/Low Level/parallelism.md",
     "Computer Science/io.md",
     "Research/recruiting.md",
     "Cognitive Science/Psychology/cognitive psychology.md",
