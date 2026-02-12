@@ -239,6 +239,10 @@ result = await task
 	- Aggregates results
 	- Cancels remaining tasks if one fails (by default)
 
+![[Pasted image 20260212123336.png]]
+
+**concurrent.futures**
+![[Pasted image 20260212124800.png]]
 ### parallelism
 **Multiprocessing**
 ```
@@ -294,3 +298,5 @@ if result.ready():
 	# continue with code
 else:
 	result.wait()
+
+```

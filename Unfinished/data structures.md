@@ -6,6 +6,20 @@
 	- left pointer = 0, right pointer = len(lst) - 1
 	- while left < right: check condition
 
+- **lst.sort()** (in place), **sorted(lst)** (copy)
+	- N log N time complexity
+	- key = sort function, reverse = True if descending (ascending default)
+
+`import bisect`
+Given a sorted list:
+Bisect O(log n)
+- `bisect_left(sorted_list, new_item, key=Optional_fn) --> leftmost insertion index`
+- `bisect_right(sorted_list, new_item) --> rightmost insertion index`
+Insort = Insert O(n) + Search O(log n) = O(n)
+- `insort(sorted_list, new_item, key=Optional_search_fn) --> None` , inserts new_item into sorted_list in place
+	- Does insort_right, insort_left also exists
+
+	
 
 **Heap & Priority Queue**
 - `import heapq`
@@ -20,6 +34,22 @@ heapq.heapify(listForTree)             # for a min heap
 heapq._heapify_max(listForTree)        # for a maxheap!!
 ```
 
+`from collections import ...`
+- **deque** (double ended queue)
+	- append, pop, appendleft, popleft
+	- `rotate(n)`: rotates n elements right (or left if negative)
+	- `deque(maxlen=Optional_int)`: once maxlen reached, evict from other side
+
+`import heapq`
+- **heapq** (heap queue)
+	- heapq.heapify(lst): list to min-heap (or heapify_max(lst))
+	- heapq.heappush(heap, item)
+	- heapq.heappop(heap): if heap is empty, [`IndexError`](https://docs.python.org/3/library/exceptions.html#IndexError "IndexError") is raised. To access the smallest item without popping it, use `heap[0]`.
+
+General purpose functions (not heapq, but use heap for efficiency)
+	- heapq.merge(lst, lst2, ..., key=None, reverse=False) --> iterable: merge n sorted lists 
+		- If reverse=True, lsts must also be sorted in descending order
+	- nlargest(n, iterable, key=None): or nsmallest
 
 **Set**
 Basic syntax: 
