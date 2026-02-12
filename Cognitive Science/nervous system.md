@@ -16,6 +16,12 @@ The **central nervous system** (CNS) consists of the brain and spinal cord and i
 - **Stem cells**: early-stage cells which have not developed a specialization or cell type yet
 - GPLD1 is an enzyme found in serum (blood) that has also been [linked](https://pmc.ncbi.nlm.nih.gov/articles/PMC7879650/) to promoting neurogenesis
 
+#### autonomic nervous system
+The **autonomic nervous system** refers to the parts of the nervous system which control involuntary physiological processes---heart rate, blood pressure, breathing, among others. It is complementary to the **somatic nervous system**, which is in charge of voluntary movements and motor control. The ANS is comprised of two components:
+1. **Sympathetic nervous system**: fight or flight
+2. **Parasympathetic nervous system**: rest and digest
+	1. Vagus nerve: carries signals between brain, heart, and digestive system. It is key in regulating heart rate, breathing, and digestion.
+
 ## anatomy of the brain
 The brain, or **cerebral cortex**, is organized in two hemispheres (left and right), and contains four main lobes.
 - **Frontal**: houses the primary motor cortex

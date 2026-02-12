@@ -2,7 +2,7 @@
 
 Anatomically, the thalamus is thought to be important for human consciousness.
 >[!note] the 40 hertz hypothesis
-Consciousness is synchronized waves of neuronal firing at a frequency of 40 times per second in gamma waves, starting at the thalamus and moving from the front to the back of the brain
+Consciousness is synchronized [[brain waves]] of neuronal firing at a frequency of 40 times per second in gamma waves, starting at the thalamus and moving from the front to the back of the brain
 
 >[!note] emergent property
 Consciousness is not focused in a component or part of the brain, rather it is the result of a complex system.

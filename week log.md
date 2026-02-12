@@ -13,3 +13,9 @@
 TODO: scribes
 - [ ] bin by ppl-zlib ratio, train primary diagnosis baseline predictors for each compare acc/performance
 - [ ] recompute ppl-zlib ratio using clinical finetuned model
+
+
+Next week:
+- Group meeting
+	- https://cseweb.ucsd.edu/~yuxiangw/classes/AIsafety-2025Fall/Lectures/Lecture10_model_collapse.pdf
+- HCI Discussant

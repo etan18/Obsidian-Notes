@@ -25,7 +25,7 @@ Stages 3 and 4 are sometimes grouped together and just known as **slow-wave slee
 - Occipital cortex - complex visual processing
 Critically, the lateral prefrontal cortex is *deactivated* during REM. This area controls logical reasoning.
 
-During REM, we can measure distinctive electrical brain bursts known as **PGO waves**. These waves are detected in sequential order in the **pons** (brainstem), followed by the lateral **geniculate** nucleus (thalamus), and finally the **occipital** lobe. PGO waves are associated with scene changes in dreams
+During REM, we can measure distinctive electrical brain bursts known as **PGO waves**. These [[brain waves]] are detected in sequential order in the **pons** (brainstem), followed by the lateral **geniculate** nucleus (thalamus), and finally the **occipital** lobe. PGO waves are associated with scene changes in dreams
 
 ### sleep ontogeny
 *Ontogeny* is the process of an organism's development across its lifetime. Sleep habits develop and change across the span of human's lifetime. Most prominently, the sleep patterns of infants differs greatly from adulthood:
@@ -137,7 +137,7 @@ How sleep affects critical aspects of cognition has been rigorously empirically 
 - Sleep within 24 hours is necessary for memories to be consolidated (for the memories to "stick")
 - NREM slow wave sleep quantity and quality are both correlated with retention of declarative memories
 - Sleep, particularly REM sleep, may help us abstract or generalize learned concepts better
-- Transcranial direct current simulation (tDCS) is an experimental technique which places electrodes on the forehead to amplify slow waves in the prefrontal cortex. This procedure, theoretically, could help increase slow wave sleep and thus enhance the consolidation of declarative memories.
+- Transcranial direct current simulation (tDCS) is a [[brain waves#brain stimulation|brain stimulation]] technique which places electrodes on the forehead to amplify slow waves in the prefrontal cortex. This procedure, theoretically, could help increase slow wave sleep and thus enhance the consolidation of declarative memories.
 - There has not been a psychological condition which is not associated with abnormal sleep.
 
 #### sleep deprivation 
