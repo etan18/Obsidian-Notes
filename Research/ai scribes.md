@@ -45,7 +45,8 @@ prediction experiment setups that would make sense:
 - emrQA and EHRNoteQA: question templates, filled in using LLM
 	- Labeled datasets
 - Clinical note rubrics are subjective: [PDQI-9](https://pmc.ncbi.nlm.nih.gov/articles/instance/3633322/bin/ACI-03-0164-s001.pdf) and [UNC Pharm](https://faopharmacy.unc.edu/wp-content/uploads/sites/200/2015/05/SOAP-Rubric-October-2012.pdf)
-- Hypothesis: ai-generated notes have the potential to achieve better training data quality than human notes (structured, more templated, parsable?) assuming human-level accuracy *and* precision of information contained. We are not there yet 
+- Hypothesis: ai-generated notes have the potential to achieve better training data quality than human notes (structured, more templated, parsable?) assuming human-level accuracy *and* precision of information contained. We are not there yet
+	- hypothesis: scribe notes are better for extraction tasks, but worse for predictive tasks 
 	- Ideal outcome: ACC(f_scribe) < ACC(f_human) < ACC(f_scribe_edited)
 
 Our setup:
