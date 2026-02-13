@@ -8,3 +8,8 @@ Cognition in the Wild (1995)
 - minimize cognitive load
 - convey functionality through recognizable objects, images, skills
 - trust as a design target
+
+
+## qualitative studies
+
+**Think aloud studies** are a qualitative method used for usability testing to understand user behavior. Participants are asked to complete a task but to verbalize whatever comes to their mind as they work to complete it.
