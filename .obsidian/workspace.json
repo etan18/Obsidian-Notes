@@ -49,7 +49,8 @@
               "title": "graph theory"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,10 +198,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e1e5940b9aa8c34",
+  "active": "10da868e0fa3a13b",
   "lastOpenFiles": [
-    "Computer Science/Algorithms/graph theory.md",
     "unfinished/data structures.md",
+    "Computer Science/Algorithms/graph theory.md",
     "unfinished/systems & networking prep.md",
     "Research/recruiting.md",
     "Computer Science/databases.md",
