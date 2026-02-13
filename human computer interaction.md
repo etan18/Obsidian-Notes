@@ -1,7 +1,4 @@
 
-Norman, The Design of Everyday Things (1988)
-- defines the problem of ensuring the user's mental model corresponds to the designer's true model
-
 Cognition in the Wild (1995)
 
 #### ui design principles
@@ -9,6 +6,9 @@ Cognition in the Wild (1995)
 - convey functionality through recognizable objects, images, skills
 - trust as a design target
 
+#### mental models
+Norman, *The Design of Everyday Things* (1988)
+- defines the problem of ensuring the user's mental model corresponds to the designer's true model
 
 ## qualitative studies
 

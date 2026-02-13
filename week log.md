@@ -14,6 +14,9 @@ TODO: scribes
 - [ ] bin by ppl-zlib ratio, train primary diagnosis baseline predictors for each compare acc/performance
 - [ ] recompute ppl-zlib ratio using clinical finetuned model
 
+- lab meeting next week on model collapse
+- impacc meeting
+
 
 Next week:
 - Group meeting
