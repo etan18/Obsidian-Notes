@@ -24,7 +24,8 @@ The return on an investment for someone with a bond-like investment is based on 
 
 ## stocks
 The return on an investment for shareholders is based on the **dividends** payments receive, as well as the **capital appreciation**.
-- Dividends are the stockholder's share of the profits
+- Dividends are the stockholder's share of the profits, which are distributed on a regular schedule (typically quarterly)
+	- Dividends are commonly **reinvested** to accumulate more shares over time.
 - Capital appreciation (or depreciation) is the change in value of a stockholder's share of the company
 Stock funds face infrequent, but large losses. In general, stocks are much riskier investments than bonds.
 
@@ -48,6 +49,11 @@ Many of these are **common factors**, meaning that if they impact one company's 
 The tradeoff between risk-taking and expected returns on investments is complex. Investments with higher expected returns *do* imply higher risk, but not all high risk investments necessarily expect high returns. 
 - Market forces guarantee this tradeoff - if a company had low risk and high returns, over-buying of stock will raise the price of shares so that the return lowers until convergence
 - However, the market does not protect against low return, high risk stocks. The market adjusts prices for common factor risks that can't be avoided through diversification, but that doesn't prevent investors from trading on speculation or taking unnecessary risks.
+
+>[!tip]+ Invert, always invert.
+>Charlie Munger, Warren Buffett's late business partner, championed the mental model of inversion when assessing an investment. Instead of asking the easy question---"how much money can I make?"---ask the *opposite*---"what needs to happen for me to not lose money, and how likely is that to happen?" 
+>
+>Essentially, focus on avoiding failure rather than just seeking success.
 
 ## other investments
 Other types of investments include

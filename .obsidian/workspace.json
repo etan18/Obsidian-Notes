@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/recruiting.md",
+                "file": "Humanities & Social Science/Personal Finance/investments.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "recruiting"
+              "title": "investments"
             }
           },
           {
@@ -183,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Networking/world wide web.md",
+                "file": "Humanities & Social Science/Personal Finance/investments.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of world wide web"
+              "title": "Outline of investments"
             }
           }
         ],
@@ -213,6 +213,8 @@
   },
   "active": "10da868e0fa3a13b",
   "lastOpenFiles": [
+    "Humanities & Social Science/Personal Finance/investments.md",
+    "Research/recruiting.md",
     "week log.md",
     "Cognitive Science/nervous system.md",
     "Cognitive Science/img/somatosensory.png",
@@ -238,8 +240,6 @@
     "Cognitive Science/brain waves.md",
     "Humanities & Social Science/behavioral economics.md",
     "Machine Learning/Artificial Intelligence/artificial intelligence.md",
-    "Cognitive Science/aphasia.md",
-    "Cognitive Science/Perception/hearing.md",
     "Pasted image 20260212123336.png",
     "Pasted image 20260212124800.png",
     "Pasted image 20260208001852.png",
