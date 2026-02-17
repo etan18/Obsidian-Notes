@@ -1,4 +1,4 @@
-#ugba135
+xp#ugba135
 
 >[!idea] Summary of Investment Basics
 >1. Invest in mutual funds or ETFs
