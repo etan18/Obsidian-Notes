@@ -34,27 +34,14 @@ final chat w/ VP AI Platform
 - high level, motivation, culture fit
 - could have some questions about technical experience
 
+Questions
+- I saw on the website that you guys  have ambitions to skill Nuro Driver to all types of vehicles. I saw things like going from the delivery stuff (I guess that was your old path) up to even trucks. I'm wondering what the focus of the company is right now: whether you're all hands-on with this tangible partnership that you already have on the books or if you're actively trying to scale into those broader avenues as well. Where effort is being concentrated right now?
+- What would you say are the biggest constraints that you guys have right now or challenges that you are facing?
+-  What's made you really buy into Nuro as a company and want to stay for the long term?
 
-### amd
-- As a primarily hardware company, what are AMD's current plans on the software AI/ML side of things?
-	- Does the company view ML development as primarily being for internal tooling or does it have plans to go to market?
-- Program
-	- What are the expectations? 
-	- Are interns working on standalone projects, or will they integrate more into day-to-day work on AI/ML teams?
-- What are you most excited about at AMD right now?
-
-Why AMD?
-- I think the way you guys are positioned now especially in this AI boom that's centered in the Bay Area is really exciting
-- So much opportunity for growth in this area
-- I want to build tools and products that are impactful to end users
-- Being from primarily academia, one of the most frustrating things is compute constraints and not really being able to scale to the level that is being demanded -- an issue that AMD certainly doesn't face given its product line
-
-Introduce yourself
-- I am currently doing research on AI for healthcare, making sure that the tools we integrate into real-world clinics are actually improving clinician load and patient care (human AI interaction)
-- One particular problem with deploying predictive clinical decision models is the differences between different hospitals (protocols, levels of care, etc.) - more of a statistical learning theory problem
-	- I previously focused on data scaling solutions for correcting distribution shift in predictive models
-	- Right now, I'm looking more at the algorithmic side of things --- distributionally-aware prediction
-
+Values
+-  ownership, hard work, and initiative
+- continuous improvement and learning from those around me 
 
 ---
 

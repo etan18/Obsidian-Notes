@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cognitive Science/nervous system.md",
+                "file": "Research/recruiting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nervous system"
+              "title": "recruiting"
             }
           },
           {
@@ -213,8 +213,9 @@
   },
   "active": "10da868e0fa3a13b",
   "lastOpenFiles": [
-    "Cognitive Science/img/somatosensory.png",
+    "week log.md",
     "Cognitive Science/nervous system.md",
+    "Cognitive Science/img/somatosensory.png",
     "Cognitive Science/brain.md",
     "Cognitive Science/Perception/visual cortex.md",
     "Cognitive Science/theory of mind.md",
