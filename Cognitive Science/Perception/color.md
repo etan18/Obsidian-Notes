@@ -5,7 +5,7 @@ What we perceive as different colors really just represents the range of wavelen
 The exact color we perceive is dependent on the reflectance of the surface we are looking at and the illumination of the [[perception#light & shadow|light]] surface.
 
 ### tri-chromatic theory
-Tri-chromatic theory is the predominantly-accepted notion for how color is encoded in the brain. It was proposed by Thomas Young and Hermann von Helmholtz in the 19th century.
+Tri-chromatic theory is the predominantly-accepted notion for how color is encoded in the [[brain]]. It was proposed by Thomas Young and Hermann von Helmholtz in the 19th century.
 
 The theory posits that there are three different types of [[visual cortex#photoreceptors|cones]], where each type is broadly tuned to a different, specific wavelength (red, blue, and green). Any color visible to humans can be formed by combining different RBG amounts.
 

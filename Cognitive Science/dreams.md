@@ -53,7 +53,7 @@ Subjects from three groups play 7 hours of Tetris over three days:
 3. amnesic patients whose hippocampus has been removed to treat epilepsy
 Subjects were repetitively woken up just after falling asleep and asked to recall what they saw in their hypnagogic dreams.
 - Novices experienced some element of Tetris in their dream at the highest rates (~70%, compared to ~50% in experts). The *novelty* of formed experiences is thus a factor in determining what we dream about.
-- Amnesia group rate was ~60%, meaning that hypnagogic dreams do not come from classical memory store (hippocampus), and must be generated from elsewhere in the brain.
+- Amnesia group rate was ~60%, meaning that hypnagogic dreams do not come from classical memory store (hippocampus), and must be generated from elsewhere in the [[brain]].
 - Participant experiences were *not episodic*, meaning they were not replays of the games they actually played. Instead, they distilled the salient aspects of the game (e.g. pieced falling or rotating)
 
 **Dream lag effect** is the observed phenomenon that episodic memories from waking life are sometimes incorporated into REM dreams, especially about 5-7 nights after the event.

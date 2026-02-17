@@ -1,4 +1,4 @@
-Brain waves are electrical currents in the brain which reflect neural activity. There are five primary types of brain waves, grouped by frequency:
+Brain waves are electrical currents in the [[brain]] which reflect neural activity. There are five primary types of brain waves, grouped by frequency:
 - **Gamma**: >30Hz
 - **Beta**: 13-30Hz
 - **Alpha**: 8-12Hz

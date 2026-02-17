@@ -1,4 +1,4 @@
-The brain is a material, physical thing that can be examined and studied empirically. The mind consists of subjective phenomena such as thoughts, feelings, and beliefs. The **mind-body problem** aims to discover the relationship between the two.
+The [[brain]] is a material, physical thing that can be examined and studied empirically. The mind consists of subjective phenomena such as thoughts, feelings, and beliefs. The **mind-body problem** aims to discover the relationship between the two.
 
 There are two primary viewpoints on the mind-body problem, monism and dualism.
 ### monism

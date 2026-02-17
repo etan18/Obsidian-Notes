@@ -6,7 +6,7 @@
 - **Pupil** is where light enters
 - **Cornea** is the transparent surface on the outside of the eye, which does most of the focusing. Because it touches air, its much stronger than the lens.
 - **Lens** is behind the cornea, used for fine-tuning (*accomodation*). It sits in an aqueous solution which dampens its lens power. 
-- The **optic disk** at the back of the eye is where the optic nerve leaves the eye to connect with the brain. This is a blind spot.
+- The **optic disk** at the back of the eye is where the optic nerve leaves the eye to connect with the [[brain]]. This is a blind spot.
 
 >[!information] Contralateral organization
 Both of our eyeballs each perceive the *entire visual field* (both left and right visual fields). However, because of the laws of [[optics]], the image they produce is inverted. Because of this, information from the right visual field (from both eyeballs) is sent to the left visual cortex for processing, and vice versa.

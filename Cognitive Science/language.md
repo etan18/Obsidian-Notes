@@ -41,7 +41,7 @@ Linguist responsible for the shift away from strictly behaviorist perspectives t
 **Wernicke’s Area** in the left posterior temporal/parietal cortex is the center of comprehension for language and speech sounds.
 
 >[!note] The Wada Test
->In most people, language is dominated in the left hemisphere. The **Wada Test** is used to determine which hemisphere a person’s language center is in. The process involves sedating one hemisphere of the brain at a time, or using [[imaging|fMRI]] to map the active regions of the brain when speaking.
+>In most people, language is dominated in the left hemisphere. The **Wada Test** is used to determine which hemisphere a person’s language center is in. The process involves sedating one hemisphere of the [[brain]] at a time, or using [[imaging|fMRI]] to map the active regions of the brain when speaking.
 
 *[[aphasia]] -* impairment of language
 *Apaxia -* inability to perform some task coherently (e.g. Broca’s Aphasia)

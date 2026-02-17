@@ -10,7 +10,7 @@ Circadian rhythms regulate
 - Urine volume
 
 >[!important] The Master Clock
->The so-called "clock" that dictates our circadian rhythm is the **suprachiasmatic nucleus** (SCN), located in the hypothalamus of the brain. There are also peripheral clocks in various other organs and tissues. These are what make circadian rhythms *endogenous*, or internally generated.
+>The so-called "clock" that dictates our circadian rhythm is the **suprachiasmatic nucleus** (SCN), located in the hypothalamus of the [[brain]]. There are also peripheral clocks in various other organs and tissues. These are what make circadian rhythms *endogenous*, or internally generated.
 
 How does the circadian rhythm express itself physiologically? There are a few cyclical phenomena that we can observe.
 1. **Body temperature**: reaches its daily high about 6 hours before sleep onset, and daily low about 2 hours after sleep onset

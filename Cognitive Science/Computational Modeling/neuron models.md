@@ -1,6 +1,6 @@
 #vissci265 
 
-How is the brain able to reproduce sensory stimulus (a continuous, analog signal) from a sequence of neuron activations? In general, the problem of encoding and decoding sensory stimulus can be formalized as follows:
+How is the [[brain]] able to reproduce sensory stimulus (a continuous, analog signal) from a sequence of neuron activations? In general, the problem of encoding and decoding sensory stimulus can be formalized as follows:
 
 ![](img/sensory_encoding.png)
 

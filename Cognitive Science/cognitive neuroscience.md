@@ -1,4 +1,4 @@
-Cognitive neuroscience is the study of "how the brain enables thought". 
+Cognitive neuroscience is the study of "how the [[brain]] enables thought". 
 - Cognition: the process of "knowing" or "thinking", encompassing [[perception]], reasoning, [[consciousness]]
 - Neuroscience: the organization and function of the nervous system
 

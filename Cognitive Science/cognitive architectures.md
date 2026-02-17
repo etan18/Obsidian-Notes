@@ -1,6 +1,6 @@
 #cogsci1 #cogsci126 
 ## localization
-Localization of function is the notion that specific areas of the brain control specific aspects of who we are, which is to some degrees the way our brain actually works. 
+Localization of function is the notion that specific areas of the brain control specific aspects of who we are, which is to some degrees the way our [[brain]] actually works. 
 - *Broca's area* controls [[language]], particularly speech production
 - The *fusiform face area* (FFA) controls our ability to recognize faces and people.
 - The *frontal lobe* controls planning and emotion, which was discovered when **Phineas Gage** impaled this area of his brain

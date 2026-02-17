@@ -4,7 +4,7 @@ Our [[perception]] of *depth* largely comes from adjusting based on the size of 
 - **Size constancy**: the image of an object on our retina gets smaller the farther away the object is. Given our perceived distance to that object $x$, we can recover the perceived size $\alpha$ as
 $$\alpha \propto x \cdot \text{size on retina}$$
 >[!info] Emmert's Law
->Emmert's Law observes an illusion which demonstrates the brain's ability to discount the distance. It states that the perceived size of an afterimage is directly proportional to the perceived distance to the surface which you are viewing it on. This means that transferring an afterimage to a farther distance will cause you to perceive a larger image.
+>Emmert's Law observes an illusion which demonstrates the [[brain]]'s ability to discount the distance. It states that the perceived size of an afterimage is directly proportional to the perceived distance to the surface which you are viewing it on. This means that transferring an afterimage to a farther distance will cause you to perceive a larger image.
 
 ## pictorial depth cues
 Pictorial cues are the features of 2D, static images that support depth perception. These are characteristics that can be manipulated by artists, for example, to create illusions of depth.

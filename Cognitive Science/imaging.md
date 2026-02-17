@@ -6,7 +6,7 @@
 - For imaging purposes, tuning the amount of radiation used can allow for visualization of different kinds of organ tissue
     - While X-rays allow for visualization of the lesion, they are limited in their ability to precisely locate the lesion
 
-**Computed Tomography (CT)** scans were created to address the weakness of x-rays by essentially taking many x-rays from different angles to generate a 3D representation of the brain’s internal structure.
+**Computed Tomography (CT)** scans were created to address the weakness of x-rays by essentially taking many x-rays from different angles to generate a 3D representation of the [[brain]]’s internal structure.
 - A _computed axial tomography_, or CAT scan, takes the image slices along a central axis of symmetry across the brain
 
 >[!danger] Invasive imaging

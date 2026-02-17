@@ -1,6 +1,6 @@
 #cogsci1 #info103 
 
-The *form* in which information is stored in the brain is one of the fundamental and most long-standing questions in cognition.
+The *form* in which information is stored in the [[brain]] is one of the fundamental and most long-standing questions in cognition.
 
 In the 1950s, Karl Lashley led the scientific search for the **engram**, the physical location of memory storage in the brain. As we know today, the engram does not exist, and memory behaves more like [[distributed systems]] across regions of our brain.
 

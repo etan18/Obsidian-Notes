@@ -1,6 +1,6 @@
 #mcb61 #cogsci126 
 
-The **neuron doctrine** (Ramon y Cajal, 1852-1934) is the base principle that **neurons** are the fundamental unit of the nervous system. These cells are responsible for receiving and relaying sensory inputs.
+The **neuron doctrine** (Ramon y Cajal, 1852-1934) is the base principle that **neurons** are the fundamental unit of the [[nervous system]]. These cells are responsible for receiving and relaying sensory inputs to and from the [[brain]].
 
 The form, interconnectivity, and arrangement of neurons varies depending on the location of the neurons, and these qualities relate to the functions of specific neurons.
 ### cell anatomy

@@ -3,7 +3,11 @@ The nervous system is comprised of two types of cells: [[neurons]] and [[neurons
 The nervous system uses electrochemical stimulation for communication.
 - The [[neurons#action potential|action potential]] is a chemical process of transmission for synaptic action
 
-The **central nervous system** (CNS) consists of the brain and spinal cord and is the body's primary control center for information processing and planning.
+The **central nervous system** (CNS) consists of the [[brain]] and spinal cord and is the body's primary control center for information processing and planning.
+
+>[!tip] Somatosensory Cortex
+>The somatosensory cortex is a region in the parietal lobe responsible for interpreting sensory inputs received from the **peripheral nervous system**. It is organized topographically, meaning we can localize which areas of the cortex process signals from specific parts of the body. This mapping is known as the **homunculus**.
+>![[Cognitive Science/img/somatosensory.png|500]]
 
 
 **Neuroplasticity** is the ability of the nervous system to reorganize its structure to reorganize its structure, functions, and connections in response to stimuli, such as [[learning]] or injury. 
@@ -16,37 +20,8 @@ The **central nervous system** (CNS) consists of the brain and spinal cord and i
 - **Stem cells**: early-stage cells which have not developed a specialization or cell type yet
 - GPLD1 is an enzyme found in serum (blood) that has also been [linked](https://pmc.ncbi.nlm.nih.gov/articles/PMC7879650/) to promoting neurogenesis
 
-#### autonomic nervous system
+## autonomic nervous system
 The **autonomic nervous system** refers to the parts of the nervous system which control involuntary physiological processes---heart rate, blood pressure, breathing, among others. It is complementary to the **somatic nervous system**, which is in charge of voluntary movements and motor control. The ANS is comprised of two components:
 1. **Sympathetic nervous system**: fight or flight
 2. **Parasympathetic nervous system**: rest and digest
 	1. Vagus nerve: carries signals between brain, heart, and digestive system. It is key in regulating heart rate, breathing, and digestion.
-
-## anatomy of the brain
-The brain, or **cerebral cortex**, is organized in two hemispheres (left and right), and contains four main lobes.
-- **Frontal**: houses the primary motor cortex
-- **Parietal**
-- **Occipital**
-- **Temporal**
-
-A nerve is a bundle, or collection of axons, usually with similar functions.
-
-The **cortex** is the outer layer of the cerebral cortex. It is made up of **grey matter**, which is the collection of soma, or cell bodies, of the neurons in the brain. Visually, the outer layer is made up of a series of folds: 
-- Superficial areas are called **gyri**
-- Deep folds are called **sulci**. The central sulcus separates the frontal and parietal lobe. p
-- Large sulci are called **fissures**
-These folds developed evolutionarily to maximize the surface area of the brain in a fixed volume skull.
-
-The inside of the brain is made up of **white matter**, containing all the axons of the neurons which are interacting with each other. The white appearance comes from the presence of glial cells supporting the propagation of neural signals.
-
-The **limbic system** is the set of brain structures involved in emotional processing.
-- Hippocampus: key [[memory]] center
-- Amygdala: primary emotional center (fear)
-- Hypothalamus: controls hormones 
-- Basal ganglia: responsible for voluntary motor control, action selection, reward-based learning
-
-The **Circle of Willis** is a ring-shaped vascular network at the base of the brain connecting seven main arteries. Its primary function is to redistribute blood flow between the anterior and posterior circulations if one vessel becomes blocked or narrowed (stenosis), preventing stroke.
-### evolution
-The human brain has evolved far beyond other primates to enable advanced cognitive processing:
-- The prefrontal cortex has evolved to be much larger
-- We have more neurons (and possible more white matter relative to brain size) than other primates

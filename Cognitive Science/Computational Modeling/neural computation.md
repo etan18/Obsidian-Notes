@@ -1,7 +1,7 @@
 #vissci265
 
 What is the difference between neural computation as a field of study in comparison with [[artificial intelligence]]? The primary difference involves the tradeoff between functional competence (i.e. results) versus computational efficiency. 
-- **Artificial intelligence**: models and algorithms prioritize outcomes and performance metrics, at the cost of intensive compute and memory, and oftentimes uninterpretable or black-boxes algorithms. The goal is to mimic the *inputs and outputs* that a human brain would produce.
+- **Artificial intelligence**: models and algorithms prioritize outcomes and performance metrics, at the cost of intensive compute and memory, and oftentimes uninterpretable or black-boxes algorithms. The goal is to mimic the *inputs and outputs* that a human [[brain]] would produce.
 - **Neural computation**: investigates principles of the brain that allow us to compute outputs so efficiently.
 
 ## physics of computing
