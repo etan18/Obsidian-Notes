@@ -2,7 +2,7 @@
 
 Reinforcement learning (RL) is the mathematical formalism in [[machine learning]] for [[learning]] decision making from experience. 
 - Unlike many traditional ML problems, RL *does not* assume that data are i.i.d.---instead, it acknowledges that past outputs influence future inputs. 
-- We also do not assume access to the ground truth, as in [[supervised learning]]; instead, our data gives us **rewards** for taking certain actions from certain states.
+- We also do not assume access to the ground truth, as in [[imitation learning]]; instead, our data gives us **rewards** for taking certain actions from certain states.
 
 The basic structure of a **reinforcement learning** problem is the same as any other involving a [[rational agent]]. We have 
 - Set of states $s \in S$

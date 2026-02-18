@@ -31,3 +31,7 @@ $$
 &= \mathrm{argmax}_{a} \sum_{s'} T(s, a, s')[R(s, a, s') + \gamma U_k(s')]
 \end{align}
 $$
+---
+## partially observed MDPs
+
+**Partially observed MDPs** (POMDPs) are used to model environments where information is not fully observable. Instead, we have a set of emissions states which can be observed, that are the byproduct of the underlying state.

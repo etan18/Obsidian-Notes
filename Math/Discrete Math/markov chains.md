@@ -1,8 +1,8 @@
 #eecs126
 
-Let $X$ be a finite set representing our static state space.
+Markov chains are the most basic probabilistic model for representing a dynamical system.
 
-#### notation
+Let $X$ be a finite set representing our static state space.
 - The state distribution at time step $n$ is $\pi_n = [\pi_n(0), \pi_n(1),\pi_n(2) \dots]$ , where $\pi_n$ must sum to $1$, as they are probabilities
 - Each $\pi_n(k)$ represents the probability that we are at state $k$ at time $n$, where
 $$ \pi_t(j) = \sum_{i \in X} \pi_{t-1}(i) \cdot \mathbb{P}_{i, j} $$
@@ -18,4 +18,4 @@ Given some state $X_n = x$, $X_{n-1}$ and $X_{n+1}$ are independent from one ano
 The thing that makes Markov chains *"Markovian"* is that fact that they must be **memoryless**. This means that, given the present state $s$, the past and future states are conditionally independent. The future state is dependent on the present only, and the present state is dependent on the past, but the past and future are independent. If we look at the definition of the *transition matrix*
 $$\mathbb{P}_{s, s'} = P(s' | s)$$
 
-> [!tip] Next: [[hidden markov models]]
+> [!tip] Next: [[hidden markov models]] and [[markov decision processes]]
