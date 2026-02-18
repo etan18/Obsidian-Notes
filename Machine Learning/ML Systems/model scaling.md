@@ -8,7 +8,7 @@ In practice, much of the challenge of deploying [[machine learning]] models come
 
 At the end of the day, performing training and inference on deep learning models is just a series of **floating point operations** (FLOPs) across many large tensors and matrices. These operations, in large scales, require the computational power of graphical processing units (**[[GPU]]**) or tensor processing units (**TPU**). For most production-level models, we need to employ many GPUs and TPUs and figure out how to spread the workloads across these chips (also referred to as *accelerators*); this is the concept of [[parallelism]].
 
-**Strong scaling** refers to the goal of increasing the number of chips used for training or inference while achieving a proportional, linear increase in throughput. Throughput refers to the rate at which the system can process information (for training, this could be measured in batches / second). 
+**Strong scaling** refers to the goal of increasing the number of chips used for training or inference while achieving a proportional, linear increase in throughput. Throughput refers to the rate at which the system can process information (for training, this could be measured in batches / second). How a model scales is determined by tradeoffs between compute power and inter-chip communication. 
 
 ## scaling laws
 >[!info] Scaling Laws for Neural Language Models
@@ -32,3 +32,6 @@ $$T_{\text{upper bound}} = T_{\text{math}} + T_{\text{comm}}$$
 The **arithmetic intensity** of an algorithm is determined by its "flops per byte"
 $$\frac{\text{Total FLOPs}}{\text{Communication Memory}}$$
 This roughly translates to the $\frac{T_{\text{math}}}{T_{\text{comm}}}$  ratio. Our hardware achieves its peak accelerator bandwidth when $T_{\text{math}} = T_{\text{comm}}$.
+
+---
+# parallelism
