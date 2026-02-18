@@ -17,3 +17,15 @@ Data can be stored in NoSQL databases in many different forms, including JSON, k
 
 ### online analytical processing
 OLAP systems must aggregate data from a variety of sources so that it can be analyzed for reporting (e.g. business intelligence) or forecasting purposes. Because these are such common use cases, we have special databases called **data warehouses** which are optimized for analytics.
+
+# apache spark
+
+>[!tip]- MapReduce
+>MapReduce is a programming model developed by Google to process large datasets distributed across many devices. MapReduce "democratized" Big Data by allowing large datasets to be distributed across many small commodity servers as opposed to highly-specialized hardware. 
+>
+>The framework consists of two phases:
+>1. Map
+>   2. Reduce
+>
+>One thing to note is that every step writes intermediate results to disk, making MapReduce slow for large iterative workloads like machine learning.
+
