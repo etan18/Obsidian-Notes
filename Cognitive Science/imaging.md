@@ -1,6 +1,5 @@
 #mcb61 #cogsci1 
-
-### static imaging techniques
+# static imaging
 **X-Rays** were invented by Wilhelm Röntgen, who won the Nobel Prize in Physics (1901) for it.
 - [High energy electromagnetic radiation](https://chandra.si.edu/graphics/resources/illustrations/em_spectrum2.jpg), which allows for penetration of solid matter
 - For imaging purposes, tuning the amount of radiation used can allow for visualization of different kinds of organ tissue
@@ -12,7 +11,10 @@
 >[!danger] Invasive imaging
 >Excessive exposure to the high energy of X-rays to genetic mutations and other damage at the cellular level. For this reason, X-rays and CT scans are considered invasive.
 
-**Magnetic Resonance Imaging (MRI)** also produces 3D reconstructions of the brain that sharper and more detailed than a CT, and does so by manipulating _quantum spin,_ which is safer than CT. MRI measures the proton densities, or the concentration of hydrogen protons, in tissues, where higher concentrations are brighter on the resulting image.
+**Single & Multi-unit Recordings** are invasive techniques that place electrodes directly on neurons. This measures the electrophysiological response of a single cells or collection of cells.
+- High temporal resolution, low spatial resolution
+#### MRI
+**Magnetic Resonance Imaging (MRI)** also produces 3D reconstructions of the brain that sharper and more detailed than a CT, and does so by manipulating _quantum spin,_ which is safer than CT. MRI measures the proton densities, or the concentration of hydrogen protons, in water molecules found in tissues, where higher concentrations are brighter on the resulting image.
 - This process of introducing a magnetic field to disturb the alignment of nuclear spin gave rise to _nuclear magnetic resonance_, or NMR
     - Mapping the [[spatial frequency|spatial]] patterns of resonant energies needed to perturb the spin of atoms can be used to determine molecule structures or even image the interior of an organism
 - The name was changed from NMR to MRI due to misconceptions about the technique being “nuclear”
@@ -20,12 +22,15 @@
 >[!note] 
 >Teslas and gauss are both units of magnetic field strength, where 1 tesla = 10,000 gauss. Earth’s magnetic field measures about 0.5 gauss, or 50 microteslas.
 
-**Single & Multi-unit Recordings** are invasive techniques that place electrodes directly on neurons. This measures the electrophysiological response of a single cells or collection of cells.
-- High temporal resolution, low spatial resolution
+**Diffusion tensor imaging** (DTI) is a neuroimaging technique that uses MRIs to track the direction of water flow to map out white matter tracts. White matter tracts are bundles of myelinated axons in the central [[nervous system]] that act as the brain's communication highways, connecting different regions to coordinate activity.
 
+# dynamic imaging
 The above techniques are all **static, or structural imaging techniques**. However, sometimes it is necessary to measure brain activity over time, a set of techniques referred to as **dynamic, or functional imaging.**
 
-### dynamic imaging techniques
+With dynamic imaging, there is typically an observed tradeoff in spatial and temporal resolution.
+- **Spatial resolution**: how clearly we can isolate regions of the brain
+- **Temporal resolution**: how clearly we can isolate when neural activity occurs
+This occurs because increasing the level of detail requires more data acquisition, which inherently takes more time and thus reduces the frequency of measurements. **Voxels** are 3-dimensional volumetric pixels representing a small cubic volume of the imaged tissue.
 
 An **Electroencephalogram (EEG)** is a graph of brain electric field changes as a function of time. These measurements are recorded by attaching electrodes to the scalp. The first EEG reading was captured by _Hans Berger_ in the 1920s.
 - Gives a measure of neural activity averaged over large regions of the cerebral cortex
@@ -44,10 +49,16 @@ The **Magnetoencephalogram (MEG)** measures another kind of [[brain waves]] invo
 
 **Transcranial Magnetic Simulation (TMS)** is a noninvasive method to excite neurons in the brain. Weak electric currents are induced in the brain by electromagnetic induction, producing virtual lesions to establish the importance of specific regions in the brain.
 
+##### fMRI
 **Functional MRI (fMRI)** utilizes the same methods as a regular MRI, but takes many MRI images over time in order to gauge brain function, rather than anatomy.
-- The BOLD response is based on changes in the relative concentration of oxygenated and deoxygenated hemoglobin to measure how much oxygen a particular brain region is using
+- The **blood oxygenation level dependent** (BOLD) response is based on changes in the relative concentration of oxygenated and deoxygenated hemoglobin to measure how much oxygen a particular brain region is using
 
 ![dynamic imaging](img/imaging.png)
 
 _Temporal Resolution_ is the accuracy of the measure of when an event is occuring.
 _Spatial Resolution_ is the accuracy of the measure of where an event is occuring.
+
+>[!info] Metabolic Activity
+>Neural activity demands a lot of oxygen and glucose consumption. Dynamic imaging techniques like PET scans and fMRI work by measuring the metabolic rates in different areas of the brain. The idea is that more metabolic activity corresponds to higher neural activity.
+>
+>For example, fMRI measures the ratio of oxygenated to de-oxygenated blood (BOLD response). This ratio increases with neural activity due to oversupply in active areas.

@@ -27,3 +27,8 @@ The **Circle of Willis** is a ring-shaped vascular network at the base of the br
 The human brain has evolved far beyond other primates to enable advanced cognitive processing:
 - The prefrontal cortex has evolved to be much larger
 - We have more neurons (and possible more white matter relative to brain size) than other primates
+
+>[!info] Default Mode Network
+>The default mode network is a large scale of connected brain regions that are active during **wakeful rest**, particularly during mental activities like daydreaming and introspection. It primarily involves the medial prefrontal cortex, posterior cingulate cortex, and angular gyrus.
+>
+>In contrast, the **resting state networks** (RSNs) are the baselines of low-frequency neural activity during complete absence of internal or external stimulation.
