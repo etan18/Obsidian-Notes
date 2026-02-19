@@ -1,0 +1,15 @@
+**JAX** is an [[GPU|accelerator]]-oriented version of NumPy, which also provides a built-in [[computational graphs#autograd|autograd]] engine similar to PyTorch. **Flax** is a Python-based library built on top of JAX, which provides the object-oriented modules to build and train [[neural networks]] through the Flax **NNX** API. 
+
+>[!warning] Just-in-time Compilation
+>
+>The `jax.jit` transformation can be applied to any code sequence where array shapes are static and known at compile time. JIT-compilation can result in code execution time being orders of magnitude faster.
+>
+>```
+>@jax.jit
+>def selu(x, a=1.67, l=1.05):
+>	return l * jax.numpy.where(x > 0, x, a * jax.numpy.exp(x) - a)
+>```
+
+
+- Unlike NumPy arrays, JAX arrays are always immutable. They can be mutated using indexed updates (`x_new = x.at[0].set(12)`). 
+- JAX arrays have `devices` and `sharding` attributes

@@ -13,3 +13,8 @@ The *linker* pulls from all necessary object files to combine them into a single
 
 ### 4. loader
 The *loader* prepares the executable file such that it's able to run. In C [[memory structure]], this includes setting up an address space in memory and running machine code instructions in the executable.
+
+---
+Eager execution, or op-by-op compilation, runs operations as soon as they are called.
+
+Graph execution, or lazy execution, builds and maintains the [[computational graphs]] for the executed code, but does not perform the actual operations until absolutely necessary. That is, when the Python expression is `eval`-ed.
