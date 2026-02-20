@@ -43,6 +43,13 @@ Values
 -  ownership, hard work, and initiative
 - continuous improvement and learning from those around me 
 
+
+pre-offer call
+- tentative start date 6/22 (can be pushed back, even after signing)
+- rsu
+- email about office meet
+- new hire equity is non-negotiable after signing
+
 ---
 
 # behavioral
