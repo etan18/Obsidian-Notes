@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cognitive Science/imaging.md",
+                "file": "Machine Learning/Artificial Intelligence/reinforcement learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "imaging"
+              "title": "reinforcement learning"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "eval",
+                "query": "\"value function\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -169,6 +170,12 @@
   },
   "active": "020929a1706272c0",
   "lastOpenFiles": [
+    "Machine Learning/Classification/logistic regression.md",
+    "Machine Learning/Artificial Intelligence/markov decision processes.md",
+    "Machine Learning/Artificial Intelligence/q-learning.md",
+    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
+    "Machine Learning/img/rl.png",
+    "Cognitive Science/imaging.md",
     "Humanities & Social Science/Personal Finance/insurance.md",
     "week log.md",
     "Research/recruiting.md",
@@ -181,14 +188,11 @@
     "Cognitive Science/nervous system.md",
     "unfinished/human computer interaction.md",
     "unfinished/research methods.md",
-    "Cognitive Science/imaging.md",
     "Cognitive Science/cognitive neuroscience.md",
     "Machine Learning/Paper Summaries/interpretability.md",
     "Machine Learning/ML Systems/model scaling.md",
     "unfinished/vector databases.md",
-    "Machine Learning/Artificial Intelligence/markov decision processes.md",
     "Math/Discrete Math/markov chains.md",
-    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "unfinished/data structures.md",
     "Machine Learning/Classical & Theory/representation learning.md",
     "Machine Learning/ML Systems/vLLM.md",
@@ -196,8 +200,6 @@
     "Untitled.canvas",
     "Machine Learning/Untitled.base",
     "Cognitive Science/img/somatosensory.png",
-    "Cognitive Science/Perception/visual cortex.md",
-    "Cognitive Science/theory of mind.md",
     "Pasted image 20260212123336.png",
     "Pasted image 20260212124800.png",
     "Pasted image 20260208001852.png",
