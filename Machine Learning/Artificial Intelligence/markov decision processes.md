@@ -1,6 +1,6 @@
 #cs188 
 
-In [[artificial intelligence]], [[markov chains]] can be used to represent *non-deterministic* discrete state space [[search problems]]. 
+In [[artificial intelligence]], [[Markov chains]] can be used to represent *non-deterministic* discrete state space [[search problems]]. 
 
 Notably, MDPs are different from traditional [[search algorithms|graph search]] in that multiple edges can correspond to the same state-action pair, except each edge will have a corresponding *transition probability*, which sum to $1$, in addition to a reward.
 

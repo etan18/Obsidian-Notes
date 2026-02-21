@@ -2,12 +2,19 @@
 
 Reinforcement learning (RL) is the mathematical formalism in [[machine learning]] for [[learning]] decision making from experience. 
 - Unlike many traditional ML problems, RL *does not* assume that data are i.i.d.---instead, it acknowledges that past outputs influence future inputs. 
-- We also do not assume access to the ground truth, as in [[imitation learning]]; instead, our data gives us **rewards** for taking certain actions from certain states.
+- We also do not assume access to the ground truth, as in [[imitation learning]]; instead, our data gives us rewards for taking certain actions from certain states.
 
 The basic structure of a **reinforcement learning** problem is the same as any other involving a [[rational agent]]. We have 
-- Set of states $s \in S$
-- Each $s$ has a corresponding set of actions $a \in A_s$
-The goal is to learn which states and actions are favorable, i.e. our *reward function* $R(s, a, s')$. Because we are starting out with no information about the environment, the only way for us to learn is by trying.
+- A **state space** $\mathcal S$, which can be discrete or continuous
+- The corresponding action space $\mathcal A$, which can also be either discrete or continuous
+- Transition probabilities describing the [[conditional probability]] $p(s_{t+1}|s)$
+- **Reward function** $R(s, a) \rightarrow \mathbb R$, letting us know which states and actions are favorable
+- Optionally, when we do not have access to the state directly, we may only see an **observation** $o_t$ which is a stochastic function of the state. 
+	- This is known as **partially-observed** RL, and can be modeled as a [[hidden markov models|Hidden Markov Model]]
+The goal is to learn a **policy** $\pi_{\theta}(a|s)$ which determines which actions to take at which states. Because we are starting out with no information about the environment, the only way for us to learn is by trying. 
+
+>[!tip] Markovian Representation
+>We can model the progression of states and actions as a [[markov chains|Markov chain]], where states must satisfy the Markov property---that is, the state $s_{t+1}$ is independent of $s_{t-1}$ conditioned on $s_t$.
 
 Training an RL agent typically involves a few key aspects:
 - At each time step, the agent begins in state $s$, takes action $a$ to end up in state $s'$, which receives reward $r$. This is known as a collected **sample**.
@@ -18,15 +25,17 @@ Training an RL agent typically involves a few key aspects:
 
 Because  the full roll out of actions from start to terminal state can be very long, we also express sequences of actions as **trajectories** $\tau$. the overarching objective of reinforcement learning then is to learn the optimal policy $\pi_*$ with parameters $\theta_*$ that maximizes long-term reward.
 $$\theta_* = \arg\max_{\theta} \mathbb E_{\tau \sim p_{\theta}(\tau)}\bigg[\sum_{t\in\tau}r_(s_t, a_t)\bigg]$$
-Here, $p_{\theta}$ is the probability of a trajectory under the current policy parameters.
+Here, $p_{\theta}$ is the probability of a trajectory under the current policy parameters. A **policy gradient** approach to RL would directly optimize the RL objective. This is done by differentiating the continuous parameters $\theta$ over the objective, or more practically, approximating the gradient using a finite number of samples:
+$$\nabla_\theta \int \pi_\theta(\tau)\cdot r(\tau) d\tau \approx \frac{1}{N} \sum_{i=1}^N \nabla_\theta \log \pi_\theta(\tau^i)\cdot r(\tau^i)$$
+There are also **value-based** RL algorithms, most notably [[Q-learning]].
 
 ![[rl.png]]
 In modern deep learning, this workflow would look like 
 1. Fitting a neural network $f$ such that $s_{t+1} \approx f(s_t, a_t)$ 
 2. Backpropagation through $f$ and $r$ to train policy $\pi_{\theta}(s_t) = a_t$ 
-This is a **policy gradient** approach, where we directly optimize the RL objective.
+This is a model-based approach.
 ### model-based learning
-Model-based learning builds off of [[markov decision processes]]. The key difference here is that we don't know the *transition probabilities* $T(s, a, s')$ or the reward function of each state, so we have to estimate it empirically. This is also known as **online learning**, as opposed to *offline planning* that we see in MDPs. Examples of model-based learning include [[q-learning]].
+Model-based learning builds off of [[markov decision processes]]. The key difference here is that we don't know the *transition probabilities* $T(s, a, s')$ or the reward function of each state, so we have to estimate it empirically. This is also known as **online learning**, as opposed to *offline planning* that we see in MDPs. 
 
 The estimated transition function $\hat{T}(s, a, s')$ is calculated simply by observing the fraction of times that an agent lands in state $s'$ after taking action $a$ from state $s$. By law of large numbers, we can prove that $\hat{T} \longrightarrow T$ as our number of samples $n \rightarrow \infty$. 
 

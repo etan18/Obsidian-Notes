@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"value function\"",
+                "query": "stationary",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,10 +169,14 @@
   },
   "active": "020929a1706272c0",
   "lastOpenFiles": [
-    "Machine Learning/Classification/logistic regression.md",
-    "Machine Learning/Artificial Intelligence/markov decision processes.md",
     "Machine Learning/Artificial Intelligence/q-learning.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
+    "Machine Learning/Artificial Intelligence/markov decision processes.md",
+    "Math/Discrete Math/markov chains.md",
+    "Math/Linear Algebra/eigenvalues.md",
+    "Math/Probability/hidden markov models.md",
+    "Machine Learning/Artificial Intelligence/rational agent.md",
+    "Machine Learning/Classification/logistic regression.md",
     "Machine Learning/img/rl.png",
     "Cognitive Science/imaging.md",
     "Humanities & Social Science/Personal Finance/insurance.md",
@@ -192,11 +195,7 @@
     "Machine Learning/Paper Summaries/interpretability.md",
     "Machine Learning/ML Systems/model scaling.md",
     "unfinished/vector databases.md",
-    "Math/Discrete Math/markov chains.md",
     "unfinished/data structures.md",
-    "Machine Learning/Classical & Theory/representation learning.md",
-    "Machine Learning/ML Systems/vLLM.md",
-    "Humanities & Social Science/Personal Finance/investments.md",
     "Untitled.canvas",
     "Machine Learning/Untitled.base",
     "Cognitive Science/img/somatosensory.png",
