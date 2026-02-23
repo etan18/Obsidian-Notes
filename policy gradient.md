@@ -1,0 +1,21 @@
+Policy gradients are one class of [[reinforcement learning]] algorithms that learns a policy by directly [[optimization|optimizing]] over the objective function. The overarching RL objective of is to learn the optimal policy $\pi_*$ with parameters $\theta_*$ that maximizes long-term reward;
+$$\theta_* = \arg\max_{\theta} \mathbb E_{\tau \sim p_{\theta}(\tau)}\bigg[\sum_{t\in\tau}r_(s_t, a_t)\bigg]$$
+Here, $p_{\theta}$ is the probability of a trajectory under the current policy parameters. A **policy gradient** approach to RL would directly optimize the RL objective. This is done by differentiating the continuous parameters $\theta$ over the objective, or more practically, approximating the gradient using a finite number of samples:
+$$\nabla_\theta \int \pi_\theta(\tau)\cdot r(\tau) d\tau \approx \frac{1}{N} \sum_{i=1}^N \nabla_\theta \log \pi_\theta(\tau^i)\cdot r(\tau^i)$$
+When a model is trained on a dataset of size $N$, we estimate the average reward across all samples as our learning signal:
+$$J(\theta) = \mathbb E \bigg[\sum_{t=1}^T r_t\bigg] = \frac{1}{N} \sum_{i=1}^N \sum_{t=1}^T r_t^i$$
+In reality, though, it's not feasible to take the derivative with respect to $\theta$ because the sample-generating process is black-boxed (i.e. not captured by our [[computational graphs]]). What we instead want to do is formulate our optimization problem with respect to $p_\theta$, which can be approximated by sampling trajectories under a black-boxed model.
+
+### REINFORCE
+At each update, we use the current policy $\pi_\theta$ to generate samples. 
+
+By proof, we find that $$\begin{align} \nabla_\theta J(\theta) &= \int \nabla_\theta p_\theta(\tau)\cdot r(\tau) d\tau &= \int p_\theta(\tau) \cdot \nabla_\theta \log p_\theta r(\tau) \\ &=  \mathbb E_{\tau \sim p_{\theta}(\tau)} [\nabla_\theta \log p_{\theta}(\tau) r(\tau)] \\ &=  \mathbb E_{\tau \sim p_{\theta}(\tau)} [\nabla_\theta \log \big( \sum_{t}\pi_{\theta}(a_t|s_t) \big)  \cdot r(\tau)] \end{align}$$
+This is known as the **policy gradient**.
+
+We can now use this derivation to update our policy:
+$$\theta \leftarrow \theta + \alpha \nabla_\theta J(\theta)$$
+>[!tip] Connection to MLE
+>It is possible to expand our policy gradient formula for $\nabla_\theta J(\theta)$ to observe that it is equivalent to the [[maximum likelihood estimation]] expression weighted by the reward. This means that REINFORCE is essentially maximizing the weighted probability of trajectories with positive rewards, while also minimizing the weighted probability of trajectories with negative rewards.
+
+Policy gradients only consider rewards over the *entire* trajectory, rather than rewarding individual good steps or punishing individual bad steps. This can lead to high variance in the rewards gained for individual $a|s$ pairs.
+- With enough samples, the probability estimation for individual steps will still average out correctly

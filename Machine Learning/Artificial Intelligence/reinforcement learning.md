@@ -23,11 +23,9 @@ Training an RL agent typically involves a few key aspects:
 >[!note] Exploration vs. Exploitation
 >In reinforcement learning, agents must try **exploration** in order to gain information about the environment. This is typically achieved by introducing some form of random-ness into the agent's decision-making. At the same time, the agent must still try to maximize its reward through **exploitation** of its current estimated policy. 
 
-Because  the full roll out of actions from start to terminal state can be very long, we also express sequences of actions as **trajectories** $\tau$. the overarching objective of reinforcement learning then is to learn the optimal policy $\pi_*$ with parameters $\theta_*$ that maximizes long-term reward.
+Because  the full roll out of actions from start to terminal state can be very long, we also express sequences of actions as **trajectories** $\tau$. The overarching objective of reinforcement learning then is to learn the optimal policy $\pi_*$ with parameters $\theta_*$ that maximizes long-term reward.
 $$\theta_* = \arg\max_{\theta} \mathbb E_{\tau \sim p_{\theta}(\tau)}\bigg[\sum_{t\in\tau}r_(s_t, a_t)\bigg]$$
-Here, $p_{\theta}$ is the probability of a trajectory under the current policy parameters. A **policy gradient** approach to RL would directly optimize the RL objective. This is done by differentiating the continuous parameters $\theta$ over the objective, or more practically, approximating the gradient using a finite number of samples:
-$$\nabla_\theta \int \pi_\theta(\tau)\cdot r(\tau) d\tau \approx \frac{1}{N} \sum_{i=1}^N \nabla_\theta \log \pi_\theta(\tau^i)\cdot r(\tau^i)$$
-There are also **value-based** RL algorithms, most notably [[Q-learning]].
+Here, $p_{\theta}$ is the probability of a trajectory under the current policy parameters. A **[[policy gradient]]** approach to RL would directly optimize the RL objective. There are also **value-based** RL algorithms, most notably [[Q-learning]].
 
 ![[rl.png]]
 In modern deep learning, this workflow would look like 
