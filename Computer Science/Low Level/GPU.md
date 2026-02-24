@@ -29,10 +29,15 @@ In CUDA we have many **threads**, many times more than a CPU. These threads are 
 >[!important] Triton
 >OpenAI develops Triton, a Python-based open-source programming language to automate and simplify the GPU optimizations that typically require lower-level CUDA knowledge.
 
+**XLA** (Accelerated Linear Algebra) is the primary open source [[compiler]] for ML frameworks, including PyTorch and [[JAX]]. 
+
 **Accelerators** are specialized hardware devices to optimize for certain tasks. The most common example of this are GPU accelerators like Google's TPUs which are designed to speed up targeted AI training and [[inference]] workloads.
 - Every accelerator has a peak arithmetic intensity describing its maximum processing rate in FLOPs / memory
 
-**XLA** (Accelerated Linear Algebra) is the primary open source [[compiler]] for ML frameworks, including PyTorch and [[JAX]]. 
+## TPU
+A TPU, or TensorCore, is a compute core that specializes in matrix multiplication attached to some HBM.
+![[tpu.png]]
+
 
 ---
 # datacenters 

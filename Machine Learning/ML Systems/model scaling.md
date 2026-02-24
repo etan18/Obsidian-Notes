@@ -31,7 +31,7 @@ $$T_{\text{lower bound}} = \max(T_{\text{math}}, T_{\text{comm}})$$
 $$T_{\text{upper bound}} = T_{\text{math}} + T_{\text{comm}}$$
 The **arithmetic intensity** of an algorithm is determined by its "flops per byte"
 $$\frac{\text{Total FLOPs}}{\text{Communication Memory}}$$
-This roughly translates to the $\frac{T_{\text{math}}}{T_{\text{comm}}}$  ratio. Our hardware achieves its peak accelerator bandwidth when $T_{\text{math}} = T_{\text{comm}}$.
+This roughly translates to the $\frac{T_{\text{math}}}{T_{\text{comm}}}$  ratio. Different devices have different peak arithmetic intensities, which are the maximum throughput for computation expressed in flops per byte.  When the arithmetic intensity of the program matches the peak arithmetic intensity of the device it's running on, we are achieving maximum throughput. When the intensity is higher than the device's, then it is compute bound. When it's lower, it's memory bound.
 
 ---
 # parallelism
