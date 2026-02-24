@@ -10,6 +10,7 @@ Tables:
 
 Literature:
 - From Abridge AI (2024): [Circumstantial Inference](https://aclanthology.org/2024.acl-long.677/)
+- [What's in a note? Unpacking predictive value in clinical notes](https://pmc.ncbi.nlm.nih.gov/articles/PMC5961801/pdf/2840866.pdf) (2018)
 ###### Slides
 - [Preliminary data analysis](https://docs.google.com/presentation/d/1H8FgXKU_eoG961NX0AksXGgJ1hIDj0TALVwmNimg0iQ/edit?usp=sharing)
 

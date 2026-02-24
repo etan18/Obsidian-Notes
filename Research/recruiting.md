@@ -1,4 +1,3 @@
-
 ### google
 
 - What do you think was the biggest learning curve for you moving from your previous role to Big Tech? 
@@ -49,6 +48,20 @@ pre-offer call
 - rsu
 - email about office meet
 - new hire equity is non-negotiable after signing
+
+## latch bio
+- OpenEvidence: Jan 2026 closed Series D $250M raise (led by Sequoia) at 12B valuation 
+- Abridge: June 2025 closed Series E $300M raise (led by a16z) at 5B valuation
+- Ambience Healthcare: July 2025 closed Series C $243M raise (a16z, OpenAI startup fund) at 1.25B valuation
+- Cairns Health: Khosla Ventures backed, more lowkey but founded in 2017
+	- digital health for seniors, Luna (smart home voice activated, app controlled device)
+- Ellipsis Health: KV backed, $45M Series A in June 2025, AI care manager Sage
+
+Who are Latch's customers? Therapeutics and pharmaceuticals companies?
+Latch: 28M series A in 2022 --> don't need more money
+- What do you think about these startups that raise big flashy rounds every year? When do you think that makes sense?
+
+New grad opportunities at these places are very rare, barrier to entry gets higher and higher. I want to get into industry now
 
 ---
 
