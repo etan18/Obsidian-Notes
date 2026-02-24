@@ -30,11 +30,15 @@ In CUDA we have many **threads**, many times more than a CPU. These threads are 
 >OpenAI develops Triton, a Python-based open-source programming language to automate and simplify the GPU optimizations that typically require lower-level CUDA knowledge.
 
 **Accelerators** are specialized hardware devices to optimize for certain tasks. The most common example of this are GPU accelerators like Google's TPUs which are designed to speed up targeted AI training and [[inference]] workloads.
+- Every accelerator has a peak arithmetic intensity describing its maximum processing rate in FLOPs / memory
 
 **XLA** (Accelerated Linear Algebra) is the primary open source [[compiler]] for ML frameworks, including PyTorch and [[JAX]]. 
 
 ---
-# servers
+# datacenters 
 
 >[!info] [A Primer on Datacenters](https://substack.com/inbox/post/141128291)
 
+Datacenters are made up of racks of servers. Servers need to be able to communicate with one another, as well as with other networking equipment and storage.
+
+They require lots of infrastructure to maintain, including power management, cooling technology, as well as building construction. Jensen Huang has previously estimated that 50% of datacenter costs come from infrastructure needs, and the other 50% to go towards compute, networking, and storage.
