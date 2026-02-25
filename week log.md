@@ -5,7 +5,5 @@
 4. **Classes**
 	- 285 lecture quizzes (wed/fri)
 	- HCI readings (mon/wed 2pm)
-		- ![[accenture.png]]
-
-
+		- CITI socio-behavioral training ![[accenture.png]]
 
