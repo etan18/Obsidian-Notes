@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3a244eacef4424e5",
+        "id": "f452b7ba41cc24b5",
         "type": "tabs",
         "children": [
           {
-            "id": "f4dbfa198dd7a73b",
+            "id": "42c7ed40ff3e2e2e",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5961801/pdf/2840866.pdf",
-                "title": "What's in a Note? Unpacking Predictive Value in Clinical Note Representations",
-                "mode": "webview"
+                "file": "Research/jax.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "globe-2",
-              "title": "What's in a Note? Unpacking Predictive Value in Clinical Note Representations"
+              "icon": "lucide-file",
+              "title": "jax"
             }
           }
         ]
@@ -167,11 +167,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6949e9cc34ed3631",
+  "active": "42c7ed40ff3e2e2e",
   "lastOpenFiles": [
-    "week log.md",
-    "Research/accenture.png",
     "Research/ai scribes.md",
+    "Research/accenture.png",
+    "week log.md",
     "Research/recruiting.md",
     "Machine Learning/ML Systems/model scaling.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
