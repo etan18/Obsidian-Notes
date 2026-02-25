@@ -76,3 +76,6 @@ open questions:
 		- primary diagnosis: EncounterFact.PrimaryDiagnosisKey and PrimaryDiagnosisName
 - What does the model look like
 	- LLM probably (versa)
+
+go back to words that are non-overlapping between scribes and humans - for each set, cluster into types (e.g names, clinical words, doctor shorthand)
+- Answer: between the scribe and human notes, what information is added and what information is lost?
