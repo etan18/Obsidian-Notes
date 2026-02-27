@@ -79,3 +79,16 @@ open questions:
 
 go back to words that are non-overlapping between scribes and humans - for each set, cluster into types (e.g names, clinical words, doctor shorthand)
 - Answer: between the scribe and human notes, what information is added and what information is lost?
+
+
+1. What are the characterizable differences between human and AI generated scribe notes?
+	1. Quantitative values
+	2. Perplexity - mean is not so different when normalizing for note length, but variance differs greatly (not necessarily a bad thing for scribe notes)
+		1. Human notes have high variance in length
+	3. Scribe notes have higher reading level than human notes
+2. How do these translate to the edits?
+	1. ~1/3 of edits *add* a quantitative value (==TODO: but then why is the percentage of quantitative values per note the same? are they removing values too?==)
+	2. Pre-edit notes have an average length of 477 words per note, edits remove a lot of information so average length is now 230 WPN (304 if excluding empty/deleted notes)
+3. How do these differences translate to performance on downstream predictive tasks?
+4. Can we predict whether these differences will grow over time?
+	1. Human-in-the-loop vs. scribe-alone settings

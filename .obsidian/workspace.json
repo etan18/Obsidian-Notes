@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "brodman",
+                "query": "vagus",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -169,10 +170,12 @@
   },
   "active": "42c7ed40ff3e2e2e",
   "lastOpenFiles": [
+    "Cognitive Science/nervous system.md",
+    "Machine Learning/policy gradient.md",
+    "Research/ai scribes.md",
     "week log.md",
     "unfinished/user experience.md",
     "Research/jax.md",
-    "Research/ai scribes.md",
     "Research/accenture.png",
     "Research/recruiting.md",
     "Machine Learning/ML Systems/model scaling.md",
@@ -181,7 +184,6 @@
     "Computer Science/img/tpu.png",
     "Homework 2 Report.md",
     "Pasted image 20260223194220.png",
-    "Machine Learning/policy gradient.md",
     "Cognitive Science/cognitive neuroscience.md",
     "Cognitive Science/imaging.md",
     "Cognitive Science/brain waves.md",
@@ -204,7 +206,6 @@
     "Computer Science/databases.md",
     "Computer Science/Low Level/compiler.md",
     "unfinished/computational graphs.md",
-    "Cognitive Science/brain.md",
     "Untitled.canvas",
     "Machine Learning/Untitled.base",
     "Cognitive Science/Psychology",
