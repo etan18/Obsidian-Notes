@@ -4,6 +4,5 @@
 3. **Psych 127**
 4. **Classes**
 	- 285 lecture quizzes (wed/fri)
-	- HCI readings (mon/wed 2pm)
-		- CITI socio-behavioral training ![[accenture.png]]
+	- HCI readings (mon/wed 2pm): [[accenture]]
 
