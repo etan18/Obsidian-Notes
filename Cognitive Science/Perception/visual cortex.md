@@ -59,3 +59,4 @@ _The “what” pathway_, in the inferior part of the temporal lobe is used for 
 _The “where” pathway_, located in the parietal lobe is used for locating, navigating to, and grasping objects. It also processes actions and movements.
 - Akinetopsia: _motion blindness_
 - Optic Ataxia - _deficit in reaching_
+The dorsal stream may not be entirely accessible to our [[consciousness]], meaning it operates without direct awareness, compared to the ventral stream which pulls from memory and active associations for [[perception]].

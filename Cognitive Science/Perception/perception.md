@@ -57,9 +57,16 @@ Modal completion, although less common, occurs when we construct subjective obje
 ## faces
 Perceiving faces involves special processing mechanisms. We are much more sensitive to slight differences between two people.
 - Faces are always perceived to be convex.
-- **Pareidolia** is the special phenomenom where people perceive some meaningful image from random stimulus.
+- **Pareidolia** is the special phenomenon where people perceive some meaningful image from random stimulus.
 - Facial recognition is handled by a specialized area of the [[visual cortex]] known as the **fusiform face area**
-	- People with *prosopagnosia* are unable to map faces to specific peopl, and this occurs when the FFA is damaged
+	- People with *prosopagnosia* are unable to map faces to specific people, and this occurs when the FFA is damaged
+	- There is also the **occipital face area** (OFA) in the occipital lobe, which is more focused on identifying perceptual, low-level facial features (e.g. nose, eyes, mouth). In contrast, the FFA is involved with higher-order concepts like emotion, likability, and personality.
+- There is a computational hypothesis that posits the facial recognition requires a more holistic analysis of the entire face, as opposed to object recognition which can be done part by part.
+
+>[!note] Multiple Access Hypothesis
+>For patients with visual agnosia, there is an observed marked difference between deficits in identifying living and non-living things. Particularly, identification of living things is drastically worse. This is thought to be because the representation of living things is based almost entirely on visual traits (e.g. a leopard is a spotted feline, but a stove is used for cooking). 
+>
+>Thus, patients with visual agnosia via lesions in the ventral stream, they can still access functional information stored in other regions of the brain.
 
 ---
 # 3-dimensional perception
