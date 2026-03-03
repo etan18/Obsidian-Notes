@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "unfinished/research methods.md",
+                "file": "week log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "research methods"
+              "title": "week log"
             }
           }
         ],
@@ -184,15 +184,17 @@
   },
   "active": "3ac906eef5f36f86",
   "lastOpenFiles": [
-    "accenture.md",
+    "unfinished/data structures.md",
+    "Research/recruiting.md",
     "week log.md",
+    "unfinished/research methods.md",
+    "accenture.md",
     "Research/ai scribes.md",
     "Cognitive Science/nervous system.md",
     "Machine Learning/policy gradient.md",
     "unfinished/user experience.md",
     "Research/jax.md",
     "Research/accenture.png",
-    "Research/recruiting.md",
     "Machine Learning/ML Systems/model scaling.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "Computer Science/Low Level/GPU.md",
@@ -203,7 +205,6 @@
     "Cognitive Science/imaging.md",
     "Cognitive Science/brain waves.md",
     "Pasted image 20260223142658.png",
-    "unfinished/research methods.md",
     "Pasted image 20260223130509.png",
     "Pasted image 20260223130435.png",
     "Pasted image 20260223130231.png",
@@ -219,7 +220,6 @@
     "Machine Learning/Classification/logistic regression.md",
     "Humanities & Social Science/Personal Finance/insurance.md",
     "Computer Science/databases.md",
-    "Computer Science/Low Level/compiler.md",
     "Untitled.canvas",
     "Machine Learning/Untitled.base",
     "Cognitive Science/Psychology",
