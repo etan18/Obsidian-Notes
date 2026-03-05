@@ -4,3 +4,6 @@
 - control
 - sim2real
 - nerf
+
+
+History: Cog and Kismet from MIT Humanoid Robotics lab (1990s)
