@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week log.md",
+                "file": "accenture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week log"
+              "title": "accenture"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vagus ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -169,14 +169,18 @@
   },
   "active": "42c7ed40ff3e2e2e",
   "lastOpenFiles": [
+    "accenture.md",
+    "unfinished/human-computer interaction.md",
+    "Computer Science/Networking/internet.md",
+    "unfinished/user experience.md",
+    "Cognitive Science/Psychology/behaviorism.md",
+    "week log.md",
     "Cognitive Science/nervous system.md",
     "Cognitive Science/cognitive neuroscience.md",
     "Cognitive Science/neurons.md",
-    "week log.md",
     "Cognitive Science/Psychology/cognitive psychology.md",
     "unfinished/robotics.md",
     "Research/recruiting.md",
-    "accenture.md",
     "Cognitive Science/Perception/perception.md",
     "Cognitive Science/Perception/visual cortex.md",
     "Cognitive Science/cognitive architectures.md",
@@ -185,7 +189,6 @@
     "unfinished/research methods.md",
     "Research/ai scribes.md",
     "Machine Learning/policy gradient.md",
-    "unfinished/user experience.md",
     "Research/jax.md",
     "Research/accenture.png",
     "Machine Learning/ML Systems/model scaling.md",
@@ -195,7 +198,6 @@
     "Homework 2 Report.md",
     "Pasted image 20260223194220.png",
     "Cognitive Science/imaging.md",
-    "Cognitive Science/brain waves.md",
     "Pasted image 20260223142658.png",
     "Pasted image 20260223130509.png",
     "Pasted image 20260223130435.png",
@@ -203,8 +205,6 @@
     "Pasted image 20260223125359.png",
     "Pasted image 20260223124736.png",
     "Pasted image 20260223121140.png",
-    "Machine Learning/Artificial Intelligence/q-learning.md",
-    "Machine Learning/Artificial Intelligence/markov decision processes.md",
     "Untitled.canvas",
     "Machine Learning/Untitled.base",
     "Cognitive Science/Psychology",

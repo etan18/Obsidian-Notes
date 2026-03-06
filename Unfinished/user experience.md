@@ -1,7 +1,8 @@
-The design of user interfaces (UI) shapes human-computer interaction.
+The design of user interfaces (UI) shapes [[human-computer interaction]].
 
-The **Wizard-of-Oz study** is an experiment where subjects interact with a computer system they believe to be autonomous, but that is actually operated or partially operated by an unseen human being.
-- The missing system functionality that the "wizard" provides may be implemented in later versions of the system
+The **Wizard-of-Oz study** is an experiment where subjects interact with a computer system they believe to be autonomous, but that is actually operated or partially operated by an unseen human being. 
+- This is useful for testing prototypes where the underlying software does not yet exist or is not accessible.
+- The missing system functionality that the "wizard" provides may be implemented in later versions of the system.
 
 # design ethics
 Ethical design establishes a relationship between a product and its user in a way that promotes responsible and informed decision making. 
