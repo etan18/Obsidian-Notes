@@ -3,7 +3,11 @@
 ---
 #cs161
 
-At a high level, the internet is a global [[network]] of computers that can send data between browsers and servers that are connected to it.
+At a high level, the internet is a global [[network]] of computers that can send data between browsers and servers that are connected to it. 
+
+In the early days, internet was introduced using "dial-up" technology, which operated through the public-switch telephone network (or standard telephone lines) and offered speeds up to 56kbps. Today, dial-up is *nearly* obsolete in the US, with the exception of very few rural areas. 
+
+It was ditched in favor of **broadband internet**, which offers "always-on" internet access with speeds up to 100 Mbps up to 10 Gbps and supporting use cases like gaming and streaming. Different types of broadband include fiber optic, cable, and 5G wireless. Some rural areas use DSL, a type of broadband which still delivers internet over copper telephone lines.
 
 ## open systems interconnection
 The internet is design using the **Open Systems Interconnection Model**, a layered architecture that relies on abstraction at each level. It is a 7-layer model, but layers 5 and 6 aren't used in the real world, so we ignore them.
@@ -34,12 +38,10 @@ The transport layer solves a few problems presented by IP addresses in the netwo
 - IP addresses uniquely identify machines, but can't differentiate between multiple processes running on the same machine on the same network (browser tabs/windows)
 - The IP protocol is a *best effort protocol*, meaning that packets can still get dropped or corrupted
 The transport layer introduces *16-bit* **port numbers** to help. These addresses are specific to a single machine, and are used together with the IP address to pinpoint the exact destination point.
-
 ###### transmission control protocol
 TCP ensures the reliability of transmitted data. It uses a three-way handshake to establish connections. 
 ###### user datagram protocol
 UDP is an alternative to TCP--it is a connectionless protocol that prioritizes speed over reliability. This is preferable in real-time use cases such as gaming or streaming where some packet loss is acceptable.
-
 ###### transport layer security
 TLS protocol is the sub-layer that ensures **end-to-end** security between the transport layer and the 7th layer. It ensures that even if part of the communication channel is compromised, only the sender and receiver are able to read or modify data.
 

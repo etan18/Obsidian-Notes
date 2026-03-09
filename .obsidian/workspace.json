@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "accenture.md",
+                "file": "Computer Science/Networking/internet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "accenture"
+              "title": "internet"
             }
           }
         ]
@@ -169,12 +169,12 @@
   },
   "active": "42c7ed40ff3e2e2e",
   "lastOpenFiles": [
+    "week log.md",
     "accenture.md",
     "unfinished/human-computer interaction.md",
     "Computer Science/Networking/internet.md",
     "unfinished/user experience.md",
     "Cognitive Science/Psychology/behaviorism.md",
-    "week log.md",
     "Cognitive Science/nervous system.md",
     "Cognitive Science/cognitive neuroscience.md",
     "Cognitive Science/neurons.md",
