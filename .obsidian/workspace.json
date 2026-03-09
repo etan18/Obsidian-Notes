@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Networking/internet.md",
+                "file": "Machine Learning/policy gradient.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "internet"
+              "title": "policy gradient"
+            }
+          },
+          {
+            "id": "0c9788c11c5a0a42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "qalmri.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "qalmri"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,12 +182,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "42c7ed40ff3e2e2e",
+  "active": "0c9788c11c5a0a42",
   "lastOpenFiles": [
+    "Machine Learning/policy gradient.md",
+    "qalmri.md",
+    "Machine Learning/Artificial Intelligence/q-learning.md",
+    "Computer Science/Networking/internet.md",
     "week log.md",
     "accenture.md",
     "unfinished/human-computer interaction.md",
-    "Computer Science/Networking/internet.md",
     "unfinished/user experience.md",
     "Cognitive Science/Psychology/behaviorism.md",
     "Cognitive Science/nervous system.md",
@@ -188,16 +206,13 @@
     "unfinished/data structures.md",
     "unfinished/research methods.md",
     "Research/ai scribes.md",
-    "Machine Learning/policy gradient.md",
     "Research/jax.md",
     "Research/accenture.png",
     "Machine Learning/ML Systems/model scaling.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "Computer Science/Low Level/GPU.md",
     "Computer Science/img/tpu.png",
-    "Homework 2 Report.md",
     "Pasted image 20260223194220.png",
-    "Cognitive Science/imaging.md",
     "Pasted image 20260223142658.png",
     "Pasted image 20260223130509.png",
     "Pasted image 20260223130435.png",

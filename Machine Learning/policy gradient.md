@@ -14,6 +14,8 @@ This is known as the **policy gradient**.
 
 We can now use this derivation to update our policy:
 $$\theta \leftarrow \theta + \alpha \nabla_\theta J(\theta)$$
+This algorithm describes vanilla REINFORCE. 
+
 >[!tip] Connection to MLE
 >It is possible to expand our policy gradient formula for $\nabla_\theta J(\theta)$ to observe that it is equivalent to the [[maximum likelihood estimation]] expression weighted by the reward. This means that REINFORCE is essentially maximizing the weighted probability of trajectories with positive rewards, while also minimizing the weighted probability of trajectories with negative rewards.
 
@@ -21,12 +23,15 @@ Policy gradients only consider rewards over the *entire* trajectory, rather than
 - With enough samples, the probability estimation for individual steps will still average out correctly, but we can't always guarantee that will be the case.
 - This leads to the shortcoming that policy gradients are **sample inefficient**.
 
-The above describes vanilla REINFORCE. What we can do is introduce a **baseline** representing an "average" step. We subtract this baseline term from the reward:
+One problem with taking the rewards over the entire trajectory at every timestep is that we only really care about *future* rewards when making the current decision (**causality**). So, we can modify the reward term in the policy gradient:
+$$\mathbb E_{\tau \sim p_{\theta}(\tau)} [\nabla_\theta \log \big( \sum_{t}\pi_{\theta}(a_t|s_t) \big)  \cdot \sum_{i=t}^T r_i]$$
+The baseline is now also computed only over current and future steps. This new term is known as the **reward-to-go**.
+
+What we can additionally do is introduce a **baseline** representing an "average" step. We subtract this baseline term from the reward:
 $$\mathbb E_{\tau \sim p_{\theta}(\tau)} [\nabla_\theta \log \big( \sum_{t}p_{\theta}(a_t|s_t) \big)  \cdot \big(r(\tau)-b)]$$
 In expectation, the baseline is *unbiased*, meaning $\mathbb E[\nabla_\theta \log p_\theta(\tau)b] = 0$. Where it helps is in reducing the variance. Examples of valid baselines include
 - Average reward: $\frac{1}{N} \sum_{i=1}^N r_i(\tau)$  
+- Value: $V(s_t) = \mathbb E_{a_t \sim \pi_{\theta}(a_t|s_t)}[Q(s_t, a_t)]$
 - Optimal baseline: compute the variance of the sample
 
-Another problem with taking the rewards over the entire trajectory at every timestep is that we only really care about *future* rewards when making the current decision (**causality**). So, we can modify the reward term in the policy gradient:
-$$\mathbb E_{\tau \sim p_{\theta}(\tau)} [\nabla_\theta \log \big( \sum_{t}\pi_{\theta}(a_t|s_t) \big)  \cdot \sum_{i=t}^T r_i - b_i]$$
-The baseline is now also computed only over current and future steps. This new term is known as the **reward-to-go**.
+
