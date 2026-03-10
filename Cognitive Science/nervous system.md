@@ -34,3 +34,16 @@ The **stretch reflex** is the cause of the "knee-jerk" hammer test. Afferent imp
 >[!tip] Somatosensory Cortex
 >The somatosensory cortex is a region in the parietal lobe responsible for interpreting sensory inputs received from the **peripheral nervous system**. It is organized topographically, meaning we can localize which areas of the cortex process signals from specific parts of the body. This mapping is known as the **homunculus**.
 >![[Cognitive Science/img/somatosensory.png|500]]
+
+#### brain-machine interfaces
+BMI Systems are used to decode neural signals in patients with focal (hemiplegia), degenerative (ALS), or traumatic (amputation, SCI) conditions in order to control prosthetic limbs or remote devices.
+
+We organize the output from many cells in a vector representation to describe neural activity. From these representations, we learn to predict the resulting movement. 
+- **Population vector**: population of $n$ (usually 30-80) randomly selected cells in the primary motor cortex provides a sufficient prediction of dimensions of movements, such as direction or force output ([[neural computation]])
+From these representations, we must train a **decoder** to convert to real, predicted movements. 
+- Initialize decoder weights randomly
+- Choose a control signal (e.g. single cell recording near motor cortex)
+	- Non-invasive signals (e.g. EEG) are lower-resolution
+	- Invasive methods (e.g. Neuralink) increase data acquisition and feedback simulation for closed-loop systems
+- Use control signal to learn the weights over time
+Current work in BMI trie
