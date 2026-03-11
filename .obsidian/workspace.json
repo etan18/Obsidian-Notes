@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "accenture"
             }
+          },
+          {
+            "id": "407334bd53a3b3d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HW3 Report.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HW3 Report"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,8 +182,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "42c7ed40ff3e2e2e",
+  "active": "407334bd53a3b3d0",
   "lastOpenFiles": [
+    "Pasted image 20260310162329.png",
+    "Pasted image 20260310161525.png",
+    "Pasted image 20260310161352.png",
+    "accenture.md",
+    "HW3 Report.md",
     "Cognitive Science/nervous system.md",
     "Cognitive Science/Computational Modeling/neural computation.md",
     "Computer Science/high-dimensional computing.md",
@@ -179,7 +199,6 @@
     "Machine Learning/Artificial Intelligence/q-learning.md",
     "Computer Science/Networking/internet.md",
     "week log.md",
-    "accenture.md",
     "unfinished/human-computer interaction.md",
     "unfinished/user experience.md",
     "Cognitive Science/Psychology/behaviorism.md",
@@ -193,8 +212,6 @@
     "Cognitive Science/cognitive architectures.md",
     "Machine Learning/Deep Learning & Neural Networks/attention.md",
     "unfinished/data structures.md",
-    "unfinished/research methods.md",
-    "Research/ai scribes.md",
     "Research/accenture.png",
     "Computer Science/img/tpu.png",
     "Pasted image 20260223194220.png",
@@ -203,8 +220,6 @@
     "Pasted image 20260223130435.png",
     "Pasted image 20260223130231.png",
     "Pasted image 20260223125359.png",
-    "Pasted image 20260223124736.png",
-    "Pasted image 20260223121140.png",
     "Untitled.canvas",
     "Machine Learning/Untitled.base",
     "Cognitive Science/Psychology",
