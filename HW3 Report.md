@@ -64,3 +64,8 @@ exploration_schedule = PiecewiseSchedule(
 	outside_value=0.01,
 )
 ```
+
+
+---
+
+### 3.4 Actor Update with Reparameterization

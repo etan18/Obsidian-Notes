@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week log.md",
+                "file": "HW3 Report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week log"
+              "title": "HW3 Report"
             }
           }
         ],
@@ -184,6 +184,9 @@
   },
   "active": "407334bd53a3b3d0",
   "lastOpenFiles": [
+    "Pasted image 20260312133315.png",
+    "qalmri.md",
+    "week log.md",
     "HW3 Report.md",
     "Pasted image 20260311160233.png",
     "Pasted image 20260310162329.png",
@@ -196,10 +199,8 @@
     "Machine Learning/Classical & Theory/representation learning.md",
     "Cognitive Science/motion.md",
     "Machine Learning/policy gradient.md",
-    "qalmri.md",
     "Machine Learning/Artificial Intelligence/q-learning.md",
     "Computer Science/Networking/internet.md",
-    "week log.md",
     "unfinished/human-computer interaction.md",
     "unfinished/user experience.md",
     "Cognitive Science/Psychology/behaviorism.md",
