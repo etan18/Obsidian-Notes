@@ -69,3 +69,4 @@ exploration_schedule = PiecewiseSchedule(
 ---
 
 ### 3.4 Actor Update with Reparameterization
+![[Pasted image 20260312152119.png]]
