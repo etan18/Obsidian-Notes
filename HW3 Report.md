@@ -80,3 +80,11 @@ The temperature starts at 0.1, but sharply decreases early before steadily incre
 
 **Why might the temperature change in this particular way for HalfCheetah?**
 Towards the beginning of training, the policy is highly stochastic (thus high entropy), so the autotune drives the temperature down to match the target entropy. As training makes the policy more deterministic (lower entropy), the temp increases, then levels off once the policy entropy is near the target.
+
+### 3.6 Stabilizing Target Values
+
+![[Pasted image 20260313001650.png]]
+**Discuss how these results relate to overestimation bias.**
+ Single-Q's  Q-values rise much faster than the clipped double-Q. This also leads to it having a lower average eval return.  this relates to overestimation bias because it means that the single cue agent was overoptimistic too early, leading to less stable learning.
+
+With clipped double Q, we observe more increases in average return over a longer time, indicating more stable learning. The q-values don't blow up as easily, meaning the actor cannot exploit those overestimation errors from the critic like it does in single Q.
