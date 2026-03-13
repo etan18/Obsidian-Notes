@@ -19,4 +19,9 @@ Psychological biases occur in many different forms:
 #### social preferences
 Much of existing economics assumes that people are selfish. While that's mostly true, people do tend to consider others when making economic decisions. Formally, this means that our **utility** may depend on the utility of others. 
 
+### *Nudge*
+Richard Thaler's work on behavioral economics won him the Nobel Prize in 2017. His work discusses various cognitive biases that shape how people make decisions. Some examples include
+- **Herd Mentality**: people are more likely to select choices they know are incorrect if they observe many other people choosing it.
+- 
+
 
