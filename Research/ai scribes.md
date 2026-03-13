@@ -13,6 +13,7 @@ Literature:
 - [What's in a note? Unpacking predictive value in clinical notes](https://pmc.ncbi.nlm.nih.gov/articles/PMC5961801/pdf/2840866.pdf) (2018)
 - [Adapted large language models can outperform medical experts in clinical text summarization](https://www.nature.com/articles/s41591-024-02855-5) (2024)
 	- Evaluated correctness, conciseness, and completeness via clinician user study, as well as traditional NLP metrics like BLEU/ROUGE
+- How do LLMs learn clinical information: https://arxiv.org/pdf/2505.15024
 ###### Slides
 - [Preliminary data analysis](https://docs.google.com/presentation/d/1H8FgXKU_eoG961NX0AksXGgJ1hIDj0TALVwmNimg0iQ/edit?usp=sharing)
 
@@ -92,3 +93,11 @@ go back to words that are non-overlapping between scribes and humans - for each 
 3. How do these differences translate to performance on downstream predictive tasks?
 4. Can we predict whether these differences will grow over time?
 	1. Human-in-the-loop vs. scribe-alone settings
+
+
+
+clinical notes:
+- use limited UMLS vocabularies
+- note down the semantic type / group of the term
+- incorporate abbreviations (https://conservancy.umn.edu/items/6651323b-444a-479e-a41a-abca58c2e721)
+- can we merge notes to query api less?
