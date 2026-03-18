@@ -101,3 +101,11 @@ clinical notes:
 - note down the semantic type / group of the term
 - incorporate abbreviations (https://conservancy.umn.edu/items/6651323b-444a-479e-a41a-abca58c2e721)
 - can we merge notes to query api less?
+
+
+rephrasing human notes:
+- Motivation: produce high-quality notes from human-written "seed"
+	- [Rephrasing the Web](https://arxiv.org/abs/2401.16380)
+	- [Rephrasing clinical notes](https://arxiv.org/html/2411.18940v1)
+		- Best prompt: "You are a medical artificial intelligence assistant. The assistant gives truthful, detailed, and professional answers to the requests. For the following paragraph give me a paraphrase of the same in high quality professional medical English language and explain the medical terms using your medical knowledge when necessary:"
+		- Following Maini et al. ([2024](https://arxiv.org/html/2411.18940v1#bib.bib22)), we apply NLTK to split clinical notes into sentences and coalesce them into chunks of approximately 300 tokens. They found asking LLMs to rephrase more than 300 tokens tends to cause information loss.
