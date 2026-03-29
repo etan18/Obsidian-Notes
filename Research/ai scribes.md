@@ -1,3 +1,11 @@
+Week TODO:
+- [ ] Distribution shift primary diagnosis models (train on SCRIBE test on HUMAN, etc.)
+- [ ] PCA of note embeddings (Fig 1 of How LLMs Distort Written Language)
+- [ ] Versa API setup
+	- [ ] Primary Diagnosis Prediction
+	- [ ] Rephrasing of human notes
+
+---
 Data:
 - ~31,000 encounters from Dec. 2024 - Present
 	- 23,801 non-empty notes (after updates)
@@ -113,3 +121,5 @@ rephrasing human notes:
 	- [Rephrasing clinical notes](https://arxiv.org/html/2411.18940v1)
 		- Best prompt: "You are a medical artificial intelligence assistant. The assistant gives truthful, detailed, and professional answers to the requests. For the following paragraph give me a paraphrase of the same in high quality professional medical English language and explain the medical terms using your medical knowledge when necessary:"
 		- Following Maini et al. ([2024](https://arxiv.org/html/2411.18940v1#bib.bib22)), we apply NLTK to split clinical notes into sentences and coalesce them into chunks of approximately 300 tokens. They found asking LLMs to rephrase more than 300 tokens tends to cause information loss.
+
+
