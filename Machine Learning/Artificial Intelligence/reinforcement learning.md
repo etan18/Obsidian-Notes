@@ -25,7 +25,7 @@ Training an RL agent typically involves a few key aspects:
 
 Because  the full roll out of actions from start to terminal state can be very long, we also express sequences of actions as **trajectories** $\tau$. The overarching objective of reinforcement learning then is to learn the optimal policy $\pi_*$ with parameters $\theta_*$ that maximizes long-term reward.
 $$\theta_* = \arg\max_{\theta} \mathbb E_{\tau \sim p_{\theta}(\tau)}\bigg[\sum_{t\in\tau}r_(s_t, a_t)\bigg]$$
-Here, $p_{\theta}$ is the probability of a trajectory under the current policy parameters. A **[[policy gradient]]** approach to RL would directly optimize the RL objective. There are also **value-based** RL algorithms, most notably [[Q-learning]].
+Here, $p_{\theta}$ is the probability of a trajectory under the current policy parameters. A **[[policy gradient]]** approach to RL would directly optimize the RL objective. There are also [[value-based RL]] algorithms, most notably [[Q-learning]], where the agent learns a function to estimate the long-term expected reward (i.e. the value) under a given policy.
 
 ![[rl.png]]
 In modern deep learning, this workflow would look like 
