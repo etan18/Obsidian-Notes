@@ -16,6 +16,8 @@ In 1953, Henry Molaison had his hippocampus removed in an attempt to cure his ep
 -   Concluded that _memory consolidation_, or the process of encoding short term memory to long term memory, occurs in the hippocampus
 In comparison to anterograde amnesia, **retrograde amnesia** is the inability to retrieve existing information and memories.
 
+This also clearly delineated the difference between explicit (or *declarative*) and implicit (or *procedural*) memory. HM was not able to form new explicit memories, but was able to learn motor tasks, showing that these are decoupled systems, where explicit memory is housed in the hippocampus.
+
 **Kim Peek**
 Kim Peek was born without a *corpus callosum*, which caused him to have *Savant Syndrome*, a phenomenon that gives people with mental disabilities extraordinary abilities on specific tasks. Peek had an unlimited memory.
 

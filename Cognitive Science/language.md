@@ -36,16 +36,22 @@ Linguist responsible for the shift away from strictly behaviorist perspectives t
 
 --- 
 ## language in the brain
-**Broca’s Area** near the motor cortex of the left frontal premotor cortex is the motor speech area. This area regulates breathing patterns while speaking and vocalizations required for normal speech.
+Language capabilities, both spoken language and comprehension, are heavily lateralized to the left hemisphere of the brain.
+- **Broca’s Area** near the motor cortex of the left frontal premotor cortex is the motor speech area. This area regulates breathing patterns while speaking and vocalizations required for normal speech.
+- **Wernicke’s Area** in the left posterior temporal/parietal cortex is the center of comprehension for language and speech sounds.
+There is a prominent white matter tract, called the **arcuate fasciculus**, that strongly connects Broca's and Wernicke's areas.
 
-**Wernicke’s Area** in the left posterior temporal/parietal cortex is the center of comprehension for language and speech sounds.
+It has also been shown that congenitally deaf individuals who communicate through ASL also encode sign language production and interpretation in Broca's and Wernicke's areas, respectively.
 
 >[!note] The Wada Test
->In most people, language is dominated in the left hemisphere. The **Wada Test** is used to determine which hemisphere a person’s language center is in. The process involves sedating one hemisphere of the [[brain]] at a time, or using [[imaging|fMRI]] to map the active regions of the brain when speaking.
+>In most people, language is dominated in the left hemisphere. The **Wada Test** is used to determine which hemisphere a person’s language and memory centers are in. The process involves sedating one hemisphere of the [[brain]] at a time, or using [[imaging|fMRI]] to map the active regions of the brain when speaking.
+>
+>It is a neurodiagnostic exam conducted primarily before epilepsy surgery.
 
 *[[aphasia]] -* impairment of language
-*Apaxia -* inability to perform some task coherently (e.g. Broca’s Aphasia)
-*Agnosia -* inability to process or interpret sensations (e.g. Wernicke’s Aphasia)
+*apaxia -* inability to perform some task coherently (e.g. Broca’s Aphasia)
+*agnosia -* inability to process or interpret sensations (e.g. Wernicke’s Aphasia)
+*anomia* - severe difficulty recalling names, nouns, and verbs, despite full knowledge
 
 ---
 ## information theoretic view

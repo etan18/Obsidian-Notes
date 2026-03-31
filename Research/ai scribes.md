@@ -1,6 +1,6 @@
 Week TODO:
-- [ ] Distribution shift primary diagnosis models (train on SCRIBE test on HUMAN, etc.)
-- [ ] PCA of note embeddings (Fig 1 of How LLMs Distort Written Language)
+- [x] Distribution shift primary diagnosis models (train on SCRIBE test on HUMAN, etc.)
+- [x] PCA of note embeddings (Fig 1 of How LLMs Distort Written Language)
 - [ ] Versa API setup
 	- [ ] Primary Diagnosis Prediction
 	- [ ] Rephrasing of human notes
