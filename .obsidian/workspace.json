@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "970d1e51a5598c59",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://arxiv.org/pdf/2411.18940v1",
+                "title": "2411.18940v1",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "2411.18940v1"
+            }
+          },
+          {
             "id": "d7ead67bb375472b",
             "type": "leaf",
             "state": {
@@ -199,11 +213,11 @@
   },
   "active": "407334bd53a3b3d0",
   "lastOpenFiles": [
+    "Research/ai scribes.md",
     "Cognitive Science/language.md",
     "Cognitive Science/imaging.md",
     "Cognitive Science/memory.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
-    "Research/ai scribes.md",
     "HW4 Report.md",
     "Pasted image 20260330162523.png",
     "Cognitive Science/Perception/visual cortex.md",

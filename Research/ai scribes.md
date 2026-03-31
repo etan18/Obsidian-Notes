@@ -121,5 +121,8 @@ rephrasing human notes:
 	- [Rephrasing clinical notes](https://arxiv.org/html/2411.18940v1)
 		- Best prompt: "You are a medical artificial intelligence assistant. The assistant gives truthful, detailed, and professional answers to the requests. For the following paragraph give me a paraphrase of the same in high quality professional medical English language and explain the medical terms using your medical knowledge when necessary:"
 		- Following Maini et al. ([2024](https://arxiv.org/html/2411.18940v1#bib.bib22)), we apply NLTK to split clinical notes into sentences and coalesce them into chunks of approximately 300 tokens. They found asking LLMs to rephrase more than 300 tokens tends to cause information loss.
+		- "In particular, we need to understand whether LLMs’ rephrasing causes subtle shifts in clinical meaning and the extent of possible hallucinations."
 
+
+You are a physician at UCSF Medical Center. 
 
