@@ -124,5 +124,4 @@ rephrasing human notes:
 		- "In particular, we need to understand whether LLMs’ rephrasing causes subtle shifts in clinical meaning and the extent of possible hallucinations."
 
 
-You are a physician at UCSF Medical Center. 
 
