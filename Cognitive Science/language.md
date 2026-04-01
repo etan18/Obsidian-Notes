@@ -43,6 +43,9 @@ There is a prominent white matter tract, called the **arcuate fasciculus**, that
 
 It has also been shown that congenitally deaf individuals who communicate through ASL also encode sign language production and interpretation in Broca's and Wernicke's areas, respectively.
 
+The **visual word form area** (VWFA) is a specialized region in the left posterior fusiform gyrus that is particularly responsive to written characters and written language. The VWFA and the [[cognitive architectures#localization|fusiform face area]] (FFA) are both part of the [[visual cortex#v4 ventral stream|ventral stream]] of the visual cortex.
+![[vwfa.png|540]]
+
 >[!note] The Wada Test
 >In most people, language is dominated in the left hemisphere. The **Wada Test** is used to determine which hemisphere a person’s language and memory centers are in. The process involves sedating one hemisphere of the [[brain]] at a time, or using [[imaging|fMRI]] to map the active regions of the brain when speaking.
 >
