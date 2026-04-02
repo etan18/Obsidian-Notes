@@ -3,6 +3,8 @@
 
 Synthetic data uses a **generator** model to sample artificial datapoints from a distribution learned from real data. We then use this synthetic data as part of our pre-training or post-training data mixtures to produce better models. 
 
+We can also use synthetic data for [[large language models#distillation|distillation]] to produce high-performing, smaller models.
+
 >[!tip] Subliminal Learning
 > [Anthropic research](https://alignment.anthropic.com/2025/subliminal-learning/) has showed that the choice of generator model can heavily influence downstream results. Specifically, they describe a student-teacher setup where the teacher generates synthetic data used to train the student. The student learns preferences of the teacher even if the data samples are unrelated to the preferences (e.g. a student model will demonstrate preference towards pandas if trained on data from a teacher trained to love pandas.)
 
