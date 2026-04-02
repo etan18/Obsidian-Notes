@@ -1,4 +1,6 @@
 #cogsci1 #cogsci126 
+
+Models of cognitive architecture aim to explain how the brain is organized to encode, consolidate, and recall information. These are strongly tied with mechanisms of [[memory]], [[perception]], and [[learning]]. 
 ## localization
 Localization of function is the notion that specific areas of the brain control specific aspects of who we are, which is to some degrees the way our [[brain]] actually works. 
 - *Broca's area* controls [[language]], particularly speech production

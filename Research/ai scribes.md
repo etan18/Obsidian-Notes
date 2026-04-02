@@ -2,8 +2,11 @@ Week TODO:
 - [x] Distribution shift primary diagnosis models (train on SCRIBE test on HUMAN, etc.)
 - [x] PCA of note embeddings (Fig 1 of How LLMs Distort Written Language)
 - [ ] Versa API setup
-	- [ ] Primary Diagnosis Prediction
+	- [x] Primary Diagnosis Prediction
 	- [ ] Rephrasing of human notes
+- [ ] Rare disease prediction - is it feasible?
+	- https://www.nature.com/articles/s41586-025-10097-9#Sec3
+	- https://www.orphadata.com/_pack-nomenclature/
 
 ---
 Data:

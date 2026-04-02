@@ -70,3 +70,14 @@ It’s difficult for NLP models to pass the [[artificial intelligence#alan turin
 4.  Ambiguity — words with multiple meanings, run-on sentences
 
 **GPT-3** is a _predictive language model_ from OpenAI. It fails Turing Test when given non-sensical prompts (randomly outputs an answer)
+
+---
+### auditory pathways
+When we are listening to someone speak, there are two processes happening:
+- Auditory-phonological conversion, the bottom-up processing of raw speech into coherent [[linguistics|linguistic]] units.
+- Auditory word representation, the higher level semantic decoding to gather the meaning and intention of some speech.
+
+Similarly, when we are reading some text, there are two pathways:
+- Orthographic-phoneme conversion, grammatical parsing of text
+- Visual word representation, which maps words to their semantic representations
+Disorders causing disruptions in either pathway are known as **dyslexia**.

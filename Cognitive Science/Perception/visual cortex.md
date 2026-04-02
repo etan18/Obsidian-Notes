@@ -55,6 +55,7 @@ After the V1, visual information is sent to the **extrastriate cortex**, which i
 _The “what” pathway_, in the inferior part of the temporal lobe is used for [[perception#object identification|object identification]].
 - Achromatopsia - _brain can’t process color_
 - Prosopagnosia - _brain can’t process faces_
+This stream passes through the inferior (lower) temporal lobe and is most visible from a ventral (bottom) view of the brain. It includes the fusiform face area and visual word form area, which are important regions for recognizing faces and written characters, respectively.
 #### v5: dorsal stream
 _The “where” pathway_, located in the parietal lobe is used for locating, navigating to, and grasping objects. It also processes actions and movements.
 - Akinetopsia: _motion blindness_

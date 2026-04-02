@@ -1,3 +1,5 @@
+**Linguistics** is the study of [[language]].
+
 Languages can be studied at different levels:
 - Phonetics: sounds in a language (phonemes)
 	- Graphemes: atomic units in a *writing* system
