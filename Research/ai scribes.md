@@ -4,7 +4,7 @@ Week TODO:
 - [ ] Versa API setup
 	- [x] Primary Diagnosis Prediction
 	- [ ] Rephrasing of human notes
-- [ ] Primary Diagnosis Prediction with Phi 4
+- [x] Primary Diagnosis Prediction with Phi 4
 - [ ] Rare disease prediction - is it feasible?
 	- https://www.nature.com/articles/s41586-025-10097-9#Sec3
 	- https://www.orphadata.com/_pack-nomenclature/
