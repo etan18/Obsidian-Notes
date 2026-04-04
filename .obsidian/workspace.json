@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "048f63c14fcb9407",
+            "id": "84301106aa0844df",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.nature.com/articles/s41586-025-10097-9#Sec3",
-                "title": "An agentic system for rare disease diagnosis with traceable reasoning | Nature",
+                "url": "https://arxiv.org/html/2411.18940v1#bib.bib22",
+                "title": "Rephrasing Electronic Health Records for Pretraining Clinical Language Models",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "An agentic system for rare disease diagnosis with traceable reasoning | Nature"
+              "title": "Rephrasing Electronic Health Records for Pretraining Clinical Language Models"
             }
           }
         ]
