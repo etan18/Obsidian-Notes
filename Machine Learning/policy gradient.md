@@ -36,12 +36,12 @@ In expectation, the baseline is *unbiased*, meaning $\mathbb E[\nabla_\theta \lo
 
 #### on-policy actor-critic
 Introducing a [[value-based RL|value-based]] critic helps alleviate the variance of policy gradients. Instead of using the baseline to estimate the advantage, it introduces a critic to evaluate the action taken by the actor, which is just executing the policy. The new advantage estimator is
-$$r(s_t, a_t) + \gamma\hat{V}^\pi(s_{t+1}) - \hat{V}^\pi(s_{t})$$
+$$\hat{A}^\pi(s_t, a_t) = r(s_t, a_t) + \gamma\hat{V}^\pi(s_{t+1}) - \hat{V}^\pi(s_{t})$$
 It is essentially computing the advantage as the estimated discounted future rewards (including the rewards from the current timestep $t$). We subtract the value for timesteps $0, \dots, t$ to isolate only future rewards.
 
-However, this method is no longer unbiased, given that your critic is imperfect.
+However, this method is no longer unbiased, given that your critic is imperfect. There are some other advantage estimators we can use:
+- **$n$-step estimator**: finite-horizon discounted advantage (earlier steps are weighted higher)
 #### generalized advantage estimation
-
-![[Pasted image 20260330131429.png]]
+![[gae.png]]
 
 In practice, center the advantage estimates. 

@@ -1,13 +1,13 @@
 Week TODO:
 - [x] Distribution shift primary diagnosis models (train on SCRIBE test on HUMAN, etc.)
-	- [ ] Group by change in # of clinical terms / quantitative values
+	- [x] Group by change in # of clinical terms / quantitative values
 - [x] PCA of note embeddings (Fig 1 of How LLMs Distort Written Language)
 - [ ] Versa API setup
 	- [x] Primary Diagnosis Prediction
 	- [x] Rephrasing of human notes 
 	- [ ] Revisions of human notes (in progress)
 - [x] Primary Diagnosis Prediction with Phi 4
-- [ ] words in scribe notes that don't appear in edits (in progress; data extracted)
+- [x] words in scribe notes that don't appear in edits (in progress; data extracted)
 - [ ] Prediction task setup
 	- [ ] 30 day followup
 	- [ ] Social determinants of health
