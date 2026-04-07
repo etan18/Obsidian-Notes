@@ -16,7 +16,18 @@ At each time step, we have:
 1. A batch of transitions $(s_i, a_i, s'_i)$ for $1 \dots i, \dots n$. 
 2. For each sample, evaluate the target $y_i = r(s_i, a_i) + \gamma\max_{a'} Q_\theta(s'_i, a')$. 
 	- Notice how we always choose the *best* next action. This is the policy of Q-learning, where the optimal policy is derived from the optimal Q-function:$$\pi_\theta(s) = \arg\max_a Q_\theta(s, a)$$ Because this is a deterministic policy, we can cache all $\arg\max_a$ values for each state $s$ in a table and update these values as we go.
+	- Also note that the targets are not differentiable ($\max$ is discrete). In practice, gradients should treat the targets as a constant.
 3. Perform a gradient update over $\theta$ to update the Q-function.
+
+>[!tip] Epsilon-Greedy Policies
+>Because Q-learning directly learns the optimal policy (which is fixed), we can use any policy of our choosing to generate samples without affecting learning. Our goal with selecting this policy should be to ensure diversity in states visited (**exploration**) but also high visibility for states we know are advantageous (**exploitation**). 
+>
+>$\epsilon$-greedy policies balance this tradeoff using tunable parameter $0 < \epsilon < 1$. Under this policy, we choose $$\pi(a_t|s_t) = \begin{cases}1-\epsilon & \text{if } a_t = \arg\max_a Q(s_t, a) \\ \epsilon & \text{else, select at random} \end{cases}$$
+
+In practice, recomputing our target values $y$ every iteration based on incrementally updated versions of $Q_\theta$ is suboptimal because it effectively means that our optimization problem *changes* every iteration. This happens because our targets are derived from $Q_\theta$. 
+
+Instead, we introduce a **target network** $Q_{\bar\theta}$, which is a static copy of $Q_{\theta}$, to efficiently compute targets $y$ and that only receives parameter updates $\bar\theta \leftarrow \theta$ every $n$ (say, 10,000) gradient steps. 
+
 ### bellman equations
 Solving the Bellman Equations allows you to determine the optimal policy for [[rational agent]]. It determines the update rule for Q-learning. Define the value function $V^{\pi}(s)$ with respect to current state $s$, as follows:
 $$V^{\pi}(s) = R(s) + \sum^{s'}_{(s, s') \in E} \mathbb{P}_s(s') \times V^{\pi}(s')$$

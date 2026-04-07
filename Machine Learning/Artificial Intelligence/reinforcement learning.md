@@ -31,16 +31,29 @@ Here, $p_{\theta}$ is the probability of a trajectory under the current policy p
 In modern deep learning, this workflow would look like 
 1. Fitting a neural network $f$ such that $s_{t+1} \approx f(s_t, a_t)$ 
 2. Backpropagation through $f$ and $r$ to train policy $\pi_{\theta}(s_t) = a_t$ 
-This is a model-based approach.
-### model-based learning
-Model-based learning builds off of [[markov decision processes]]. The key difference here is that we don't know the *transition probabilities* $T(s, a, s')$ or the reward function of each state, so we have to estimate it empirically. 
+This is a **model-based** approach.
 
-We do this by running (or sampling) the current policy as many times as we can to compute increasingly accurate probabilities. This is also known as **online learning**, where data is collected and learned from in real-time, as opposed to *offline planning* that we see in MDPs. 
+Data collection, the process of generating samples from a policy, can be divided into online and offline learning methods. 
+- For **online** learning, the agent is collecting data operating under the current policy. This means we get new, up-to-date data every iteration. 
+- For **offline** learning, we only have access to a static dataset, which may or may not be up-to-date with the current policy. We cannot collect more data as we update the model.
+Further, the model learning step can also be divided into on-policy and off-policy methods:
+- **On-policy**: we only learn from data generated under (or very close to) the current policy.
+- **Off-policy**: we may learn from out-of-date data as well.
 
-The estimated transition function $\hat{T}(s, a, s')$ is calculated simply by observing the fraction of times that an agent lands in state $s'$ after taking action $a$ from state $s$. By law of large numbers, we can prove that $\hat{T} \longrightarrow T$ as our number of samples $n \rightarrow \infty$. 
-
+There are nuances between these types of methods. For online + on-policy learning, we would only train on fresh rollouts and discard old data each iteration. For online + off-policy learning, we would store all data in a **replay buffer** and add fresh data each iteration, but we would sample mini-batches from the entire buffer to learn from.
 ### model-free learning
 ###### passive reinforcement learning
 Passive reinforcement learning is a method of evaluating a given policy by following it as is and seeing how well it performs.
+### model-based learning
+Model-based learning builds off of [[markov decision processes]]. The key difference here is that we don't know the *transition probabilities* $T(s, a, s')$ or the reward function of each state, so we have to learn them ourselves. Concretely, the goal is to learn a transition function approximator $f(s, a) \rightarrow s'$. 
+
+A naive way to do this is to estimate it empirically. We do this by running (or sampling) the current policy as many times as we can to compute increasingly accurate probabilities. The estimated transition function $\hat{T}(s, a, s')$ is calculated simply by observing the fraction of times that an agent lands in state $s'$ after taking action $a$ from state $s$. 
+- This is an online learning method, where data is collected and learned from in real-time, as opposed to *offline planning* that we see in MDPs. 
+- By law of large numbers, we can prove that $\hat{T} \longrightarrow T$ as our number of samples $n \rightarrow \infty$. 
+
+>[!warning] Uncertainty
+>There are a few types of uncertainty that arise in our learned simulator:
+>- **Aleatoric**: data uncertainty, intrinsic randomness from incomplete or finite data
+>- **Epistemic**: model uncertainty, lack of knowledge from model limitations (can be addressed by fixing the model)
 
 

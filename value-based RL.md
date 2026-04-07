@@ -8,4 +8,12 @@ Now having defined the Q- and value-functions, the next step is how to learn the
 ![[Pasted image 20260407001940.png]]
 
 ### fitted value iteration
-Now we treat the learning of the value function as a [[regression]] problem.
+Now we treat the learning of the value function as a [[regression]] problem. For a dataset of transition samples $\{(s_i, a_i, s'_i)\}_{i=1}^n$, we fit a neural network to approximate $Q_\theta(s, a)$ for parameters $\theta$. Our targets $y_i$ for each sample $i$ is computed as
+$$y_i = r(s_i, a_i) + \gamma \max_{a'}Q_\theta(s'_i, a')$$
+This is computing the Bellman optimality equation under Q-learning to set the action-value (Q-value) target. Note that this operates under the assumption that $\max_{a'}Q(s', a') \approx V^*(s')$.
+
+From these targets, we can perform our gradient updates w.r.t $\theta$. 
+
+>[!tip] Boltzmann Exploration
+> For any algorithm using the fixed optimal policy (ala Q-learning), we can choose a policy to run simulation in such a way that our collected data balances exploitation and exploration. For problems with larger state spaces and discrete action spaces, we can use **Boltzmann exploration**. This policy assigns probabilities $$\pi(a_t|s_t) \propto \exp(Q_\theta(s_t, a_t))$$ 
+
