@@ -4,6 +4,9 @@
 
 HD computing is the over-arching framework that governs the primary methods for fields like [[sequence modeling]] (e.g. Word2Vec).
 
+>[!danger] Curse of Dimensionality
+>As data becomes more high dimensional, we incur exponential increases in storage volume and data sparsity. This makes data analysis on high-dimensional data---we are susceptible to overfitting, require increased computational costs, among other new challenges.
+
 ### representing relationships
 The ability to *bind* together multiple high-dimensional base vectors to represent more complex concepts and the relationships between concepts is a key characteristic of HD computing, known as **structural alignment**. For example, we can represent the meaning of a whole sentence by taking a *superposition* of the key-value bindings of the words in the sentence.
 

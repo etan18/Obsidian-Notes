@@ -56,7 +56,7 @@ $$\hat{A}_{GAE}^\pi (s_t, a_t) = \sum_{t'=t}^\infty (\gamma\lambda)^{t'-t}(r(s_{
 where $\gamma$ acts as a discount factor and $\lambda$ is the weight parameter.
 
 ![[gae.png]]
->[!tip] Replay Buffer
+>[!tip] Off-Policy Actor-Critic (a.k.a real Actor-Critic)
 >We want to be able to reuse data, instead of simulating it once, computing the advantage, then moving on like the previous algorithms do. What we do is keep a **replay buffer** storing states we've visited in the past. At each timestep, we randomly select a minibatch of i.i.d. states $\{s_i\}_{i=1}^n$. For each state, we sample an action from our current policy (to ensure data is up-to-date) to get Q-states $(s_i, a_i^\pi)$. 
 >
 >We can then update our policy by taking the gradient of the estimated Q-function. This makes scaling sample size much cheaper.
