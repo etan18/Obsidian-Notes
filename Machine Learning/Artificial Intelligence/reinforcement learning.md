@@ -33,7 +33,9 @@ In modern deep learning, this workflow would look like
 2. Backpropagation through $f$ and $r$ to train policy $\pi_{\theta}(s_t) = a_t$ 
 This is a model-based approach.
 ### model-based learning
-Model-based learning builds off of [[markov decision processes]]. The key difference here is that we don't know the *transition probabilities* $T(s, a, s')$ or the reward function of each state, so we have to estimate it empirically. This is also known as **online learning**, as opposed to *offline planning* that we see in MDPs. 
+Model-based learning builds off of [[markov decision processes]]. The key difference here is that we don't know the *transition probabilities* $T(s, a, s')$ or the reward function of each state, so we have to estimate it empirically. 
+
+We do this by running (or sampling) the current policy as many times as we can to compute increasingly accurate probabilities. This is also known as **online learning**, where data is collected and learned from in real-time, as opposed to *offline planning* that we see in MDPs. 
 
 The estimated transition function $\hat{T}(s, a, s')$ is calculated simply by observing the fraction of times that an agent lands in state $s'$ after taking action $a$ from state $s$. By law of large numbers, we can prove that $\hat{T} \longrightarrow T$ as our number of samples $n \rightarrow \infty$. 
 

@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cognitive Science/nervous system.md",
+                "file": "Machine Learning/policy gradient.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nervous system"
-            }
-          },
-          {
-            "id": "84301106aa0844df",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://arxiv.org/html/2411.18940v1#bib.bib22",
-                "title": "Rephrasing Electronic Health Records for Pretraining Clinical Language Models",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Rephrasing Electronic Health Records for Pretraining Clinical Language Models"
+              "title": "policy gradient"
             }
           }
         ]
@@ -67,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pyra",
+                "query": "online rl",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -184,9 +170,10 @@
   },
   "active": "407334bd53a3b3d0",
   "lastOpenFiles": [
-    "Machine Learning/policy gradient.md",
-    "Machine Learning/img/gae.png",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
+    "Machine Learning/policy gradient.md",
+    "Cognitive Science/nervous system.md",
+    "Machine Learning/img/gae.png",
     "value-based RL.md",
     "Machine Learning/imitation learning.md",
     "Research/ai scribes.md",

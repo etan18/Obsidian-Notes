@@ -34,14 +34,29 @@ In expectation, the baseline is *unbiased*, meaning $\mathbb E[\nabla_\theta \lo
 - Value: $V(s_t) = \mathbb E_{a_t \sim \pi_{\theta}(a_t|s_t)}[Q(s_t, a_t)]$
 - Optimal baseline: compute the variance of the sample
 
+Any function that quantifies, on average, how much better an action is than others is known as an **advantage function**. $(r(\tau)-b)$ is a simple advantage functions, but we will discuss more complex ones in the next section.
+- In practice, we typically center the advantages $\hat A = \frac{\hat A - \mu}{\sigma}$
 #### on-policy actor-critic
-Introducing a [[value-based RL|value-based]] critic helps alleviate the variance of policy gradients. Instead of using the baseline to estimate the advantage, it introduces a critic to evaluate the action taken by the actor, which is just executing the policy. The new advantage estimator is
+Introducing a [[value-based RL|value-based]] critic helps alleviate the variance of policy gradients. Instead of using the baseline to estimate the advantage, it introduces a critic to evaluate the action taken by the actor, which is just executing the policy. 
+
+The new advantage estimator is
 $$\hat{A}^\pi(s_t, a_t) = r(s_t, a_t) + \gamma\hat{V}^\pi(s_{t+1}) - \hat{V}^\pi(s_{t})$$
 It is essentially computing the advantage as the estimated discounted future rewards (including the rewards from the current timestep $t$). We subtract the value for timesteps $0, \dots, t$ to isolate only future rewards.
 
 However, this method is no longer unbiased, given that your critic is imperfect. There are some other advantage estimators we can use:
-- **$n$-step estimator**: finite-horizon discounted advantage (earlier steps are weighted higher)
+- **$n$-step estimator**: sums over finite horizon $n$ steps in the future. The "critic" above can be viewed as a $1$-step estimator. 
+	- Select $n$ to balance bias-variance tradeoff (lower bias, higher variance as $n$ increases).
+- **Monte Carlo estimator**: sums over an infinite horizon of samples (no bias, high variance for longer horizons). This can be viewed as an $\infty$-step estimator.
+	- Because Monte Carlo is effectively simulating real data infinitely, its advantage estimate is unbiased. For any finite $n$-step estimator, we are effectively cutting off the simulation at timestep $n$ and replacing the contribution of $n+1 \le t' < \infty$ with the value $\hat{V}^\pi(s_{n+1})$
 #### generalized advantage estimation
-![[gae.png]]
+Takes the weighted sum over all possible $n$-step estimators. The assigned weight is generally $w_n \propto \lambda^{n-1}$. 
+$$\hat{A}_{GAE}^\pi (s_t, a_t) = \sum_{n=1}^\infty w_n \cdot \hat{A}_n^\pi(s_t, a_t)$$
+To make this value computable, we can re-write it as a sum over timesteps, like the n-step estimators above:
+$$\hat{A}_{GAE}^\pi (s_t, a_t) = \sum_{t'=t}^\infty (\gamma\lambda)^{t'-t}(r(s_{t'}, a_{t'}) + \gamma \hat V^\pi(s_{t'+1})) - \hat V^\pi(s_{t'})$$
+where $\gamma$ acts as a discount factor and $\lambda$ is the weight parameter.
 
-In practice, center the advantage estimates. 
+![[gae.png]]
+>[!tip] Replay Buffer
+>We want to be able to reuse data, instead of simulating it once, computing the advantage, then moving on like the previous algorithms do. What we do is keep a **replay buffer** storing states we've visited in the past. At each timestep, we randomly select a minibatch of i.i.d. states $\{s_i\}_{i=1}^n$. For each state, we sample an action from our current policy (to ensure data is up-to-date) to get Q-states $(s_i, a_i^\pi)$. 
+>
+>We can then update our policy by taking the gradient of the estimated Q-function. This makes scaling sample size much cheaper.
