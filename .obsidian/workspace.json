@@ -49,7 +49,8 @@
               "title": "week log"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -195,8 +196,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "407334bd53a3b3d0",
+  "active": "795113d0ee706b8a",
   "lastOpenFiles": [
+    "value-based RL.md",
     "Machine Learning/Artificial Intelligence/q-learning.md",
     "Machine Learning/policy gradient.md",
     "Machine Learning/img/policy.png",
@@ -206,7 +208,6 @@
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "variational inference.md",
     "Machine Learning/Classification/bayes classifiers.md",
-    "value-based RL.md",
     "Cognitive Science/Psychology/behaviorism.md",
     "Machine Learning/Artificial Intelligence/heuristics.md",
     "Machine Learning/Artificial Intelligence/rational agent.md",
