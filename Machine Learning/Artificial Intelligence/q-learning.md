@@ -39,13 +39,7 @@ In this equation, $R(s)$ denotes the reward for being in state $s$. $\mathbb{P}_
 Bellman error gradients can be big, we can address this by using **Huber loss** instead of MSE, or by implementing gradient clipping to set an upper bound on the norm of the gradients.
 
 ---
-### approximate q-learning
-Approximate Q-learning employs a **feature-based representation** of Q-states to be able to extrapolate the general experiences of an agent to similar, potentially unseen situations. 
-
-Let $f: (s, a) \rightarrow \mathbb{R}^n$ be the function which featurizes a Q-state, producing an $n$-dimensional feature vector. Then, our goal is to learn weight vector $w \in \mathbb{R}^n$ such that 
-$$Q(s, a) \approx w^\top f(s, a)$$
-This also means that states which are similar to each other have similar feature representations, so we benefit from generalization in the case where we don't have many data points for a certain state. 
-## deep q-learning (DQN)
+# deep q-learning (DQN)
 
 ![[dqn.png]]
 
@@ -75,6 +69,25 @@ In practice, what we can do is replace $Q_{\theta_A}$ and $Q_{\theta_B}$ with ou
 One [[ensemble learning]] approach to address overestimation is to just maintain $n=2$ copies of both the Q-network and target network and take the $\arg\min$ of the $\arg\max$ of the copies.
 
 ---
-## q-learning on continuous action spaces
+## continuous action spaces
+
+Continuous Q-learning methods are popular alternatives to actor-critic methods.
+- **Stochastic optimization**: A naive approach would sample $N$ candidate actions from the state space $\{(s, a_i)\}_{i=1}^N$ , and just perform standard Q-learning over the discrete set of candidates.
+- **Cross-Entropy Method**: if we iteratively perform stochastic optimization, incrementally updating the model at each step, we get CEM. This works well for smaller dimension spaces.
+
+#### approximate q-learning
+Approximate Q-learning, also known as deep deterministic policy gradient, employs a **feature-based representation** of Q-states to be able to extrapolate the general experiences of an agent to similar, potentially unseen situations. 
+
+Let $f: (s, a) \rightarrow \mathbb{R}^n$ be the function which featurizes a Q-state, producing an $n$-dimensional feature vector. Then, our goal is to learn weight vector $w \in \mathbb{R}^n$ such that 
+$$Q_w(s, a) \approx w^\top f(s, a)$$
+This also means that states which are similar to each other have similar feature representations, so we benefit from generalization in the case where we don't have many data points for a certain state. 
+
+In continuous action spaces, taking the arg-max is difficult to compute. Instead, we can approximate this with another neural network $\mu_\theta \approx \arg\max_a Q_w(s,a)$. Note that this is equivalent to a deterministic [[policy gradient#on-policy actor-critic|actor-critic]] algorithm, where $Q_w$ is the critic, and $\mu_\theta$ is the deterministic actor. 
+
+We can train $\mu_\theta$ under the update rule $$\theta \leftarrow \arg\max_\theta Q_w(s, \mu_\theta(s))$$
+
+
+
+
 
 

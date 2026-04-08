@@ -49,8 +49,7 @@
               "title": "week log"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,12 +195,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "faf3a87a4a121e77",
+  "active": "407334bd53a3b3d0",
   "lastOpenFiles": [
+    "Machine Learning/Artificial Intelligence/q-learning.md",
+    "Machine Learning/policy gradient.md",
     "Machine Learning/img/policy.png",
     "Machine Learning/img/qn.png",
     "Machine Learning/img/dqn.png",
-    "Machine Learning/Artificial Intelligence/q-learning.md",
     "week log.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "variational inference.md",
@@ -212,7 +212,6 @@
     "Machine Learning/Artificial Intelligence/rational agent.md",
     "Computer Science/high-dimensional computing.md",
     "synthetic data.md",
-    "Machine Learning/policy gradient.md",
     "Cognitive Science/nervous system.md",
     "Machine Learning/img/gae.png",
     "Machine Learning/imitation learning.md",
