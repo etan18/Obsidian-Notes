@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,18 +196,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "795113d0ee706b8a",
+  "active": "faf3a87a4a121e77",
   "lastOpenFiles": [
+    "Machine Learning/img/policy.png",
+    "Machine Learning/img/qn.png",
+    "Machine Learning/img/dqn.png",
+    "Machine Learning/Artificial Intelligence/q-learning.md",
+    "week log.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "variational inference.md",
     "Machine Learning/Classification/bayes classifiers.md",
-    "Machine Learning/Artificial Intelligence/q-learning.md",
     "value-based RL.md",
-    "week log.md",
     "Cognitive Science/Psychology/behaviorism.md",
     "Machine Learning/Artificial Intelligence/heuristics.md",
     "Machine Learning/Artificial Intelligence/rational agent.md",
-    "Pasted image 20260407001940.png",
     "Computer Science/high-dimensional computing.md",
     "synthetic data.md",
     "Machine Learning/policy gradient.md",
@@ -230,10 +232,7 @@
     "Pasted image 20260330132709.png",
     "Pasted image 20260330132620.png",
     "Pasted image 20260330131429.png",
-    "Machine Learning/Artificial Intelligence/markov decision processes.md",
     "Pasted image 20260313001650.png",
-    "Pasted image 20260312214110.png",
-    "Pasted image 20260312213445.png",
     "Untitled.canvas",
     "Machine Learning/Untitled.base",
     "Cognitive Science/Psychology",

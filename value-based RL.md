@@ -5,7 +5,7 @@
 
 ### policy iteration
 Now having defined the Q- and value-functions, the next step is how to learn them.
-![[Pasted image 20260407001940.png]]
+![[policy.png]]
 
 ### fitted value iteration
 Now we treat the learning of the value function as a [[regression]] problem. For a dataset of transition samples $\{(s_i, a_i, s'_i)\}_{i=1}^n$, we fit a neural network to approximate $Q_\theta(s, a)$ for parameters $\theta$. Our targets $y_i$ for each sample $i$ is computed as
