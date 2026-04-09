@@ -36,6 +36,7 @@ This is a **model-based** approach.
 Data collection, the process of generating samples from a policy, can be divided into online and offline learning methods. 
 - For **online** learning, the agent is collecting data operating under the current policy. This means we get new, up-to-date data every iteration. 
 - For **offline** learning, we only have access to a static dataset, which may or may not be up-to-date with the current policy. We cannot collect more data as we update the model.
+
 Further, the model learning step can also be divided into on-policy and off-policy methods:
 - **On-policy**: we only learn from data generated under (or very close to) the current policy.
 - **Off-policy**: we may learn from out-of-date data as well.

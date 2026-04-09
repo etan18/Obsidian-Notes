@@ -36,6 +36,11 @@ In expectation, the baseline is *unbiased*, meaning $\mathbb E[\nabla_\theta \lo
 
 Any function that quantifies, on average, how much better an action is than others is known as an **advantage function**. $(r(\tau)-b)$ is a simple advantage functions, but we will discuss more complex ones in the next section.
 - In practice, we typically center the advantages $\hat A = \frac{\hat A - \mu}{\sigma}$
+
+# actor-critic
+Actor-critic methods learn two models:
+1. **Critic** $Q_\theta(s, a)$: evaluate the expected return of a Q-state of the chosen action
+2. **Actor** $\pi_\phi(a|s)$: the policy which selects the actions
 #### on-policy actor-critic
 Introducing a [[value-based RL|value-based]] critic helps alleviate the variance of policy gradients. Instead of using the baseline to estimate the advantage, it introduces a critic to evaluate the action taken by the actor, which is just executing the policy. 
 
@@ -60,3 +65,7 @@ where $\gamma$ acts as a discount factor and $\lambda$ is the weight parameter.
 >We want to be able to reuse data, instead of simulating it once, computing the advantage, then moving on like the previous algorithms do. What we do is keep a **replay buffer** storing states we've visited in the past. At each timestep, we randomly select a minibatch of i.i.d. states $\{s_i\}_{i=1}^n$. For each state, we sample an action from our current policy (to ensure data is up-to-date) to get Q-states $(s_i, a_i^\pi)$. 
 >
 >We can then update our policy by taking the gradient of the estimated Q-function. This makes scaling sample size much cheaper.
+
+### soft actor-critic
+
+Introduces an **[[entropy]] bonus** $\alpha H(\pi((\cdot|s_t)))$ to the target which enhances the exploration of the policy.

@@ -36,10 +36,17 @@ Solving the Bellman Equations allows you to determine the optimal policy for [[r
 $$V^{\pi}(s) = R(s) + \sum^{s'}_{(s, s') \in E} \mathbb{P}_s(s') \times V^{\pi}(s')$$
 In this equation, $R(s)$ denotes the reward for being in state $s$. $\mathbb{P}_s(s')$ is the probability of transitioning from $s$ to $s'$, determined by state transition matrix for the current time step $\pi$. The equation is yielding the expected reward for the next transition.
 
+For the continuous case, the Bellman optimality equation can be rewritten as:
+$$Q^*(s, a) = r(s, a) + \gamma \mathbb E_{s' \sim p(s'|s, a)}[\max_{a'} Q^*(s', a')]$$
+Clearly, we do not have access to such a $Q^*$, so we need to learn an approximation $Q_\theta$ that is close enough.
+
 Bellman error gradients can be big, we can address this by using **Huber loss** instead of MSE, or by implementing gradient clipping to set an upper bound on the norm of the gradients.
 
+### temporal difference learning
+Q-networks are trained using TD-learning. TD loss is defined as $$\mathcal L(\theta) = \mathbb{E}_{(s, a, s') \sim \mathcal D}[(Q_\theta(s, a) - (r(s,a) + \gamma \max_{a'}Q_\theta(s', a')))^2]$$Unlike Monte Carlo which averages over real trajectories, TD learning bootstraps its current guess using other, existing estimates of the next state.
+
 ---
-# deep q-learning (DQN)
+# deep q-networks (DQN)
 
 ![[dqn.png]]
 
@@ -67,10 +74,7 @@ $$Q_{\theta_B }\leftarrow r + \gamma Q_{\theta_A}(s', \arg\max_{a'}Q_{\theta_B}(
 In practice, what we can do is replace $Q_{\theta_A}$ and $Q_{\theta_B}$ with our original Q-network $Q_\theta$ and target network $Q_{\bar\theta}$, respectively. These networks, while they are just copies of each others at different time steps, introduce enough difference between one another to de-correlate noise sufficiently for our use case.
 ###### clipped double q-learning
 One [[ensemble learning]] approach to address overestimation is to just maintain $n=2$ copies of both the Q-network and target network and take the $\arg\min$ of the $\arg\max$ of the copies.
-
----
 ## continuous action spaces
-
 Continuous Q-learning methods are popular alternatives to actor-critic methods.
 - **Stochastic optimization**: A naive approach would sample $N$ candidate actions from the state space $\{(s, a_i)\}_{i=1}^N$ , and just perform standard Q-learning over the discrete set of candidates.
 - **Cross-Entropy Method**: if we iteratively perform stochastic optimization, incrementally updating the model at each step, we get CEM. This works well for smaller dimension spaces.
@@ -85,9 +89,16 @@ This also means that states which are similar to each other have similar feature
 In continuous action spaces, taking the arg-max is difficult to compute. Instead, we can approximate this with another neural network $\mu_\theta \approx \arg\max_a Q_w(s,a)$. Note that this is equivalent to a deterministic [[policy gradient#on-policy actor-critic|actor-critic]] algorithm, where $Q_w$ is the critic, and $\mu_\theta$ is the deterministic actor. 
 
 We can train $\mu_\theta$ under the update rule $$\theta \leftarrow \arg\max_\theta Q_w(s, \mu_\theta(s))$$
+## implicit q-learning
+This is an offline algorithm, meaning we only have access to a static dataset $\mathcal D$. In these cases where distribution shift is present, overestimation bias becomes a larger problem. IQL replaces the $\max$ operation of the Bellman target by fitting a value function:
+$$Q(s, a) = r(s,a) + \gamma \mathbb E[V(s')]$$
+The value function itself *implicitly* is computing the max $V(s) = \max_{a} Q(s, a)$, but we don't directly perform that operation.
 
+IQL is trained using the **expectile loss**, an asymmetric function that regresses the values onto the Q-values.
+$$\min_{V} \mathbb{(s,a) \sim \mathcal D} [\ell^2 \tau (V(s)-Q(s,a))]$$
+The value should be larger than the Q-value, because it is implicitly performing the max operation, so to enforce this the expectile loss implicitly penalizes value underestimation bias. 
 
-
-
-
+Let $x = V(s) - Q(s,a)$. 
+$$\ell^2\tau = \begin{cases}(1-\tau)x^2 & \text{if }x>0 \\ \tau x^2 & \text{otherwise} \end{cases}$$
+where, in general $0.5 < \tau < 1$. 
 

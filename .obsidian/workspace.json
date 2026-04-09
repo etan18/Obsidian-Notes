@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "greedy",
+                "query": "bellman optimal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -196,16 +196,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "795113d0ee706b8a",
+  "active": "faf3a87a4a121e77",
   "lastOpenFiles": [
+    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
+    "Machine Learning/policy gradient.md",
+    "week log.md",
+    "Math/Probability/entropy.md",
     "value-based RL.md",
     "Machine Learning/Artificial Intelligence/q-learning.md",
-    "Machine Learning/policy gradient.md",
     "Machine Learning/img/policy.png",
     "Machine Learning/img/qn.png",
     "Machine Learning/img/dqn.png",
-    "week log.md",
-    "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "variational inference.md",
     "Machine Learning/Classification/bayes classifiers.md",
     "Cognitive Science/Psychology/behaviorism.md",
