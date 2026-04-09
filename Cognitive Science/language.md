@@ -77,7 +77,10 @@ When we are listening to someone speak, there are two processes happening:
 - Auditory-phonological conversion, the bottom-up processing of raw speech into coherent [[linguistics|linguistic]] units.
 - Auditory word representation, the higher level semantic decoding to gather the meaning and intention of some speech.
 
+#### orthography
 Similarly, when we are reading some text, there are two pathways:
 - Orthographic-phoneme conversion, grammatical parsing of text
+	- Hypothesis: developmental dyslexia is associated with the difficulty of the written language (e.g. English has a complex mapping of orthography to phonology and thus a high rate of dyslexia)
 - Visual word representation, which maps words to their semantic representations
-Disorders causing disruptions in either pathway are known as **dyslexia**.
+	- Hypothesis: developmental dyslexia is caused primarily by difficulties with dynamic visual stimuli
+Disorders causing disruptions in either pathway are known as **dyslexia**. 
