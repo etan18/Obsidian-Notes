@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week log.md",
+                "file": "synthetic data.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "week log"
+              "title": "synthetic data"
             }
           }
         ],
@@ -103,8 +103,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,17 +198,17 @@
   },
   "active": "795113d0ee706b8a",
   "lastOpenFiles": [
+    "value-based RL.md",
+    "variational inference.md",
+    "week log.md",
     "Cognitive Science/language.md",
     "Machine Learning/Artificial Intelligence/q-learning.md",
     "Machine Learning/Artificial Intelligence/reinforcement learning.md",
     "Machine Learning/policy gradient.md",
-    "week log.md",
     "Math/Probability/entropy.md",
-    "value-based RL.md",
     "Machine Learning/img/policy.png",
     "Machine Learning/img/qn.png",
     "Machine Learning/img/dqn.png",
-    "variational inference.md",
     "Machine Learning/Classification/bayes classifiers.md",
     "Cognitive Science/Psychology/behaviorism.md",
     "Machine Learning/Artificial Intelligence/heuristics.md",
