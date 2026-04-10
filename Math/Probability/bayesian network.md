@@ -39,3 +39,5 @@ Inference by enumeration becomes exponentially expensive as the number of variab
 Variable elimination is a cheaper and more exact method of inference in comparison to inference by enumeration. Given a Bayes Net, we repeatedly eliminate all the hidden variables $H_i$ by:
 1. Joining (multiplying together) all factors involving $H_i$.
 2. Summing out over all outcomes $h \in H_i$.
+
+For deep RL cases, we can perform large-scale probabilistic inference via [[variational inference]].

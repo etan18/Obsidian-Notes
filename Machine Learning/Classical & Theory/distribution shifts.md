@@ -16,3 +16,10 @@ Prevalence shifts, also known as **$Y|A$-shifts**, are observed when certain sub
 
 #### representation shifts
 Representation shifts, also known as **$X|A$-shifts**, are observed when some subset of our features $X$ are conditionally dependent on the sensitive attribute $A$. 
+
+---
+## kl-divergence
+
+KL-divergence measures the distance between two distributions, $p(x)$ and $q(x)$.
+$$D_{KL}(q||p) = \mathbb E_{x \sim q(x)}\bigg[\log\frac{p(x)}{q(x)}\bigg] = -\mathbb E_{x \sim q(x)}[\log p(x)] - \mathcal H(q)$$
+The second derivation emphasizes that KL-divergence effectively measures the expected log probability of $p(x)$ under $q(x)$, minus the [[entropy]] (or uncertainty).
