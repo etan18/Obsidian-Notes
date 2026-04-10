@@ -103,8 +103,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -197,10 +196,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "795113d0ee706b8a",
+  "active": "6949e9cc34ed3631",
   "lastOpenFiles": [
-    "Machine Learning/Classical & Theory/distribution shifts.md",
+    "Math/Probability/random variable.md",
     "variational inference.md",
+    "Machine Learning/Classical & Theory/distribution shifts.md",
     "Math/Probability/entropy.md",
     "Math/Probability/bayesian network.md",
     "Machine Learning/policy gradient.md",
@@ -228,7 +228,6 @@
     "Humanities & Social Science/linguistics.md",
     "Cognitive Science/cognitive architectures.md",
     "Cognitive Science/Perception/visual cortex.md",
-    "Cognitive Science/memory.md",
     "Cognitive Science/img/vwfa.png",
     "Pasted image 20260330162523.png",
     "Pasted image 20260330132709.png",
