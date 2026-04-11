@@ -1,5 +1,8 @@
 Research
 - [ ] 4/10: [[ai scribes]]
+	- [ ] validate followup task
+	- [ ] run clinical/quantitative stats on rephrased notes
+	- [ ] start writing up the draft
 - [ ] 4/16: prepare iclr oral presentation
 
 PSYCH C127

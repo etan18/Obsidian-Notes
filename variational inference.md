@@ -18,6 +18,11 @@ The presence of the [[entropy]] term employs the Principle of Maximum Entropy to
 
 However, in this case each $q_i$, assumed to be Gaussian, is learning separate $\mu_i$, $\sigma_i$ parameters for each datapoint $x_i$. We instead want to have a single neural network approximating $q_\phi(x_i) \approx p(z|x_i)$ for all $x_i$.
 
+#### amortized variational inference
+In the basic VI case each $q_i$, assumed to be Gaussian, is learning separate $\mu_i$, $\sigma_i$ parameters for each datapoint $x_i$. We instead want to have a single neural network approximating the *amortized* $q_\phi(x_i) \approx p(z|x_i)$ for all $x_i$. That is, $q_\phi(x_i)$ returns a *distribution* over $z|x_i$.
+
+>[!tip] Reparameterization Trick
+>In practice, all of these gradients we need to compute are approximated from a finite set of random samples $z_i \sim q_\phi (z|x)$, which is not differentiable. The **reparameterization trick** treats
 
 
 #### variational autoencoders

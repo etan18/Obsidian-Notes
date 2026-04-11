@@ -28,7 +28,7 @@ Now, we can claim that
 $$ r^*(x) = \max_{\substack{C}} f(X=x|Y=C) \cdot \pi_C = \max_{\substack{C}} Q_C(x) ,$$
 giving us our QDA decision function.
 >[!idea] Two Class Case
->For QDA with two classes $C$ and $D$, we can take a generative approach by looking at $P(Y=C|X=x) = s(Q_C(x) - Q_D(x))$, where we apply the [[vanishing gradient problem | logistic function]] to the difference in quadratic discriminant functions.
+>For QDA with two classes $C$ and $D$, we can take a [[generative models|generative]] approach by looking at $P(Y=C|X=x) = s(Q_C(x) - Q_D(x))$, where we apply the [[vanishing gradient problem | logistic function]] to the difference in quadratic discriminant functions.
 
 ## linear discriminant analysis (LDA)
 LDA is the exact same as QDA, but with one additional fundamental assumption--the Gaussians of each class all share the same variance $\sigma$. This allows our decision boundary to simplify to a hyperplane rather than a quadratic, making LDA a useful [[dimensionality reduction]] technique.

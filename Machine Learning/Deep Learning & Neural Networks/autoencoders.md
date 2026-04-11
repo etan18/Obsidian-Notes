@@ -1,4 +1,4 @@
-**Autoencoders** are a class of generative [[neural networks]] which are trained to learn representations of data. They are an [[unsupervised learning]] technique, consisting of two neural networks: an encoder and a decoder.
+**Autoencoders** are a class of [[generative models|generative]] [[neural networks]] which are trained to learn representations of data. They are an [[unsupervised learning]] technique, consisting of two neural networks: an encoder and a decoder.
 1. **Encoder**: takes in input data and compresses it into a low-dimensional latent space.
 2. **Decoder**: takes in compressed representation and attempts to reconstruct the input.
 These learned models are used for [[representation learning]] and can encode data into shared latent spaces. 

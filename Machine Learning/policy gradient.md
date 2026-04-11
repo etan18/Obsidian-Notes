@@ -70,5 +70,7 @@ where $\gamma$ acts as a discount factor and $\lambda$ is the weight parameter.
 >We can then update our policy by taking the gradient of the estimated Q-function. This makes scaling sample size much cheaper.
 
 ### soft actor-critic
+- **Entropy bonus**:  introduces an [[entropy]] bonus $\alpha H(\pi((\cdot|s_t)))$ to the target which enhances the exploration of the policy. This is a [[regularization]] technique to improve convergence and robustness in practice.
+	- The temperature parameter $\alpha$ controls exploration.
+- **Clipped double [[q-learning]]**: SAC uses two Q-networks and takes the $\min$ of their $\arg\max$ to help with the overestimation bias of Q-learning.
 
-Introduces an **[[entropy]] bonus** $\alpha H(\pi((\cdot|s_t)))$ to the target which enhances the exploration of the policy.

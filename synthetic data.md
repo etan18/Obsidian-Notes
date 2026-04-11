@@ -16,7 +16,7 @@ How effective synthetic data is at boosting model performance is dependent on a 
 - Mixture strategy: where is synthetic data introduced and how does it interact with the real data
 
 >[!danger] Model Collapse
-> [Shumailov et al. 2024](https://www.nature.com/articles/s41586-024-07566-y) described the phenomenon of **model collapse**, which occurs when models are recursively trained on synthetic data. That is, a generative model is used to produce synthetic data samples, and those samples are used to train the next version of the same model. 
+> [Shumailov et al. 2024](https://www.nature.com/articles/s41586-024-07566-y) described the phenomenon of **model collapse**, which occurs when models are recursively trained on synthetic data. That is, [[generative models]] are used to produce synthetic data samples, and those samples are used to train the next version of the same model. 
 > 
 > The authors observed that over time the distribution of perplexity of tokens generated diverged further and further from the original data before converging to a collapsed distribution.
 > 
