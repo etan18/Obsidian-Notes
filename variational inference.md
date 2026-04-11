@@ -10,11 +10,13 @@ Variational inference is an approach to reframe learning [[conditional probabili
 In practice, for simple models of $p(x|z)$ (e.g. a conditional Gaussian) and $p(z)$ (e.g. a Gaussian), we can model quite complex probability distributions for complex $p(x)$.
 
 #### expected log likelihood
-To avoid integrating over all $z \sim p(z)$, we can instead estimate the likelihood via **expected log likelihood**: 
+To avoid integrating over all $z \sim p(z)$, we can instead estimate the likelihood via **expected log likelihood**, which samples from the posterior distribution $z \sim p(z|x_i)$: 
 $$\theta \leftarrow \arg\max_\theta \frac 1 N \sum_i \mathbb E_{z \sim p(z|x_i)}[\log p_\theta (x_i)]$$
 We get this posterior distribution $p(z|x)$ which we take the expectation over from $p(x|z)$ via [[bayesian network#bayesian inference|probabilistic inference]]. We can derive a lower bound on $\log p_\theta(x_i)$, known as the evidence lower bound (**ELBO**):
 $$\log p(x_i) \ge \mathcal L_i(p, q_i) =  \mathbb E_{z \sim q_i(z)}[\log p(x_i|z) + \log p(z)] + \mathcal H(q_i)$$
-The presence of the [[entropy]] term employs the Principle of Maximum Entropy to implicitly select the valid distribution which is broadest (highest entropy). Maximizing $\mathcal L_i$ minimizes the [[distribution shifts#kl-divergence|KL-divergence]] between $q_i$ and the true distribution $p(z)$. 
+The presence of the [[entropy]] term employs the Principle of Maximum Entropy to implicitly select the valid distribution which is broadest (highest entropy). Maximizing $\mathcal L_i$ minimizes the [[distribution shifts#kl-divergence|KL-divergence]] between $q_i$ and the true distribution $p(z)$:
+$$\log p(x_i) = \mathcal L_i(p, q_i) + D_{KL}(q_i(z)||p(z|x_i))$$
+We can perform gradient ascent on the ELBO objective to learn parameters $\theta$ for $p_\theta(x_i|z)$. Doing so also pushes our posterior approximation $q_i(z)$ closer to the true distribution.
 
 However, in this case each $q_i$, assumed to be Gaussian, is learning separate $\mu_i$, $\sigma_i$ parameters for each datapoint $x_i$. We instead want to have a single neural network approximating $q_\phi(x_i) \approx p(z|x_i)$ for all $x_i$.
 
