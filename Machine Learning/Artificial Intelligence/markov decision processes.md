@@ -18,7 +18,7 @@ Where $R_\max$ is the maximum possible reward attainable at any timestep of the 
 ---
 # policy
 This section discusses methods for finding an optimal **policy function** $\pi^*(s) = a$, which returns the *action* that will yield the maximum reward from the input *state*. Common approaches to this include [[q-learning]].  
-#### value iteration
+## value iteration
 *Value iteration* is a [[dynamic programming]] algorithm that iteratively increases the finite horizon until it reaches convergence. Let $U_k(s)$ denote the maximum expected utility attainable starting from state $s$ if we run for $k$ steps. 
 1. $\forall s \in S$, initialize $U_0(s) = 0$. 
 2. Repeat the update rule until convergence (defined $\forall s \in S, U_{k + 1}(s) = U_k(s)$)
@@ -31,6 +31,11 @@ $$
 &= \mathrm{argmax}_{a} \sum_{s'} T(s, a, s')[R(s, a, s') + \gamma U_k(s')]
 \end{align}
 $$
+## policy iteration
+Policy iteration is another DP approach, which iteratively optimizes the improvement in the expected value of the **advantage** term, $A_{\pi}(s,a) = R(s, a, s') + \gamma U_k(s')$. Concretely, we optimize
+$$\theta' \leftarrow \arg\max_{\theta'} \sum_t \mathbb E_{s_t \sim p_\theta(s_t)}\bigg[\mathbb{E}_{a_t \sim \pi_\theta(a_t|s_t)} \bigg[ \frac{\pi_{\theta'}(s_t, a_t)}{\pi_\theta(s_t, a_t)} \gamma^t A^{\pi_\theta}(s_t, a_t)\bigg]\bigg]$$
+This is the optimization objective for one iteration of policy iteration. Commonly, we also impose a [[alignment#trust region methods|KL-divergence penalty]] to ensure policy weights do not deviate too much in a single step.
+
 ---
 ## partially observed MDPs
 
