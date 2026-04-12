@@ -58,3 +58,4 @@ A naive way to do this is to estimate it empirically. We do this by running (or 
 >- **Epistemic**: model uncertainty, lack of knowledge from model limitations (can be addressed by fixing the model)
 
 
+Inverse RL: you have optimal human data and want to estimate the reward function from it

@@ -24,9 +24,11 @@ However, in this case each $q_i$, assumed to be Gaussian, is learning separate $
 In the basic VI case each $q_i$, assumed to be Gaussian, is learning separate $\mu_i$, $\sigma_i$ parameters for each datapoint $x_i$. We instead want to have a single neural network approximating the *amortized* $q_\phi(x_i) \approx p(z|x_i)$ for all $x_i$. That is, $q_\phi(x_i)$ returns a *distribution* over $z|x_i$.
 
 >[!tip] Reparameterization Trick
->In practice, all of these gradients we need to compute are approximated from a finite set of random samples $z_i \sim q_\phi (z|x)$, which is not differentiable. The **reparameterization trick** treats
-
-
+>In practice, all of these gradients we need to compute are approximated from a finite set of random samples $z_i \sim q_\phi (z|x)$, which is not differentiable. The **reparameterization trick** decouples the trainable parameters of $\phi$ from random noise $\epsilon \sim \mathcal N(0, 1)$. $$z = \mu_\phi(x) + \sigma_\phi(x) \cdot \epsilon$$
+>Now, we sample from $\epsilon$, which is independent of the parameters $\phi$ so they are differentiable again.
 #### variational autoencoders
+Variational [[autoencoders]] encode the complex distribution $p(x)$ into a simplified latent space under prior $p(z) \sim \mathcal N(0, I)$. We can decode the latents to produce a denoised approximation of $p(x)$.
+- **Encoder**: models $p_\phi(z|x) = \mathcal N(\mu_\phi(x), \sigma_\phi(x))$ 
+- **Decoder**: models $p_\theta(x|z) = \mathcal N(\mu_\theta(z), \sigma_\theta(z))$ 
 
 
