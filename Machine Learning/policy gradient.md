@@ -74,3 +74,8 @@ where $\gamma$ acts as a discount factor and $\lambda$ is the weight parameter.
 	- The temperature parameter $\alpha$ controls exploration.
 - **Clipped double [[q-learning]]**: SAC uses two Q-networks and takes the $\min$ of their $\arg\max$ to help with the overestimation bias of Q-learning.
 
+---
+## off-policy policy gradients
+ The policy gradient framework is on-policy, meaning that we make our updates based only on data sampled from the current policy. This is sample inefficient, so we want to find a way to reuse older samples. 
+
+We do this by applying [[importance sampling]] weights to each action across the entire trajectory.
