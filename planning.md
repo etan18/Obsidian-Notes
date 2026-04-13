@@ -1,0 +1,2 @@
+- **Open-loop** planning: select trajectories based on predetermined input without feedback. You effectively commit to the entire action sequence without being able to observe intermediate rewards.
+- **Closed-loop** planning: select the action, receive feedback (reward) before selecting the next action.

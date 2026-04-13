@@ -1,6 +1,6 @@
 #cs188 
 
-Bayesian Networks take advantage of [[conditional probability]] to efficiently store information about joint distributions.
+Bayesian Networks take advantage of [[conditional probability]] to efficiently store information about joint distributions. 
 
 ## architecture
 Say we have $n$ variables which each have a domain of size $d$. To naively store information about the probabilities of these variables, we'd need a table with $d^n$ entries. Instead, we can use a **directed acyclic graph (DAG)** to capture the relationship between each variable. The representation is as follows:
@@ -40,4 +40,7 @@ Variable elimination is a cheaper and more exact method of inference in comparis
 1. Joining (multiplying together) all factors involving $H_i$.
 2. Summing out over all outcomes $h \in H_i$.
 
-For deep RL cases, we can perform large-scale probabilistic inference via [[variational inference]].
+>[!tip] Deep Bayesian Networks
+For deep RL cases where we model our distribution over the next state $p(s'|a, s)$ using a neural network, we can represent each model weight as a Gaussian distribution with two parameters, the mean $\mu$ and variance $\sigma$. This gives us a model of uncertainty.
+We train this model by performing large-scale probabilistic inference via [[variational inference]].
+
